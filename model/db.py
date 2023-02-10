@@ -57,7 +57,7 @@ class db:
             print("Failed creating database: {}".format(err))
             return False
 
-    def ProductMatch(ProdName):
+    def ProductMatch(ProdName, English, Chinese):
         exluded_terms = ['系列']
         for terms in exluded_terms:
             ProdName = ProdName.replace(terms, "")
@@ -83,21 +83,22 @@ class db:
             select ProductID, ProductName,ProductNick, CurrentPrice, ProductURL,
             match(ProductName, ProductNick) against(%s in natural language mode) as score 
             from PCHomeProducts 
-            where match(ProductName, ProductNick) against(%s in natural language mode) > 10 
+            where match(EnglishWords) against(%s in natural language mode)
+            and match(ChineseWords) against(%s in natural language mode) 
             and ProductID 
             in (select ProductID 
                 from PCHomeProducts 
                 where match(ProductName, ProductNick) against(%s in natural language mode))
             Limit 5;
             """
-        val = (ProdName[1], ProdName[1], ProdName[0],)
+        val = (English, Chinese, ProdName[0],)
         result = db.checkAllData(sql, val)
         # print(f'PCHome result: {result}')
         return result
 
     def SearchProductbyCategory(CateLevel, CateName):
         sql = """
-            select P.ProductID, P.ProductName, P.CurrentPrice, P.ProductURL,C.CategoryName 
+            select P.ProductID, P.ProductName, P.CurrentPrice, P.ProductURL,C.CategoryName, P.EnglishWords, P.ChineseWords 
             from MomoProdCategory as C 
             inner join MomoProducts as P 
             on C.ProductID=P.ProductID 

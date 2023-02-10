@@ -3,7 +3,6 @@ from flask import jsonify, make_response
 
 class comparePrice:
     def searchCategory(CateLevel, CateName):
-        print("in function comparPrice")
         print(f'CateLevel: {CateLevel}, CateName: {CateName}')
         result = db.SearchProductbyCategory(CateLevel, CateName)
 
@@ -11,7 +10,7 @@ class comparePrice:
         for i in range(len(result)):
             # print(
             #     f"\n\nMomo Product Name: {result[i]['ProductName']},Momo Price: {result[i]['CurrentPrice']}")
-            matchResult = db.ProductMatch(result[i]["ProductName"])
+            matchResult = db.ProductMatch(result[i]["ProductName"],result[i]["EnglishWords"], result[i]["ChineseWords"])
             if not matchResult:
                 removeIndex.append(i)
             else:

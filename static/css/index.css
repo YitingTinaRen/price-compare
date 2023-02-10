@@ -72,7 +72,7 @@
     }
     .row{
         grid-template-columns: 1fr;
-        background-color: #f5f0e1;
+        background-color: #ff6340;
     }
     .row>img{
         grid-row: -1;

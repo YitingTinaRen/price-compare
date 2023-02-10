@@ -46,7 +46,13 @@ TABLES['PCHomeProducts'] = (
     "`ProductAvailability` varchar(20) not null,"
     "`ProductURL` varchar(100) not null,"
     "`DateTime` DATETIME default CURRENT_TIMESTAMP,"
+    "`EnglishWords` varchar(40) default null,"
+    "`ChineseWords` varchar(5000) default null, "
+    "`NumberWords` varchar(40) default null, "
     "FULLTEXT `fulltext_index` (`ProductName`, `ProductNick`),"
+    "FULLTEXT `keywords_index` (`EnglishWords`), "
+    "FULLTEXT `keywords_index` (`ChineseWords`), "
+    "FULLTEXT `keywords_index` (`NumberWords`), "
     "INDEX (`ProductID`) "
     ") ENGINE=InnoDB CHARACTER SET = utf8mb4")
 

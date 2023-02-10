@@ -96,10 +96,50 @@ class db:
         result = db.checkAllData(sql, val)
         # print(f'PCHome result: {result}')
         return result
+    
+    def ProductMatchV2(ProdName, English, Chinese):
+        ProdName = ProdName.replace("+", " ")
+        # ProdName = ProdName.split('】')
+        # ProdName[0] = ProdName[0].replace("【", "")
+        # ProdName[1] = ProdName[1].replace("/", " ")
+        # ProdName[1] = ProdName[1].replace("-", " ")
+        
+        if ProdName.find('】')==-1:
+            l=[]
+            if ProdName.find(' ')==-1:
+                l.append(ProdName[:5])
+                l.append(ProdName[6:])
+            else:
+                l.append(ProdName[:ProdName.index(' ')])
+                l.append(ProdName[ProdName.index(' ')+1:])
+                
+            ProdName=l
+        else:
+            ProdName = ProdName.split('】')
+            ProdName[0] = ProdName[0].replace("【", "")
+        
+        ProdName[1] = ProdName[1].replace("/", " ")
+        ProdName[1] = ProdName[1].replace("-", " ")
+        
+        sql = """
+            select ProductID, ProductName,ProductNick, CurrentPrice, ProductURL
+            from PCHomeProducts 
+            where match(EnglishWords) against(%s in natural language mode)
+            and match(ChineseWords) against(%s in natural language mode) 
+            and ProductID 
+            in (select ProductID 
+                from PCHomeProducts 
+                where match(ProductName, ProductNick) against(%s in natural language mode))
+            ;
+            """
+        val = (English, Chinese, ProdName[0],)
+        result = db.checkAllData(sql, val)
+        # print(f'PCHome result: {result}')
+        return result
 
     def SearchProductbyCategory(CateLevel,CateName):
         sql = """
-select P.ProductID, P.ProductName, P.CurrentPrice, P.ProductURL,C.CategoryName 
+select P.ProductID, P.ProductName, P.CurrentPrice, P.ProductURL,C.CategoryName, P.EnglishWords, P.ChineseWords 
 from MomoProdCategory as C 
 inner join MomoProducts as P 
 on C.ProductID=P.ProductID 
@@ -130,34 +170,32 @@ where C.CategoryLevel=%s and C.CategoryName like %s and P.ProductName like %s
 if __name__ == '__main__':
     MyCate='餐椅'
     # result=db.SearchProductbyCategory('3',"固齒器")
-    # result=db.SearchProductbyCategory('2',"水杯") #配對率頗低，錯誤率很高
-    # result=db.SearchProductbyCategory('3',"消毒") #可以拿來demo，但配對率還是需要改進
-    # result=db.SearchProductbyCategory('3',"圍欄") #可以demo
+    # result=db.SearchProductbyCategory('2',"水杯") #配對率頗低，錯誤率很高 Done
+    # result=db.SearchProductbyCategory('3',"消毒") #可以拿來demo，但配對率還是需要改進 Done
+    # result=db.SearchProductbyCategory('3',"圍欄") #可以demo Done
     # result=db.SearchProductbyCategory('3',"澡盆") # 不能用 沒配對成功的
     # result=db.SearchProductbyCategory('3',"汽座") #可以試試看，不過結果也沒很好
-    result=db.SearchProductbyCategory('3',"餐椅") #
+    result=db.SearchProductbyCategory('3',"餐椅") #可以
+    # result=db.SearchProductbyCategory('3',"地墊") #
+    # result=db.SearchProductbyCategory('3',"奶瓶") #
+    # result=db.SearchProductbyCategory('3',"奶嘴") #
+    # result=db.SearchProductbyCategory('3',"溫奶器") #
+    # result=db.SearchProductbyCategory('3',"推車") #
+    # !!!result=db.SearchProductbyCategory('3',"副食品") #C.CategoryLevel='2' and C.CategoryName like '%副食品%' and P.ProductName like '%副食品分裝盒%'
+
 
     
     removeIndex=[]
     for i in range(len(result)):
         print(f"\n\n{i}/{len(result)} \nMomo Product Name: {result[i]['ProductName']}, Momo Price: {result[i]['CurrentPrice']}")
-        matchResult=db.ProductMatch(result[i]["ProductName"])
+        # matchResult=db.ProductMatch(result[i]["ProductName"])
+        matchResult=db.ProductMatchV2(result[i]["ProductName"],result[i]["EnglishWords"], result[i]["ChineseWords"])
+        print(matchResult)
         if not matchResult:
             removeIndex.append(i)
         else:
             db.writeMatchResult(result[i]["ProductID"], matchResult[0]["ProductID"],MyCate)
             print(
-                f"PCHome ProductNick:{matchResult[0]['ProductNick']}, PCHome Price:{matchResult[0]['CurrentPrice']}, Matching score:{matchResult[0]['score']}")
-            # PCH={
-            #     "PCHPrice":matchResult[0]["CurrentPrice"],
-            #     "PCHURL": matchResult[0]["ProductURL"]
-            #     }
-            # result[i].update(PCH)
-
-    # for item in sorted(removeIndex, reverse=True):
-    #     if item < len(result):
-    #         del result[item]
-    # print(result)
-    # db.ProductMatch('MOYUUM 韓國 白金矽膠手環固齒器禮盒 多款可選 彌月禮盒 成長禮盒 新生兒禮盒 ')
+                f"PCHome ProductNick:{matchResult[0]['ProductNick']}, PCHome Price:{matchResult[0]['CurrentPrice']}")
    
 

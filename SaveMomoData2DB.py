@@ -47,9 +47,13 @@ TABLES['MomoProducts'] = (
     "`DateTime` DATETIME default CURRENT_TIMESTAMP,"
     "`PCHProductID` varchar(25) default null, "
     "`HasMatching` boolean not null default FALSE, "
-    "`MyCategory varchar(25) default null,"
+    "`MyCategory` varchar(25) default null,"
+    "`EnglishWords` varchar(40) default null,"
+    "`ChineseWords` varchar(5000) default null, "
+    "`NumberWords` varchar(40) default null, "
     "INDEX (`ProductID`), "
     "FOREIGN KEY (`PCHProductID`) REFERENCES `PCHomeProducts` (`ProductID`) ON DELETE CASCADE "
+    "FULLTEXT `keywords_index` (`EnglishWords`,`ChineseWords`,`NumberWords), "
     "FULLTEXT `fulltext_index` (`ProductName`) "
     ") ENGINE=InnoDB CHARACTER SET = utf8mb4")
 

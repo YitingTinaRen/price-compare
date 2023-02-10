@@ -105,6 +105,9 @@
 .card-list>a:visited {
     text-decoration: none;
 }
+.card-list>a:hover{
+    transform: scale(1.05);
+}
 .price {
     font-size: 0.5em;
     font-weight: lighter;

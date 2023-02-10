@@ -7,5 +7,5 @@ api_compare=Blueprint('api_compare',__name__)
 def compare():
     Category=request.args.get('Category')
     Page=request.args.get('Page',0)
-    result = model.comparePrice.getSearchResult(Category, int(Page))
+    result = model.comparePrice.getSearchResult(Category, 10*int(Page))
     return result
