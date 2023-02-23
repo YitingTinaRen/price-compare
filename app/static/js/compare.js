@@ -59,6 +59,18 @@ const displayData = (data)=>{
                                 $${data.CurrentPrice}
                             </div>
                         </a>
+                        <div class="side-functions">
+                            <a href='#'>
+                                <span class="history-btn">
+                                歷史價格
+                                </span>
+                            </a>
+                            <a href='#'>
+                                <span class="track-btn">
+                                    追蹤商品
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </li>
