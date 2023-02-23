@@ -1,0 +1,704 @@
+[
+    {
+        "Seq": 19458508,
+        "Id": "QFATAV-B9008Q2OQ-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 4300,
+            "P": 3655,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATAV-B9008Q2OQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 19458824,
+        "Id": "QFATAV-B9008Q2OQ-003",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 4300,
+            "P": 3655,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATAV-B9008Q2OQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16092111,
+        "Id": "QFATAV-B9007BNCX-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 4800,
+            "P": 4080,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "NotReady",
+        "SaleStatus": 0,
+        "Group": "QFATAV-B9007BNCX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 19458486,
+        "Id": "QFATAV-B9008Q2N6-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 5300,
+            "P": 4505,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATAV-B9008Q2N6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 19458836,
+        "Id": "QFATAV-B9008Q2N6-005",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 5300,
+            "P": 4505,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATAV-B9008Q2N6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26193179,
+        "Id": "DEAUCS-B900B4I0Y-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2200,
+            "P": 1870,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4I0Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26193227,
+        "Id": "DEAUCS-B900B4I0Y-001",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2200,
+            "P": 1870,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4I0Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26193228,
+        "Id": "DEAUCS-B900B4I0Y-002",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2200,
+            "P": 1870,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4I0Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26193229,
+        "Id": "DEAUCS-B900B4I0Y-003",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2200,
+            "P": 1870,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4I0Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26193399,
+        "Id": "DEAUCS-B900B4I0Y-004",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2200,
+            "P": 1870,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4I0Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26193400,
+        "Id": "DEAUCS-B900B4I0Y-005",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2200,
+            "P": 1870,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4I0Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27454895,
+        "Id": "DEAUCS-B900B4I0Y-006",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2200,
+            "P": 1870,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4I0Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27454896,
+        "Id": "DEAUCS-B900B4I0Y-007",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2200,
+            "P": 1870,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAUCS-B900B4I0Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32525328,
+        "Id": "DEAUCS-B900ES5YM-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900ES5YM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32525627,
+        "Id": "DEAUCS-B900ES67J-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900ES67J",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32525064,
+        "Id": "DEAUCS-B900ES5RA-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900ES5RA",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32525453,
+        "Id": "DEAUCS-B900ES61U-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900ES61U",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32525534,
+        "Id": "DEAUCS-B900ES655-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900ES655",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26192536,
+        "Id": "DEAUCS-B900B4HO8-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HO8",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26192570,
+        "Id": "DEAUCS-B900B4HO8-001",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HO8",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26192571,
+        "Id": "DEAUCS-B900B4HO8-002",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HO8",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26192572,
+        "Id": "DEAUCS-B900B4HO8-003",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HO8",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27454898,
+        "Id": "DEAUCS-B900B4HO8-004",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HO8",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26192897,
+        "Id": "DEAUCS-B900B4HVH-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2200,
+            "P": 1870,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HVH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26192938,
+        "Id": "DEAUCS-B900B4HVH-001",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2200,
+            "P": 1870,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HVH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26192940,
+        "Id": "DEAUCS-B900B4HVH-003",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2200,
+            "P": 1870,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HVH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27454966,
+        "Id": "DEAUCS-B900B4HVH-004",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2200,
+            "P": 1870,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HVH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32525180,
+        "Id": "DEAUCS-B900ES5UT-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900ES5UT",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32491277,
+        "Id": "DEAUCS-B900EQZJZ-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900EQZJZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32525385,
+        "Id": "DEAUCS-B900ES5Z2-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900ES5Z2",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25209203,
+        "Id": "QFATAV-B900ASX93-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 4800,
+            "P": 4080,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATAV-B900ASX93",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25209746,
+        "Id": "QFATAV-B900ASX93-004",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 4800,
+            "P": 4080,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATAV-B900ASX93",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26191887,
+        "Id": "DEAUCS-B900B4HF5-000",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HF5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26191939,
+        "Id": "DEAUCS-B900B4HF5-001",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HF5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26191940,
+        "Id": "DEAUCS-B900B4HF5-002",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HF5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26191941,
+        "Id": "DEAUCS-B900B4HF5-003",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HF5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26191942,
+        "Id": "DEAUCS-B900B4HF5-004",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HF5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27454940,
+        "Id": "DEAUCS-B900B4HF5-006",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HF5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32746484,
+        "Id": "DEAUCS-B900B4HF5-007",
+        "Store": "DEAUCS",
+        "Price": {
+            "M": 2850,
+            "P": 2422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCS-B900B4HF5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

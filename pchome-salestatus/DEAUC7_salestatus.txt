@@ -1,0 +1,200 @@
+[
+    {
+        "Seq": 25996153,
+        "Id": "DEAUC7-A900B27L5-000",
+        "Store": "DEAUC7",
+        "Price": {
+            "M": 1280,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUC7-A900B27L5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27445971,
+        "Id": "DEAUC7-A900BQDXD-000",
+        "Store": "DEAUC7",
+        "Price": {
+            "M": 790,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUC7-A900BQDXD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25996546,
+        "Id": "DEAUC7-A900B27RT-000",
+        "Store": "DEAUC7",
+        "Price": {
+            "M": 890,
+            "P": 490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUC7-A900B27RT",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25996009,
+        "Id": "DEAUC7-A900B27HU-000",
+        "Store": "DEAUC7",
+        "Price": {
+            "M": 1280,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUC7-A900B27HU",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25996288,
+        "Id": "DEAUC7-A900B27NW-000",
+        "Store": "DEAUC7",
+        "Price": {
+            "M": 1280,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUC7-A900B27NW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27491871,
+        "Id": "DEAUC7-A900BRB3J-000",
+        "Store": "DEAUC7",
+        "Price": {
+            "M": 1280,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUC7-A900BRB3J",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27445914,
+        "Id": "DEAUC7-A900BQDVX-000",
+        "Store": "DEAUC7",
+        "Price": {
+            "M": 790,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUC7-A900BQDVX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25996038,
+        "Id": "DEAUC7-A900B27J9-000",
+        "Store": "DEAUC7",
+        "Price": {
+            "M": 1280,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUC7-A900B27J9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27491734,
+        "Id": "DEAUC7-A900BRB1U-000",
+        "Store": "DEAUC7",
+        "Price": {
+            "M": 690,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUC7-A900BRB1U",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25996076,
+        "Id": "DEAUC7-A900B27K5-000",
+        "Store": "DEAUC7",
+        "Price": {
+            "M": 1280,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUC7-A900B27K5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16750690,
+        "Id": "DEAU2K-A9007LHJ6-000",
+        "Store": "DEAUC7",
+        "Price": {
+            "M": 1280,
+            "P": 496,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAU2K-A9007LHJ6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

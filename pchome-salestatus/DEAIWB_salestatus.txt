@@ -1,0 +1,182 @@
+[
+    {
+        "Seq": 21004819,
+        "Id": "DEAITG-A9009DV55-000",
+        "Store": "DEAITG",
+        "Price": {
+            "M": 1299,
+            "P": 859,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAITG-A9009DV55",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22052563,
+        "Id": "QFATF3-A9009SU5Q-000",
+        "Store": "DECHBM",
+        "Price": {
+            "M": 1299,
+            "P": 859,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATF3-A9009SU5Q",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 18428127,
+        "Id": "QFAT84-A9008AYO2-000",
+        "Store": "DECHBM",
+        "Price": {
+            "M": 1299,
+            "P": 959,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFAT84-A9008AYO2",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 18428204,
+        "Id": "DEAIE8-A9008AYS9-000",
+        "Store": "DECHBM",
+        "Price": {
+            "M": 1299,
+            "P": 999,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIE8-A9008AYS9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23084752,
+        "Id": "QFAT84-A900A4XEG-000",
+        "Store": "DECHBM",
+        "Price": {
+            "M": 1299,
+            "P": 859,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFAT84-A900A4XEG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22052768,
+        "Id": "QFATF3-A9009SUB3-000",
+        "Store": "DECHBM",
+        "Price": {
+            "M": 1299,
+            "P": 859,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATF3-A9009SUB3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 21004861,
+        "Id": "DEAITG-A9009DV5I-000",
+        "Store": "DEAITG",
+        "Price": {
+            "M": 1299,
+            "P": 959,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAITG-A9009DV5I",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 18411084,
+        "Id": "QFATF3-A9008AP6S-000",
+        "Store": "DECHBM",
+        "Price": {
+            "M": 1299,
+            "P": 859,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATF3-A9008AP6S",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23090420,
+        "Id": "DEAITG-A900A4Y13-000",
+        "Store": "DEAITG",
+        "Price": {
+            "M": 1299,
+            "P": 859,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAITG-A900A4Y13",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 21004883,
+        "Id": "DEAITG-A9009DV62-000",
+        "Store": "DEAITG",
+        "Price": {
+            "M": 1299,
+            "P": 859,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAITG-A9009DV62",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

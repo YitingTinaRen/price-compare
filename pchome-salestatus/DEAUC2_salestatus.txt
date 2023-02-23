@@ -1,0 +1,92 @@
+[
+    {
+        "Seq": 25990149,
+        "Id": "DEAUC2-A900B249I-000",
+        "Store": "DEAUC2",
+        "Price": {
+            "M": 990,
+            "P": 690,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUC2-A900B249I",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25982627,
+        "Id": "DEAUC2-A900B20OU-000",
+        "Store": "DEAUC2",
+        "Price": {
+            "M": 890,
+            "P": 690,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUC2-A900B20OU",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25990115,
+        "Id": "DEAUC2-A900B248W-000",
+        "Store": "DEAUC2",
+        "Price": {
+            "M": 890,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUC2-A900B248W",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25989247,
+        "Id": "DEAUC2-A900B23T6-000",
+        "Store": "DEAUC2",
+        "Price": {
+            "M": 890,
+            "P": 690,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUC2-A900B23T6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25989357,
+        "Id": "DEAUC2-A900B23UT-000",
+        "Store": "DEAUC2",
+        "Price": {
+            "M": 890,
+            "P": 690,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAUC2-A900B23UT",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

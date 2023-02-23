@@ -1,0 +1,200 @@
+[
+    {
+        "Seq": 34618253,
+        "Id": "DECH4E-A900FSSD5-000",
+        "Store": "DECH4E",
+        "Price": {
+            "M": 930,
+            "P": 740,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH4E-A900FSSD5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34618096,
+        "Id": "DECH4E-A900FSSAK-000",
+        "Store": "DECH4E",
+        "Price": {
+            "M": 1680,
+            "P": 1380,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH4E-A900FSSAK",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34618152,
+        "Id": "DECH4E-A900FSSBH-000",
+        "Store": "DECH4E",
+        "Price": {
+            "M": 825,
+            "P": 722,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH4E-A900FSSBH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34618203,
+        "Id": "DECH4E-A900FSSCO-000",
+        "Store": "DECH4E",
+        "Price": {
+            "M": 2040,
+            "P": 1600,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH4E-A900FSSCO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34618280,
+        "Id": "DECH4E-A900FSSCV-000",
+        "Store": "DECH4E",
+        "Price": {
+            "M": 3360,
+            "P": 2660,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH4E-A900FSSCV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34618195,
+        "Id": "DECH4E-A900FSSCM-000",
+        "Store": "DECH4E",
+        "Price": {
+            "M": 750,
+            "P": 7550,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH4E-A900FSSCM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34618181,
+        "Id": "DECH4E-A900FSSCB-000",
+        "Store": "DECH4E",
+        "Price": {
+            "M": 1650,
+            "P": 1300,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH4E-A900FSSCB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34618103,
+        "Id": "DECH4E-A900FSSAR-000",
+        "Store": "DECH4E",
+        "Price": {
+            "M": 680,
+            "P": 580,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH4E-A900FSSAR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34618188,
+        "Id": "DECH4E-A900FSSCF-000",
+        "Store": "DECH4E",
+        "Price": {
+            "M": 2940,
+            "P": 1980,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH4E-A900FSSCF",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34618178,
+        "Id": "DECH4E-A900FSSC7-000",
+        "Store": "DECH4E",
+        "Price": {
+            "M": 1590,
+            "P": 1300,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH4E-A900FSSC7",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34618144,
+        "Id": "DECH4E-A900FSSBD-000",
+        "Store": "DECH4E",
+        "Price": {
+            "M": 3360,
+            "P": 1980,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH4E-A900FSSBD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

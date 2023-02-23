@@ -1,0 +1,92 @@
+[
+    {
+        "Seq": 27342186,
+        "Id": "DECHAH-A900BO9AU-000",
+        "Store": "DECH6W",
+        "Price": {
+            "M": 1200,
+            "P": 900,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAH-A900BO9AU",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32296255,
+        "Id": "DECHAH-A900EN7L4-000",
+        "Store": "DECH6W",
+        "Price": {
+            "M": 1598,
+            "P": 1093,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAH-A900EN7L4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32296249,
+        "Id": "DECHAH-A900EN7KQ-000",
+        "Store": "DECH6W",
+        "Price": {
+            "M": 1750,
+            "P": 1195,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAH-A900EN7KQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27342192,
+        "Id": "DECHAH-A900BO9AX-000",
+        "Store": "DECH6W",
+        "Price": {
+            "M": 1080,
+            "P": 792,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAH-A900BO9AX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33631903,
+        "Id": "DECH6W-A900FEKIA-000",
+        "Store": "DECH6W",
+        "Price": {
+            "M": 5000,
+            "P": 3420,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH6W-A900FEKIA",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

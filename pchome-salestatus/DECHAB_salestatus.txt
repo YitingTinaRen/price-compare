@@ -1,0 +1,146 @@
+[
+    {
+        "Seq": 22507438,
+        "Id": "QFAT5E-B9009YNLZ-000",
+        "Store": "DECHAB",
+        "Price": {
+            "M": 960,
+            "P": 688,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFAT5E-B9009YNLZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22372589,
+        "Id": "QFAT5E-B9009X5GJ-000",
+        "Store": "DECHAB",
+        "Price": {
+            "M": 1750,
+            "P": 1403,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFAT5E-B9009X5GJ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27400514,
+        "Id": "DECHAB-B900BPCZ6-000",
+        "Store": "DECHAB",
+        "Price": {
+            "M": 760,
+            "P": 660,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAB-B900BPCZ6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22372549,
+        "Id": "QFAT5E-B9009X5E5-000",
+        "Store": "DECHAB",
+        "Price": {
+            "M": 720,
+            "P": 527,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFAT5E-B9009X5E5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33517993,
+        "Id": "DECHAB-B900FCT0G-000",
+        "Store": "DECHAB",
+        "Price": {
+            "M": 350,
+            "P": 250,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAB-B900FCT0G",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22372541,
+        "Id": "QFAT5E-B9009X5DX-000",
+        "Store": "DECHAB",
+        "Price": {
+            "M": 780,
+            "P": 578,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 15,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFAT5E-B9009X5DX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22507372,
+        "Id": "QFAT5E-B9009YNKB-000",
+        "Store": "DECHAB",
+        "Price": {
+            "M": 820,
+            "P": 576,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFAT5E-B9009YNKB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34483473,
+        "Id": "DECHAB-B900FR3Z6-000",
+        "Store": "DECHAB",
+        "Price": {
+            "M": 530,
+            "P": 430,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAB-B900FR3Z6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

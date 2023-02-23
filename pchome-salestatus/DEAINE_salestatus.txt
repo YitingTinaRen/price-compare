@@ -1,0 +1,2288 @@
+[
+    {
+        "Seq": 25652867,
+        "Id": "DEAINE-A900AY5TX-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 2540,
+            "P": 1608,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 9,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900AY5TX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24898149,
+        "Id": "DEAINE-A900APEQG-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 780,
+            "P": 624,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900APEQG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25170832,
+        "Id": "QFATMO-A900ASG52-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1536,
+            "P": 798,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMO-A900ASG52",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24974690,
+        "Id": "QFATMO-A900AQBDA-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1880,
+            "P": 1080,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMO-A900AQBDA",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25825060,
+        "Id": "DEAINE-A900B093M-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 680,
+            "P": 544,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900B093M",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25825092,
+        "Id": "DEAINE-A900B094A-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 680,
+            "P": 544,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900B094A",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 19783598,
+        "Id": "DEAINE-A9008UN65-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 128,
+            "P": 79,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 14,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A9008UN65",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14787172,
+        "Id": "DEAINE-A9006PB5F-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 420,
+            "P": 336,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A9006PB5F",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 18447581,
+        "Id": "DEAINE-A9008B8UV-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 528,
+            "P": 422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A9008B8UV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 18447582,
+        "Id": "DEAINE-A9008B8UV-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 528,
+            "P": 422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A9008B8UV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 18447583,
+        "Id": "DEAINE-A9008B8UV-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 528,
+            "P": 422,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A9008B8UV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14787915,
+        "Id": "DEAINE-A9006PBI9-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 220,
+            "P": 176,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A9006PBI9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 15939190,
+        "Id": "DEAINE-A90079IWF-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 120,
+            "P": 96,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A90079IWF",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 15103627,
+        "Id": "DEAINE-A9006U8WH-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 120,
+            "P": 96,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 9,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A9006U8WH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 15103620,
+        "Id": "DEAINE-A9006U8WA-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 150,
+            "P": 120,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 12,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A9006U8WA",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 15103624,
+        "Id": "DEAINE-A9006U8WE-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 128,
+            "P": 102,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A9006U8WE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14787409,
+        "Id": "DEAINE-A9006PBBG-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 220,
+            "P": 149,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A9006PBBG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20656871,
+        "Id": "DEAINE-A900986DU-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 480,
+            "P": 384,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900986DU",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20656872,
+        "Id": "DEAINE-A900986DU-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 480,
+            "P": 384,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900986DU",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20656873,
+        "Id": "DEAINE-A900986DU-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 480,
+            "P": 384,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900986DU",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23482517,
+        "Id": "DEAINE-A900A8N7O-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 68,
+            "P": 54,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900A8N7O",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23482518,
+        "Id": "DEAINE-A900A8N7O-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 68,
+            "P": 54,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900A8N7O",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23482519,
+        "Id": "DEAINE-A900A8N7O-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 68,
+            "P": 54,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900A8N7O",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23482557,
+        "Id": "DEAINE-A900A8N7V-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 88,
+            "P": 70,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900A8N7V",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23483197,
+        "Id": "DEAINE-A900A8NJV-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 80,
+            "P": 64,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900A8NJV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23481735,
+        "Id": "DEAINE-A900A8MQW-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 88,
+            "P": 70,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 11,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900A8MQW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24676278,
+        "Id": "DEAINE-A900AMQ17-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 108,
+            "P": 86,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900AMQ17",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 28282932,
+        "Id": "DEAINE-A900C8OTI-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 320,
+            "P": 256,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900C8OTI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 28282933,
+        "Id": "DEAINE-A900C8OTI-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 320,
+            "P": 256,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900C8OTI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 28282934,
+        "Id": "DEAINE-A900C8OTI-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 320,
+            "P": 256,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900C8OTI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27138518,
+        "Id": "DEAINE-A900BKDTM-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 880,
+            "P": 660,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BKDTM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27138519,
+        "Id": "DEAINE-A900BKDTM-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 880,
+            "P": 660,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BKDTM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27138520,
+        "Id": "DEAINE-A900BKDTM-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 880,
+            "P": 660,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BKDTM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27264995,
+        "Id": "DEAINE-A900BMR58-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 160,
+            "P": 128,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BMR58",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27264996,
+        "Id": "DEAINE-A900BMR58-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 160,
+            "P": 128,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BMR58",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27264997,
+        "Id": "DEAINE-A900BMR58-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 160,
+            "P": 128,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BMR58",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27140046,
+        "Id": "DEAINE-A900BKEJP-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 138,
+            "P": 110,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BKEJP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27140047,
+        "Id": "DEAINE-A900BKEJP-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 138,
+            "P": 110,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BKEJP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27140048,
+        "Id": "DEAINE-A900BKEJP-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 138,
+            "P": 110,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BKEJP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27140049,
+        "Id": "DEAINE-A900BKEJP-003",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 138,
+            "P": 110,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BKEJP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25170849,
+        "Id": "QFATMO-A900ASG4I-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1024,
+            "P": 538,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMO-A900ASG4I",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27265385,
+        "Id": "DEAINE-A900BMRC5-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 70,
+            "P": 56,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900BMRC5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25035792,
+        "Id": "DEAINE-A900AQZO8-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 108,
+            "P": 86,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900AQZO8",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24676268,
+        "Id": "DEAINE-A900AMQ0Z-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 108,
+            "P": 86,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900AMQ0Z",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25035777,
+        "Id": "DEAINE-A900AQZOE-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 108,
+            "P": 86,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900AQZOE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23481578,
+        "Id": "DEAINE-A900A8MO1-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 100,
+            "P": 80,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900A8MO1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23399000,
+        "Id": "DEAIDM-A900A7MNG-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 85,
+            "P": 58,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIDM-A900A7MNG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23399001,
+        "Id": "DEAIDM-A900A7MNG-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 85,
+            "P": 58,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIDM-A900A7MNG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23399002,
+        "Id": "DEAIDM-A900A7MNG-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 85,
+            "P": 58,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIDM-A900A7MNG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23399003,
+        "Id": "DEAIDM-A900A7MNG-003",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 85,
+            "P": 58,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIDM-A900A7MNG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23399004,
+        "Id": "DEAIDM-A900A7MNG-004",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 85,
+            "P": 58,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIDM-A900A7MNG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23399005,
+        "Id": "DEAIDM-A900A7MNG-005",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 85,
+            "P": 58,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIDM-A900A7MNG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23399006,
+        "Id": "DEAIDM-A900A7MNG-006",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 85,
+            "P": 58,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIDM-A900A7MNG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27265281,
+        "Id": "DEAINE-A900BMRA1-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 60,
+            "P": 48,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BMRA1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27265282,
+        "Id": "DEAINE-A900BMRA1-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 60,
+            "P": 48,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BMRA1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27265284,
+        "Id": "DEAINE-A900BMRA1-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 60,
+            "P": 48,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900BMRA1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26102715,
+        "Id": "DEAINE-A900B3EB0-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 168,
+            "P": 142,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900B3EB0",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24676311,
+        "Id": "DEAINE-A900AMQ1J-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 108,
+            "P": 86,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900AMQ1J",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25247142,
+        "Id": "DEAINE-A900ATE3T-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 48,
+            "P": 30,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 11,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900ATE3T",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27265481,
+        "Id": "DEAINE-A900BMRDV-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 50,
+            "P": 40,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BMRDV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23482335,
+        "Id": "DEAINE-A900A8N3D-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 78,
+            "P": 62,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900A8N3D",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23482336,
+        "Id": "DEAINE-A900A8N3D-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 78,
+            "P": 62,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900A8N3D",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23482337,
+        "Id": "DEAINE-A900A8N3D-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 78,
+            "P": 62,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900A8N3D",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27174739,
+        "Id": "DEAINE-A900BL3O6-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 198,
+            "P": 158,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BL3O6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27174740,
+        "Id": "DEAINE-A900BL3O6-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 198,
+            "P": 158,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BL3O6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27174781,
+        "Id": "DEAINE-A900BL3O6-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 198,
+            "P": 158,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900BL3O6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14798058,
+        "Id": "DEAIB7-A9006PHCH-000",
+        "Store": "DEAIB7",
+        "Price": {
+            "M": 78,
+            "P": 62,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIB7-A9006PHCH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23482484,
+        "Id": "DEAINE-A900A8N6P-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 78,
+            "P": 62,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900A8N6P",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23482485,
+        "Id": "DEAINE-A900A8N6P-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 78,
+            "P": 62,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900A8N6P",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23482486,
+        "Id": "DEAINE-A900A8N6P-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 78,
+            "P": 62,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900A8N6P",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25652821,
+        "Id": "DEAINE-A900AY5SH-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 2540,
+            "P": 1608,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 9,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900AY5SH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25170863,
+        "Id": "QFATMO-A900ASG5U-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 3072,
+            "P": 1558,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMO-A900ASG5U",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27968482,
+        "Id": "DEAINE-A900C1QIY-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1280,
+            "P": 978,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900C1QIY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27968483,
+        "Id": "DEAINE-A900C1QIY-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1280,
+            "P": 978,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900C1QIY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27968484,
+        "Id": "DEAINE-A900C1QIY-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1280,
+            "P": 978,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900C1QIY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27968485,
+        "Id": "DEAINE-A900C1QIY-003",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1280,
+            "P": 978,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900C1QIY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27968742,
+        "Id": "DEAINE-A900C1QN8-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 980,
+            "P": 784,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900C1QN8",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27968743,
+        "Id": "DEAINE-A900C1QN8-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 980,
+            "P": 784,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900C1QN8",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27968744,
+        "Id": "DEAINE-A900C1QN8-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 980,
+            "P": 784,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900C1QN8",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27968745,
+        "Id": "DEAINE-A900C1QN8-003",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 980,
+            "P": 784,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900C1QN8",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27990922,
+        "Id": "DEAINE-A900C29G6-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 980,
+            "P": 784,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900C29G6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27990924,
+        "Id": "DEAINE-A900C29G6-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 980,
+            "P": 784,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900C29G6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27990925,
+        "Id": "DEAINE-A900C29G6-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 980,
+            "P": 784,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900C29G6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27990926,
+        "Id": "DEAINE-A900C29G6-003",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 980,
+            "P": 784,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900C29G6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27990929,
+        "Id": "DEAINE-A900C29HG-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1280,
+            "P": 1024,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900C29HG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27990951,
+        "Id": "DEAINE-A900C29HG-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1280,
+            "P": 1024,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900C29HG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27990952,
+        "Id": "DEAINE-A900C29HG-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1280,
+            "P": 1024,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900C29HG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27990953,
+        "Id": "DEAINE-A900C29HG-003",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1280,
+            "P": 1024,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900C29HG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 31034252,
+        "Id": "DEAINE-A900DVYU6-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 220,
+            "P": 176,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900DVYU6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 31034253,
+        "Id": "DEAINE-A900DVYU6-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 220,
+            "P": 176,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900DVYU6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 31034254,
+        "Id": "DEAINE-A900DVYU6-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 220,
+            "P": 176,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAINE-A900DVYU6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23484925,
+        "Id": "DEAINE-A900A8OCJ-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 90,
+            "P": 59,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900A8OCJ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26052253,
+        "Id": "DEAINE-A900B2UWW-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 178,
+            "P": 142,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900B2UWW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 21571536,
+        "Id": "DEAINE-A9009LWF3-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 280,
+            "P": 224,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A9009LWF3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14787298,
+        "Id": "DEAINE-A9006PB7I-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 880,
+            "P": 660,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A9006PB7I",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14787299,
+        "Id": "DEAINE-A9006PB7I-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 880,
+            "P": 660,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A9006PB7I",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14787300,
+        "Id": "DEAINE-A9006PB7I-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 880,
+            "P": 660,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A9006PB7I",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24896036,
+        "Id": "DEAINE-A900APDL9-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 384,
+            "P": 235,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900APDL9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27741700,
+        "Id": "DEAINE-A900BWCBG-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1690,
+            "P": 1352,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900BWCBG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27741701,
+        "Id": "DEAINE-A900BWCBG-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1690,
+            "P": 1352,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900BWCBG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27741702,
+        "Id": "DEAINE-A900BWCBG-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1690,
+            "P": 1352,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900BWCBG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27743350,
+        "Id": "DEAINE-A900BWEG2-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1680,
+            "P": 1300,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900BWEG2",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27743391,
+        "Id": "DEAINE-A900BWEG2-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1680,
+            "P": 1300,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900BWEG2",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27743392,
+        "Id": "DEAINE-A900BWEG2-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1680,
+            "P": 1300,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900BWEG2",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 21571301,
+        "Id": "DEAINE-A9009LWAY-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 80,
+            "P": 64,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A9009LWAY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 21571302,
+        "Id": "DEAINE-A9009LWAY-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 80,
+            "P": 64,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A9009LWAY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 21571303,
+        "Id": "DEAINE-A9009LWAY-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 80,
+            "P": 64,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A9009LWAY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 21571304,
+        "Id": "DEAINE-A9009LWAY-003",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 80,
+            "P": 64,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A9009LWAY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25992187,
+        "Id": "DEAINE-A900B256F-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 178,
+            "P": 142,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900B256F",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23487564,
+        "Id": "DEAINE-A900A8PG6-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 90,
+            "P": 72,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900A8PG6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25287907,
+        "Id": "DEAINE-A900ATVTW-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 580,
+            "P": 464,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900ATVTW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25287894,
+        "Id": "DEAINE-A900ATVTJ-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 580,
+            "P": 464,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900ATVTJ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27729609,
+        "Id": "DEAINE-A900BW4R1-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 880,
+            "P": 704,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900BW4R1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27729611,
+        "Id": "DEAINE-A900BW4R1-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 880,
+            "P": 704,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900BW4R1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27729612,
+        "Id": "DEAINE-A900BW4R1-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 880,
+            "P": 704,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900BW4R1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23478402,
+        "Id": "DEAINE-A900A8LI5-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 1880,
+            "P": 1080,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900A8LI5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20743784,
+        "Id": "DEAINE-A90099MSI-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 128,
+            "P": 102,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A90099MSI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20743785,
+        "Id": "DEAINE-A90099MSI-001",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 128,
+            "P": 102,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A90099MSI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20743786,
+        "Id": "DEAINE-A90099MSI-002",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 128,
+            "P": 102,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A90099MSI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20743788,
+        "Id": "DEAINE-A90099MSI-004",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 128,
+            "P": 102,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A90099MSI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20743787,
+        "Id": "DEAINE-A90099MSI-003",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 128,
+            "P": 102,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A90099MSI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25035773,
+        "Id": "DEAINE-A900AQZNP-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 108,
+            "P": 86,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900AQZNP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24896030,
+        "Id": "DEAINE-A900APDJZ-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 270,
+            "P": 175,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900APDJZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23481751,
+        "Id": "DEAINE-A900A8MR1-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 100,
+            "P": 80,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900A8MR1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24898173,
+        "Id": "DEAINE-A900APEQV-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 780,
+            "P": 624,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900APEQV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24676178,
+        "Id": "DEAINE-A900AMPZ3-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 380,
+            "P": 304,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900AMPZ3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 31033217,
+        "Id": "DEAINE-A900DVYF1-000",
+        "Store": "DEAINE",
+        "Price": {
+            "M": 680,
+            "P": 544,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAINE-A900DVYF1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

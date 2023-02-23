@@ -1,0 +1,74 @@
+[
+    {
+        "Seq": 18439221,
+        "Id": "DEAU7N-A9008B45I-000",
+        "Store": "DEAU7N",
+        "Price": {
+            "M": 1080,
+            "P": 973,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAU7N-A9008B45I",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24689765,
+        "Id": "DEAU7N-A900AMW96-000",
+        "Store": "DEAU7N",
+        "Price": {
+            "M": 780,
+            "P": 744,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAU7N-A900AMW96",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 18439260,
+        "Id": "DEAU7N-A9008B46L-000",
+        "Store": "DEAU7N",
+        "Price": {
+            "M": 1080,
+            "P": 1030,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAU7N-A9008B46L",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 18439201,
+        "Id": "DEAU7N-A9008B44Y-000",
+        "Store": "DEAU7N",
+        "Price": {
+            "M": 1080,
+            "P": 1020,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAU7N-A9008B44Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

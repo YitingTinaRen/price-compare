@@ -1,0 +1,236 @@
+[
+    {
+        "Seq": 27248044,
+        "Id": "DAARAA-A900BME8J-000",
+        "Store": "DAAT1S",
+        "Price": {
+            "M": 42,
+            "P": 36,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAARAA-A900BME8J",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27248045,
+        "Id": "DAARAA-A900BME8O-000",
+        "Store": "DAAT1S",
+        "Price": {
+            "M": 840,
+            "P": 668,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAARAA-A900BME8O",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27248871,
+        "Id": "DAARAA-A900BMG07-000",
+        "Store": "DAAT1S",
+        "Price": {
+            "M": 2720,
+            "P": 2160,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 11,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAARAA-A900BMG07",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27392785,
+        "Id": "DAARAA-A900BP7UB-000",
+        "Store": "DAAT1S",
+        "Price": {
+            "M": 1033,
+            "P": 799,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 15,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAARAA-A900BP7UB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27455005,
+        "Id": "DAARAA-A900BQMXD-000",
+        "Store": "DAAT1S",
+        "Price": {
+            "M": 792,
+            "P": 663,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAARAA-A900BQMXD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27248055,
+        "Id": "DAARAA-A900BMEAZ-000",
+        "Store": "DAAT1S",
+        "Price": {
+            "M": 1120,
+            "P": 859,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAARAA-A900BMEAZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27248047,
+        "Id": "DAARAA-A900BME8V-000",
+        "Store": "DAAT1S",
+        "Price": {
+            "M": 50,
+            "P": 40,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAARAA-A900BME8V",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27248056,
+        "Id": "DAARAA-A900BMEB0-000",
+        "Store": "DAAT1S",
+        "Price": {
+            "M": 104,
+            "P": 88,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAARAA-A900BMEB0",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27248035,
+        "Id": "DAARAA-A900BMEBE-000",
+        "Store": "DAAT1S",
+        "Price": {
+            "M": 1000,
+            "P": 800,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAARAA-A900BMEBE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27248061,
+        "Id": "DAARAA-A900BMEBO-000",
+        "Store": "DAAT1S",
+        "Price": {
+            "M": 136,
+            "P": 108,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAARAA-A900BMEBO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27248036,
+        "Id": "DAARAA-A900BMEBH-000",
+        "Store": "DAAT1S",
+        "Price": {
+            "M": 56,
+            "P": 45,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAARAA-A900BMEBH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27454771,
+        "Id": "DAARAA-A900BQMRJ-000",
+        "Store": "DAAT1S",
+        "Price": {
+            "M": 1360,
+            "P": 954,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAARAA-A900BQMRJ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27248057,
+        "Id": "DAARAA-A900BMEBN-000",
+        "Store": "DAAT1S",
+        "Price": {
+            "M": 2080,
+            "P": 1760,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAARAA-A900BMEBN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

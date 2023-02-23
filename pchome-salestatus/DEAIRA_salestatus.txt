@@ -1,0 +1,344 @@
+[
+    {
+        "Seq": 15157363,
+        "Id": "DEAIZ8-A9006V548-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 1305,
+            "P": 980,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIZ8-A9006V548",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 15157464,
+        "Id": "DEAIZ8-A9006V57J-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 1305,
+            "P": 980,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIZ8-A9006V57J",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 15157458,
+        "Id": "DEAIZ8-A9006V57F-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 1305,
+            "P": 980,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIZ8-A9006V57F",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16074217,
+        "Id": "DEAIBG-A9007BCSM-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 580,
+            "P": 480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIBG-A9007BCSM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 19454348,
+        "Id": "DEAIRA-A9008Q0NX-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 580,
+            "P": 480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 11,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIRA-A9008Q0NX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16074222,
+        "Id": "DEAIBG-A9007BCRL-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 580,
+            "P": 480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 7,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIBG-A9007BCRL",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 15157618,
+        "Id": "DEAIRU-A9006V5BV-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 580,
+            "P": 430,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 17,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIRU-A9006V5BV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 15157565,
+        "Id": "DEAIRU-A9006V5AE-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 580,
+            "P": 430,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 12,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIRU-A9006V5AE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 15157580,
+        "Id": "DEAIRU-A9006V5AT-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 580,
+            "P": 430,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 14,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIRU-A9006V5AT",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27541595,
+        "Id": "DEAIRA-A900BS93O-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 580,
+            "P": 480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIRA-A900BS93O",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27536593,
+        "Id": "DEAIRA-A900BS6WB-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 580,
+            "P": 430,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIRA-A900BS6WB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27536327,
+        "Id": "DEAIRA-A900BS6QN-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 580,
+            "P": 430,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 17,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIRA-A900BS6QN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16074151,
+        "Id": "DEAIBG-A9007BCRH-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 790,
+            "P": 660,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIBG-A9007BCRH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 15157566,
+        "Id": "DEAIRU-A9006V5AF-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 580,
+            "P": 430,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIRU-A9006V5AF",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 15157549,
+        "Id": "DEAIRU-A9006V59S-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 580,
+            "P": 430,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIRU-A9006V59S",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 15157619,
+        "Id": "DEAIRU-A9006V5BW-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 580,
+            "P": 430,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIRU-A9006V5BW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27543254,
+        "Id": "DEAIRA-A900BS9UH-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 790,
+            "P": 660,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIRA-A900BS9UH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27541258,
+        "Id": "DEAIRA-A900BS8XN-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 1305,
+            "P": 980,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIRA-A900BS8XN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27543217,
+        "Id": "DEAIRA-A900BS9TU-000",
+        "Store": "DEAIRA",
+        "Price": {
+            "M": 790,
+            "P": 660,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIRA-A900BS9TU",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

@@ -1,0 +1,45 @@
+[
+    {
+        "Id": "DICA53-A9009J089-000",
+        "Nick": "【滿福寶】三層包[曲曲迷彩] - 童趣迷彩！多隔層側背包/入門款",
+        "Pic": {
+            "B": "/items/DICA53A9009J089/000001_1541059515.jpg",
+            "S": "/items/DICA53A9009J089/000002_1541059515.jpg"
+        },
+        "Price": {
+            "M": 3780,
+            "P": 1650,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【滿福寶】三層包[曲曲迷彩] - 童趣迷彩！多隔層側背包/入門款",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DICA53-A90089CTH-000",
+        "Nick": "【滿福寶】中後背包 [佩斯利]",
+        "Pic": {
+            "B": "/items/DICA53A90089CTH/000001_1499694607.jpg",
+            "S": "/items/DICA53A90089CTH/000001_1499694607.jpg"
+        },
+        "Price": {
+            "M": 3180,
+            "P": 1096,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【滿福寶】中後背包 [佩斯利]",
+        "OriginPrice": {}
+    },
+    {
+        "Category": {
+            "L1CategoryCode": "DEAU",
+            "L2CategoryCode": "DEAU42C",
+            "L2CategoryName": "親子包／媽媽包",
+            "L3CategoryCode": "DEAUBN",
+            "L3CategoryName": "．滿福寶媽媽包"
+        }
+    }
+]

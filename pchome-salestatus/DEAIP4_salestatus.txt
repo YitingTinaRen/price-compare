@@ -1,0 +1,686 @@
+[
+    {
+        "Seq": 33609044,
+        "Id": "DEASS1-A900FE99B-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 5098,
+            "P": 2999,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A900FE99B",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33611517,
+        "Id": "DEASS1-A900FEAAD-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 5498,
+            "P": 3675,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A900FEAAD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33610210,
+        "Id": "DEASS1-A900FE9PI-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 3198,
+            "P": 1999,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A900FE9PI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33610245,
+        "Id": "DEASS1-A900FE9PI-002",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 3198,
+            "P": 1999,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A900FE9PI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33610244,
+        "Id": "DEASS1-A900FE9PI-001",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 3198,
+            "P": 1999,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A900FE9PI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33612916,
+        "Id": "DEASS1-A900FEAU8-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 2498,
+            "P": 1349,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A900FEAU8",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25940273,
+        "Id": "DEAIZL-A900B1KUW-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 4899,
+            "P": 3269,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIZL-A900B1KUW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27688746,
+        "Id": "DEAIP4-A900BV634-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 4899,
+            "P": 3269,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 12,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIP4-A900BV634",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27688660,
+        "Id": "DEAIP4-A900BV62V-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 3899,
+            "P": 2602,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIP4-A900BV62V",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25257744,
+        "Id": "QFAS1E-A900ATISV-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 1500,
+            "P": 1069,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFAS1E-A900ATISV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27885620,
+        "Id": "DEAI13-A900BZB2Y-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 2499,
+            "P": 1781,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI13-A900BZB2Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 31649481,
+        "Id": "DEAI13-A900E9HUR-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 3198,
+            "P": 2279,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 17,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI13-A900E9HUR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 31649370,
+        "Id": "DEAI13-A900E9HUR-001",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 3198,
+            "P": 2279,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI13-A900E9HUR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 31649511,
+        "Id": "DEAI13-A900E9HUR-002",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 3198,
+            "P": 2279,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 17,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI13-A900E9HUR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32418687,
+        "Id": "DEAIP4-A900EPBY4-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 4798,
+            "P": 3359,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIP4-A900EPBY4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22747269,
+        "Id": "DEASS1-A900A1TNI-000",
+        "Store": "DEASS1",
+        "Price": {
+            "M": 3199,
+            "P": 2299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 18,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A900A1TNI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22800598,
+        "Id": "DEASS1-A900A2NPI-000",
+        "Store": "DEASS1",
+        "Price": {
+            "M": 699,
+            "P": 524,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A900A2NPI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22800653,
+        "Id": "DEASS1-A900A2NPR-000",
+        "Store": "DEASS1",
+        "Price": {
+            "M": 999,
+            "P": 849,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A900A2NPR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22578368,
+        "Id": "DEASS1-A9009ZJ9J-000",
+        "Store": "DEASS1",
+        "Price": {
+            "M": 249,
+            "P": 177,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A9009ZJ9J",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22578370,
+        "Id": "DEASS1-A9009ZJ9J-002",
+        "Store": "DEASS1",
+        "Price": {
+            "M": 249,
+            "P": 177,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEASS1-A9009ZJ9J",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22578372,
+        "Id": "DEASS1-A9009ZJ9J-004",
+        "Store": "DEASS1",
+        "Price": {
+            "M": 249,
+            "P": 177,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A9009ZJ9J",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22578567,
+        "Id": "DEASS1-A9009ZJCL-000",
+        "Store": "DEASS1",
+        "Price": {
+            "M": 699,
+            "P": 524,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A9009ZJCL",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22747209,
+        "Id": "DEASS1-A900A1TOY-000",
+        "Store": "DEASS1",
+        "Price": {
+            "M": 1999,
+            "P": 1339,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A900A1TOY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22800745,
+        "Id": "DEASS1-A900A2NRQ-000",
+        "Store": "DEASS1",
+        "Price": {
+            "M": 1299,
+            "P": 1104,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 16,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A900A2NRQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22800738,
+        "Id": "DEASS1-A900A2NRQ-001",
+        "Store": "DEASS1",
+        "Price": {
+            "M": 1299,
+            "P": 1104,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 16,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A900A2NRQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22800739,
+        "Id": "DEASS1-A900A2NRQ-002",
+        "Store": "DEASS1",
+        "Price": {
+            "M": 1299,
+            "P": 1104,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A900A2NRQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27796298,
+        "Id": "DEASS1-A900BXFHJ-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 3699,
+            "P": 2148,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEASS1-A900BXFHJ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34124184,
+        "Id": "DEAIP4-A900FMF5X-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 4498,
+            "P": 3374,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIP4-A900FMF5X",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27796337,
+        "Id": "DEASS1-A900BXFHP-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 3699,
+            "P": 2148,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEASS1-A900BXFHP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27599650,
+        "Id": "DEAIP4-A900BTLMU-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 4299,
+            "P": 2661,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIP4-A900BTLMU",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27599959,
+        "Id": "DEAIP4-A900BTLSK-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 4299,
+            "P": 2811,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIP4-A900BTLSK",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 28053949,
+        "Id": "DEAI13-A900C3H2V-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 2399,
+            "P": 1480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI13-A900C3H2V",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 28053950,
+        "Id": "DEAI13-A900C3H2V-001",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 2399,
+            "P": 1480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI13-A900C3H2V",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 28053951,
+        "Id": "DEAI13-A900C3H2V-002",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 2399,
+            "P": 1480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI13-A900C3H2V",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22578714,
+        "Id": "DEASS1-A9009ZJDS-000",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 299,
+            "P": 179,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEASS1-A9009ZJDS",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22578715,
+        "Id": "DEASS1-A9009ZJDS-001",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 299,
+            "P": 179,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEASS1-A9009ZJDS",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22578716,
+        "Id": "DEASS1-A9009ZJDS-002",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 299,
+            "P": 179,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEASS1-A9009ZJDS",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22578717,
+        "Id": "DEASS1-A9009ZJDS-003",
+        "Store": "DEAIP4",
+        "Price": {
+            "M": 299,
+            "P": 179,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEASS1-A9009ZJDS",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

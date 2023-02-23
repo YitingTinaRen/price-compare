@@ -1,0 +1,20 @@
+[
+    {
+        "Seq": 27347686,
+        "Id": "DEAIPY-A900BOBRD-000",
+        "Store": "DEAIPY",
+        "Price": {
+            "M": 1390,
+            "P": 990,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIPY-A900BOBRD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

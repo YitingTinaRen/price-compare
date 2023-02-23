@@ -1,0 +1,92 @@
+[
+    {
+        "Seq": 16552785,
+        "Id": "DAAT0S-A9007IDCV-000",
+        "Store": "DAAT0S",
+        "Price": {
+            "M": 449,
+            "P": 379,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0S-A9007IDCV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25076541,
+        "Id": "DAAT0S-A900ARGK4-000",
+        "Store": "DAAT0S",
+        "Price": {
+            "M": 799,
+            "P": 699,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0S-A900ARGK4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16552831,
+        "Id": "DAAT0S-A9007IDDX-000",
+        "Store": "DAAT0S",
+        "Price": {
+            "M": 799,
+            "P": 699,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0S-A9007IDDX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25076544,
+        "Id": "DAAT0S-A900ARGK7-000",
+        "Store": "DAAT0S",
+        "Price": {
+            "M": 89,
+            "P": 89,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0S-A900ARGK7",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16553110,
+        "Id": "DAAT0S-A9007IDJE-000",
+        "Store": "DAAT0S",
+        "Price": {
+            "M": 789,
+            "P": 699,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0S-A9007IDJE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

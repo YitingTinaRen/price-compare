@@ -1,0 +1,182 @@
+[
+    {
+        "Seq": 24937120,
+        "Id": "DEAIGY-A900APVA3-000",
+        "Store": "DEAIGY",
+        "Price": {
+            "M": 480,
+            "P": 408,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIGY-A900APVA3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24934912,
+        "Id": "DEAIGY-A900APUKK-000",
+        "Store": "DEAIGY",
+        "Price": {
+            "M": 390,
+            "P": 332,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIGY-A900APUKK",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24937219,
+        "Id": "DEAIGY-A900APVCD-000",
+        "Store": "DEAIGY",
+        "Price": {
+            "M": 480,
+            "P": 408,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIGY-A900APVCD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24937325,
+        "Id": "DEAIGY-A900APVEL-000",
+        "Store": "DEAIGY",
+        "Price": {
+            "M": 390,
+            "P": 332,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIGY-A900APVEL",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24937130,
+        "Id": "DEAIGY-A900APVAC-000",
+        "Store": "DEAIGY",
+        "Price": {
+            "M": 480,
+            "P": 408,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIGY-A900APVAC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24937061,
+        "Id": "DEAIGY-A900APV8B-000",
+        "Store": "DEAIGY",
+        "Price": {
+            "M": 390,
+            "P": 332,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIGY-A900APV8B",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24934985,
+        "Id": "DEAIGY-A900APUKZ-000",
+        "Store": "DEAIGY",
+        "Price": {
+            "M": 390,
+            "P": 332,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIGY-A900APUKZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24937147,
+        "Id": "DEAIGY-A900APVAP-000",
+        "Store": "DEAIGY",
+        "Price": {
+            "M": 480,
+            "P": 408,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIGY-A900APVAP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24937146,
+        "Id": "DEAIGY-A900APVAO-000",
+        "Store": "DEAIGY",
+        "Price": {
+            "M": 390,
+            "P": 332,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIGY-A900APVAO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24937366,
+        "Id": "DEAIGY-A900APVFN-000",
+        "Store": "DEAIGY",
+        "Price": {
+            "M": 1260,
+            "P": 1071,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIGY-A900APVFN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

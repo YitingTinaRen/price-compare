@@ -1,0 +1,556 @@
+[
+    {
+        "Id": "DECH43-A900C5YIF-000",
+        "Nick": "明和 無鹽加鈣寶寶細麵-南瓜-100g",
+        "Pic": {
+            "B": "/items/DECH43A900C5YIF/000001_1640577156.jpg",
+            "S": "/items/DECH43A900C5YIF/000002_1640577156.jpg"
+        },
+        "Price": {
+            "M": 199,
+            "P": 85,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "明和 無鹽加鈣寶寶細麵-南瓜-100g",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900C5Y2E-000",
+        "Nick": "明和 無鹽加鈣寶寶細麵-菠菜-100g",
+        "Pic": {
+            "B": "/items/DECH43A900C5Y2E/000001_1640576793.jpg",
+            "S": "/items/DECH43A900C5Y2E/000002_1640576793.jpg"
+        },
+        "Price": {
+            "M": 199,
+            "P": 85,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "明和 無鹽加鈣寶寶細麵-菠菜-100g",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900C5YA2-000",
+        "Nick": "明和 無鹽加鈣寶寶細麵-胡蘿蔔-100g",
+        "Pic": {
+            "B": "/items/DECH43A900C5YA2/000001_1640576969.jpg",
+            "S": "/items/DECH43A900C5YA2/000002_1640576969.jpg"
+        },
+        "Price": {
+            "M": 199,
+            "P": 85,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "明和 無鹽加鈣寶寶細麵-胡蘿蔔-100g",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECHCU-A900B650G-000",
+        "Nick": "【法國Babybio】生機鮮蔬鱈魚泥200gX6《 專業嬰幼兒副食品》",
+        "Pic": {
+            "B": "/items/DECHCUA900B650G/000001_1614765122.jpg",
+            "S": "/items/DECHCUA900B650G/000002_1614765122.jpg"
+        },
+        "Price": {
+            "M": 957,
+            "P": 870,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【法國Babybio】生機鮮蔬鱈魚泥200gX6",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECHCU-A900B650Y-000",
+        "Nick": "【法國Babybio】生機鮮蔬鱒魚泥200gX6《 專業嬰幼兒副食品》",
+        "Pic": {
+            "B": "/items/DECHCUA900B650Y/000001_1614765250.jpg",
+            "S": "/items/DECHCUA900B650Y/000002_1614765250.jpg"
+        },
+        "Price": {
+            "M": 957,
+            "P": 870,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【法國Babybio】生機鮮蔬鱒魚泥200gX6",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECHCU-A900B6506-000",
+        "Nick": "【法國Babybio】生機鮮蔬雞肉泥200gX6《 專業嬰幼兒副食品》",
+        "Pic": {
+            "B": "/items/DECHCUA900B6506/000001_1614764904.jpg",
+            "S": "/items/DECHCUA900B6506/000002_1614764904.jpg"
+        },
+        "Price": {
+            "M": 957,
+            "P": 870,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【法國Babybio】生機鮮蔬雞肉泥200gX6",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECHCU-A900B64PU-000",
+        "Nick": "【法國Babybio】生機新普羅旺斯鮮蔬泥130gX6《 專業嬰幼兒副食品》",
+        "Pic": {
+            "B": "/items/DECHCUA900B64PU/000001_1614761962.jpg",
+            "S": "/items/DECHCUA900B64PU/000002_1614761962.jpg"
+        },
+        "Price": {
+            "M": 587,
+            "P": 534,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【法國Babybio】生機新普羅旺斯鮮蔬泥130gX6",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECHCU-A900B64N9-000",
+        "Nick": "【法國Babybio】生機紅蘿蔔蔬菜泥130gX6《 專業嬰幼兒副食品》",
+        "Pic": {
+            "B": "/items/DECHCUA900B64N9/000001_1614761227.jpg",
+            "S": "/items/DECHCUA900B64N9/000002_1614761228.jpg"
+        },
+        "Price": {
+            "M": 587,
+            "P": 534,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【法國Babybio】生機紅蘿蔔蔬菜泥130gX6",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECHCU-A900B652I-000",
+        "Nick": "【法國Babybio】生機寶寶米精-水果220gX6《 專業嬰幼兒副食品》",
+        "Pic": {
+            "B": "/items/DECHCUA900B652I/000001_1614765820.jpg",
+            "S": "/items/DECHCUA900B652I/000002_1614765820.jpg"
+        },
+        "Price": {
+            "M": 2178,
+            "P": 1980,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【法國Babybio】生機寶寶米精-水果220gX6",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH3X-A900B2AKQ-000",
+        "Nick": "【新加坡琉元堂】好寶寶粥超值優惠24包綜合組(牛奶魚粥8包+小蕃薯肉肉粥8包+田園菜菜粥8包) 常溫保存 方便攜帶",
+        "Pic": {
+            "B": "/items/DECH3XA900B2AKQ/000001_1663819129.jpg",
+            "S": "/items/DECH3XA900B2AKQ/000002_1663819129.jpg"
+        },
+        "Price": {
+            "M": 3870,
+            "P": 2640,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【琉元堂】好寶寶粥口味綜合組(咕雞咕雞8包+牛奶魚8包)",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900FHIVW-000",
+        "Nick": "【大地之愛HAPPY HOURS】寶寶粥綜合口味6入(洋芋抱小豬/粉紅甜心牛/田園椒菇菇)",
+        "Pic": {
+            "B": "/items/DECH43A900FHIVW/000001_1663128650.jpg",
+            "S": "/items/DECH43A900FHIVW/000002_1663128650.jpg"
+        },
+        "Price": {
+            "M": 694,
+            "P": 539,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【大地之愛HAPPY HOURS】寶寶粥綜合口味6入(洋芋抱小豬/粉紅甜心牛/田園椒菇菇)",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DEAIVR-A900F3P8J-000",
+        "Nick": "《KUKU酷咕鴨》寶寶粥150g-4入(鮮蔬小牛/吻魚鮮貝/南瓜小雞)",
+        "Pic": {
+            "B": "/items/DEAIVRA900F3P8J/000001_1653643466.jpg",
+            "S": "/items/DEAIVRA900F3P8J/000002_1653643467.jpg"
+        },
+        "Price": {
+            "M": 498,
+            "P": 329,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "酷咕鴨寶寶粥150g-4入(鮮蔬小牛/吻魚鮮貝/南瓜小雞)",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DEAIVR-A900EZLU8-000",
+        "Nick": "《KUKU酷咕鴨》寶寶粥150g-12入(鮮蔬小牛/吻魚鮮貝/南瓜小雞)",
+        "Pic": {
+            "B": "/items/DEAIVRA900EZLU8/000001_1651630882.jpg",
+            "S": "/items/DEAIVRA900EZLU8/000002_1651630883.jpg"
+        },
+        "Price": {
+            "M": 1494,
+            "P": 850,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "酷咕鴨寶寶粥150g-12入(鮮蔬小牛/吻魚鮮貝/南瓜小雞)",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900B8PHT-000",
+        "Nick": "【新加坡琉元堂】好寶寶粥-小番薯肉肉粥8包 獨家兩道熬煮工法 小分子營養寶寶好吸收",
+        "Pic": {
+            "B": "/items/DECH43A900B8PHT/000001_1663751361.jpg",
+            "S": "/items/DECH43A900B8PHT/000002_1663751361.jpg"
+        },
+        "Price": {
+            "M": 1290,
+            "P": 1180,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【琉元堂】好寶寶粥- 小番薯肉肉口味8包   小分子營養好吸收",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900B8TJZ-000",
+        "Nick": "【新加坡琉元堂】好寶寶粥超值優惠16包綜合組(牛奶魚粥6包+小蕃薯肉肉粥5包+田園菜菜粥5包) 常溫保存 方便攜帶",
+        "Pic": {
+            "B": "/items/DECH43A900B8TJZ/000001_1663822205.jpg",
+            "S": "/items/DECH43A900B8TJZ/000002_1663822205.jpg"
+        },
+        "Price": {
+            "M": 2580,
+            "P": 1800,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【琉元堂】好寶寶粥16包綜合組(咕雞+牛奶魚+番薯肉肉+菜菜)",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900B8PDT-000",
+        "Nick": "【新加坡琉元堂】好寶寶粥- 田園菜菜粥8包 獨家兩道熬煮工法 小分子營養寶寶好吸收",
+        "Pic": {
+            "B": "/items/DECH43A900B8PDT/000001_1663750509.jpg",
+            "S": "/items/DECH43A900B8PDT/000002_1663750510.jpg"
+        },
+        "Price": {
+            "M": 1290,
+            "P": 1180,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【琉元堂】好寶寶粥- 田園菜菜口味8包   小分子營養好吸收",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900BPAH3-000",
+        "Nick": "<font color=\"#008B00\"><strong>裸廚房 蕃茄牛肉大寶寶粥 160g (5入裝)</strong></font><br/>\t",
+        "Pic": {
+            "B": "/items/DECH43A900BPAH3/000001_1629886242.jpg",
+            "S": "/items/DECH43A900BPAH3/000002_1629886242.jpg"
+        },
+        "Price": {
+            "M": 980,
+            "P": 870,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【裸廚房】蕃茄牛肉大寶寶粥五入裝",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900F9O81-000",
+        "Nick": "【大地之愛HAPPY HOURS】寶寶粥綜合口味6入(元氣樂樂豬/活力瓜瓜牛/和風海味鮭)",
+        "Pic": {
+            "B": "/items/DECH43A900F9O81/000001_1657187329.jpg",
+            "S": "/items/DECH43A900F9O81/000002_1657187329.jpg"
+        },
+        "Price": {
+            "M": 694,
+            "P": 539,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【大地之愛HAPPY HOURS】寶寶粥綜合口味6入(元氣樂樂豬/活力瓜瓜牛/和風海味鮭)",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECHCU-A900B64MY-000",
+        "Nick": "【法國Babybio】生機碧綠蔬菜泥130gX6《 專業嬰幼兒副食品》",
+        "Pic": {
+            "B": "/items/DECHCUA900B64MY/000001_1614761413.jpg",
+            "S": "/items/DECHCUA900B64MY/000002_1614761413.jpg"
+        },
+        "Price": {
+            "M": 587,
+            "P": 534,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【法國Babybio】生機碧綠蔬菜泥130gX6",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECHCU-A900B6520-000",
+        "Nick": "【法國Babybio】生機寶寶米精-小小米220gX6《 專業嬰幼兒副食品》",
+        "Pic": {
+            "B": "/items/DECHCUA900B6520/000001_1614765681.jpg",
+            "S": "/items/DECHCUA900B6520/000002_1614765681.jpg"
+        },
+        "Price": {
+            "M": 2178,
+            "P": 1980,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【法國Babybio】生機寶寶米精-小小米220gX6",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECHCU-A900B64O3-000",
+        "Nick": "【法國Babybio】生機田園綜合鮮蔬泥130gX6《 專業嬰幼兒副食品》",
+        "Pic": {
+            "B": "/items/DECHCUA900B64O3/000001_1614761667.jpg",
+            "S": "/items/DECHCUA900B64O3/000002_1614761667.jpg"
+        },
+        "Price": {
+            "M": 587,
+            "P": 534,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【法國Babybio】生機田園綜合鮮蔬泥130gX6",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "QFAT1X-A900AS5ZX-000",
+        "Nick": "【新加坡琉元堂】好寶寶粥- 牛奶魚粥8包 獨家兩道熬煮工法 小分子營養寶寶好吸收",
+        "Pic": {
+            "B": "/items/QFAT1XA900AS5ZX/000001_1663751489.jpg",
+            "S": "/items/QFAT1XA900AS5ZX/000002_1663751489.jpg"
+        },
+        "Price": {
+            "M": 1290,
+            "P": 1180,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【琉元堂】好寶寶粥- 牛奶魚口味8包   小分子營養好吸收",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900BJ9U8-000",
+        "Nick": "【大地之愛HAPPY HOURS】寶寶粥綜合口味6入(鮮鮭魚/鮮貝吻仔魚/咕咕雞)",
+        "Pic": {
+            "B": "/items/DECH43A900BJ9U8/000001_1652348949.jpg",
+            "S": "/items/DECH43A900BJ9U8/000002_1652348949.jpg"
+        },
+        "Price": {
+            "M": 694,
+            "P": 539,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【HAPPY HOURS】寶寶粥(綜合口味)150g_(3盒)",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900BPAKH-000",
+        "Nick": "【裸廚房】Hello Kitty 頭好壯壯寶寶粥(吻仔魚+豬肉+雞肉) 3入*80g/包",
+        "Pic": {
+            "B": "/items/DECH43A900BPAKH/000001_1629887086.jpg",
+            "S": "/items/DECH43A900BPAKH/000002_1629887086.jpg"
+        },
+        "Price": {
+            "M": 500,
+            "P": 380,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【裸廚房】Hello Kitty 頭好壯壯寶寶粥(3入*80g/包)",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900CAMIT-000",
+        "Nick": "【大地之愛HAPPY HOURS】寶寶粥綜合口味6入(田園椒菇菇/臉紅茄茄牛/蘋蘋愛小豬)",
+        "Pic": {
+            "B": "/items/DECH43A900CAMIT/000001_1654508055.jpg",
+            "S": "/items/DECH43A900CAMIT/000002_1654508055.jpg"
+        },
+        "Price": {
+            "M": 694,
+            "P": 539,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【HAPPY HOURS】寶寶粥(新口味)150g_(3盒)",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900C5XKN-000",
+        "Nick": "明和 無鹽加鈣寶寶細麵-綜合蔬菜-100g",
+        "Pic": {
+            "B": "/items/DECH43A900C5XKN/000001_1640576363.jpg",
+            "S": "/items/DECH43A900C5XKN/000002_1640576363.jpg"
+        },
+        "Price": {
+            "M": 199,
+            "P": 85,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "明和 無鹽加鈣寶寶細麵-綜合蔬菜-100g",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900C7B5O-000",
+        "Nick": "明和 無鹽加鈣寶寶細麵-原味-100g",
+        "Pic": {
+            "B": "/items/DECH43A900C7B5O/000001_1640655722.jpg",
+            "S": "/items/DECH43A900C7B5O/000002_1640655723.jpg"
+        },
+        "Price": {
+            "M": 199,
+            "P": 85,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "明和 無鹽加鈣寶寶細麵-原味-100g",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH3X-A900AHOTV-000",
+        "Nick": "近效品【裸廚房】Hello Kitty 頭好壯壯寶寶粥(3入*80g/包)",
+        "Pic": {
+            "B": "/items/DECH3XA900AHOTV/000001_1582012108.jpg",
+            "S": "/items/DECH3XA900AHOTV/000002_1582012109.jpg"
+        },
+        "Price": {
+            "M": 0,
+            "P": 380,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【裸廚房】Hello Kitty 頭好壯壯寶寶粥(3入*80g/包)",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECHCU-A900B64OI-000",
+        "Nick": "【法國Babybio】生機南瓜紅蘿蔔蔬菜泥130gX6《 專業嬰幼兒副食品》",
+        "Pic": {
+            "B": "/items/DECHCUA900B64OI/000001_1614761539.jpg",
+            "S": "/items/DECHCUA900B64OI/000002_1614761539.jpg"
+        },
+        "Price": {
+            "M": 587,
+            "P": 534,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【法國Babybio】生機南瓜紅蘿蔔蔬菜泥130gX6",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900BPAGA-000",
+        "Nick": "<font color=\"#008B00\"><strong>裸廚房 陽光彩蔬大寶寶粥 160g (5入裝)</strong></font><br/>\t",
+        "Pic": {
+            "B": "/items/DECH43A900BPAGA/000001_1629885651.jpg",
+            "S": "/items/DECH43A900BPAGA/000002_1629885651.jpg"
+        },
+        "Price": {
+            "M": 890,
+            "P": 799,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【裸廚房】陽光彩蔬大寶粥五入裝（全素）",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900BPAJ0-000",
+        "Nick": "<font color=\"#008B00\"><strong>裸廚房 鯛魚鮮蔬大寶寶粥 160g (5入裝)</strong></font><br/>\t",
+        "Pic": {
+            "B": "/items/DECH43A900BPAJ0/000001_1629886820.jpg",
+            "S": "/items/DECH43A900BPAJ0/000002_1629886820.jpg"
+        },
+        "Price": {
+            "M": 950,
+            "P": 850,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【裸廚房】鯛魚鮮蔬大寶寶粥五入裝",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DECH43-A900BPAKS-000",
+        "Nick": "<font color=\"#008B00\"><strong>裸廚房 經典大寶寶粥綜合三盒組(鯛魚+牛肉+彩蔬)160g (5入/盒)</strong></font><br/>\t",
+        "Pic": {
+            "B": "/items/DECH43A900BPAKS/000001_1629888176.jpg",
+            "S": "/items/DECH43A900BPAKS/000002_1629888176.jpg"
+        },
+        "Price": {
+            "M": 2590,
+            "P": 2290,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【裸廚房】經典大寶寶粥綜合三盒組",
+        "OriginPrice": {}
+    },
+    {
+        "Category": {
+            "L0CategoryCode": "DECH",
+            "L0CategoryName": "嬰童",
+            "L1CategoryCode": "DECH11C",
+            "L1CategoryName": " ▌寶寶食品館 ▌",
+            "L2CategoryCode": "DECH43",
+            "L2CategoryName": " ■寶寶副食品"
+        }
+    }
+]

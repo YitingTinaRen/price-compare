@@ -1,0 +1,110 @@
+[
+    {
+        "Seq": 25961799,
+        "Id": "DAAO00-A900B1TAF-000",
+        "Store": "DAAO3W",
+        "Price": {
+            "M": 0,
+            "P": 1299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO00-A900B1TAF",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24855593,
+        "Id": "DAAO3W-A900AOVIK-000",
+        "Store": "DAAO3W",
+        "Price": {
+            "M": 999,
+            "P": 888,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO3W-A900AOVIK",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24880887,
+        "Id": "DAAO7H-A900AP7EI-000",
+        "Store": "DAAO7H",
+        "Price": {
+            "M": 1299,
+            "P": 999,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO7H-A900AP7EI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27310068,
+        "Id": "DAAO3W-A900BNLQ7-000",
+        "Store": "DAAOA4",
+        "Price": {
+            "M": 1199,
+            "P": 1099,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DAAO3W-A900BNLQ7",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24880882,
+        "Id": "DAAO7H-A900AP7ED-000",
+        "Store": "DAAO7H",
+        "Price": {
+            "M": 1599,
+            "P": 1149,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAO7H-A900AP7ED",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26231087,
+        "Id": "DAAO04-A900B4ZAD-000",
+        "Store": "DAAO0C",
+        "Price": {
+            "M": 1399,
+            "P": 999,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAO04-A900B4ZAD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

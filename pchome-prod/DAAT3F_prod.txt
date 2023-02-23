@@ -1,0 +1,45 @@
+[
+    {
+        "Id": "DAAT1C-A900FQMVW-000",
+        "Nick": "御衣坊【角落小夥伴】加厚純水濕紙巾70抽*24入",
+        "Pic": {
+            "B": "/items/DAAT1CA900FQMVW/000001_1667956298.jpg",
+            "S": "/items/DAAT1CA900FQMVW/000002_1667956299.jpg"
+        },
+        "Price": {
+            "M": 1395,
+            "P": 1080,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【角落小夥伴】加厚純水濕紙巾70抽*24入",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DAAT1B-A900F8TMN-000",
+        "Nick": "【御衣坊】大眼蛙純水濕紙巾(80抽)18入 ",
+        "Pic": {
+            "B": "/items/DAAT1BA900F8TMN/000001_1656659625.jpg",
+            "S": "/items/DAAT1BA900F8TMN/000002_1656659625.jpg"
+        },
+        "Price": {
+            "M": 700,
+            "P": 540,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【御衣坊】純水濕紙巾(80抽)18入 大眼蛙",
+        "OriginPrice": {}
+    },
+    {
+        "Category": {
+            "L1CategoryCode": "DAAT",
+            "L2CategoryCode": "DAAT21C",
+            "L2CategoryName": "御衣坊濕紙巾",
+            "L3CategoryCode": "DAAT3F",
+            "L3CategoryName": "●卡通聯名系列"
+        }
+    }
+]

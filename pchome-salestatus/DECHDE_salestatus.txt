@@ -1,0 +1,92 @@
+[
+    {
+        "Seq": 23254056,
+        "Id": "DEAU6N-A900A60K1-000",
+        "Store": "DEAU6N",
+        "Price": {
+            "M": 85,
+            "P": 80,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAU6N-A900A60K1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23253980,
+        "Id": "DEAU6N-A900A60IR-000",
+        "Store": "DEAU6N",
+        "Price": {
+            "M": 340,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAU6N-A900A60IR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23253923,
+        "Id": "DEAU6N-A900A60GG-000",
+        "Store": "DEAU6N",
+        "Price": {
+            "M": 170,
+            "P": 160,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAU6N-A900A60GG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23254027,
+        "Id": "DEAU6N-A900A60IN-000",
+        "Store": "DEAU6N",
+        "Price": {
+            "M": 340,
+            "P": 324,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAU6N-A900A60IN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23254095,
+        "Id": "DEAU6N-A900A60KE-000",
+        "Store": "DEAU6N",
+        "Price": {
+            "M": 510,
+            "P": 453,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAU6N-A900A60KE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

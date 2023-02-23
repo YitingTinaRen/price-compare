@@ -1,0 +1,74 @@
+[
+    {
+        "Seq": 24836491,
+        "Id": "DEAUA2-A900AOMXJ-000",
+        "Store": "DEAUA2",
+        "Price": {
+            "M": 690,
+            "P": 556,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUA2-A900AOMXJ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24836479,
+        "Id": "DEAUA2-A900AOMX8-000",
+        "Store": "DEAUA2",
+        "Price": {
+            "M": 690,
+            "P": 631,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUA2-A900AOMX8",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24836522,
+        "Id": "DEAUA2-A900AOMX6-000",
+        "Store": "DEAUA2",
+        "Price": {
+            "M": 690,
+            "P": 592,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUA2-A900AOMX6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26691093,
+        "Id": "DEAUA2-A900BBISY-000",
+        "Store": "DEAUA2",
+        "Price": {
+            "M": 1190,
+            "P": 1190,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUA2-A900BBISY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

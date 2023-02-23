@@ -1,0 +1,110 @@
+[
+    {
+        "Seq": 24958568,
+        "Id": "QFAT4U-A900AQ4ZD-000",
+        "Store": "DEAU4D",
+        "Price": {
+            "M": 3980,
+            "P": 3582,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFAT4U-A900AQ4ZD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20100068,
+        "Id": "DEAI14-A9008ZJHH-000",
+        "Store": "DEAU4D",
+        "Price": {
+            "M": 7380,
+            "P": 6640,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI14-A9008ZJHH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14495612,
+        "Id": "DEAI14-A9006KUPB-000",
+        "Store": "DEAU4D",
+        "Price": {
+            "M": 4680,
+            "P": 2299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAI14-A9006KUPB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14798915,
+        "Id": "DEAU35-A9006PHSH-000",
+        "Store": "DEAU4D",
+        "Price": {
+            "M": 4680,
+            "P": 2299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAU35-A9006PHSH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20100082,
+        "Id": "DEAI14-A9008ZJIY-000",
+        "Store": "DEAU4D",
+        "Price": {
+            "M": 7380,
+            "P": 6642,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAI14-A9008ZJIY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23604942,
+        "Id": "QFAT4Q-A900AA6A4-000",
+        "Store": "DEAU4D",
+        "Price": {
+            "M": 3980,
+            "P": 3582,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFAT4Q-A900AA6A4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

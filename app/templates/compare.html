@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>PricePickCompare</title>
+    <script src="/static/js/NavBar.js"></script>
+    <script src="/static/js/Footer.js"></script>
+    <script src="/static/js/compare.js"></script>
+    <!-- <script src="/static/js/login-register.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="/static/css/NavBar.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/compare.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="/static/css/login-register.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div class="outer-frame">
+        <nav-bar></nav-bar>
+        <div class="content-frame">
+            <div class="function-bar">
+                <div class="category"><span></span></div>
+                <!-- <div class="filter-bar"><span>篩選欄</span></div> -->
+                <div class="filter-bar">
+                    <div class="dropdown">
+                        <div onclick="myFunction()" class="dropbtn"><span>品牌篩選&ensp;</span><i class="arrow down"></i></div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <input type="text" placeholder="Search" id="myInput" onkeyup="filterFunction()">
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="compare-list">
+                <div class="d-flex justify-content-center">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Login/singup form -->
+        <login-form></login-form>
+        <register-form></register-form>
+        <my-footer></my-footer>
+    </div>
+
+</body>
+
+</html>

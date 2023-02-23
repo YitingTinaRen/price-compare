@@ -1,0 +1,614 @@
+[
+    {
+        "Seq": 23995879,
+        "Id": "QFATMF-A900AEP18-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 1599,
+            "P": 1099,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 18,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AEP18",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23995880,
+        "Id": "QFATMF-A900AEP18-001",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 1599,
+            "P": 1099,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATMF-A900AEP18",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23995901,
+        "Id": "QFATMF-A900AEP18-002",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 1599,
+            "P": 1099,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATMF-A900AEP18",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23995902,
+        "Id": "QFATMF-A900AEP18-003",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 1599,
+            "P": 1099,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATMF-A900AEP18",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23995903,
+        "Id": "QFATMF-A900AEP18-004",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 1599,
+            "P": 1099,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 18,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AEP18",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25980980,
+        "Id": "DAAO76-A900B201D-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 910,
+            "P": 595,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO76-A900B201D",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25981125,
+        "Id": "DAAO76-A900B202U-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 2880,
+            "P": 1400,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO76-A900B202U",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25980718,
+        "Id": "DAAO76-A900B1ZYD-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 890,
+            "P": 580,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 13,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO76-A900B1ZYD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25981278,
+        "Id": "DAAO76-A900B205M-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 2980,
+            "P": 1430,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO76-A900B205M",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23995796,
+        "Id": "QFATMF-A900AEOZ1-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 1099,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AEOZ1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23995797,
+        "Id": "QFATMF-A900AEOZ1-001",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 1099,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATMF-A900AEOZ1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23995798,
+        "Id": "QFATMF-A900AEOZ1-002",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 1099,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATMF-A900AEOZ1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23995799,
+        "Id": "QFATMF-A900AEOZ1-003",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 1099,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AEOZ1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24002521,
+        "Id": "QFATMF-A900AERBY-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 1099,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AERBY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24002522,
+        "Id": "QFATMF-A900AERBZ-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 1099,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 15,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AERBZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24392812,
+        "Id": "QFATMF-A900AJCP3-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 915,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AJCP3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24002564,
+        "Id": "QFATMF-A900AERCZ-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 1199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AERCZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24002581,
+        "Id": "QFATMF-A900AERCG-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 1899,
+            "P": 1199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AERCG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24002557,
+        "Id": "QFATMF-A900AERCV-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 1899,
+            "P": 1199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 12,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AERCV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24002520,
+        "Id": "QFATMF-A900AERBX-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 1099,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AERBX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24903337,
+        "Id": "QFDG1V-A900APH7I-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 1699,
+            "P": 1199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFDG1V-A900APH7I",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 31411294,
+        "Id": "DAAO76-A900E4HFR-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 2350,
+            "P": 1199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO76-A900E4HFR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24002559,
+        "Id": "QFATMF-A900AERCX-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 1199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AERCX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24336462,
+        "Id": "QFATMF-A900AIMTB-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 999,
+            "P": 955,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AIMTB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24396190,
+        "Id": "QFATMF-A900AJEB9-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 1199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 11,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AJEB9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24396192,
+        "Id": "QFATMF-A900AJEB9-002",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 1199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 12,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AJEB9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24396193,
+        "Id": "QFATMF-A900AJEB9-003",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 1199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 15,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AJEB9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24396194,
+        "Id": "QFATMF-A900AJEB9-004",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 1199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AJEB9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33776451,
+        "Id": "QFATMF-A900AJEB9-005",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 1199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 11,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AJEB9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24392885,
+        "Id": "QFATMF-A900AJCPR-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 0,
+            "P": 1299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AJCPR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24336363,
+        "Id": "QFATMF-A900AIMQS-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 1799,
+            "P": 1699,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AIMQS",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24336408,
+        "Id": "QFATMF-A900AIMSH-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 1799,
+            "P": 1699,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AIMSH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 31485680,
+        "Id": "DAAO76-A900E62BL-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 2350,
+            "P": 1199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO76-A900E62BL",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24336565,
+        "Id": "QFATMF-A900AIMVB-000",
+        "Store": "DAAO76",
+        "Price": {
+            "M": 999,
+            "P": 955,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 9,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATMF-A900AIMVB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

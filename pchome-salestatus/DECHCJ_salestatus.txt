@@ -1,0 +1,200 @@
+[
+    {
+        "Seq": 33793878,
+        "Id": "DECHCJ-A900FGXAS-000",
+        "Store": "DECHCJ",
+        "Price": {
+            "M": 1765,
+            "P": 1500,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHCJ-A900FGXAS",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33793853,
+        "Id": "DECHCJ-A900FGX9D-000",
+        "Store": "DECHCJ",
+        "Price": {
+            "M": 920,
+            "P": 780,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHCJ-A900FGX9D",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33793859,
+        "Id": "DECHCJ-A900FGX9G-000",
+        "Store": "DECHCJ",
+        "Price": {
+            "M": 920,
+            "P": 780,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHCJ-A900FGX9G",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33793843,
+        "Id": "DECHCJ-A900FGX9V-000",
+        "Store": "DECHCJ",
+        "Price": {
+            "M": 920,
+            "P": 780,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHCJ-A900FGX9V",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25672421,
+        "Id": "DEAIZ9-A900AYE8X-000",
+        "Store": "DECHCJ",
+        "Price": {
+            "M": 0,
+            "P": 490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIZ9-A900AYE8X",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26013539,
+        "Id": "DEAIZ9-A900B2ERT-000",
+        "Store": "DECHCJ",
+        "Price": {
+            "M": 1280,
+            "P": 860,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIZ9-A900B2ERT",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32704886,
+        "Id": "DECHCJ-A900EXHAQ-000",
+        "Store": "DECHCJ",
+        "Price": {
+            "M": 599,
+            "P": 599,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHCJ-A900EXHAQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32704887,
+        "Id": "DECHCJ-A900EXHAQ-001",
+        "Store": "DECHCJ",
+        "Price": {
+            "M": 599,
+            "P": 599,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHCJ-A900EXHAQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32704888,
+        "Id": "DECHCJ-A900EXHAQ-002",
+        "Store": "DECHCJ",
+        "Price": {
+            "M": 599,
+            "P": 599,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHCJ-A900EXHAQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32704889,
+        "Id": "DECHCJ-A900EXHAQ-003",
+        "Store": "DECHCJ",
+        "Price": {
+            "M": 599,
+            "P": 599,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHCJ-A900EXHAQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32704890,
+        "Id": "DECHCJ-A900EXHAQ-004",
+        "Store": "DECHCJ",
+        "Price": {
+            "M": 599,
+            "P": 599,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHCJ-A900EXHAQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

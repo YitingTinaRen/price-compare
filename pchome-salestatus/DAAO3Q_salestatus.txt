@@ -1,0 +1,38 @@
+[
+    {
+        "Seq": 18198896,
+        "Id": "DAAO56-A90087LNL-000",
+        "Store": "DAAO3Q",
+        "Price": {
+            "M": 799,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO56-A90087LNL",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 18198905,
+        "Id": "DAAO56-A90087LO9-000",
+        "Store": "DAAO3Q",
+        "Price": {
+            "M": 799,
+            "P": 488,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DAAO56-A90087LO9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

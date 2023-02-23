@@ -1,0 +1,1222 @@
+[
+    {
+        "Name": "嬰童紙尿褲",
+        "Level": "1",
+        "Code": "2700400000",
+        "ActionType": "10",
+        "ActionValue": "2700400000#1#0",
+        "Sub": [
+            {
+                "Name": "依尿褲功能",
+                "Level": "2",
+                "Code": "2700400360",
+                "ActionType": "10",
+                "ActionValue": "2700400360#2#0",
+                "Sub": [
+                    {
+                        "Name": "褲型",
+                        "Level": "3",
+                        "Code": "2700400364",
+                        "ActionType": "10",
+                        "ActionValue": "2700400364#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "黏貼型",
+                        "Level": "3",
+                        "Code": "2700400361",
+                        "ActionType": "10",
+                        "ActionValue": "2700400361#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "環保尿布",
+                        "Level": "3",
+                        "Code": "2700400372",
+                        "ActionType": "10",
+                        "ActionValue": "2700400372#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "幫寶適",
+                "Level": "2",
+                "Code": "2700400054",
+                "ActionType": "10",
+                "ActionValue": "2700400054#2#0",
+                "Sub": [
+                    {
+                        "Name": "一級幫",
+                        "Level": "3",
+                        "Code": "2700400443",
+                        "ActionType": "10",
+                        "ActionValue": "2700400443#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "一級幫褲型",
+                        "Level": "3",
+                        "Code": "2700400445",
+                        "ActionType": "10",
+                        "ActionValue": "2700400445#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "拉拉褲",
+                        "Level": "3",
+                        "Code": "2700400057",
+                        "ActionType": "10",
+                        "ActionValue": "2700400057#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "超薄乾爽",
+                        "Level": "3",
+                        "Code": "2700400056",
+                        "ActionType": "10",
+                        "ActionValue": "2700400056#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "安睡褲",
+                        "Level": "3",
+                        "Code": "2700400621",
+                        "ActionType": "10",
+                        "ActionValue": "2700400621#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "清新幫 NEW",
+                        "Level": "3",
+                        "Code": "2700400647",
+                        "ActionType": "10",
+                        "ActionValue": "2700400647#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "日本大王",
+                "Level": "2",
+                "Code": "2700400062",
+                "ActionType": "10",
+                "ActionValue": "2700400062#2#0",
+                "Sub": [
+                    {
+                        "Name": "全新奢華肌",
+                        "Level": "3",
+                        "Code": "2700400065",
+                        "ActionType": "10",
+                        "ActionValue": "2700400065#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "黏貼型",
+                        "Level": "3",
+                        "Code": "2700400063",
+                        "ActionType": "10",
+                        "ActionValue": "2700400063#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "褲型",
+                        "Level": "3",
+                        "Code": "2700400413",
+                        "ActionType": "10",
+                        "ActionValue": "2700400413#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "包購",
+                        "Level": "3",
+                        "Code": "2700400692",
+                        "ActionType": "10",
+                        "ActionValue": "2700400692#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "滿意寶寶",
+                "Level": "2",
+                "Code": "2700400049",
+                "ActionType": "10",
+                "ActionValue": "2700400049#2#0",
+                "Sub": [
+                    {
+                        "Name": "極上雙重呵護組",
+                        "Level": "3",
+                        "Code": "2700400649",
+                        "ActionType": "10",
+                        "ActionValue": "2700400649#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "極上輕巧褲",
+                        "Level": "3",
+                        "Code": "2700400570",
+                        "ActionType": "10",
+                        "ActionValue": "2700400570#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "極上呵護",
+                        "Level": "3",
+                        "Code": "2700400505",
+                        "ActionType": "10",
+                        "ActionValue": "2700400505#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "瞬潔乾爽",
+                        "Level": "3",
+                        "Code": "2700400051",
+                        "ActionType": "10",
+                        "ActionValue": "2700400051#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "輕巧褲",
+                        "Level": "3",
+                        "Code": "2700400053",
+                        "ActionType": "10",
+                        "ActionValue": "2700400053#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "活潑寶寶",
+                        "Level": "3",
+                        "Code": "2700400050",
+                        "ActionType": "10",
+                        "ActionValue": "2700400050#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "晚安褲",
+                        "Level": "3",
+                        "Code": "2700400531",
+                        "ActionType": "10",
+                        "ActionValue": "2700400531#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "好奇",
+                "Level": "2",
+                "Code": "2700400108",
+                "ActionType": "10",
+                "ActionValue": "2700400108#2#0",
+                "Sub": [
+                    {
+                        "Name": "雲柔乾爽",
+                        "Level": "3",
+                        "Code": "2700400652",
+                        "ActionType": "10",
+                        "ActionValue": "2700400652#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "裸感系列",
+                        "Level": "3",
+                        "Code": "2700400577",
+                        "ActionType": "10",
+                        "ActionValue": "2700400577#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "好動褲",
+                        "Level": "3",
+                        "Code": "2700400329",
+                        "ActionType": "10",
+                        "ActionValue": "2700400329#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "黏貼型",
+                        "Level": "3",
+                        "Code": "2700400660",
+                        "ActionType": "10",
+                        "ActionValue": "2700400660#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "新品上市★",
+                        "Level": "3",
+                        "Code": "2700400693",
+                        "ActionType": "10",
+                        "ActionValue": "2700400693#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "妙而舒",
+                "Level": "2",
+                "Code": "2700400058",
+                "ActionType": "10",
+                "ActionValue": "2700400058#2#0",
+                "Sub": [
+                    {
+                        "Name": "瞬吸舒爽",
+                        "Level": "3",
+                        "Code": "2700400059",
+                        "ActionType": "10",
+                        "ActionValue": "2700400059#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "金緻柔點",
+                        "Level": "3",
+                        "Code": "2700400060",
+                        "ActionType": "10",
+                        "ActionValue": "2700400060#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "妙兒褲",
+                        "Level": "3",
+                        "Code": "2700400061",
+                        "ActionType": "10",
+                        "ActionValue": "2700400061#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "頂柔舒護",
+                        "Level": "3",
+                        "Code": "2700400601",
+                        "ActionType": "10",
+                        "ActionValue": "2700400601#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "麗貝樂Libero",
+                "Level": "2",
+                "Code": "2700400508",
+                "ActionType": "10",
+                "ActionValue": "2700400508#2#0",
+                "Sub": [
+                    {
+                        "Name": "黏貼式Touch",
+                        "Level": "3",
+                        "Code": "2700400103",
+                        "ActionType": "10",
+                        "ActionValue": "2700400103#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "敢動褲",
+                        "Level": "3",
+                        "Code": "2700400213",
+                        "ActionType": "10",
+                        "ActionValue": "2700400213#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "限定版",
+                        "Level": "3",
+                        "Code": "2700400337",
+                        "ActionType": "10",
+                        "ActionValue": "2700400337#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "黏貼式",
+                        "Level": "3",
+                        "Code": "2700400137",
+                        "ActionType": "10",
+                        "ActionValue": "2700400137#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "包購",
+                        "Level": "3",
+                        "Code": "2700400688",
+                        "ActionType": "10",
+                        "ActionValue": "2700400688#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "王子GENKI",
+                "Level": "2",
+                "Code": "2700400610",
+                "ActionType": "10",
+                "ActionValue": "2700400610#2#0",
+                "Sub": [
+                    {
+                        "Name": "超柔軟",
+                        "Level": "3",
+                        "Code": "2700400612",
+                        "ActionType": "10",
+                        "ActionValue": "2700400612#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "WHITO超薄",
+                        "Level": "3",
+                        "Code": "2700400613",
+                        "ActionType": "10",
+                        "ActionValue": "2700400613#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "麵包超人",
+                        "Level": "3",
+                        "Code": "2700400614",
+                        "ActionType": "10",
+                        "ActionValue": "2700400614#2#0",
+                        "Sub": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "推車/安全椅",
+        "Level": "1",
+        "Code": "2700200000",
+        "ActionType": "10",
+        "ActionValue": "2700200000#1#0",
+        "Sub": [
+            {
+                "Name": "手推車",
+                "Level": "2",
+                "Code": "2700200995",
+                "ActionType": "10",
+                "ActionValue": "2700200995#2#0",
+                "Sub": [
+                    {
+                        "Name": "四輪推車",
+                        "Level": "3",
+                        "Code": "2700200570",
+                        "ActionType": "10",
+                        "ActionValue": "2700200570#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "三輪推車",
+                        "Level": "3",
+                        "Code": "2700200803",
+                        "ActionType": "10",
+                        "ActionValue": "2700200803#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "雙寶推車",
+                        "Level": "3",
+                        "Code": "2700200807",
+                        "ActionType": "10",
+                        "ActionValue": "2700200807#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "推車座墊",
+                        "Level": "3",
+                        "Code": "2700201001",
+                        "ActionType": "10",
+                        "ActionValue": "2700201001#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "其他配件",
+                        "Level": "3",
+                        "Code": "2700200228",
+                        "ActionType": "10",
+                        "ActionValue": "2700200228#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "安全座椅",
+                "Level": "2",
+                "Code": "2700200996",
+                "ActionType": "10",
+                "ActionValue": "2700200996#2#0",
+                "Sub": [
+                    {
+                        "Name": "0-4歲汽座",
+                        "Level": "3",
+                        "Code": "2700200809",
+                        "ActionType": "10",
+                        "ActionValue": "2700200809#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "ISOFIX",
+                        "Level": "3",
+                        "Code": "2700200398",
+                        "ActionType": "10",
+                        "ActionValue": "2700200398#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "成長型汽座",
+                        "Level": "3",
+                        "Code": "2700200077",
+                        "ActionType": "10",
+                        "ActionValue": "2700200077#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "提籃汽座",
+                        "Level": "3",
+                        "Code": "2700200808",
+                        "ActionType": "10",
+                        "ActionValue": "2700200808#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "汽座配件",
+                        "Level": "3",
+                        "Code": "2700200027",
+                        "ActionType": "10",
+                        "ActionValue": "2700200027#2#0",
+                        "Sub": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "背巾/腰凳",
+        "Level": "1",
+        "Code": "2704700000",
+        "ActionType": "10",
+        "ActionValue": "2704700000#1#0",
+        "Sub": [
+            {
+                "Name": "揹巾/腰凳",
+                "Level": "2",
+                "Code": "2704700003",
+                "ActionType": "10",
+                "ActionValue": "2704700003#2#0",
+                "Sub": [
+                    {
+                        "Name": "腰凳/坐墊型",
+                        "Level": "3",
+                        "Code": "2704700009",
+                        "ActionType": "10",
+                        "ActionValue": "2704700009#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "雙肩揹巾",
+                        "Level": "3",
+                        "Code": "2704700010",
+                        "ActionType": "10",
+                        "ActionValue": "2704700010#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "單肩揹巾",
+                        "Level": "3",
+                        "Code": "2704700011",
+                        "ActionType": "10",
+                        "ActionValue": "2704700011#2#0",
+                        "Sub": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "哺育用品",
+        "Level": "1",
+        "Code": "2702700000",
+        "ActionType": "10",
+        "ActionValue": "2702700000#1#0",
+        "Sub": [
+            {
+                "Name": "哺育電器",
+                "Level": "2",
+                "Code": "2702700002",
+                "ActionType": "10",
+                "ActionValue": "2702700002#2#0",
+                "Sub": [
+                    {
+                        "Name": "紫外線消毒鍋",
+                        "Level": "3",
+                        "Code": "2702700010",
+                        "ActionType": "10",
+                        "ActionValue": "2702700010#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "蒸氣消毒鍋",
+                        "Level": "3",
+                        "Code": "2702700011",
+                        "ActionType": "10",
+                        "ActionValue": "2702700011#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "調乳溫奶器",
+                        "Level": "3",
+                        "Code": "2702700012",
+                        "ActionType": "10",
+                        "ActionValue": "2702700012#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "奶瓶",
+                "Level": "2",
+                "Code": "2702700358",
+                "ActionType": "10",
+                "ActionValue": "2702700358#2#0",
+                "Sub": [
+                    {
+                        "Name": "玻璃奶瓶",
+                        "Level": "3",
+                        "Code": "2702700014",
+                        "ActionType": "10",
+                        "ActionValue": "2702700014#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "PPSU奶瓶",
+                        "Level": "3",
+                        "Code": "2702700015",
+                        "ActionType": "10",
+                        "ActionValue": "2702700015#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "PES奶瓶",
+                        "Level": "3",
+                        "Code": "2702700016",
+                        "ActionType": "10",
+                        "ActionValue": "2702700016#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "PP奶瓶",
+                        "Level": "3",
+                        "Code": "2702700017",
+                        "ActionType": "10",
+                        "ActionValue": "2702700017#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "不鏽鋼奶瓶",
+                        "Level": "3",
+                        "Code": "2702700018",
+                        "ActionType": "10",
+                        "ActionValue": "2702700018#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "PA奶瓶",
+                        "Level": "3",
+                        "Code": "2702700360",
+                        "ActionType": "10",
+                        "ActionValue": "2702700360#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "拋棄式奶瓶",
+                        "Level": "3",
+                        "Code": "2702700020",
+                        "ActionType": "10",
+                        "ActionValue": "2702700020#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "矽膠奶瓶",
+                        "Level": "3",
+                        "Code": "2702700019",
+                        "ActionType": "10",
+                        "ActionValue": "2702700019#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "奶瓶禮盒",
+                        "Level": "3",
+                        "Code": "2702700387",
+                        "ActionType": "10",
+                        "ActionValue": "2702700387#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "奶嘴/固齒器",
+                "Level": "2",
+                "Code": "2702700359",
+                "ActionType": "10",
+                "ActionValue": "2702700359#2#0",
+                "Sub": [
+                    {
+                        "Name": "標口奶嘴",
+                        "Level": "3",
+                        "Code": "2702700022",
+                        "ActionType": "10",
+                        "ActionValue": "2702700022#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "寬口奶嘴",
+                        "Level": "3",
+                        "Code": "2702700362",
+                        "ActionType": "10",
+                        "ActionValue": "2702700362#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "安撫奶嘴",
+                        "Level": "3",
+                        "Code": "2702700023",
+                        "ActionType": "10",
+                        "ActionValue": "2702700023#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "固齒器",
+                        "Level": "3",
+                        "Code": "2702700038",
+                        "ActionType": "10",
+                        "ActionValue": "2702700038#2#0",
+                        "Sub": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "餐具/餐椅",
+        "Level": "1",
+        "Code": "2704100000",
+        "ActionType": "10",
+        "ActionValue": "2704100000#1#0",
+        "Sub": [
+            {
+                "Name": "研磨/調理器",
+                "Level": "2",
+                "Code": "2704100003",
+                "ActionType": "10",
+                "ActionValue": "2704100003#2#0",
+                "Sub": [
+                    {
+                        "Name": "副食品調理機",
+                        "Level": "3",
+                        "Code": "2704100008",
+                        "ActionType": "10",
+                        "ActionValue": "2704100008#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "副食品研磨器",
+                        "Level": "3",
+                        "Code": "2704100009",
+                        "ActionType": "10",
+                        "ActionValue": "2704100009#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "副食品分裝盒",
+                        "Level": "3",
+                        "Code": "2704100011",
+                        "ActionType": "10",
+                        "ActionValue": "2704100011#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "安全食物剪刀",
+                        "Level": "3",
+                        "Code": "2704100048",
+                        "ActionType": "10",
+                        "ActionValue": "2704100048#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "餐具/餐椅",
+                "Level": "2",
+                "Code": "2704100004",
+                "ActionType": "10",
+                "ActionValue": "2704100004#2#0",
+                "Sub": [
+                    {
+                        "Name": "學習餐椅",
+                        "Level": "3",
+                        "Code": "2704100012",
+                        "ActionType": "10",
+                        "ActionValue": "2704100012#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "餐搖椅",
+                        "Level": "3",
+                        "Code": "2704100049",
+                        "ActionType": "10",
+                        "ActionValue": "2704100049#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "塑膠餐具",
+                        "Level": "3",
+                        "Code": "2704100013",
+                        "ActionType": "10",
+                        "ActionValue": "2704100013#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "不鏽鋼餐具",
+                        "Level": "3",
+                        "Code": "2704100014",
+                        "ActionType": "10",
+                        "ActionValue": "2704100014#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "矽膠餐具",
+                        "Level": "3",
+                        "Code": "2704100016",
+                        "ActionType": "10",
+                        "ActionValue": "2704100016#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "植物纖維餐具",
+                        "Level": "3",
+                        "Code": "2704100015",
+                        "ActionType": "10",
+                        "ActionValue": "2704100015#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "學習水杯/壺",
+                "Level": "2",
+                "Code": "2704100005",
+                "ActionType": "10",
+                "ActionValue": "2704100005#2#0",
+                "Sub": [
+                    {
+                        "Name": "學習吸管杯",
+                        "Level": "3",
+                        "Code": "2704100018",
+                        "ActionType": "10",
+                        "ActionValue": "2704100018#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "直飲杯",
+                        "Level": "3",
+                        "Code": "2704100019",
+                        "ActionType": "10",
+                        "ActionValue": "2704100019#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "水瓶水壺",
+                        "Level": "3",
+                        "Code": "2704100020",
+                        "ActionType": "10",
+                        "ActionValue": "2704100020#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "罐套揹帶",
+                        "Level": "3",
+                        "Code": "2704100021",
+                        "ActionType": "10",
+                        "ActionValue": "2704100021#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "口水巾/圍兜",
+                "Level": "2",
+                "Code": "2704100006",
+                "ActionType": "10",
+                "ActionValue": "2704100006#2#0",
+                "Sub": [
+                    {
+                        "Name": "口水巾",
+                        "Level": "3",
+                        "Code": "2704100022",
+                        "ActionType": "10",
+                        "ActionValue": "2704100022#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "圍兜",
+                        "Level": "3",
+                        "Code": "2704100023",
+                        "ActionType": "10",
+                        "ActionValue": "2704100023#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "防水圍兜",
+                        "Level": "3",
+                        "Code": "2704100024",
+                        "ActionType": "10",
+                        "ActionValue": "2704100024#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "畫畫衣圍裙",
+                        "Level": "3",
+                        "Code": "2704100025",
+                        "ActionType": "10",
+                        "ActionValue": "2704100025#2#0",
+                        "Sub": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "浴盆/便器",
+        "Level": "1",
+        "Code": "2704300000",
+        "ActionType": "10",
+        "ActionValue": "2704300000#1#0",
+        "Sub": [
+            {
+                "Name": "浴盆/浴網",
+                "Level": "2",
+                "Code": "2704300003",
+                "ActionType": "10",
+                "ActionValue": "2704300003#2#0",
+                "Sub": [
+                    {
+                        "Name": "澡盆/浴桶",
+                        "Level": "3",
+                        "Code": "2704300012",
+                        "ActionType": "10",
+                        "ActionValue": "2704300012#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "折疊浴盆",
+                        "Level": "3",
+                        "Code": "2704300013",
+                        "ActionType": "10",
+                        "ActionValue": "2704300013#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "清潔/配件",
+                "Level": "2",
+                "Code": "2704300006",
+                "ActionType": "10",
+                "ActionValue": "2704300006#2#0",
+                "Sub": [
+                    {
+                        "Name": "乾濕兩用巾",
+                        "Level": "3",
+                        "Code": "2704300027",
+                        "ActionType": "10",
+                        "ActionValue": "2704300027#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "尿布處理器",
+                        "Level": "3",
+                        "Code": "2704300028",
+                        "ActionType": "10",
+                        "ActionValue": "2704300028#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "濕巾加熱器",
+                        "Level": "3",
+                        "Code": "2704300029",
+                        "ActionType": "10",
+                        "ActionValue": "2704300029#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "爽身粉盒",
+                        "Level": "3",
+                        "Code": "2704300030",
+                        "ActionType": "10",
+                        "ActionValue": "2704300030#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "指甲剪/刀",
+                        "Level": "3",
+                        "Code": "2704300031",
+                        "ActionType": "10",
+                        "ActionValue": "2704300031#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "棉花棒",
+                        "Level": "3",
+                        "Code": "2704300032",
+                        "ActionType": "10",
+                        "ActionValue": "2704300032#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "水龍頭延伸器",
+                        "Level": "3",
+                        "Code": "2704300038",
+                        "ActionType": "10",
+                        "ActionValue": "2704300038#2#0",
+                        "Sub": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "嬰兒床",
+        "Level": "1",
+        "Code": "2700600000",
+        "ActionType": "10",
+        "ActionValue": "2700600000#1#0",
+        "Sub": [
+            {
+                "Name": "床架",
+                "Level": "2",
+                "Code": "2700600002",
+                "ActionType": "10",
+                "ActionValue": "2700600002#2#0",
+                "Sub": [
+                    {
+                        "Name": "嬰兒床",
+                        "Level": "3",
+                        "Code": "2700600003",
+                        "ActionType": "10",
+                        "ActionValue": "2700600003#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "床邊床",
+                        "Level": "3",
+                        "Code": "2700600604",
+                        "ActionType": "10",
+                        "ActionValue": "2700600604#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "成長多功能床",
+                        "Level": "3",
+                        "Code": "2700600060",
+                        "ActionType": "10",
+                        "ActionValue": "2700600060#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "遊戲床",
+                        "Level": "3",
+                        "Code": "2700600004",
+                        "ActionType": "10",
+                        "ActionValue": "2700600004#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "安撫躺/搖椅",
+                        "Level": "3",
+                        "Code": "2700600059",
+                        "ActionType": "10",
+                        "ActionValue": "2700600059#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "床墊",
+                "Level": "2",
+                "Code": "2700600557",
+                "ActionType": "10",
+                "ActionValue": "2700600557#2#0",
+                "Sub": [
+                    {
+                        "Name": "護脊記憶床墊",
+                        "Level": "3",
+                        "Code": "2700600558",
+                        "ActionType": "10",
+                        "ActionValue": "2700600558#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "防蹣透氣床墊",
+                        "Level": "3",
+                        "Code": "2700600559",
+                        "ActionType": "10",
+                        "ActionValue": "2700600559#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "乳膠床墊",
+                        "Level": "3",
+                        "Code": "2700600010",
+                        "ActionType": "10",
+                        "ActionValue": "2700600010#2#0",
+                        "Sub": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "嬰幼兒寢具",
+        "Level": "1",
+        "Code": "2704200000",
+        "ActionType": "10",
+        "ActionValue": "2704200000#1#0",
+        "Sub": [
+            {
+                "Name": "包巾/抱袋",
+                "Level": "2",
+                "Code": "2704200004",
+                "ActionType": "10",
+                "ActionValue": "2704200004#2#0",
+                "Sub": [
+                    {
+                        "Name": "包巾/紗布巾",
+                        "Level": "3",
+                        "Code": "2704200018",
+                        "ActionType": "10",
+                        "ActionValue": "2704200018#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "防踢背心",
+                "Level": "2",
+                "Code": "2704200005",
+                "ActionType": "10",
+                "ActionValue": "2704200005#2#0",
+                "Sub": [
+                    {
+                        "Name": "夏季",
+                        "Level": "3",
+                        "Code": "2704200021",
+                        "ActionType": "10",
+                        "ActionValue": "2704200021#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "冬季",
+                        "Level": "3",
+                        "Code": "2704200022",
+                        "ActionType": "10",
+                        "ActionValue": "2704200022#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "床墊",
+                "Level": "2",
+                "Code": "2704200096",
+                "ActionType": "10",
+                "ActionValue": "2704200096#2#0",
+                "Sub": [
+                    {
+                        "Name": "護脊記憶床墊",
+                        "Level": "3",
+                        "Code": "2704200097",
+                        "ActionType": "10",
+                        "ActionValue": "2704200097#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "防蹣透氣床墊",
+                        "Level": "3",
+                        "Code": "2704200098",
+                        "ActionType": "10",
+                        "ActionValue": "2704200098#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "乳膠床墊",
+                        "Level": "3",
+                        "Code": "2704200099",
+                        "ActionType": "10",
+                        "ActionValue": "2704200099#2#0",
+                        "Sub": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name": "地墊/圍欄",
+        "Level": "1",
+        "Code": "2703000000",
+        "ActionType": "10",
+        "ActionValue": "2703000000#1#0",
+        "Sub": [
+            {
+                "Name": "爬行地墊",
+                "Level": "2",
+                "Code": "2703000180",
+                "ActionType": "10",
+                "ActionValue": "2703000180#2#0",
+                "Sub": [
+                    {
+                        "Name": "遊戲地墊",
+                        "Level": "3",
+                        "Code": "2703000145",
+                        "ActionType": "10",
+                        "ActionValue": "2703000145#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "摺疊地墊",
+                        "Level": "3",
+                        "Code": "2703000183",
+                        "ActionType": "10",
+                        "ActionValue": "2703000183#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "拼接地墊",
+                        "Level": "3",
+                        "Code": "2703000184",
+                        "ActionType": "10",
+                        "ActionValue": "2703000184#2#0",
+                        "Sub": []
+                    }
+                ]
+            },
+            {
+                "Name": "安全圍欄",
+                "Level": "2",
+                "Code": "2703000181",
+                "ActionType": "10",
+                "ActionValue": "2703000181#2#0",
+                "Sub": [
+                    {
+                        "Name": "遊戲圍欄",
+                        "Level": "3",
+                        "Code": "2703000144",
+                        "ActionType": "10",
+                        "ActionValue": "2703000144#2#0",
+                        "Sub": []
+                    },
+                    {
+                        "Name": "城堡圍欄",
+                        "Level": "3",
+                        "Code": "2703000188",
+                        "ActionType": "10",
+                        "ActionValue": "2703000188#2#0",
+                        "Sub": []
+                    }
+                ]
+            }
+        ]
+    }
+]

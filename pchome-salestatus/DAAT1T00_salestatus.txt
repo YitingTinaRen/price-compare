@@ -1,0 +1,704 @@
+[
+    {
+        "Seq": 27481751,
+        "Id": "DAAT1T-A900BR4XB-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 790,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT1T-A900BR4XB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27482000,
+        "Id": "DAAT1T-A900BR50Q-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 790,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT1T-A900BR50Q",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27482743,
+        "Id": "DAAT1T-A900BR5F4-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 796,
+            "P": 596,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT1T-A900BR5F4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27481659,
+        "Id": "DAAT1T-A900BR4VC-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 796,
+            "P": 596,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT1T-A900BR4VC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27312330,
+        "Id": "DAAT1T-A900BNMWR-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 199,
+            "P": 155,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900BNMWR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33553402,
+        "Id": "DAAT1T-A900FDFWV-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 250,
+            "P": 189,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 13,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900FDFWV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33553331,
+        "Id": "DAAT1T-A900FDFV7-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 395,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900FDFV7",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33553344,
+        "Id": "DAAT1T-A900FDFVB-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 395,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900FDFVB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33553391,
+        "Id": "DAAT1T-A900FDFWA-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 250,
+            "P": 189,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 19,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900FDFWA",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27313021,
+        "Id": "DAAT1T-A900BNN8W-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 89,
+            "P": 65,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900BNN8W",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27956127,
+        "Id": "DAAT1T-A900C1HE9-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 796,
+            "P": 596,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT1T-A900C1HE9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32489089,
+        "Id": "DAAT1T-A900EQYG5-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 249,
+            "P": 189,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900EQYG5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32489237,
+        "Id": "DAAT1T-A900EQYJD-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 189,
+            "P": 119,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900EQYJD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32489224,
+        "Id": "DAAT1T-A900EQYIK-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 179,
+            "P": 119,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900EQYIK",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33553351,
+        "Id": "DAAT1T-A900FDFVI-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 395,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900FDFVI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32489204,
+        "Id": "DAAT1T-A900EQYJ3-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 189,
+            "P": 109,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900EQYJ3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32489072,
+        "Id": "DAAT1T-A900EQYGP-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 249,
+            "P": 189,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900EQYGP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32623737,
+        "Id": "DAAT1T-A900EVGPB-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 338,
+            "P": 218,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 7,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900EVGPB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32623733,
+        "Id": "DAAT1T-A900EVGP7-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 338,
+            "P": 218,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 11,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900EVGP7",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32623691,
+        "Id": "DAAT1T-A900EVGOV-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 338,
+            "P": 218,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900EVGOV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32623366,
+        "Id": "DAAT1T-A900EVGJ9-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 746,
+            "P": 499,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT1T-A900EVGJ9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33613501,
+        "Id": "DAAT1T-A900FEB2F-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 1548,
+            "P": 1111,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900FEB2F",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32623356,
+        "Id": "DAAT1T-A900EVGJW-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 746,
+            "P": 499,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT1T-A900EVGJW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27311862,
+        "Id": "DAAT1T-A900BNMNF-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 129,
+            "P": 105,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900BNMNF",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27311720,
+        "Id": "DAAT1T-A900BNMKM-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 199,
+            "P": 155,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 16,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900BNMKM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27311747,
+        "Id": "DAAT1T-A900BNMKT-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 89,
+            "P": 65,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900BNMKT",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26964885,
+        "Id": "DAAT1T-A900BH0HC-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 1000,
+            "P": 569,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900BH0HC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27311696,
+        "Id": "DAAT1T-A900BNMKC-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 129,
+            "P": 105,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900BNMKC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27313143,
+        "Id": "DAAT1T-A900BNNBL-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 89,
+            "P": 65,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900BNNBL",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27313123,
+        "Id": "DAAT1T-A900BNNBP-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 199,
+            "P": 155,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900BNNBP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27313081,
+        "Id": "DAAT1T-A900BNNAB-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 129,
+            "P": 105,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900BNNAB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32489114,
+        "Id": "DAAT1T-A900EQYH2-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 249,
+            "P": 179,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900EQYH2",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33553421,
+        "Id": "DAAT1T-A900FDFX6-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 250,
+            "P": 189,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT1T-A900FDFX6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27481881,
+        "Id": "DAAT1T-A900BR4YC-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 726,
+            "P": 546,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT1T-A900BR4YC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27640859,
+        "Id": "DAAT1T-A900BUBUG-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 850,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT1T-A900BUBUG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27482802,
+        "Id": "DAAT1T-A900BR5FO-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 726,
+            "P": 546,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT1T-A900BR5FO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27481735,
+        "Id": "DAAT1T-A900BR4WI-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 726,
+            "P": 546,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT1T-A900BR4WI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32623454,
+        "Id": "DAAT1T-A900EVGKW-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 746,
+            "P": 499,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT1T-A900EVGKW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33613481,
+        "Id": "DAAT1T-A900FEB26-000",
+        "Store": "DAAT1T",
+        "Price": {
+            "M": 2844,
+            "P": 1911,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT1T-A900FEB26",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

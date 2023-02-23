@@ -1,0 +1,63 @@
+[
+    {
+        "Id": "DEAU3P-A900FRLRH-000",
+        "Nick": "Britax Römer 英國 B-Agile M 豪華四輪嬰兒手推車-多色可選",
+        "Pic": {
+            "B": "/items/DEAU3PA900FRLRH/000001_1668785132.jpg",
+            "S": "/items/DEAU3PA900FRLRH/000002_1668785132.jpg"
+        },
+        "Price": {
+            "M": 19000,
+            "P": 10800,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "Britax Römer 英國 B-Agile M 豪華四輪嬰兒手推車-多色可選",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DEAU3P-A900FRM41-000",
+        "Nick": "Britax Römer 英國 Gravity II 自動收嬰兒手推車-多色可選",
+        "Pic": {
+            "B": "/items/DEAU3PA900FRM41/000001_1668788447.jpg",
+            "S": "/items/DEAU3PA900FRM41/000002_1668788447.jpg"
+        },
+        "Price": {
+            "M": 19000,
+            "P": 10900,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "Britax Römer 英國 Gravity II 自動收嬰兒手推車-多色可選",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DEAU8Q-A900FI3QT-000",
+        "Nick": "【然瀚】多功能老人助行購物車助力車(折疊代步/買菜休閑/止步休息)",
+        "Pic": {
+            "B": "/items/DEAU8QA900FI3QT/000001_1669269269.jpg",
+            "S": "/items/DEAU8QA900FI3QT/000002_1669269269.jpg"
+        },
+        "Price": {
+            "M": 3999,
+            "P": 3150,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【然瀚】老人助行手推車步行購物代步車可座帶手剎",
+        "OriginPrice": {}
+    },
+    {
+        "Category": {
+            "L0CategoryCode": "DEAU",
+            "L0CategoryName": "推車汽座",
+            "L1CategoryCode": "DEAU22C",
+            "L1CategoryName": "嬰幼兒推車",
+            "L2CategoryCode": "DEAU3P",
+            "L2CategoryName": "【功能】購物型推車"
+        }
+    }
+]

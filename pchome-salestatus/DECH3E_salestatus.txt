@@ -1,0 +1,74 @@
+[
+    {
+        "Seq": 13152696,
+        "Id": "DEAITK-A90060EUV-000",
+        "Store": "DECH0Z",
+        "Price": {
+            "M": 200,
+            "P": 130,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAITK-A90060EUV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 13152553,
+        "Id": "DEAITK-A90060ET0-000",
+        "Store": "DECH0Z",
+        "Price": {
+            "M": 280,
+            "P": 195,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 12,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAITK-A90060ET0",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 13152551,
+        "Id": "DEAITK-A90060ESY-000",
+        "Store": "DECH0Z",
+        "Price": {
+            "M": 210,
+            "P": 132,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAITK-A90060ESY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24592141,
+        "Id": "DECH0Z-A900ALQOH-000",
+        "Store": "DECH0I",
+        "Price": {
+            "M": 0,
+            "P": 247,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECH0Z-A900ALQOH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

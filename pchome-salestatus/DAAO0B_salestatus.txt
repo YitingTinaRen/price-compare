@@ -1,0 +1,308 @@
+[
+    {
+        "Seq": 24183760,
+        "Id": "DAAO0B-A900AGUN1-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 2239,
+            "P": 1959,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO0B-A900AGUN1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24183771,
+        "Id": "DAAO0B-A900AGUNE-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 2239,
+            "P": 1959,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO0B-A900AGUNE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 24183774,
+        "Id": "DAAO0B-A900AGUNH-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 2239,
+            "P": 1959,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO0B-A900AGUNH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20501061,
+        "Id": "DAAO0B-190095SVI-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 0,
+            "P": 1096,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO0B-190095SVI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20501121,
+        "Id": "DAAO0B-190095SX6-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 0,
+            "P": 1096,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO0B-190095SX6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 21174324,
+        "Id": "DAAO0B-A9009G9SY-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 1476,
+            "P": 1139,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO0B-A9009G9SY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 21855400,
+        "Id": "DAAO0B-A9009PXPN-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 2214,
+            "P": 1639,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO0B-A9009PXPN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 19330482,
+        "Id": "DAAO4H-19008NQM1-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 1476,
+            "P": 1096,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO4H-19008NQM1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22007148,
+        "Id": "DAAO0B-19009S5BJ-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 4428,
+            "P": 3198,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO0B-19009S5BJ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 17394036,
+        "Id": "DAAO09-A9007VRQ4-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 2214,
+            "P": 1709,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAO09-A9007VRQ4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 17394444,
+        "Id": "DAAO5Q-A9007VRZA-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 399,
+            "P": 275,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO5Q-A9007VRZA",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 17394376,
+        "Id": "DAAO5Q-A9007VRZR-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 399,
+            "P": 275,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO5Q-A9007VRZR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 17394502,
+        "Id": "DAAO5Q-A9007VS1G-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 399,
+            "P": 275,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO5Q-A9007VS1G",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 21105209,
+        "Id": "DAAO09-19009FC29-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 4428,
+            "P": 3198,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAO09-19009FC29",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 22031015,
+        "Id": "DAAO0B-A9009SIPX-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 1476,
+            "P": 1139,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAO0B-A9009SIPX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 19330500,
+        "Id": "DAAO4H-19008NQLH-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 1476,
+            "P": 1096,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAO4H-19008NQLH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 17394264,
+        "Id": "DAAO5Q-A9007VRV5-000",
+        "Store": "DAAO0B",
+        "Price": {
+            "M": 399,
+            "P": 275,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAO5Q-A9007VRV5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

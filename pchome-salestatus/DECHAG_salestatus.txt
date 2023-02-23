@@ -1,0 +1,6734 @@
+[
+    {
+        "Seq": 25786245,
+        "Id": "DEAIVL-A900AZSZI-000",
+        "Store": "DEAIVL",
+        "Price": {
+            "M": 6000,
+            "P": 4480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIVL-A900AZSZI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25786138,
+        "Id": "DEAIVL-A900AZSXT-000",
+        "Store": "DEAIVL",
+        "Price": {
+            "M": 6000,
+            "P": 4480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIVL-A900AZSXT",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25444987,
+        "Id": "DECHAG-B900AVR2Q-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 465,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVR2Q",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25444784,
+        "Id": "DECHAG-B900AVQYA-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 300,
+            "P": 149,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQYA",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365807,
+        "Id": "DEAIK3-A900AUV6P-000",
+        "Store": "DEAI0H",
+        "Price": {
+            "M": 3200,
+            "P": 2100,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 12,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIK3-A900AUV6P",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25782239,
+        "Id": "DEAIX7-A900AZRTL-000",
+        "Store": "DECHCO",
+        "Price": {
+            "M": 3280,
+            "P": 2380,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIX7-A900AZRTL",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365577,
+        "Id": "DEAI0H-A900AUV1T-000",
+        "Store": "DEAIK3",
+        "Price": {
+            "M": 3120,
+            "P": 1240,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI0H-A900AUV1T",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25451909,
+        "Id": "DECHAG-B900AVU7V-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 69,
+            "P": 59,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVU7V",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25402621,
+        "Id": "DECH0T-A900AVB63-000",
+        "Store": "DECH0T",
+        "Price": {
+            "M": 1560,
+            "P": 676,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH0T-A900AVB63",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25402597,
+        "Id": "DECH0T-A900AVB4V-000",
+        "Store": "DECH0T",
+        "Price": {
+            "M": 1560,
+            "P": 676,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 12,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH0T-A900AVB4V",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25384622,
+        "Id": "DEAIZG-A900AV46M-000",
+        "Store": "DECHCS",
+        "Price": {
+            "M": 1680,
+            "P": 690,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIZG-A900AV46M",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26000301,
+        "Id": "DECHAG-B900B29J0-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 260,
+            "P": 159,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B29J0",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365201,
+        "Id": "DEAIE8-A900AUUUG-000",
+        "Store": "DECHBM",
+        "Price": {
+            "M": 1980,
+            "P": 990,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIE8-A900AUUUG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365120,
+        "Id": "DEAIE8-A900AUUUE-000",
+        "Store": "DECHBM",
+        "Price": {
+            "M": 1980,
+            "P": 990,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIE8-A900AUUUE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365136,
+        "Id": "DEAIE8-A900AUUU9-000",
+        "Store": "DECHBM",
+        "Price": {
+            "M": 1980,
+            "P": 990,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIE8-A900AUUU9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365115,
+        "Id": "DEAIE8-A900AUUTP-000",
+        "Store": "DECHBM",
+        "Price": {
+            "M": 1980,
+            "P": 990,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIE8-A900AUUTP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25469968,
+        "Id": "DEAI4A-A900AW24A-000",
+        "Store": "DECHCA",
+        "Price": {
+            "M": 980,
+            "P": 784,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI4A-A900AW24A",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25366742,
+        "Id": "DEAI4A-A900AUVD1-000",
+        "Store": "DECHCA",
+        "Price": {
+            "M": 850,
+            "P": 680,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI4A-A900AUVD1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25366684,
+        "Id": "DEAI4A-A900AUVCA-000",
+        "Store": "DECHCA",
+        "Price": {
+            "M": 850,
+            "P": 680,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI4A-A900AUVCA",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365649,
+        "Id": "DEAI4A-A900AUV3D-000",
+        "Store": "DECHCA",
+        "Price": {
+            "M": 880,
+            "P": 550,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI4A-A900AUV3D",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365639,
+        "Id": "DEAI4A-A900AUV37-000",
+        "Store": "DECHCA",
+        "Price": {
+            "M": 880,
+            "P": 528,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI4A-A900AUV37",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25425998,
+        "Id": "DEAIXN-A900AVJZ3-000",
+        "Store": "DECH61",
+        "Price": {
+            "M": 550,
+            "P": 499,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIXN-A900AVJZ3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25425971,
+        "Id": "DEAIXN-A900AVJYL-000",
+        "Store": "DECH61",
+        "Price": {
+            "M": 550,
+            "P": 499,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIXN-A900AVJYL",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25425970,
+        "Id": "DEAIXN-A900AVJYK-000",
+        "Store": "DECH61",
+        "Price": {
+            "M": 550,
+            "P": 499,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIXN-A900AVJYK",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25426073,
+        "Id": "DEAIVI-A900AVJZD-000",
+        "Store": "DEAIVI",
+        "Price": {
+            "M": 900,
+            "P": 490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIVI-A900AVJZD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25426109,
+        "Id": "DEAIVI-A900AVJZF-000",
+        "Store": "DEAIVI",
+        "Price": {
+            "M": 900,
+            "P": 490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIVI-A900AVJZF",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25790827,
+        "Id": "DEAIXB-A900AZUSX-000",
+        "Store": "DECHCP",
+        "Price": {
+            "M": 2990,
+            "P": 2190,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIXB-A900AZUSX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25679140,
+        "Id": "DEAICR-A900AYHFR-000",
+        "Store": "DEAICR",
+        "Price": {
+            "M": 4800,
+            "P": 3359,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAICR-A900AYHFR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25391388,
+        "Id": "DECH5M-A900AV7JM-000",
+        "Store": "DEAIG6",
+        "Price": {
+            "M": 1710,
+            "P": 1480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH5M-A900AV7JM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25391406,
+        "Id": "DECH5M-A900AV7JM-001",
+        "Store": "DEAIG6",
+        "Price": {
+            "M": 1710,
+            "P": 1480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH5M-A900AV7JM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25391407,
+        "Id": "DECH5M-A900AV7JM-002",
+        "Store": "DEAIG6",
+        "Price": {
+            "M": 1710,
+            "P": 1480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH5M-A900AV7JM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25426489,
+        "Id": "DEAIK3-A900AVK16-000",
+        "Store": "DEAIK3",
+        "Price": {
+            "M": 930,
+            "P": 629,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIK3-A900AVK16",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443601,
+        "Id": "DECHAG-B900AVQH4-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 100,
+            "P": 85,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 12,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQH4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25752720,
+        "Id": "DECH1D-A900AZDV5-000",
+        "Store": "DECH1D",
+        "Price": {
+            "M": 2080,
+            "P": 1190,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 7,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH1D-A900AZDV5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443594,
+        "Id": "DECHAG-B900AVQHG-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 95,
+            "P": 80,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQHG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26498001,
+        "Id": "DECHAG-B900B81AD-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 180,
+            "P": 135,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B81AD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432735,
+        "Id": "DECHAG-B900AVN00-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 480,
+            "P": 349,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVN00",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25425841,
+        "Id": "DECH0Z-A900AVJXN-000",
+        "Store": "DECH0Z",
+        "Price": {
+            "M": 698,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH0Z-A900AVJXN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25576272,
+        "Id": "DEAIS5-A900AXAY5-000",
+        "Store": "DEAIS5",
+        "Price": {
+            "M": 1299,
+            "P": 990,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIS5-A900AXAY5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25391413,
+        "Id": "DEAI2J-A900AV7KE-000",
+        "Store": "DEAI2J",
+        "Price": {
+            "M": 1280,
+            "P": 990,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI2J-A900AV7KE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443520,
+        "Id": "DECHAG-B900AVQG5-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 319,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQG5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25493095,
+        "Id": "DECHAG-B900AWC7P-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 600,
+            "P": 249,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWC7P",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442998,
+        "Id": "DECHAG-B900AVQ3T-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 39,
+            "P": 29,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQ3T",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26562212,
+        "Id": "DECHAG-B900B8OJB-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 499,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B8OJB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26329437,
+        "Id": "DECHAG-B900B62GZ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 520,
+            "P": 442,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B62GZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443596,
+        "Id": "DECHAG-B900AVQHI-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 45,
+            "P": 40,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQHI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443327,
+        "Id": "DECHAG-B900AVQBZ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 330,
+            "P": 231,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQBZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25391080,
+        "Id": "DECH0T-A900AV7CV-000",
+        "Store": "DECH0T",
+        "Price": {
+            "M": 1036,
+            "P": 649,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH0T-A900AV7CV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25548276,
+        "Id": "DECHAG-B900AWZI4-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 249,
+            "P": 187,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWZI4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443296,
+        "Id": "DECHAG-B900AVQBV-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 220,
+            "P": 154,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQBV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432767,
+        "Id": "DECHAG-B900AVN1G-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 80,
+            "P": 60,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVN1G",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25469929,
+        "Id": "DEAI44-A900AW234-000",
+        "Store": "DECHCB",
+        "Price": {
+            "M": 2680,
+            "P": 2144,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI44-A900AW234",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26103456,
+        "Id": "DECH0Z-A900B3ENK-000",
+        "Store": "DECH0Z",
+        "Price": {
+            "M": 860,
+            "P": 490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH0Z-A900B3ENK",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25491842,
+        "Id": "DECHAG-B900AWBNZ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 75,
+            "P": 57,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWBNZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26035269,
+        "Id": "DECHAG-B900B2NLW-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 120,
+            "P": 94,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B2NLW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26341478,
+        "Id": "DECHAG-B900B67R0-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 699,
+            "P": 499,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B67R0",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365597,
+        "Id": "DEAI0H-A900AUV2B-000",
+        "Store": "DEAIK3",
+        "Price": {
+            "M": 3120,
+            "P": 1240,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI0H-A900AUV2B",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26633147,
+        "Id": "DECHAG-B900BA4VE-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 330,
+            "P": 189,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BA4VE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25540651,
+        "Id": "DECHAG-B900AWWP8-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 290,
+            "P": 239,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWWP8",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432770,
+        "Id": "DECHAG-B900AVN1J-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 330,
+            "P": 172,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVN1J",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432749,
+        "Id": "DECHAG-B900AVN0M-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 440,
+            "P": 290,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVN0M",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26340849,
+        "Id": "DECHAG-B900B67GH-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 440,
+            "P": 390,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B67GH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27189763,
+        "Id": "DECHAG-B900BLCIW-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 300,
+            "P": 240,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BLCIW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25549567,
+        "Id": "DECHAG-B900AWZXE-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 319,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWZXE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25470357,
+        "Id": "DEAI4E-A900AW2FW-000",
+        "Store": "DECHC9",
+        "Price": {
+            "M": 2480,
+            "P": 1984,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI4E-A900AW2FW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443471,
+        "Id": "DECHAG-B900AVQFK-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 200,
+            "P": 89,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQFK",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25530123,
+        "Id": "DECHAG-B900AWRXM-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 560,
+            "P": 349,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWRXM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25530124,
+        "Id": "DECHAG-B900AWRXM-001",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 560,
+            "P": 349,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWRXM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25530125,
+        "Id": "DECHAG-B900AWRXM-002",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 560,
+            "P": 349,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWRXM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25530126,
+        "Id": "DECHAG-B900AWRXM-003",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 560,
+            "P": 349,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWRXM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25530127,
+        "Id": "DECHAG-B900AWRXM-004",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 560,
+            "P": 349,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWRXM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25445565,
+        "Id": "DECHAG-B900AVRDJ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 140,
+            "P": 89,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVRDJ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432788,
+        "Id": "DECHAG-B900AVN15-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 230,
+            "P": 154,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 14,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVN15",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26291608,
+        "Id": "DECHAG-B900B5M1D-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 240,
+            "P": 192,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B5M1D",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25679434,
+        "Id": "DECHAG-B900AYHML-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 100,
+            "P": 75,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AYHML",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442454,
+        "Id": "DECHAG-B900AVPSZ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 168,
+            "P": 126,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVPSZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25790060,
+        "Id": "DECHAG-B900AZUFN-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 650,
+            "P": 455,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AZUFN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26328915,
+        "Id": "DECHAG-B900B629C-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 590,
+            "P": 502,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B629C",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26075749,
+        "Id": "DECHAG-B900B33ZM-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 600,
+            "P": 339,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B33ZM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25540483,
+        "Id": "DECHAG-B900AWWLQ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 290,
+            "P": 232,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWWLQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25540554,
+        "Id": "DECHAG-B900AWWN6-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 290,
+            "P": 239,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWWN6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25641682,
+        "Id": "DECHAG-B900AY281-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 299,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AY281",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432766,
+        "Id": "DECHAG-B900AVN1F-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 539,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVN1F",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25790021,
+        "Id": "DECHAG-B900AZUER-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 650,
+            "P": 455,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AZUER",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25425824,
+        "Id": "DECH0Z-A900AVJX6-000",
+        "Store": "DECH0Z",
+        "Price": {
+            "M": 638,
+            "P": 530,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH0Z-A900AVJX6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26532403,
+        "Id": "DECHAG-B900B8DC4-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 120,
+            "P": 84,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B8DC4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432779,
+        "Id": "DECHAG-B900AVN1S-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 300,
+            "P": 145,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVN1S",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25949788,
+        "Id": "DECHAG-B900B1OL0-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 210,
+            "P": 147,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B1OL0",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365664,
+        "Id": "DEAIZ5-A900AUV31-000",
+        "Store": "DECHC8",
+        "Price": {
+            "M": 1850,
+            "P": 1480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIZ5-A900AUV31",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365681,
+        "Id": "DEAIK3-A900AUV3Q-000",
+        "Store": "DEAI0H",
+        "Price": {
+            "M": 3200,
+            "P": 2100,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIK3-A900AUV3Q",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25790107,
+        "Id": "DECHAG-B900AZUG4-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 650,
+            "P": 455,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AZUG4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25835632,
+        "Id": "DEAIWD-A900B0DZ6-000",
+        "Store": "DECHCM",
+        "Price": {
+            "M": 699,
+            "P": 559,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIWD-A900B0DZ6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26075709,
+        "Id": "DECH0Z-A900B33Z5-000",
+        "Store": "DECH0Z",
+        "Price": {
+            "M": 2400,
+            "P": 1350,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 15,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH0Z-A900B33Z5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443473,
+        "Id": "DECHAG-B900AVQFM-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 90,
+            "P": 72,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQFM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25402704,
+        "Id": "DEAIC3-A900AVB7N-000",
+        "Store": "DEAIC3",
+        "Price": {
+            "M": 1490,
+            "P": 899,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIC3-A900AVB7N",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27367591,
+        "Id": "DECHAG-B900BOOIZ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 100,
+            "P": 75,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BOOIZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25591570,
+        "Id": "DECHAG-B900AXHE8-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 170,
+            "P": 128,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AXHE8",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443592,
+        "Id": "DECHAG-B900AVQHE-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 259,
+            "P": 169,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQHE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25494784,
+        "Id": "DECHAG-B900AWCR6-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWCR6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26341071,
+        "Id": "DECHAG-B900B67KD-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 440,
+            "P": 390,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B67KD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25398749,
+        "Id": "DECH0T-A900AVA74-000",
+        "Store": "DECH0T",
+        "Price": {
+            "M": 1800,
+            "P": 790,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH0T-A900AVA74",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26341641,
+        "Id": "DECHAG-B900B67SA-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 699,
+            "P": 499,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B67SA",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26734045,
+        "Id": "DECHAG-B900BCBUO-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 500,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BCBUO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26734046,
+        "Id": "DECHAG-B900BCBUO-001",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 500,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900BCBUO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26734047,
+        "Id": "DECHAG-B900BCBUO-002",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 500,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BCBUO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26734048,
+        "Id": "DECHAG-B900BCBUO-003",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 500,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900BCBUO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26734049,
+        "Id": "DECHAG-B900BCBUO-004",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 500,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900BCBUO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25934184,
+        "Id": "DECHAG-B900B1I80-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 199,
+            "P": 159,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B1I80",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26341723,
+        "Id": "DECHAG-B900B67TR-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 699,
+            "P": 499,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B67TR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26075734,
+        "Id": "DECH0Z-A900B3405-000",
+        "Store": "DECH0Z",
+        "Price": {
+            "M": 2400,
+            "P": 1200,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH0Z-A900B3405",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26365421,
+        "Id": "DECHAG-B900B6I8S-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 480,
+            "P": 384,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B6I8S",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26900937,
+        "Id": "DECHAG-B900BFXGS-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 420,
+            "P": 220,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BFXGS",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432769,
+        "Id": "DECHAG-B900AVN1I-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 539,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVN1I",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25444991,
+        "Id": "DECHAG-B900AVR40-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 450,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVR40",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25641522,
+        "Id": "DECHAG-B900AY25P-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 299,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AY25P",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26033127,
+        "Id": "DECHAG-B900B2MPZ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 830,
+            "P": 480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B2MPZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26673867,
+        "Id": "DECHAG-B900BB4UJ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 600,
+            "P": 328,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BB4UJ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25752694,
+        "Id": "DECH1D-A900AZDUF-000",
+        "Store": "DECH1D",
+        "Price": {
+            "M": 2080,
+            "P": 1190,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 11,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH1D-A900AZDUF",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26561952,
+        "Id": "DECHAG-B900B8OGY-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 1099,
+            "P": 879,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B8OGY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25444997,
+        "Id": "DECHAG-B900AVR44-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 200,
+            "P": 107,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVR44",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25547720,
+        "Id": "DECHAG-B900AWZ5P-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 119,
+            "P": 119,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWZ5P",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26562393,
+        "Id": "DECHAG-B900B8OLP-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 319,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B8OLP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25391347,
+        "Id": "DEAI42-A900AV7J5-000",
+        "Store": "DECH0D",
+        "Price": {
+            "M": 790,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI42-A900AV7J5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25418314,
+        "Id": "DEAI2U-A900AVGHP-000",
+        "Store": "DEAI2U",
+        "Price": {
+            "M": 1650,
+            "P": 799,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI2U-A900AVGHP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442318,
+        "Id": "DECHAG-B900AVPQN-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 180,
+            "P": 144,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVPQN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25493091,
+        "Id": "DECHAG-B900AWC7L-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 600,
+            "P": 249,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWC7L",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25591563,
+        "Id": "DECHAG-B900AXHDJ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 170,
+            "P": 128,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AXHDJ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26533177,
+        "Id": "DECHAG-B900B8DTM-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 420,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B8DTM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25402624,
+        "Id": "DEAIQ9-A900AVB66-000",
+        "Store": "DECHCN",
+        "Price": {
+            "M": 1199,
+            "P": 959,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIQ9-A900AVB66",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25548933,
+        "Id": "DECHAG-B900AWZS3-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWZS3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25838908,
+        "Id": "DECHAG-B900B0FGB-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 319,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B0FGB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26596023,
+        "Id": "DECHAG-B900B9DNH-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 350,
+            "P": 315,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B9DNH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27294693,
+        "Id": "DECHAG-B900BNC8Y-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 239,
+            "P": 199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BNC8Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27294694,
+        "Id": "DECHAG-B900BNC8Y-001",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 239,
+            "P": 199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BNC8Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27294695,
+        "Id": "DECHAG-B900BNC8Y-002",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 239,
+            "P": 199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BNC8Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27294696,
+        "Id": "DECHAG-B900BNC8Y-003",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 239,
+            "P": 199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BNC8Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27294697,
+        "Id": "DECHAG-B900BNC8Y-004",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 239,
+            "P": 199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BNC8Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27294698,
+        "Id": "DECHAG-B900BNC8Y-005",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 239,
+            "P": 199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BNC8Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25949921,
+        "Id": "DECHAG-B900B1ONE-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 240,
+            "P": 180,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B1ONE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365640,
+        "Id": "DEAITJ-A900AUV38-000",
+        "Store": "DECHCA",
+        "Price": {
+            "M": 880,
+            "P": 528,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAITJ-A900AUV38",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26532203,
+        "Id": "DECHAG-B900B8D8Q-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 130,
+            "P": 98,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B8D8Q",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26673822,
+        "Id": "DECHAG-B900BB4T4-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 600,
+            "P": 328,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BB4T4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26734355,
+        "Id": "DECHAG-B900BCC0G-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 485,
+            "P": 390,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BCC0G",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26734356,
+        "Id": "DECHAG-B900BCC0G-001",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 485,
+            "P": 390,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900BCC0G",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26734357,
+        "Id": "DECHAG-B900BCC0G-002",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 485,
+            "P": 390,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BCC0G",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26734358,
+        "Id": "DECHAG-B900BCC0G-003",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 485,
+            "P": 390,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900BCC0G",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26734359,
+        "Id": "DECHAG-B900BCC0G-004",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 485,
+            "P": 390,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900BCC0G",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25469898,
+        "Id": "DEAIZ5-A900AW22W-000",
+        "Store": "DECHC8",
+        "Price": {
+            "M": 1380,
+            "P": 1104,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIZ5-A900AW22W",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432773,
+        "Id": "DECHAG-B900AVN1M-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 220,
+            "P": 165,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 19,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVN1M",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25491846,
+        "Id": "DECHAG-B900AWBO1-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 180,
+            "P": 144,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 9,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWBO1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25549523,
+        "Id": "DECHAG-B900AWZVU-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWZVU",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25444993,
+        "Id": "DECHAG-B900AVR42-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 349,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVR42",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25494785,
+        "Id": "DECHAG-B900AWCR7-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWCR7",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27043313,
+        "Id": "DECHAG-B900BIE1K-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 130,
+            "P": 104,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BIE1K",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365651,
+        "Id": "DEAIZ5-A900AUV3F-000",
+        "Store": "DECHC8",
+        "Price": {
+            "M": 1600,
+            "P": 1280,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIZ5-A900AUV3F",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25477198,
+        "Id": "DECHAG-B900AW5J9-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 5616,
+            "P": 3490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AW5J9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443351,
+        "Id": "DECHAG-B900AVQCN-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 150,
+            "P": 119,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQCN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443584,
+        "Id": "DECHAG-B900AVQH9-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 400,
+            "P": 209,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQH9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25491850,
+        "Id": "DECHAG-B900AWBO5-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 560,
+            "P": 420,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 14,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWBO5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25641850,
+        "Id": "DECHAG-B900AY2AV-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 350,
+            "P": 350,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AY2AV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442296,
+        "Id": "DECHAG-B900AVPQG-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 150,
+            "P": 120,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVPQG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443304,
+        "Id": "DECHAG-B900AVQBH-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 125,
+            "P": 89,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQBH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443577,
+        "Id": "DECHAG-B900AVQH0-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 199,
+            "P": 199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQH0",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443593,
+        "Id": "DECHAG-B900AVQHF-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 219,
+            "P": 139,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQHF",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25491771,
+        "Id": "DECHAG-B900AWBM9-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 100,
+            "P": 50,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 16,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWBM9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25540653,
+        "Id": "DECHAG-B900AWWPA-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 290,
+            "P": 239,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWWPA",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365768,
+        "Id": "DEAIZG-A900AUV52-000",
+        "Store": "DECHCS",
+        "Price": {
+            "M": 1250,
+            "P": 980,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIZG-A900AUV52",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365652,
+        "Id": "DEAIZ7-A900AUV3H-000",
+        "Store": "DEAIZ6",
+        "Price": {
+            "M": 3050,
+            "P": 2440,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIZ7-A900AUV3H",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25445066,
+        "Id": "DECHAG-B900AVR4B-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 120,
+            "P": 90,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVR4B",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25497204,
+        "Id": "DECHAG-B900AWDWV-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 750,
+            "P": 599,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWDWV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25549196,
+        "Id": "DECHAG-B900AWZUR-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWZUR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25639366,
+        "Id": "DECHAG-B900AY18V-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 180,
+            "P": 135,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AY18V",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25781913,
+        "Id": "DECHAG-B900AZRMZ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 349,
+            "P": 219,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AZRMZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25825843,
+        "Id": "DECHAG-B900B09D6-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 260,
+            "P": 260,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B09D6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26873181,
+        "Id": "DECHAG-B900BFCFQ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 590,
+            "P": 490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BFCFQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365655,
+        "Id": "DEAIZY-A900AUV3K-000",
+        "Store": "DECHC7",
+        "Price": {
+            "M": 1380,
+            "P": 990,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIZY-A900AUV3K",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25444992,
+        "Id": "DECHAG-B900AVR41-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 359,
+            "P": 329,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 15,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVR41",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25497260,
+        "Id": "DECHAG-B900AWDXP-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 750,
+            "P": 599,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWDXP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26291508,
+        "Id": "DECHAG-B900B5LYO-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 280,
+            "P": 224,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B5LYO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26562069,
+        "Id": "DECHAG-B900B8OIM-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 549,
+            "P": 439,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B8OIM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26873757,
+        "Id": "DECHAG-B900BFCUE-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 790,
+            "P": 690,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BFCUE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26873759,
+        "Id": "DECHAG-B900BFCUE-001",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 790,
+            "P": 690,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BFCUE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26873760,
+        "Id": "DECHAG-B900BFCUE-002",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 790,
+            "P": 690,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BFCUE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443437,
+        "Id": "DECHAG-B900AVQEQ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 210,
+            "P": 190,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQEQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25811532,
+        "Id": "DEAI58-A900B02X2-000",
+        "Store": "DEAI58",
+        "Price": {
+            "M": 2200,
+            "P": 1650,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI58-A900B02X2",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27189757,
+        "Id": "DECHAG-B900BLCII-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 320,
+            "P": 256,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BLCII",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443315,
+        "Id": "DECHAG-B900AVQC9-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 50,
+            "P": 39,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 7,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQC9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443591,
+        "Id": "DECHAG-B900AVQHD-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 199,
+            "P": 199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQHD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365663,
+        "Id": "DEAI4E-A900AUV2Z-000",
+        "Store": "DECHC9",
+        "Price": {
+            "M": 5680,
+            "P": 3408,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI4E-A900AUV2Z",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25469796,
+        "Id": "DEAIZ5-A900AW22Z-000",
+        "Store": "DECHC8",
+        "Price": {
+            "M": 1380,
+            "P": 1104,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIZ5-A900AW22Z",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365784,
+        "Id": "DEAIZY-A900AUV5T-000",
+        "Store": "DECHC7",
+        "Price": {
+            "M": 1380,
+            "P": 990,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIZY-A900AUV5T",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443585,
+        "Id": "DECHAG-B900AVQHA-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 199,
+            "P": 199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQHA",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25549047,
+        "Id": "DECHAG-B900AWZTO-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWZTO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26034033,
+        "Id": "DECHAG-B900B2N3H-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 200,
+            "P": 129,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B2N3H",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365667,
+        "Id": "DEAIZ7-A900AUV34-000",
+        "Store": "DEAIZ6",
+        "Price": {
+            "M": 3050,
+            "P": 2440,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIZ7-A900AUV34",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25536652,
+        "Id": "DECHAG-B900AWUXY-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 290,
+            "P": 232,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWUXY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25825941,
+        "Id": "DECHAG-B900B09EY-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 260,
+            "P": 260,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B09EY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26034030,
+        "Id": "DECHAG-B900B2N3D-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 200,
+            "P": 129,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B2N3D",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26218154,
+        "Id": "DECHAG-B900B4U26-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 240,
+            "P": 168,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B4U26",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26534341,
+        "Id": "DECHAG-B900B8E9W-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 180,
+            "P": 129,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B8E9W",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25425788,
+        "Id": "DEAIYT-A900AVJW6-000",
+        "Store": "DEAIYT",
+        "Price": {
+            "M": 1077,
+            "P": 980,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIYT-A900AVJW6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443436,
+        "Id": "DECHAG-B900AVQEP-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 210,
+            "P": 190,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQEP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25641638,
+        "Id": "DECHAG-B900AY288-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 299,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AY288",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26534472,
+        "Id": "DECHAG-B900B8EDL-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 190,
+            "P": 139,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 7,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B8EDL",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365662,
+        "Id": "DEAITJ-A900AUV2Y-000",
+        "Store": "DECHC9",
+        "Price": {
+            "M": 2480,
+            "P": 1488,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAITJ-A900AUV2Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25494854,
+        "Id": "DECHAG-B900AWCSP-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 990,
+            "P": 990,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWCSP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25949859,
+        "Id": "DECHAG-B900B1OMY-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 280,
+            "P": 196,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B1OMY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26075712,
+        "Id": "DECHAG-B900B33Z6-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 600,
+            "P": 339,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B33Z6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26340752,
+        "Id": "DECHAG-B900B67FM-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 415,
+            "P": 370,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B67FM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27189758,
+        "Id": "DECHAG-B900BLCJ3-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 350,
+            "P": 280,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BLCJ3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25530105,
+        "Id": "DEAI29-A900AWRWM-000",
+        "Store": "DECH5A",
+        "Price": {
+            "M": 899,
+            "P": 529,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI29-A900AWRWM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25530106,
+        "Id": "DEAI29-A900AWRWM-001",
+        "Store": "DECH5A",
+        "Price": {
+            "M": 899,
+            "P": 529,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI29-A900AWRWM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25530107,
+        "Id": "DEAI29-A900AWRWM-002",
+        "Store": "DECH5A",
+        "Price": {
+            "M": 899,
+            "P": 529,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI29-A900AWRWM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25530108,
+        "Id": "DEAI29-A900AWRWM-003",
+        "Store": "DECH5A",
+        "Price": {
+            "M": 899,
+            "P": 529,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI29-A900AWRWM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25811501,
+        "Id": "DEAI58-A900B02WE-000",
+        "Store": "DEAI58",
+        "Price": {
+            "M": 2200,
+            "P": 1650,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI58-A900B02WE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25445566,
+        "Id": "DECHAG-B900AVRDK-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 158,
+            "P": 99,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVRDK",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432737,
+        "Id": "DECHAG-B900AVN02-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 590,
+            "P": 470,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVN02",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443579,
+        "Id": "DECHAG-B900AVQH2-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 129,
+            "P": 79,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQH2",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25494790,
+        "Id": "DECHAG-B900AWCRC-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWCRC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25540637,
+        "Id": "DECHAG-B900AWWOR-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 290,
+            "P": 239,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWWOR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25548275,
+        "Id": "DECHAG-B900AWZI3-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 299,
+            "P": 224,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWZI3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26075958,
+        "Id": "DECHAG-B900B343B-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 660,
+            "P": 369,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B343B",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26562297,
+        "Id": "DECHAG-B900B8OKV-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 349,
+            "P": 279,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B8OKV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26633256,
+        "Id": "DECHAG-B900BA4Y7-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 330,
+            "P": 189,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BA4Y7",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25585857,
+        "Id": "DECHAG-B900AXFC3-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 100,
+            "P": 55,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AXFC3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26340904,
+        "Id": "DECHAG-B900B67GR-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 415,
+            "P": 370,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B67GR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26364969,
+        "Id": "DECHAG-B900B6I25-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 250,
+            "P": 188,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B6I25",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25601088,
+        "Id": "DECH0T-A900AXLFI-000",
+        "Store": "DECH0T",
+        "Price": {
+            "M": 1036,
+            "P": 649,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECH0T-A900AXLFI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442968,
+        "Id": "DECHAG-B900AVQ2O-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 300,
+            "P": 225,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQ2O",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25497128,
+        "Id": "DECHAG-B900AWDW1-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 750,
+            "P": 599,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWDW1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25540485,
+        "Id": "DECHAG-B900AWWLS-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 290,
+            "P": 232,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWWLS",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25838932,
+        "Id": "DECHAG-B900B0FH3-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 319,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B0FH3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26633177,
+        "Id": "DECHAG-B900BA4X5-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 270,
+            "P": 169,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BA4X5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27367589,
+        "Id": "DECHAG-B900BOOIW-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 100,
+            "P": 75,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BOOIW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26632984,
+        "Id": "DECHAG-B900BA4SQ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 270,
+            "P": 169,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BA4SQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442971,
+        "Id": "DECHAG-B900AVQ3W-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 300,
+            "P": 225,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQ3W",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25781916,
+        "Id": "DECHAG-B900AZRN2-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 349,
+            "P": 219,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AZRN2",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25790047,
+        "Id": "DECHAG-B900AZUFE-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 650,
+            "P": 455,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AZUFE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26329497,
+        "Id": "DECHAG-B900B62IC-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 460,
+            "P": 391,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B62IC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26334892,
+        "Id": "DECHAG-B900B64SV-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 128,
+            "P": 96,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B64SV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26534226,
+        "Id": "DECHAG-B900B8E7R-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 180,
+            "P": 129,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 9,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B8E7R",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442457,
+        "Id": "DECHAG-B900AVPT2-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 285,
+            "P": 214,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVPT2",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443485,
+        "Id": "DECHAG-B900AVQF3-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 200,
+            "P": 89,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQF3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25548935,
+        "Id": "DECHAG-B900AWZS5-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWZS5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25934382,
+        "Id": "DECHAG-B900B1IAH-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 199,
+            "P": 159,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B1IAH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26001541,
+        "Id": "DECHAG-B900B2A1E-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 220,
+            "P": 139,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B2A1E",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26291581,
+        "Id": "DECHAG-B900B5M0G-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 350,
+            "P": 280,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B5M0G",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26640430,
+        "Id": "DECHAG-B900BAARE-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 550,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BAARE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27189740,
+        "Id": "DECHAG-B900BLCI9-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 320,
+            "P": 256,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BLCI9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442192,
+        "Id": "DECHAG-B900AVPPB-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 310,
+            "P": 210,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVPPB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25445586,
+        "Id": "DECHAG-B900AVRE4-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 75,
+            "P": 56,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVRE4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25549048,
+        "Id": "DECHAG-B900AWZTP-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWZTP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25836268,
+        "Id": "DECHAG-B900B0EA1-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 7440,
+            "P": 3690,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B0EA1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26291707,
+        "Id": "DECHAG-B900B5M2F-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 350,
+            "P": 280,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B5M2F",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26872751,
+        "Id": "DECHAG-B900BFC9K-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 590,
+            "P": 490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BFC9K",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25396061,
+        "Id": "DEAIVL-A900AVA0Z-000",
+        "Store": "DEAIVL",
+        "Price": {
+            "M": 1350,
+            "P": 890,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIVL-A900AVA0Z",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432760,
+        "Id": "DECHAG-B900AVN0X-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 425,
+            "P": 380,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVN0X",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443506,
+        "Id": "DECHAG-B900AVQFW-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 306,
+            "P": 249,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQFW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443586,
+        "Id": "DECHAG-B900AVQHB-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 199,
+            "P": 199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQHB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25540655,
+        "Id": "DECHAG-B900AWWPC-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 290,
+            "P": 239,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWWPC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26873551,
+        "Id": "DECHAG-B900BFCQX-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 690,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BFCQX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26873527,
+        "Id": "DECHAG-B900BFCQX-001",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 690,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BFCQX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26873529,
+        "Id": "DECHAG-B900BFCQX-003",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 690,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BFCQX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26873528,
+        "Id": "DECHAG-B900BFCQX-002",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 690,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BFCQX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442844,
+        "Id": "DECHAG-B900AVQ1A-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 550,
+            "P": 358,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 11,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQ1A",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25536512,
+        "Id": "DECHAG-B900AWUUH-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 330,
+            "P": 264,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWUUH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25549591,
+        "Id": "DECHAG-B900AWZX4-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 319,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWZX4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25641973,
+        "Id": "DECHAG-B900AY2CR-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 350,
+            "P": 350,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AY2CR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25838899,
+        "Id": "DECHAG-B900B0FG2-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 319,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B0FG2",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26873374,
+        "Id": "DECHAG-B900BFCL0-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 690,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BFCL0",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26873375,
+        "Id": "DECHAG-B900BFCL0-001",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 690,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BFCL0",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26873376,
+        "Id": "DECHAG-B900BFCL0-002",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 690,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BFCL0",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26873377,
+        "Id": "DECHAG-B900BFCL0-003",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 690,
+            "P": 590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BFCL0",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442992,
+        "Id": "DECHAG-B900AVQ3P-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 300,
+            "P": 225,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVQ3P",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25933871,
+        "Id": "DECHAG-B900B1I44-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 319,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B1I44",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27189717,
+        "Id": "DECHAG-B900BLCIQ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 300,
+            "P": 240,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900BLCIQ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365673,
+        "Id": "DEAIVL-A900AUV3U-000",
+        "Store": "DEAIVL",
+        "Price": {
+            "M": 1900,
+            "P": 1296,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIVL-A900AUV3U",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25445017,
+        "Id": "DECHAG-B900AVR3G-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 319,
+            "P": 269,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AVR3G",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25491782,
+        "Id": "DECHAG-B900AWBN4-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 400,
+            "P": 288,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900AWBN4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25933822,
+        "Id": "DECHAG-B900B1I2E-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 319,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B1I2E",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25933958,
+        "Id": "DECHAG-B900B1I5B-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 319,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900B1I5B",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34960769,
+        "Id": "DECHAG-B900FXGHD-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 120,
+            "P": 120,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900FXGHD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34963741,
+        "Id": "DECHAG-B900FXHY4-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 315,
+            "P": 315,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900FXHY4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34963772,
+        "Id": "DECHAG-B900FXHYY-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 470,
+            "P": 470,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900FXHYY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34968306,
+        "Id": "DECHAG-B900FXJJ2-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 2480,
+            "P": 2480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900FXJJ2",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34968412,
+        "Id": "DECHAG-B900FXJJO-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 3720,
+            "P": 3720,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900FXJJO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 34968716,
+        "Id": "DECHAG-B900FXJLZ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 850,
+            "P": 850,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHAG-B900FXJLZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365575,
+        "Id": "DECH0T-A900AUV1R-000",
+        "Store": "DECH0T",
+        "Price": {
+            "M": 3360,
+            "P": 1350,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECH0T-A900AUV1R",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25789764,
+        "Id": "DEAIZG-A900AZU89-000",
+        "Store": "DECHCS",
+        "Price": {
+            "M": 3388,
+            "P": 2680,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIZG-A900AZU89",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25391346,
+        "Id": "DECH0T-A900AV7J4-000",
+        "Store": "DECH0T",
+        "Price": {
+            "M": 3360,
+            "P": 1350,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECH0T-A900AV7J4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365799,
+        "Id": "DECH45-A900AUV68-000",
+        "Store": "DECH45",
+        "Price": {
+            "M": 5180,
+            "P": 3280,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECH45-A900AUV68",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25391410,
+        "Id": "DEAIVI-A900AV7KB-000",
+        "Store": "DEAIVI",
+        "Price": {
+            "M": 690,
+            "P": 480,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIVI-A900AV7KB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26640388,
+        "Id": "DECHAG-B900BAAQ0-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 550,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900BAAQ0",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443530,
+        "Id": "DECHAG-B900AVQFI-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 276,
+            "P": 276,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVQFI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25438937,
+        "Id": "DECH0T-A900AVO27-000",
+        "Store": "DECH0T",
+        "Price": {
+            "M": 2460,
+            "P": 990,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECH0T-A900AVO27",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25402641,
+        "Id": "DECH0T-A900AVB5K-000",
+        "Store": "DECH0T",
+        "Price": {
+            "M": 1600,
+            "P": 676,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECH0T-A900AVB5K",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442902,
+        "Id": "DECHAG-B900AVQ25-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 430,
+            "P": 280,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVQ25",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432750,
+        "Id": "DECHAG-B900AVN0N-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 145,
+            "P": 108,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVN0N",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26534443,
+        "Id": "DECHAG-B900B8ED0-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 240,
+            "P": 169,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900B8ED0",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25425846,
+        "Id": "DEAIVI-A900AVJXS-000",
+        "Store": "DEAIVI",
+        "Price": {
+            "M": 720,
+            "P": 490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIVI-A900AVJXS",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26035243,
+        "Id": "DECHAG-B900B2NLH-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 120,
+            "P": 84,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900B2NLH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443501,
+        "Id": "DECHAG-B900AVQFR-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 315,
+            "P": 279,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVQFR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25391103,
+        "Id": "DECH0T-A900AV7CY-000",
+        "Store": "DECH0T",
+        "Price": {
+            "M": 1752,
+            "P": 990,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECH0T-A900AV7CY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26033419,
+        "Id": "DECHAG-B900B2MVG-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 840,
+            "P": 500,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900B2MVG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442270,
+        "Id": "DECHAG-B900AVPPX-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 150,
+            "P": 113,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVPPX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25447116,
+        "Id": "DEAIVL-A900AVS77-000",
+        "Store": "DEAIVL",
+        "Price": {
+            "M": 1700,
+            "P": 1200,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIVL-A900AVS77",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442552,
+        "Id": "DECHAG-B900AVPVV-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 450,
+            "P": 293,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVPVV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25934045,
+        "Id": "DECHAG-B900B1I6M-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 319,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900B1I6M",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432782,
+        "Id": "DECHAG-B900AVN0Z-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 240,
+            "P": 180,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVN0Z",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26329469,
+        "Id": "DECHAG-B900B62H9-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 490,
+            "P": 416,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900B62H9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26341418,
+        "Id": "DECHAG-B900B67PW-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 699,
+            "P": 499,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900B67PW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26365462,
+        "Id": "DECHAG-B900B6I9L-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 480,
+            "P": 384,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900B6I9L",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25548953,
+        "Id": "DECHAG-B900AWZSN-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 319,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWZSN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25477625,
+        "Id": "DECHAG-B900AW5KO-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 2880,
+            "P": 1750,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AW5KO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25421603,
+        "Id": "DECH0V-A900AVHOI-000",
+        "Store": "DECH0V",
+        "Price": {
+            "M": 2640,
+            "P": 1699,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECH0V-A900AVHOI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25491745,
+        "Id": "DECHAG-B900AWBMC-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 280,
+            "P": 210,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWBMC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25491761,
+        "Id": "DECHAG-B900AWBMC-001",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 280,
+            "P": 210,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWBMC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25491762,
+        "Id": "DECHAG-B900AWBMC-002",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 280,
+            "P": 210,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWBMC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25491763,
+        "Id": "DECHAG-B900AWBMC-003",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 280,
+            "P": 210,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWBMC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25933591,
+        "Id": "DECHAG-B900B1I0C-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 319,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900B1I0C",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442848,
+        "Id": "DECHAG-B900AVQ1E-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 230,
+            "P": 150,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVQ1E",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432777,
+        "Id": "DECHAG-B900AVN1Q-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 120,
+            "P": 89,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVN1Q",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25444801,
+        "Id": "DECHAG-B900AVQYZ-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 140,
+            "P": 59,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVQYZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443455,
+        "Id": "DECHAG-B900AVQEC-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 210,
+            "P": 190,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVQEC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25678814,
+        "Id": "DECH45-A900AYHAU-000",
+        "Store": "DECH45",
+        "Price": {
+            "M": 10190,
+            "P": 4280,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECH45-A900AYHAU",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26584082,
+        "Id": "DECHAG-B900B94RA-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 380,
+            "P": 266,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900B94RA",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25447059,
+        "Id": "DEAIVL-A900AVS6X-000",
+        "Store": "DEAIVL",
+        "Price": {
+            "M": 1700,
+            "P": 1200,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIVL-A900AVS6X",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442394,
+        "Id": "DECHAG-B900AVPRT-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 260,
+            "P": 56,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVPRT",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365800,
+        "Id": "DECH46-A900AUV69-000",
+        "Store": "DECH46",
+        "Price": {
+            "M": 4300,
+            "P": 1880,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECH46-A900AUV69",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25445537,
+        "Id": "DECHAG-B900AVRCR-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 200,
+            "P": 99,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVRCR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25391362,
+        "Id": "DEAIXN-A900AV7IU-000",
+        "Store": "DECH61",
+        "Price": {
+            "M": 690,
+            "P": 469,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIXN-A900AV7IU",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443295,
+        "Id": "DECHAG-B900AVQBT-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 250,
+            "P": 125,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVQBT",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25425809,
+        "Id": "DEAIYT-A900AVJWR-000",
+        "Store": "DEAIYT",
+        "Price": {
+            "M": 1350,
+            "P": 1190,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIYT-A900AVJWR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442582,
+        "Id": "DECHAG-B900AVPWP-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 220,
+            "P": 143,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVPWP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25474218,
+        "Id": "DECHAG-B900AW45Y-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 9600,
+            "P": 2990,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AW45Y",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25826471,
+        "Id": "DECHAG-B900B09MG-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 439,
+            "P": 420,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900B09MG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432732,
+        "Id": "DECHAG-B900AVMZX-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 400,
+            "P": 179,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVMZX",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25445567,
+        "Id": "DECHAG-B900AVRDL-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 110,
+            "P": 85,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVRDL",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432775,
+        "Id": "DECHAG-B900AVN1O-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 180,
+            "P": 120,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVN1O",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25421698,
+        "Id": "DECH0V-A900AVHR3-000",
+        "Store": "DECH0V",
+        "Price": {
+            "M": 3960,
+            "P": 2690,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECH0V-A900AVHR3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25599922,
+        "Id": "DECHAG-B900AXKW6-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 730,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AXKW6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25491821,
+        "Id": "DECHAG-B900AWBNF-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 420,
+            "P": 302,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWBNF",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442334,
+        "Id": "DECHAG-B900AVPQY-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 150,
+            "P": 120,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVPQY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25781899,
+        "Id": "DECHAG-B900AZRNB-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 780,
+            "P": 490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AZRNB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25836186,
+        "Id": "DEAIWD-A900B0E8Q-000",
+        "Store": "DECHCM",
+        "Price": {
+            "M": 1199,
+            "P": 959,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIWD-A900B0E8Q",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432758,
+        "Id": "DECHAG-B900AVN0V-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 425,
+            "P": 380,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVN0V",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443493,
+        "Id": "DECHAG-B900AVQF9-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 229,
+            "P": 199,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVQF9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25443531,
+        "Id": "DECHAG-B900AVQGN-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 399,
+            "P": 319,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVQGN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25445028,
+        "Id": "DECHAG-B900AVR3J-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 480,
+            "P": 239,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVR3J",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26329483,
+        "Id": "DECHAG-B900B62I0-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 520,
+            "P": 442,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900B62I0",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25547743,
+        "Id": "DECHAG-B900AWZ5S-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 45,
+            "P": 45,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWZ5S",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25678957,
+        "Id": "DECHAG-B900AYHDD-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 499,
+            "P": 450,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AYHDD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26033427,
+        "Id": "DECHAG-B900B2MV6-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 420,
+            "P": 315,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900B2MV6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25530109,
+        "Id": "DECHAG-B900AWRWN-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 650,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWRWN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25530110,
+        "Id": "DECHAG-B900AWRWN-001",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 650,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWRWN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25530111,
+        "Id": "DECHAG-B900AWRWN-002",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 650,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWRWN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25530112,
+        "Id": "DECHAG-B900AWRWN-003",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 650,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWRWN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25530113,
+        "Id": "DECHAG-B900AWRWN-004",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 650,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWRWN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25540513,
+        "Id": "DECHAG-B900AWWMI-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 290,
+            "P": 239,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWWMI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442559,
+        "Id": "DECHAG-B900AVPW2-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 140,
+            "P": 91,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVPW2",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25679254,
+        "Id": "DECH45-A900AYHIC-000",
+        "Store": "DECH45",
+        "Price": {
+            "M": 1180,
+            "P": 950,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECH45-A900AYHIC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25365806,
+        "Id": "DECH0I-A900AUV6O-000",
+        "Store": "DECH0I",
+        "Price": {
+            "M": 1200,
+            "P": 599,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECH0I-A900AUV6O",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442261,
+        "Id": "DECHAG-B900AVPPO-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 220,
+            "P": 175,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVPPO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442564,
+        "Id": "DECHAG-B900AVPW3-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 180,
+            "P": 117,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVPW3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432764,
+        "Id": "DECHAG-B900AVN1D-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 540,
+            "P": 369,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVN1D",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442460,
+        "Id": "DECHAG-B900AVPT4-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 195,
+            "P": 146,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVPT4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25442495,
+        "Id": "DECHAG-B900AVPU1-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 530,
+            "P": 345,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVPU1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26164790,
+        "Id": "DECHAG-B900B45MN-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 480,
+            "P": 380,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900B45MN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25444989,
+        "Id": "DECHAG-B900AVR2S-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 490,
+            "P": 465,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVR2S",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25491780,
+        "Id": "DECHAG-B900AWBN2-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 420,
+            "P": 302,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWBN2",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25491802,
+        "Id": "DECHAG-B900AWBMT-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 420,
+            "P": 302,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AWBMT",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27189791,
+        "Id": "DECHAG-B900BLCJG-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 350,
+            "P": 280,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900BLCJG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25432745,
+        "Id": "DECHAG-B900AVN0I-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 450,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AVN0I",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25641230,
+        "Id": "DECHAG-B900AY20U-000",
+        "Store": "DECHAG",
+        "Price": {
+            "M": 499,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHAG-B900AY20U",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

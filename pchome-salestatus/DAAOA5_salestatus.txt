@@ -1,0 +1,74 @@
+[
+    {
+        "Seq": 32880245,
+        "Id": "DAAO8S-A900F18UN-000",
+        "Store": "DAAOA5",
+        "Price": {
+            "M": 1699,
+            "P": 1549,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO8S-A900F18UN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 32880291,
+        "Id": "DAAO8S-A900F18VZ-000",
+        "Store": "DAAOA5",
+        "Price": {
+            "M": 1699,
+            "P": 1549,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO8S-A900F18VZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33044836,
+        "Id": "DAAO8S-1900F5EKJ-000",
+        "Store": "DAAOA5",
+        "Price": {
+            "M": 0,
+            "P": 3098,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO8S-1900F5EKJ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33044839,
+        "Id": "DAAO8S-1900F5EKM-000",
+        "Store": "DAAOA5",
+        "Price": {
+            "M": 0,
+            "P": 3098,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO8S-1900F5EKM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

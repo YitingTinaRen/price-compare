@@ -1,0 +1,74 @@
+[
+    {
+        "Seq": 27256383,
+        "Id": "DAAO99-A900BML9F-000",
+        "Store": "DAAO99",
+        "Price": {
+            "M": 390,
+            "P": 279,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO99-A900BML9F",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33462700,
+        "Id": "DAAO99-A900FC2O6-000",
+        "Store": "DAAO99",
+        "Price": {
+            "M": 1420,
+            "P": 1299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 9,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO99-A900FC2O6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33462588,
+        "Id": "DAAO99-A900FC2NH-000",
+        "Store": "DAAO99",
+        "Price": {
+            "M": 1420,
+            "P": 1299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO99-A900FC2NH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33462793,
+        "Id": "DAAO99-A900FC2PW-000",
+        "Store": "DAAO99",
+        "Price": {
+            "M": 1420,
+            "P": 1299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO99-A900FC2PW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

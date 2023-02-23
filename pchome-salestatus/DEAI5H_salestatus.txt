@@ -1,0 +1,524 @@
+[
+    {
+        "Seq": 16638569,
+        "Id": "DEAI5H-A9007JR9A-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 780,
+            "P": 308,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI5H-A9007JR9A",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16638518,
+        "Id": "DEAI5H-A9007JR7O-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 980,
+            "P": 376,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI5H-A9007JR7O",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23788082,
+        "Id": "DEAI5H-1900AC9MP-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 0,
+            "P": 1950,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAI5H-1900AC9MP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20233722,
+        "Id": "QFATFO-A90091JAM-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 980,
+            "P": 850,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATFO-A90091JAM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 21063541,
+        "Id": "QFATFO-A9009ERS4-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 880,
+            "P": 580,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATFO-A9009ERS4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20217897,
+        "Id": "QFATFO-A90091A2O-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 980,
+            "P": 850,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATFO-A90091A2O",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20233878,
+        "Id": "QFATFO-A90091JBO-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 980,
+            "P": 850,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATFO-A90091JBO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16638561,
+        "Id": "DEAI5H-A9007JR92-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 880,
+            "P": 477,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI5H-A9007JR92",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16640535,
+        "Id": "DEAI5H-A9007JSGI-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 880,
+            "P": 499,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI5H-A9007JSGI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16724327,
+        "Id": "QFATFO-A9007L3DE-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 280,
+            "P": 280,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATFO-A9007L3DE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 17523037,
+        "Id": "QFATFO-A9007XPER-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 880,
+            "P": 680,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATFO-A9007XPER",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16721790,
+        "Id": "QFATFO-A9007L1VU-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 0,
+            "P": 280,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATFO-A9007L1VU",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16629671,
+        "Id": "QFATFO-A9007JLLW-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 880,
+            "P": 680,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATFO-A9007JLLW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16626850,
+        "Id": "QFATFO-A9007JKA2-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 780,
+            "P": 580,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATFO-A9007JKA2",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16638558,
+        "Id": "DEAI5H-A9007JR9R-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 880,
+            "P": 499,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI5H-A9007JR9R",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16638519,
+        "Id": "DEAI5H-A9007JRAH-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 950,
+            "P": 477,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI5H-A9007JRAH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16638562,
+        "Id": "DEAI5H-A9007JR93-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 880,
+            "P": 499,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI5H-A9007JR93",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16638494,
+        "Id": "DEAI5H-A9007JR8V-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 880,
+            "P": 477,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI5H-A9007JR8V",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16638498,
+        "Id": "DEAI5H-A9007JR8Z-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 880,
+            "P": 477,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI5H-A9007JR8Z",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16638479,
+        "Id": "DEAI5H-A9007JR6K-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 880,
+            "P": 499,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI5H-A9007JR6K",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16638492,
+        "Id": "DEAI5H-A9007JR8T-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 880,
+            "P": 467,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI5H-A9007JR8T",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16629549,
+        "Id": "QFATFO-A9007JLJP-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 880,
+            "P": 680,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATFO-A9007JLJP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16724233,
+        "Id": "QFATFO-A9007L3C7-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 280,
+            "P": 280,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATFO-A9007L3C7",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16721841,
+        "Id": "QFATFO-A9007L1XY-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 280,
+            "P": 280,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATFO-A9007L1XY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16640502,
+        "Id": "QFATFO-A9007JSF6-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 880,
+            "P": 680,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATFO-A9007JSF6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16638509,
+        "Id": "QFATFO-A9007JR7F-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 880,
+            "P": 680,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATFO-A9007JR7F",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27709177,
+        "Id": "DEAI5H-1900BVLF3-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 0,
+            "P": 1099,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI5H-1900BVLF3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23788101,
+        "Id": "DEAI5H-1900AC9MH-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 0,
+            "P": 1950,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAI5H-1900AC9MH",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25122409,
+        "Id": "QFATFO-A900AS0A6-000",
+        "Store": "DEAI5H",
+        "Price": {
+            "M": 280,
+            "P": 250,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "QFATFO-A900AS0A6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

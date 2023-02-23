@@ -1,0 +1,128 @@
+[
+    {
+        "Seq": 14308930,
+        "Id": "DEAU4Y-A9006I4C7-000",
+        "Store": "DEAU4Y",
+        "Price": {
+            "M": 1290,
+            "P": 946,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAU4Y-A9006I4C7",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14530259,
+        "Id": "DEAILV-A9006LF6Z-000",
+        "Store": "DEAILV",
+        "Price": {
+            "M": 1030,
+            "P": 670,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAILV-A9006LF6Z",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 9849193,
+        "Id": "DEAI29-A78652848-000",
+        "Store": "DEAIMX",
+        "Price": {
+            "M": 480,
+            "P": 380,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAI29-A78652848",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14529957,
+        "Id": "DEAILV-A9006LF2N-000",
+        "Store": "DEAILV",
+        "Price": {
+            "M": 1030,
+            "P": 670,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAILV-A9006LF2N",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14530085,
+        "Id": "DEAILV-A9006LF4Q-000",
+        "Store": "DEAILV",
+        "Price": {
+            "M": 1030,
+            "P": 670,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAILV-A9006LF4Q",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14530016,
+        "Id": "DEAILV-A9006LF4M-000",
+        "Store": "DEAILV",
+        "Price": {
+            "M": 1030,
+            "P": 670,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAILV-A9006LF4M",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14530087,
+        "Id": "DEAILV-A9006LF4S-000",
+        "Store": "DEAILV",
+        "Price": {
+            "M": 1030,
+            "P": 670,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAILV-A9006LF4S",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

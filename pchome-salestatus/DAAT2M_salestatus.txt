@@ -1,0 +1,38 @@
+[
+    {
+        "Seq": 16552838,
+        "Id": "DAAT0S-A9007IDE4-000",
+        "Store": "DAAT0S",
+        "Price": {
+            "M": 729,
+            "P": 699,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0S-A9007IDE4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16553060,
+        "Id": "DAAT0S-A9007IDI8-000",
+        "Store": "DAAT0S",
+        "Price": {
+            "M": 199,
+            "P": 139,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT0S-A9007IDI8",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "Id": "DEAU6W-A9006KBQG-000",
+        "Nick": "TFK Dot城市小旅人 專用配件- 雨罩",
+        "Pic": {
+            "B": "/items/DEAU6WA9006KBQG/000001_1478486407.jpg",
+            "S": "/items/DEAU6WA9006KBQG/000001_1478486407.jpg"
+        },
+        "Price": {
+            "M": 0,
+            "P": 403,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "TFK Dot城市小旅人 專用配件- 雨罩",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DEAU6W-A9006KBME-000",
+        "Nick": "TFK Buggster雲端小遊俠 專用配件- 雨罩",
+        "Pic": {
+            "B": "/items/DEAU6WA9006KBME/000001_1478486398.jpg",
+            "S": "/items/DEAU6WA9006KBME/000001_1478486398.jpg"
+        },
+        "Price": {
+            "M": 0,
+            "P": 825,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "TFK Buggster雲端小遊俠 專用配件- 雨罩",
+        "OriginPrice": {}
+    },
+    {
+        "Category": {
+            "L0CategoryCode": "DEAU",
+            "L0CategoryName": "推車汽座",
+            "L1CategoryCode": "DEAU22C",
+            "L1CategoryName": "嬰幼兒推車",
+            "L2CategoryCode": "DEAU6W",
+            "L2CategoryName": "◤TFK手推車"
+        }
+    }
+]

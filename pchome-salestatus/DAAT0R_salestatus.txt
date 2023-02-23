@@ -1,0 +1,182 @@
+[
+    {
+        "Seq": 22167065,
+        "Id": "DAAT0R-19009UD4V-000",
+        "Store": "DAAT0R",
+        "Price": {
+            "M": 2028,
+            "P": 1118,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0R-19009UD4V",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27409352,
+        "Id": "DAAT0R-1900BPII3-000",
+        "Store": "DAAT0R",
+        "Price": {
+            "M": 0,
+            "P": 1118,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0R-1900BPII3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20199241,
+        "Id": "DAAT0R-A90091009-000",
+        "Store": "DAAT0R",
+        "Price": {
+            "M": 1014,
+            "P": 559,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0R-A90091009",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20199223,
+        "Id": "DAAT0R-A90090ZZP-000",
+        "Store": "DAAT0R",
+        "Price": {
+            "M": 1014,
+            "P": 559,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0R-A90090ZZP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16215973,
+        "Id": "DAAT0R-A9007DGSK-000",
+        "Store": "DAAT0R",
+        "Price": {
+            "M": 0,
+            "P": 159,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0R-A9007DGSK",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 17491277,
+        "Id": "DAAT0R-19007X65P-000",
+        "Store": "DAAT0R",
+        "Price": {
+            "M": 774,
+            "P": 530,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0R-19007X65P",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16321446,
+        "Id": "DAAT0R-19007F0I4-000",
+        "Store": "DAAT0R",
+        "Price": {
+            "M": 358,
+            "P": 318,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0R-19007F0I4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16215447,
+        "Id": "DAAT0R-A9007DGG5-000",
+        "Store": "DAAT0R",
+        "Price": {
+            "M": 0,
+            "P": 72,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0R-A9007DGG5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16215333,
+        "Id": "DAAT0R-A9007DGGJ-000",
+        "Store": "DAAT0R",
+        "Price": {
+            "M": 0,
+            "P": 159,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0R-A9007DGGJ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27073032,
+        "Id": "DAAT0R-A900BJ285-000",
+        "Store": "DAAT0R",
+        "Price": {
+            "M": 699,
+            "P": 579,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0R-A900BJ285",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

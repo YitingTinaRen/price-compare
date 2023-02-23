@@ -1,0 +1,113 @@
+[
+    {
+        "Id": "DEAUAX-A900B1T6P-000",
+        "Nick": "B+B 時尚純靜媽媽包-紫",
+        "Pic": {
+            "B": "/items/DEAUAXA900B1T6P/000001_1608185562.jpg",
+            "S": "/items/DEAUAXA900B1T6P/000002_1608185562.jpg"
+        },
+        "Price": {
+            "M": 2280,
+            "P": 1590,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "B+B 時尚純靜媽媽包-紫",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DEAUAX-A900B1T4Q-000",
+        "Nick": "B+B 休閒純靜側背媽媽包-紫 ",
+        "Pic": {
+            "B": "/items/DEAUAXA900B1T4Q/000001_1608184909.jpg",
+            "S": "/items/DEAUAXA900B1T4Q/000002_1608184909.jpg"
+        },
+        "Price": {
+            "M": 2480,
+            "P": 1690,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "B+B 休閒純靜側背媽媽包-紫",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DEAUAX-A900B2CPY-000",
+        "Nick": "baby street 雙色實用後揹包",
+        "Pic": {
+            "B": "/items/DEAUAXA900B2CPY/000001_1608875257.jpg",
+            "S": "/items/DEAUAXA900B2CPY/000002_1608875257.jpg"
+        },
+        "Price": {
+            "M": 1580,
+            "P": 1280,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "baby street 雙色實用後揹包",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DEAUAX-A900B29J9-000",
+        "Nick": "B+B 時尚B媽媽空氣包-紫  ",
+        "Pic": {
+            "B": "/items/DEAUAXA900B29J9/000001_1608781444.jpg",
+            "S": "/items/DEAUAXA900B29J9/000002_1608781444.jpg"
+        },
+        "Price": {
+            "M": 1580,
+            "P": 1090,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "B+B 時尚B媽媽空氣包-紫",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DEAUAX-A900B2CQ4-000",
+        "Nick": "B+B 時尚純靜媽媽包-綠 ",
+        "Pic": {
+            "B": "/items/DEAUAXA900B2CQ4/000001_1608875365.jpg",
+            "S": "/items/DEAUAXA900B2CQ4/000002_1608875365.jpg"
+        },
+        "Price": {
+            "M": 2280,
+            "P": 1590,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "B+B 時尚純靜媽媽包-綠",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DEAUAX-A900B2CPB-000",
+        "Nick": "baby street 雙色機能媽咪包",
+        "Pic": {
+            "B": "/items/DEAUAXA900B2CPB/000001_1635920249.jpg",
+            "S": "/items/DEAUAXA900B2CPB/000002_1635920249.jpg"
+        },
+        "Price": {
+            "M": 1680,
+            "P": 1490,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "baby street 雙色機能媽咪包",
+        "OriginPrice": {}
+    },
+    {
+        "Category": {
+            "L1CategoryCode": "DEAU",
+            "L2CategoryCode": "DEAU42C",
+            "L2CategoryName": "親子包／媽媽包",
+            "L3CategoryCode": "DEAUAX",
+            "L3CategoryName": "．B+B 媽媽包  "
+        }
+    }
+]

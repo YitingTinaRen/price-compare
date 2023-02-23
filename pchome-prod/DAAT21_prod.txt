@@ -1,0 +1,79 @@
+[
+    {
+        "Id": "DAAO0S-A67452631-000",
+        "Nick": "添寧 純水濕巾-加大加厚版(40抽/包)",
+        "Pic": {
+            "B": "/items/DAAO0SA67452631/000001_1632461161.jpg",
+            "S": "/items/DAAO0SA67452631/000002_1632461161.jpg"
+        },
+        "Price": {
+            "M": 70,
+            "P": 65,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "添寧 潔膚濕巾(40抽/包)",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DAAU5P-19007WGY1-000",
+        "Nick": "添寧 超大尺寸潔膚濕巾 (40抽x20包)",
+        "Pic": {
+            "B": "/items/DAAU5P19007WGY1/000001_1632461229.jpg",
+            "S": "/items/DAAU5P19007WGY1/000002_1632461229.jpg"
+        },
+        "Price": {
+            "M": 1380,
+            "P": 1365,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "添寧 潔膚濕巾(40抽x20包)",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DAAO0T-A79333825-000",
+        "Nick": "包大人加厚型濕巾80抽/包",
+        "Pic": {
+            "B": "/items/DAAO0TA79333825/000001_1656577866.jpg",
+            "S": "/items/DAAO0TA79333825/000002_1656577866.jpg"
+        },
+        "Price": {
+            "M": 99,
+            "P": 80,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "包大人 濕巾 80抽/包",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DAAO0T-A79334064-000",
+        "Nick": "包大人加厚型濕紙巾/濕巾 80抽x24包/箱",
+        "Pic": {
+            "B": "/items/DAAO0TA79334064/000001_1673838276.jpg",
+            "S": "/items/DAAO0TA79334064/000002_1673838315.jpg"
+        },
+        "Price": {
+            "M": 1920,
+            "P": 1199,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "包大人 濕巾 80抽/包*24包/箱",
+        "OriginPrice": {}
+    },
+    {
+        "Category": {
+            "L1CategoryCode": "DAAT",
+            "L2CategoryCode": "DAAT02C",
+            "L2CategoryName": "濕紙巾功能分類",
+            "L3CategoryCode": "DAAT21",
+            "L3CategoryName": "├銀髮照護專用濕紙巾"
+        }
+    }
+]

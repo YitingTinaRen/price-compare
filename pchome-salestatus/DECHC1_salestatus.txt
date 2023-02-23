@@ -1,0 +1,812 @@
+[
+    {
+        "Seq": 18689385,
+        "Id": "DEAIW9-A9008EM8N-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 200,
+            "P": 85,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIW9-A9008EM8N",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10617978,
+        "Id": "DEBA9M-A83163959-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 279,
+            "P": 179,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEBA9M-A83163959",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 11227898,
+        "Id": "DEBA9M-A83163959-004",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 279,
+            "P": 179,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEBA9M-A83163959",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 12713161,
+        "Id": "DEAIW9-A9005T8I6-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 299,
+            "P": 209,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIW9-A9005T8I6",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 18111402,
+        "Id": "DEAIW9-A90086BPN-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 132,
+            "P": 109,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 6,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIW9-A90086BPN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 8263359,
+        "Id": "DEBA00-A68073501-000",
+        "Store": "DEBAD6",
+        "Price": {
+            "M": 129,
+            "P": 89,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEBA00-A68073501",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16006147,
+        "Id": "DEAIW9-A9007AEMG-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 0,
+            "P": 99,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIW9-A9007AEMG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 11348643,
+        "Id": "DEAITA-A90057NY9-000",
+        "Store": "DEAITA",
+        "Price": {
+            "M": 159,
+            "P": 89,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAITA-A90057NY9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 5584521,
+        "Id": "DEAB2S-A49996706-000",
+        "Store": "DEBAD6",
+        "Price": {
+            "M": 0,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAB2S-A49996706",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 3455536,
+        "Id": "DEAG15-A33683485-000",
+        "Store": "DECE1B",
+        "Price": {
+            "M": 159,
+            "P": 105,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 18,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAG15-A33683485",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27727793,
+        "Id": "DECHC1-A900BW3NM-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 180,
+            "P": 80,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 9,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900BW3NM",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23700552,
+        "Id": "QFCZ32-A900AB9OG-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 1100,
+            "P": 790,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 5,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFCZ32-A900AB9OG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23769068,
+        "Id": "QFCZ32-A900AC0KB-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 600,
+            "P": 460,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFCZ32-A900AC0KB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23781978,
+        "Id": "QFCZ32-A900AC6O1-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 1200,
+            "P": 848,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 4,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFCZ32-A900AC6O1",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26505777,
+        "Id": "DECHC1-A900B83TY-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 500,
+            "P": 350,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900B83TY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26381744,
+        "Id": "DECHC1-A900B6P3Z-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 499,
+            "P": 398,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 8,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900B6P3Z",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27252595,
+        "Id": "DECHC1-A900BMI24-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 380,
+            "P": 208,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900BMI24",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27252621,
+        "Id": "DECHC1-A900BMI24-002",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 380,
+            "P": 208,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900BMI24",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27252620,
+        "Id": "DECHC1-A900BMI24-001",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 380,
+            "P": 208,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900BMI24",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26707672,
+        "Id": "DECHC1-A900BBSV7-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 199,
+            "P": 125,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 7,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900BBSV7",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27252575,
+        "Id": "DECHC1-A900BMI0R-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 580,
+            "P": 318,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900BMI0R",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27252586,
+        "Id": "DECHC1-A900BMI0R-001",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 580,
+            "P": 318,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900BMI0R",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27252587,
+        "Id": "DECHC1-A900BMI0R-002",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 580,
+            "P": 318,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900BMI0R",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25022560,
+        "Id": "DEAIW9-A900AQUHC-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 399,
+            "P": 349,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIW9-A900AQUHC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25464319,
+        "Id": "DMABCF-A900AVZRP-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 349,
+            "P": 233,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DMABCF-A900AVZRP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 31092044,
+        "Id": "DECHC1-A900DXJ6E-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 195,
+            "P": 95,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900DXJ6E",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 31092034,
+        "Id": "DECHC1-A900DXJ5D-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 252,
+            "P": 152,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 9,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900DXJ5D",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27727812,
+        "Id": "DECHC1-A900BW3O5-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 219,
+            "P": 119,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 9,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900BW3O5",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 31091834,
+        "Id": "DECHC1-A900DXJ2Q-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 314,
+            "P": 214,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 7,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900DXJ2Q",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 33839369,
+        "Id": "DECHC1-A900FHJ0V-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 279,
+            "P": 179,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900FHJ0V",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25022559,
+        "Id": "DEAIW9-A900AQUHB-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 299,
+            "P": 299,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIW9-A900AQUHB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27727826,
+        "Id": "DECHC1-A900BW3OW-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 259,
+            "P": 159,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900BW3OW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26570245,
+        "Id": "DECHC1-A900B8RR7-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 500,
+            "P": 350,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900B8RR7",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26570255,
+        "Id": "DECHC1-A900B8RRB-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 600,
+            "P": 390,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900B8RRB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26607452,
+        "Id": "DECHC1-A900B9N16-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 600,
+            "P": 390,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 10,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900B9N16",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26707710,
+        "Id": "DECHC1-A900BBSW9-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 199,
+            "P": 115,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 11,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900BBSW9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26707698,
+        "Id": "DECHC1-A900BBSVO-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 259,
+            "P": 139,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 11,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DECHC1-A900BBSVO",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23214700,
+        "Id": "DEAIW9-A900A5QFG-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 600,
+            "P": 239,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIW9-A900A5QFG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26707766,
+        "Id": "DECHC1-A900BBSXE-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 229,
+            "P": 129,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHC1-A900BBSXE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26705703,
+        "Id": "DECHC1-A900BBRSS-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 599,
+            "P": 499,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHC1-A900BBRSS",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26668081,
+        "Id": "DECHC1-A900BB0FG-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 229,
+            "P": 139,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHC1-A900BB0FG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25464250,
+        "Id": "DEAIW9-A900AVZPD-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 499,
+            "P": 399,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DEAIW9-A900AVZPD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25464316,
+        "Id": "DMABCF-A900AVZQI-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 349,
+            "P": 249,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DMABCF-A900AVZQI",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27255394,
+        "Id": "DECHC1-A900BMKO3-000",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 219,
+            "P": 119,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHC1-A900BMKO3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 27255395,
+        "Id": "DECHC1-A900BMKO3-001",
+        "Store": "DECHC1",
+        "Price": {
+            "M": 219,
+            "P": 119,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DECHC1-A900BMKO3",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

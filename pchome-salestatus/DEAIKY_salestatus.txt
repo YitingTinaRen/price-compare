@@ -1,0 +1,308 @@
+[
+    {
+        "Seq": 10507683,
+        "Id": "DEAIKY-A82492720-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 1280,
+            "P": 640,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIKY-A82492720",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10507697,
+        "Id": "DEAIKY-A82492508-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 1280,
+            "P": 640,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIKY-A82492508",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10776442,
+        "Id": "DEAIKY-A84245685-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 980,
+            "P": 490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIKY-A84245685",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10775832,
+        "Id": "DEAIKY-A84241759-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 880,
+            "P": 440,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIKY-A84241759",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10773950,
+        "Id": "DEAIKY-A84232672-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 390,
+            "P": 195,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIKY-A84232672",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10774119,
+        "Id": "DEAIKY-A84233857-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 390,
+            "P": 195,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIKY-A84233857",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10774146,
+        "Id": "DEAIKY-A84233699-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 390,
+            "P": 195,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAIKY-A84233699",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10789673,
+        "Id": "DEAIKY-A84311933-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 980,
+            "P": 490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIKY-A84311933",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10776160,
+        "Id": "DEAIKY-A84243872-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 980,
+            "P": 490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIKY-A84243872",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10762260,
+        "Id": "DEAIKY-A84151890-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 1080,
+            "P": 540,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIKY-A84151890",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10774692,
+        "Id": "DEAIKY-A84237057-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 720,
+            "P": 360,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIKY-A84237057",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10763456,
+        "Id": "DEAIKY-A84157405-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 1080,
+            "P": 540,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIKY-A84157405",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10774027,
+        "Id": "DEAIKY-A84233024-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 390,
+            "P": 195,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIKY-A84233024",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10763541,
+        "Id": "DEAIKY-A84158653-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 1080,
+            "P": 540,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIKY-A84158653",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10763549,
+        "Id": "DEAIKY-A84158167-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 1080,
+            "P": 540,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIKY-A84158167",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10763094,
+        "Id": "DEAIKY-A84155841-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 1080,
+            "P": 540,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIKY-A84155841",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 10762969,
+        "Id": "DEAIKY-A84155452-000",
+        "Store": "DEAIKY",
+        "Price": {
+            "M": 1080,
+            "P": 540,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIKY-A84155452",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

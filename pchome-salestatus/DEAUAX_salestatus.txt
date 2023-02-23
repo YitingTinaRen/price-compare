@@ -1,0 +1,110 @@
+[
+    {
+        "Seq": 25961607,
+        "Id": "DEAUAX-A900B1T6P-000",
+        "Store": "DEAUAX",
+        "Price": {
+            "M": 2280,
+            "P": 1590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUAX-A900B1T6P",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25961482,
+        "Id": "DEAUAX-A900B1T4Q-000",
+        "Store": "DEAUAX",
+        "Price": {
+            "M": 2480,
+            "P": 1690,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUAX-A900B1T4Q",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26007640,
+        "Id": "DEAUAX-A900B2CPY-000",
+        "Store": "DEAUAX",
+        "Price": {
+            "M": 1580,
+            "P": 1280,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUAX-A900B2CPY",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26000354,
+        "Id": "DEAUAX-A900B29J9-000",
+        "Store": "DEAUAX",
+        "Price": {
+            "M": 1580,
+            "P": 1090,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUAX-A900B29J9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26007668,
+        "Id": "DEAUAX-A900B2CQ4-000",
+        "Store": "DEAUAX",
+        "Price": {
+            "M": 2280,
+            "P": 1590,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUAX-A900B2CQ4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26007641,
+        "Id": "DEAUAX-A900B2CPB-000",
+        "Store": "DEAUAX",
+        "Price": {
+            "M": 1680,
+            "P": 1490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUAX-A900B2CPB",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

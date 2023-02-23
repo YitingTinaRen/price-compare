@@ -1,0 +1,110 @@
+[
+    {
+        "Seq": 11210280,
+        "Id": "DAAT0T-A90055XPN-000",
+        "Store": "DAAT0T",
+        "Price": {
+            "M": 2499,
+            "P": 1148,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0T-A90055XPN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 9872045,
+        "Id": "DAAT0H-A78785155-000",
+        "Store": "DAAT0T",
+        "Price": {
+            "M": 828,
+            "P": 629,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAT0H-A78785155",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26103406,
+        "Id": "DAAT1F-A900B3EMN-000",
+        "Store": "DAAT0T",
+        "Price": {
+            "M": 1068,
+            "P": 599,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT1F-A900B3EMN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23414177,
+        "Id": "DAAT0T-A900A7SKR-000",
+        "Store": "DAAT0T",
+        "Price": {
+            "M": 0,
+            "P": 639,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAT0T-A900A7SKR",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20588884,
+        "Id": "DAAC6E-A9009761E-000",
+        "Store": "DAAT0T",
+        "Price": {
+            "M": 1099,
+            "P": 699,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAC6E-A9009761E",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 20588704,
+        "Id": "DAAC6E-A900975WZ-000",
+        "Store": "DAAT0T",
+        "Price": {
+            "M": 1099,
+            "P": 599,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "OrderRefill",
+        "SaleStatus": 0,
+        "Group": "DAAC6E-A900975WZ",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

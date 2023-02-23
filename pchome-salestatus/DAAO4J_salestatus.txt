@@ -1,0 +1,38 @@
+[
+    {
+        "Seq": 14997721,
+        "Id": "DAAO5N-A9006SMMV-000",
+        "Store": "DAAO3S",
+        "Price": {
+            "M": 350,
+            "P": 289,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 17,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO5N-A9006SMMV",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14997693,
+        "Id": "DAAO5N-A9006SMM0-000",
+        "Store": "DAAO3S",
+        "Price": {
+            "M": 350,
+            "P": 327,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 20,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DAAO5N-A9006SMM0",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

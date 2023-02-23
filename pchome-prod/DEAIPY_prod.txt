@@ -1,0 +1,35 @@
+[
+    {
+        "Id": "DEAIPY-A900BOBRD-000",
+        "Nick": "【Cuz】有機棉織毯-兔子托兒所",
+        "Pic": {
+            "B": "/items/DEAIPYA900BOBRD/000001_1629195066.jpg",
+            "S": "/items/DEAIPYA900BOBRD/000002_1629195066.jpg"
+        },
+        "Price": {
+            "M": 1390,
+            "P": 990,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【Cuz】有機棉織毯-兔子托兒所",
+        "OriginPrice": {}
+    },
+    {
+        "Category": [
+            {
+                "L0CategoryCode": "DEAI",
+                "L0CategoryName": "婦幼"
+            },
+            {
+                "L2CategoryCode": "DEAI86C",
+                "L2CategoryName": "▌嬰幼紡織品▌"
+            },
+            {
+                "L3CategoryCode": "DEAIPY",
+                "L3CategoryName": " ■印度Cuz織毯/口水巾"
+            }
+        ]
+    }
+]

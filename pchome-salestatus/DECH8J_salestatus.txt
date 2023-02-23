@@ -1,0 +1,110 @@
+[
+    {
+        "Seq": 12717345,
+        "Id": "CAAFE3-B9005TAJT-000",
+        "Store": "DECH8J",
+        "Price": {
+            "M": 600,
+            "P": 540,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "CAAFE3-B9005TAJT",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 12717346,
+        "Id": "CAAFE3-B9005TAJT-001",
+        "Store": "DECH8J",
+        "Price": {
+            "M": 600,
+            "P": 540,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "CAAFE3-B9005TAJT",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 12717347,
+        "Id": "CAAFE3-B9005TAJT-002",
+        "Store": "DECH8J",
+        "Price": {
+            "M": 600,
+            "P": 540,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "CAAFE3-B9005TAJT",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 12717385,
+        "Id": "CAAFE3-B9005TAL4-000",
+        "Store": "DECH8J",
+        "Price": {
+            "M": 600,
+            "P": 540,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "CAAFE3-B9005TAL4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 12717360,
+        "Id": "CAAFE3-B9005TAL4-002",
+        "Store": "DECH8J",
+        "Price": {
+            "M": 600,
+            "P": 540,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "CAAFE3-B9005TAL4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 12717359,
+        "Id": "CAAFE3-B9005TAL4-001",
+        "Store": "DECH8J",
+        "Price": {
+            "M": 600,
+            "P": 540,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "CAAFE3-B9005TAL4",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

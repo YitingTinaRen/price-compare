@@ -1,0 +1,182 @@
+[
+    {
+        "Seq": 16398471,
+        "Id": "QFATF1-A9007G4Z9-000",
+        "Store": "DEAUCM",
+        "Price": {
+            "M": 1350,
+            "P": 1350,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATF1-A9007G4Z9",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16399485,
+        "Id": "QFATF1-A9007G5KC-000",
+        "Store": "DEAUCM",
+        "Price": {
+            "M": 1350,
+            "P": 1350,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATF1-A9007G5KC",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16399468,
+        "Id": "QFATF1-A9007G5JP-000",
+        "Store": "DEAUCM",
+        "Price": {
+            "M": 1350,
+            "P": 1350,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATF1-A9007G5JP",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16399466,
+        "Id": "QFATF1-A9007G5JN-000",
+        "Store": "DEAUCM",
+        "Price": {
+            "M": 1350,
+            "P": 1350,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATF1-A9007G5JN",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16398512,
+        "Id": "QFATF1-A9007G527-000",
+        "Store": "DEAUCM",
+        "Price": {
+            "M": 1350,
+            "P": 1350,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATF1-A9007G527",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16398962,
+        "Id": "QFATF1-A9007G59S-000",
+        "Store": "DEAUCM",
+        "Price": {
+            "M": 1350,
+            "P": 1350,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATF1-A9007G59S",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16399262,
+        "Id": "QFATF1-A9007G5IE-000",
+        "Store": "DEAUCM",
+        "Price": {
+            "M": 1350,
+            "P": 1350,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATF1-A9007G5IE",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 16399019,
+        "Id": "QFATF1-A9007G5CW-000",
+        "Store": "DEAUCM",
+        "Price": {
+            "M": 1350,
+            "P": 1350,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "QFATF1-A9007G5CW",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26331186,
+        "Id": "DEAUCM-A900B634Q-000",
+        "Store": "DEAUCM",
+        "Price": {
+            "M": 0,
+            "P": 850,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 1,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCM-A900B634Q",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 26331143,
+        "Id": "DEAUCM-A900B634F-000",
+        "Store": "DEAUCM",
+        "Price": {
+            "M": 0,
+            "P": 850,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAUCM-A900B634F",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

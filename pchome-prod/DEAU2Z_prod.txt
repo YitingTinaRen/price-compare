@@ -1,0 +1,63 @@
+[
+    {
+        "Id": "DEAU8N-A900FRLR1-000",
+        "Nick": "Britax Römer 英國 汽車安全座椅 ISOFIX 360度0-4歲 Britax Dualfix I Size-多色可選",
+        "Pic": {
+            "B": "/items/DEAU8NA900FRLR1/000001_1668784017.jpg",
+            "S": "/items/DEAU8NA900FRLR1/000002_1668784017.jpg"
+        },
+        "Price": {
+            "M": 29800,
+            "P": 22800,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "Britax Römer 英國 汽車安全座椅 ISOFIX 360度0-4歲 Britax Dualfix I Size-多色可選",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DEAI14-A90096DQE-000",
+        "Nick": "Joie tilt 雙向汽座0-4歲-紅色",
+        "Pic": {
+            "B": "/items/DEAI14A90096DQE/000001_1644203455.jpg",
+            "S": "/items/DEAI14A90096DQE/000002_1644203456.jpg"
+        },
+        "Price": {
+            "M": 6000,
+            "P": 3300,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【奇哥】Joie tilt 雙向汽座0-4歲-紅色",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DEAI14-A90096EC2-000",
+        "Nick": "Joie tilt 雙向汽座0-4歲-灰色",
+        "Pic": {
+            "B": "/items/DEAI14A90096EC2/000001_1644546133.jpg",
+            "S": "/items/DEAI14A90096EC2/000002_1644546133.jpg"
+        },
+        "Price": {
+            "M": 6000,
+            "P": 3300,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【奇哥】Joie tilt 雙向汽座0-4歲-灰色",
+        "OriginPrice": {}
+    },
+    {
+        "Category": {
+            "L0CategoryCode": "DEAU",
+            "L0CategoryName": "推車汽座",
+            "L1CategoryCode": "DEAU20C",
+            "L1CategoryName": "兒童安全汽座",
+            "L2CategoryCode": "DEAU2Z",
+            "L2CategoryName": "【功能】4歲以下汽座"
+        }
+    }
+]

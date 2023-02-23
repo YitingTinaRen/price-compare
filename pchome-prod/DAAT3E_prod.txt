@@ -1,0 +1,45 @@
+[
+    {
+        "Id": "DAAT1B-A900DVYTV-000",
+        "Nick": "【蝙蝠俠】80抽有蓋純水溼紙巾*36包",
+        "Pic": {
+            "B": "/items/DAAT1BA900DVYTV/000001_1646359940.jpg",
+            "S": "/items/DAAT1BA900DVYTV/000002_1646359940.jpg"
+        },
+        "Price": {
+            "M": 1350,
+            "P": 900,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【蝙蝠俠】80抽有蓋純水溼紙巾*36包",
+        "OriginPrice": {}
+    },
+    {
+        "Id": "DAAT1B-A900F8TEL-000",
+        "Nick": "御衣坊【蝙蝠俠】有蓋純水濕紙巾(80抽)18入",
+        "Pic": {
+            "B": "/items/DAAT1BA900F8TEL/000001_1656659736.jpg",
+            "S": "/items/DAAT1BA900F8TEL/000002_1656659736.jpg"
+        },
+        "Price": {
+            "M": 700,
+            "P": 540,
+            "Low": null,
+            "Prime": ""
+        },
+        "Discount": 0,
+        "Name": "【蝙蝠俠】純水濕紙巾(80抽)18入",
+        "OriginPrice": {}
+    },
+    {
+        "Category": {
+            "L1CategoryCode": "DAAT",
+            "L2CategoryCode": "DAAT21C",
+            "L2CategoryName": "御衣坊濕紙巾",
+            "L3CategoryCode": "DAAT3E",
+            "L3CategoryName": "●電影聯名系列"
+        }
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "Seq": 24214735,
+        "Id": "DEAIVX-A900AH76E-000",
+        "Store": "DEAIVX",
+        "Price": {
+            "M": 3990,
+            "P": 1999,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIVX-A900AH76E",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25039899,
+        "Id": "DEAIVX-A900AR1MD-000",
+        "Store": "DEAIVX",
+        "Price": {
+            "M": 3290,
+            "P": 2790,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIVX-A900AR1MD",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 23822016,
+        "Id": "DEAIVX-A900ACOWS-000",
+        "Store": "DEAIVX",
+        "Price": {
+            "M": 3490,
+            "P": 2490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIVX-A900ACOWS",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 25073584,
+        "Id": "DEAIVX-A900ARF9G-000",
+        "Store": "DEAIVX",
+        "Price": {
+            "M": 5990,
+            "P": 5490,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 0,
+        "ButtonType": "SoldOut",
+        "SaleStatus": 0,
+        "Group": "DEAIVX-A900ARF9G",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]

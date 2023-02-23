@@ -1,0 +1,38 @@
+[
+    {
+        "Seq": 14462309,
+        "Id": "DEAU6W-A9006KBQG-000",
+        "Store": "DEAU6W",
+        "Price": {
+            "M": 0,
+            "P": 403,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 2,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAU6W-A9006KBQG",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    },
+    {
+        "Seq": 14462078,
+        "Id": "DEAU6W-A9006KBME-000",
+        "Store": "DEAU6W",
+        "Price": {
+            "M": 0,
+            "P": 825,
+            "Prime": "",
+            "Low": null
+        },
+        "Qty": 3,
+        "ButtonType": "ForSale",
+        "SaleStatus": 1,
+        "Group": "DEAU6W-A9006KBME",
+        "isPrimeOnly": 0,
+        "SpecialQty": 0,
+        "Device": []
+    }
+]
