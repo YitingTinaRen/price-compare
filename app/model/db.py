@@ -139,4 +139,24 @@ class db:
         result=db.writeData(sql,val)
         return result
 
+    def getPCHPriceHistory(ID):
+        sql="""
+            select DATE_FORMAT(Date,'%Y-%m-%d') as Date, Price
+            from PCHDaily_Price
+            where ProductID = %s;
+        """
+        val=(ID,)
+        result=db.checkAllData(sql,val)
+        return result
+
+    def getMomoPriceHistory(ID):
+        sql = """
+            select DATE_FORMAT(Date,'%Y-%m-%d') as Date, Price
+            from MomoDaily_Price
+            where ProductID = %s;
+        """
+        val = (ID,)
+        result = db.checkAllData(sql, val)
+        return result
+
 

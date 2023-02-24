@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 LoadData()
 LoadBrand()
 
+
 // Event handlers
 window.addEventListener("wheel", wheelfunc);
 // window.addEventListener("click", clickEvent);
@@ -60,16 +61,16 @@ const displayData = (data)=>{
                             </div>
                         </a>
                         <div class="side-functions">
-                            <a href='#'>
-                                <span class="history-btn">
+                            <div>
+                                <span class="history-btn" onclick="showChart(event)" data-arg1=${data.ProductID} data-arg2=${data.PCHProductID}>
                                 歷史價格
                                 </span>
-                            </a>
-                            <a href='#'>
+                            </div>
+                            <div>
                                 <span class="track-btn">
                                     追蹤商品
                                 </span>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -160,3 +161,4 @@ function filterFunction() {
         }
     }
 }
+

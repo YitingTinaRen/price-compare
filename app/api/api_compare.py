@@ -23,3 +23,10 @@ def brand():
     Category = request.args.get('Category')
     result = model.comparePrice.getMomoBrands(Category)
     return result
+
+@api_compare.route("/api/history", methods=["GET"])
+def history():
+    momoID=request.args.get('momoID')
+    PCHomeID=request.args.get('PCHID') 
+    result=model.comparePrice.getPriceHistory(momoID,PCHomeID)
+    return result

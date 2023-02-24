@@ -146,11 +146,11 @@
     align-items: center;
     margin-bottom: 5px;
 }
-.side-functions>a{
+.side-functions>div{
     text-align: left;
 }
-.side-functions>a:link{
-    text-decoration: none;
+.side-functions>div:hover {
+    transform: scale(1.05);
 }
 .history-btn{
     background-color: #ffc13b;
@@ -160,6 +160,9 @@
     padding:0 5px;
     font-size: 0.8em;
 }
+/* .history-btn:hover {
+    transform: scale(1.05);
+} */
 .track-btn {
     background-color: #ffc13b;
     border-radius: 10px;
@@ -168,6 +171,9 @@
     padding: 0 5px;
     font-size: 0.8em;
 }
+/* .track-btn:hover {
+    transform: scale(1.05);
+} */
 
 
 /* Dropdown Button */

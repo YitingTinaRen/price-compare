@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <title>PricePickCompare</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/static/js/NavBar.js"></script>
     <script src="/static/js/Footer.js"></script>
     <script src="/static/js/compare.js"></script>
+    <script src="/static/js/history.js"></script>
     <!-- <script src="/static/js/login-register.js"></script> -->
     <link rel="stylesheet" type="text/css" href="/static/css/NavBar.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/compare.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/history.css" />
     <!-- <link rel="stylesheet" type="text/css" href="/static/css/login-register.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +23,7 @@
 <body>
     <div class="outer-frame">
         <nav-bar></nav-bar>
+        
         <div class="content-frame">
             <div class="function-bar">
                 <div class="category"><span></span></div>
@@ -36,6 +40,7 @@
                 </div>
                 
             </div>
+            <history-tag></history-tag>
             <div class="compare-list">
                 <div class="d-flex justify-content-center">
                     <div class="spinner-border" role="status">
@@ -46,9 +51,7 @@
             
         </div>
 
-        <!-- Login/singup form -->
-        <login-form></login-form>
-        <register-form></register-form>
+        
         <my-footer></my-footer>
     </div>
 

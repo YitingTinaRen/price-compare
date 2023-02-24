@@ -25,3 +25,14 @@ class comparePrice:
     def getSearchResult_brand(Category, Page, Brand):
         result = model.db.getResult_Brand(Category, Page, Brand)
         return jsonify(result), 200
+
+    def getPriceHistory(momoID,PCHomeID):
+        PCHomeHistory=model.db.getPCHPriceHistory(PCHomeID)
+        MomoHistory=model.db.getMomoPriceHistory(momoID)
+        data={
+            'PCHomeXLabels':[item['Date'] for item in PCHomeHistory],
+            'PCHomeData':[item['Price'] for item in PCHomeHistory],
+            'MomoXLabels':[item['Date'] for item in MomoHistory],
+            'MomoData':[item['Price'] for item in MomoHistory]
+        }
+        return data
