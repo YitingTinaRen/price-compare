@@ -71,9 +71,29 @@ class db:
             group by Pic.PicURL
             Limit 20 offset %s
         """
-
         val=(Category,Page,)
         result = db.checkAllData(sql,val)
+        return result
+
+    def getResult4Member(Category,Page,memberID):
+        sql="""
+            select M.ProductID, M.ProductName, M.CurrentPrice, M.ProductURL,
+            P.ProductID as PCHProductID, P.ProductName as PCHProductName,P.CurrentPrice as PCHCurrentPrice, P.ProductURL as PCHProductURL,
+            substring_index(group_concat(Pic.PicURL order by PCHPicID separator ','), ',',1) as PicURL,
+            T.TrackingID, T.MemberID
+            from MomoProducts as M 
+            inner join PCHomeProducts as P 
+            on M.PCHProductID=P.ProductID 
+            inner join MomoPic as Pic
+            on M.ProductID=Pic.ProductID
+            left join (select MomoProductID, MemberID, TrackingID from ProductTracking where MemberID =%s) as T
+            on M.ProductID=T.MomoProductID
+            where M.MyCategory=%s and M.HasMatching =TRUE
+            group by Pic.PicURL
+            Limit 20 offset %s
+        """
+        val = (memberID, Category, Page, )
+        result = db.checkAllData(sql, val)
         return result
 
     def getMomoBrand(Category):
@@ -104,6 +124,28 @@ class db:
         """
 
         val = (Category, '%'+Brand+'%',Page ,)
+        result = db.checkAllData(sql, val)
+        return result
+    
+    def getResult_Brand4member(Category, Page, Brand,memberID):
+        sql = """
+            select M.ProductID, M.ProductName, M.CurrentPrice, M.ProductURL,
+            P.ProductID as PCHProductID, P.ProductName as PCHProductName,P.CurrentPrice as PCHCurrentPrice, P.ProductURL as PCHProductURL,
+            substring_index(group_concat(Pic.PicURL order by PCHPicID separator ','), ',',1) as PicURL,
+            T.TrackingID, T.MemberID
+            from MomoProducts as M 
+            inner join PCHomeProducts as P 
+            on M.PCHProductID=P.ProductID 
+            inner join MomoPic as Pic
+            on M.ProductID=Pic.ProductID
+            left join (select MomoProductID, MemberID, TrackingID from ProductTracking where MemberID =%s) as T
+            on M.ProductID=T.MomoProductID
+            where M.MyCategory=%s and M.HasMatching =TRUE and M.ProductName like %s
+            group by Pic.PicURL
+            Limit 20 offset %s
+        """
+
+        val = (memberID, Category, '%'+Brand+'%', Page,)
         result = db.checkAllData(sql, val)
         return result
     
@@ -156,6 +198,34 @@ class db:
             where ProductID = %s;
         """
         val = (ID,)
+        result = db.checkAllData(sql, val)
+        return result
+    
+    def TrackProduct(MemberID, MomoProductID, PCHProductID, TargetPrice, Notify):
+        sql="""
+            insert into ProductTracking (MemberID,MomoProductID, PCHProductID, TargetPrice, NotifyBelowTarget)
+            values(%s, %s, %s, %s,%s)
+        """
+        val = (MemberID, MomoProductID, PCHProductID, TargetPrice, Notify,)
+        result=db.writeData(sql,val)
+        return result
+    
+    def UnTrackProduct(MomoProductID, PCHProductID, MemberID):
+        sql = """
+            delete from ProductTracking 
+            where MomoProductID =%s and PCHProductID=%s and MemberID=%s
+        """
+        val = (MomoProductID, PCHProductID, MemberID)
+        result = db.writeData(sql, val)
+        return result
+    
+    def GetTrackingProduct(MemberID):
+        sql = """
+            select *
+            from ProductTracking
+            where MemberID=%s
+        """
+        val = (MemberID,)
         result = db.checkAllData(sql, val)
         return result
 

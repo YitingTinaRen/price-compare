@@ -1,14 +1,19 @@
+let isLogin=false;
+let memID=null;
+
 fetch("/api/auth").then((response) => { return response.json() }).then(function (auth) {
     if (auth.hasOwnProperty("error")) {
         console.log(auth["errormsg"])
         document.getElementById("logout-btn").style.display = 'none';
         document.getElementById("Linelogin-btn").style.display = 'block';
-        return false;
+        isLogin=false;
     } else {
         console.log("have auth")
+        memID=auth.data.id;
+        // console.log(memID)
         document.getElementById("logout-btn").style.display = 'block';
         document.getElementById("Linelogin-btn").style.display = 'none';
-        return true;
+        isLogin=true;
     }
 })
 

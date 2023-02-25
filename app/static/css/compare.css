@@ -147,6 +147,9 @@
     margin-bottom: 5px;
 }
 .side-functions>div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
     text-align: left;
 }
 .side-functions>div:hover {
@@ -160,20 +163,49 @@
     padding:0 5px;
     font-size: 0.8em;
 }
-/* .history-btn:hover {
-    transform: scale(1.05);
-} */
+.side-functions>div>img {
+    width:20px;
+    height:20px;
+    margin-right:5px;
+    cursor: pointer;
+}
 .track-btn {
     background-color: #ffc13b;
     border-radius: 10px;
     color: white;
-    cursor: pointer;
+    /* cursor: pointer; */
     padding: 0 5px;
     font-size: 0.8em;
 }
-/* .track-btn:hover {
-    transform: scale(1.05);
-} */
+
+#trackedHeart[data-arg3]:not([data-arg3="null"]){
+    display:block;
+}
+#tracked[data-arg3]:not([data-arg3="null"]) {
+    display: block;
+}
+#untrackedHeart[data-arg3]:not([data-arg3="null"]) {
+    display: none;
+}
+#untracked[data-arg3]:not([data-arg3="null"]) {
+    display: none;
+}
+
+#trackedHeart[data-arg3="null"]{
+    display: none;
+}
+
+#tracked[data-arg3="null"] {
+    display: none;
+}
+
+#untrackedHeart[data-arg3="null"]{
+    display: block;
+}
+
+#untracked[data-arg3="null"]{
+    display: block;
+}
 
 
 /* Dropdown Button */

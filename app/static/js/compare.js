@@ -62,13 +62,18 @@ const displayData = (data)=>{
                         </a>
                         <div class="side-functions">
                             <div>
-                                <span class="history-btn" onclick="showChart(event)" data-arg1=${data.ProductID} data-arg2=${data.PCHProductID}>
+                                <span class="history-btn" onclick="showChart(event)" data-arg1=${data.ProductID} data-arg2=${data.PCHProductID} >
                                 歷史價格
                                 </span>
                             </div>
                             <div>
-                                <span class="track-btn">
-                                    追蹤商品
+                                <img id="untrackedHeart" onclick="track(event)" src="/static/img/heart_empty.png" data-arg1=${data.ProductID} data-arg2=${data.PCHProductID} data-arg3=${data.TrackingID} />
+                                <span id="untracked" class="track-btn"data-arg3=${data.TrackingID} >
+                                    追蹤
+                                </span>
+                                <img id="trackedHeart"  onclick="track(event)" src="/static/img/heart_full.png" data-arg1=${data.ProductID} data-arg2=${data.PCHProductID} data-arg3=${data.TrackingID} />
+                                <span id="tracked" class="track-btn"  data-arg3=${data.TrackingID} >
+                                    已追蹤
                                 </span>
                             </div>
                         </div>
@@ -91,6 +96,8 @@ function LoadData(){
     fetch("/api/compare"+queryString+"&page="+page).then(function (res) {
         return res.json();
     }).then(function (data) {
+        console.log(data[0])
+        console.log(data[6])
         isLoading=false;
         if (data.length > 10) {
             page++;
@@ -159,6 +166,48 @@ function filterFunction() {
         } else {
             a[i].style.display = "none";
         }
+    }
+}
+
+function track(event){
+    if(!isLogin){
+        alert("請先登入，再追蹤商品！");
+    } else if (event.target.id==='untrackedHeart'){
+        // enable tracking the product!
+        const momoID = event.target.getAttribute('data-arg1');
+        const PCHID = event.target.getAttribute('data-arg2');
+        fetch("/api/trackProduct?momoID="+momoID+"&PCHID="+PCHID).then(function(res){
+            return res.json()
+        }).then(function(data){
+            console.log(data);
+        })
+        event.target.parentElement.querySelector('#trackedHeart').style.display = 'block';
+        event.target.parentElement.querySelector('#tracked').style.display = 'block';
+        event.target.nextElementSibling.style.display = 'none';
+        event.target.style.display = 'none';
+    }else{
+        // untrack the product!
+        const momoID = event.target.getAttribute('data-arg1');
+        const PCHID = event.target.getAttribute('data-arg2');
+        fetch("/api/trackProduct",{
+            method:'DELETE',
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body:JSON.stringify({momoID:momoID, PCHID:PCHID})
+        }).then(function (res) {
+            return res.json()
+        }).then(function (data) {
+            // console.log(data);
+        })
+        document.getElementById("untrackedHeart").style.display = 'block';
+        document.getElementById("untracked").style.display = 'block';
+        document.getElementById("trackedHeart").style.display = 'none';
+        document.getElementById("tracked").style.display = 'none';
+        event.target.parentElement.querySelector('#untrackedHeart').style.display = 'block';
+        event.target.parentElement.querySelector('#untracked').style.display = 'block';
+        event.target.nextElementSibling.style.display = 'none';
+        event.target.style.display = 'none';
     }
 }
 
