@@ -178,32 +178,36 @@
     font-size: 0.8em;
 }
 
-#trackedHeart[data-arg3]:not([data-arg3="null"]){
+#trackedHeart[data-arg3]:not([data-arg3="null"]):not([data-arg3="undefined"]){
     display:block;
 }
-#tracked[data-arg3]:not([data-arg3="null"]) {
+#tracked[data-arg3]:not([data-arg3="null"]):not([data-arg3="undefined"]) {
     display: block;
 }
-#untrackedHeart[data-arg3]:not([data-arg3="null"]) {
+#untrackedHeart[data-arg3]:not([data-arg3="null"]):not([data-arg3="undefined"]) {
     display: none;
 }
-#untracked[data-arg3]:not([data-arg3="null"]) {
-    display: none;
-}
-
-#trackedHeart[data-arg3="null"]{
+#untracked[data-arg3]:not([data-arg3="null"]):not([data-arg3="undefined"]) {
     display: none;
 }
 
-#tracked[data-arg3="null"] {
+#trackedHeart[data-arg3="null"],
+#trackedHeart[data-arg3="undefined"]{
     display: none;
 }
 
-#untrackedHeart[data-arg3="null"]{
+#tracked[data-arg3="null"],
+#tracked[data-arg3="undefined"] {
+    display: none;
+}
+
+#untrackedHeart[data-arg3="null"],
+#untrackedHeart[data-arg3="undefined"]{
     display: block;
 }
 
-#untracked[data-arg3="null"]{
+#untracked[data-arg3="null"],
+#untracked[data-arg3="undefined"]{
     display: block;
 }
 

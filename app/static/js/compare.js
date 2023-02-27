@@ -44,7 +44,7 @@ const displayData = (data)=>{
                 <div class="card-details">
                     <div class="card-title">${data.ProductName}</div>
                     <div class="card-list">
-                        <a href=${data.PCHProductURL}>
+                        <a href=${data.PCHProductURL} target="_blank">
                             <div class="market-img">
                                 <img src="https://av.sc.com/tw/content/images/pchome_logo_400x400.jpg">
                             </div>
@@ -52,7 +52,7 @@ const displayData = (data)=>{
                                 $${data.PCHCurrentPrice}
                             </div>
                         </a>
-                        <a href=${data.ProductURL}>
+                        <a href=${"https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code="+data.ProductID} target="_blank">
                             <div class="market-img">
                                 <img src="https://mylazyweb.com/wp-content/uploads/thumbs_dir/%E6%87%B6%E4%BA%BA%E7%B6%B2-momo%E8%B3%BC%E7%89%A9-Logo-Large-1y1g1m7w385cqumoumxip7iy5c8c81bj9iteituevvvo.png">
                             </div>
@@ -85,6 +85,7 @@ const displayData = (data)=>{
     .join('');
 
     if(page-1==0){
+        console.log("in page-1==0")
         CompareList[0].innerHTML =  htmlString;
     }else{
         oldString = CompareList[0].innerHTML;
@@ -96,13 +97,12 @@ function LoadData(){
     fetch("/api/compare"+queryString+"&page="+page).then(function (res) {
         return res.json();
     }).then(function (data) {
-        console.log(data[0])
-        console.log(data[6])
         isLoading=false;
         if (data.length > 10) {
             page++;
         } else {
             lastPage = true;
+            page++;
             console.log("final page!")
         }
         if(Boolean(document.querySelector(".compare-list>div"))){
