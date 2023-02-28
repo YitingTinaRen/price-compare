@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementsByTagName('title')[0].textContent = Category;
 }, false);
 
-LoadData()
-LoadBrand()
+executeAfterCheckAuth();
 
 
 // Event handlers
@@ -22,6 +21,14 @@ window.addEventListener("wheel", wheelfunc);
 // window.addEventListener("click", clickEvent);
 
 // Functions
+async function executeAfterCheckAuth(){
+    const Auth= await checkAuth();
+    if(Auth=='Done'){
+        LoadData()
+        LoadBrand()
+    }
+}
+
 function wheelfunc() {
     didScroll = true;
     
@@ -105,8 +112,8 @@ function LoadData(){
             page++;
             console.log("final page!")
         }
-        if(Boolean(document.querySelector(".compare-list>div"))){
-            document.querySelector('.compare-list>div').remove();
+        if(Boolean(document.querySelector(".compare-list>span"))){
+            document.querySelector('.compare-list>span').remove();
         }
         displayData(data.splice(0, 10));
 
@@ -179,7 +186,6 @@ function track(event){
         fetch("/api/trackProduct?momoID="+momoID+"&PCHID="+PCHID).then(function(res){
             return res.json()
         }).then(function(data){
-            console.log(data);
         })
         event.target.parentElement.querySelector('#trackedHeart').style.display = 'block';
         event.target.parentElement.querySelector('#tracked').style.display = 'block';
@@ -200,10 +206,6 @@ function track(event){
         }).then(function (data) {
             // console.log(data);
         })
-        document.getElementById("untrackedHeart").style.display = 'block';
-        document.getElementById("untracked").style.display = 'block';
-        document.getElementById("trackedHeart").style.display = 'none';
-        document.getElementById("tracked").style.display = 'none';
         event.target.parentElement.querySelector('#untrackedHeart').style.display = 'block';
         event.target.parentElement.querySelector('#untracked').style.display = 'block';
         event.target.nextElementSibling.style.display = 'none';

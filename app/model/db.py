@@ -219,14 +219,38 @@ class db:
         result = db.writeData(sql, val)
         return result
     
-    def GetTrackingProduct(MemberID):
+    def GetMemberTrackingProduct(MemberID,Page):
         sql = """
-            select *
-            from ProductTracking
+            select M.ProductID, M.ProductName, M.CurrentPrice, M.ProductURL,
+            P.ProductID as PCHProductID, P.ProductName as PCHProductName,P.CurrentPrice as PCHCurrentPrice, P.ProductURL as PCHProductURL,
+            substring_index(group_concat(Pic.PicURL order by PCHPicID separator ','), ',',1) as PicURL,
+            T.TrackingID, T.MemberID,
+            Mem.Name, Mem.Email, Mem.Picture as ProfilePic
+            from MomoProducts as M 
+            inner join PCHomeProducts as P 
+            on M.PCHProductID=P.ProductID 
+            inner join MomoPic as Pic
+            on M.ProductID=Pic.ProductID
+            right join (select MomoProductID, MemberID, TrackingID from ProductTracking where MemberID =%s) as T
+            on M.ProductID=T.MomoProductID
+            inner join member as Mem
+            on Mem.MemberID=T.MemberID
+            where M.HasMatching =TRUE  
+            group by Pic.PicURL
+            Limit 20 offset %s;
+        """
+        val = (MemberID,Page,)
+        result = db.checkAllData(sql, val)
+        return result
+    
+    def getMemberInfoOnly(MemberID):
+        sql="""
+            select Name, Picture as ProfilePic, Email
+            from member
             where MemberID=%s
         """
-        val = (MemberID,)
-        result = db.checkAllData(sql, val)
+        val=(MemberID,)
+        result=db.checkOneData(sql,val)
         return result
 
 

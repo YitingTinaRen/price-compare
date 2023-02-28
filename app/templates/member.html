@@ -8,14 +8,14 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="/static/js/NavBar.js"></script>
     <script src="/static/js/Footer.js"></script>
-    <script src="/static/js/compare.js"></script>
+    <script src="/static/js/member.js"></script>
     <script src="/static/js/history.js"></script>
     <!-- <script src="/static/js/login-register.js"></script> -->
     <link rel="stylesheet" type="text/css" href="/static/css/NavBar.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/Footer.css" />
-    <link rel="stylesheet" type="text/css" href="/static/css/compare.css" />
     <link rel="stylesheet" type="text/css" href="/static/css/history.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/member.css" />
     <!-- <link rel="stylesheet" type="text/css" href="/static/css/login-register.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,30 +24,25 @@
 <body>
     <div class="outer-frame">
         <nav-bar></nav-bar>
-        
+
+       
+
         <div class="content-frame">
-            <div class="function-bar">
-                <div class="category"><span></span></div>
-                <!-- <div class="filter-bar"><span>篩選欄</span></div> -->
-                <div class="filter-bar">
-                    <div class="dropdown">
-                        <div onclick="myFunction()" class="dropbtn"><span>品牌篩選&ensp;</span><i class="arrow down"></i></div>
-                        <div id="myDropdown" class="dropdown-content">
-                            <input type="text" placeholder="Search" id="myInput" onkeyup="filterFunction()">
-                        </div>
-                    </div>
-                </div>
+            <div class="member-bar">
+                <div></div>
+                <div class="profile-pic"></div>
+                <div class="member-name"><span></span></div>
+                <div></div>
             </div>
-            
+
             <div class="compare-list">
                 <span>Loading...</span>
             </div>
 
             <history-tag></history-tag>
-            
+
         </div>
 
-        
         <my-footer></my-footer>
     </div>
 

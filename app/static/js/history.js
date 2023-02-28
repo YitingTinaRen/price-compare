@@ -25,12 +25,10 @@ function showChart(event){
         chunks.push(rawTitle.substring(i,i+27));
     }
 
-    console.log(chunks)
 
     fetch("/api/history?momoID="+momoID+"&PCHID="+PCHID).then(function (res){
         return res.json()
     }).then(function(data){
-        console.log(data)
         const ctx = document.getElementById('myChart')
 
         lineChart = new Chart(ctx, {
@@ -41,6 +39,7 @@ function showChart(event){
                 labels: data.PCHomeXLabels,
                 datasets: [{
                     label: 'PCHome',
+                    borderDash: [5, 5],
                     data: data.PCHomeData,
                 }, {
                     label: 'Momo',

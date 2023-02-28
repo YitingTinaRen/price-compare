@@ -29,3 +29,11 @@ def auth():
         token = request.cookies.get("user")
         result=model.member.logout(token)
         return result
+
+@api_member.route("/api/member", methods=["GET"])
+def member():
+    if request.method=="GET":
+        token=request.cookies.get("user")
+        Page=request.args.get('page',0)
+        result=model.member.member(token,10*int(Page))
+        return result

@@ -137,4 +137,17 @@ class member:
         res.delete_cookie('user')
         return res
 
+    def member(token, Page):
+        try:
+            member = jwt.decode(token, config.PP_SECRET_KEY,
+                              algorithms=config.PP_JWT_ALGO)
+        except jwt.exceptions.InvalidTokenError as error:
+            print(error)
+            return jsonify({"error": True, "message": "Invalid token"}), 400
+        result=model.db.GetMemberTrackingProduct(member["ID"],Page)
+        if not result:
+            result=model.db.getMemberInfoOnly(member['ID'])
+            return jsonify({'result':result, 'TrackProduct':False}), 200
+        
+        return jsonify({'result':result, 'TrackProduct':True}),200
 
