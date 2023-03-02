@@ -52,3 +52,4 @@ def trackingRecord():
     token = request.cookies.get("user")
     result=model.comparePrice.trackingRecord(token)
     return result
+

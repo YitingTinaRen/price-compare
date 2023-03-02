@@ -42,7 +42,7 @@
     border-radius: 3px;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
     gap: 20px;
     padding-inline-start: none;
@@ -204,4 +204,19 @@
 #untracked[data-arg3="null"],
 #untracked[data-arg3="undefined"] {
     display: block;
+}
+
+.PriceNotify{
+    /* display:grid; */
+    align-items: center;
+    background-color: #ffc13b;
+    border-radius: 10px;
+    color: white;
+    /* cursor: pointer; */
+    padding: 0 5px;
+    font-size: 0.8em;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
 }

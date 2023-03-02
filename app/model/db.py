@@ -224,14 +224,14 @@ class db:
             select M.ProductID, M.ProductName, M.CurrentPrice, M.ProductURL,
             P.ProductID as PCHProductID, P.ProductName as PCHProductName,P.CurrentPrice as PCHCurrentPrice, P.ProductURL as PCHProductURL,
             substring_index(group_concat(Pic.PicURL order by PCHPicID separator ','), ',',1) as PicURL,
-            T.TrackingID, T.MemberID,
+            T.TrackingID, T.MemberID, T.NotifyBelowTarget, T.TargetPrice,
             Mem.Name, Mem.Email, Mem.Picture as ProfilePic
             from MomoProducts as M 
             inner join PCHomeProducts as P 
             on M.PCHProductID=P.ProductID 
             inner join MomoPic as Pic
             on M.ProductID=Pic.ProductID
-            right join (select MomoProductID, MemberID, TrackingID from ProductTracking where MemberID =%s) as T
+            right join (select MomoProductID, MemberID, TrackingID, NotifyBelowTarget, TargetPrice from ProductTracking where MemberID =%s) as T
             on M.ProductID=T.MomoProductID
             inner join member as Mem
             on Mem.MemberID=T.MemberID
@@ -253,4 +253,40 @@ class db:
         result=db.checkOneData(sql,val)
         return result
 
+    def setNotify(MemberID, TrackingID, TargetPrice):
+        sql="""
+            update ProductTracking
+            set
+            TargetPrice =%s,
+            NotifyBelowTarget=TRUE
+            where MemberID=%s and TrackingID=%s
+        """
+        val=(TargetPrice, MemberID, TrackingID,)
+        result=db.writeData(sql,val)
+        return result
 
+    def cancelNotify(MemberID,TrackingID):
+        sql="""
+            update ProductTracking
+            set TargetPrice=NULL,
+            NotifyBelowTarget=FALSE
+            where MemberID=%s and TrackingID=%s
+        """
+        val=(MemberID, TrackingID,)
+        result=db.writeData(sql,val)
+        return result
+
+    def checkTargetPrice(TargetPrice,TrackingID):
+        sql="""
+    select M.CurrentPrice, P.CurrentPrice
+    from ProductTracking as PT
+    inner join MomoProducts as M
+    on PT.MomoProductID=M.ProductID
+    inner join PCHomeProducts as P
+    on PT.PCHProductID=P.ProductID
+    where PT.TrackingID=%s 
+    and (M.CurrentPrice <= %s or P.CurrentPrice <= %s)
+        """
+        val=(TrackingID, TargetPrice, TargetPrice,)
+        result=db.checkAllData(sql,val)
+        return result

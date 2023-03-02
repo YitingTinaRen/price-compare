@@ -37,3 +37,18 @@ def member():
         Page=request.args.get('page',0)
         result=model.member.member(token,10*int(Page))
         return result
+    
+@api_member.route("/api/Notify", methods=["GET", "DELETE"])
+def Notify():
+    if request.method =="GET":
+        token=request.cookies.get("user")
+        TrackingID=request.args.get('TrackingID')
+        TargetPrice=request.args.get("TargetPrice")
+        ProdTitle=request.args.get("ProdTitle")
+        result=model.member.enableNotify(token,TrackingID, TargetPrice, ProdTitle)
+        return result
+    elif request.method=="DELETE":
+        token = request.cookies.get("user")
+        data = request.get_json()
+        result=model.member.disableNotify(token,data)
+        return result

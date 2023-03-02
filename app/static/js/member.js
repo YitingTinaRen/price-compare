@@ -22,10 +22,10 @@ function wheelfunc() {
 // functions
 async function executeAfterCheckAuth(){
     const Auth=await checkAuth();
-    if(Auth=='Done'){
+    if(isLogin){
         getMemberData();
     }else{
-        return 'Please log in!'
+        document.querySelector(".compare-list>span").textContent="請登入！"
     }
 }
 
@@ -116,6 +116,12 @@ const displayData = (data) => {
                                     已追蹤
                                 </span>
                             </div>
+                            <div>
+                                <input type="checkbox" name="priceNotify" value="yes" data-arg3=${data.TrackingID} onclick="PriceNotifyCheckbox(event)">
+                                <label class="PriceNotify" data-arg3=${data.TrackingID}>
+                                    到價通知
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -130,6 +136,13 @@ const displayData = (data) => {
         oldString = CompareList[0].innerHTML;
         CompareList[0].innerHTML = oldString + htmlString;
     }
+    data.forEach(element => {
+        if(element.NotifyBelowTarget){
+            let TrackingID=element.TrackingID.toString();
+            document.querySelector('input[type="checkbox"][data-arg3="'+TrackingID+'"]').checked=true;
+            document.querySelector('.PriceNotify[data-arg3="'+TrackingID+'"]').textContent='低於$'+element.TargetPrice+'通知';
+        }
+    });
 }
 
 function track(event) {
@@ -175,4 +188,34 @@ function track(event) {
             }
         }
     }
+}
+
+function PriceNotifyCheckbox(event){
+    if(event.target.checked){
+        console.log("checked");
+        console.log(event.target.getAttribute('data-arg3'));
+        showTargetPrice(event);
+    }else{
+        console.log("unchecked");
+        let productTitle = event.target.parentElement.parentElement.parentElement.previousElementSibling.textContent;
+        let yes = confirm("您確定要取消該商品之到價通知？");
+        if(yes){
+            fetch("/api/Notify" ,{
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ TrackingID: event.target.getAttribute('data-arg3'),
+                                    ProdTitle:productTitle})
+            }).then(function(res){
+                return res.json()
+            }).then(function(data){
+                console.log(data)
+            })
+            event.target.checked=false;
+            event.target.nextElementSibling.textContent="到價通知";
+        }
+    }
+
+
 }

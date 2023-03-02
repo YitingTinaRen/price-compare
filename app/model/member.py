@@ -54,6 +54,7 @@ class member:
                 }
                 id_res = requests.post(url=id_url, data=id_data)
                 id_res=id_res.json()
+                print(id_res)
                 hasMember=model.db.checkMemberExist(id_res["email"])
                 if hasMember:
                     model.db.updateUserInfo(
@@ -150,4 +151,39 @@ class member:
             return jsonify({'result':result, 'TrackProduct':False}), 200
         
         return jsonify({'result':result, 'TrackProduct':True}),200
+    
+    def enableNotify(token, TrackingID, TargetPrice, ProdTitle):
+        try:
+            member = jwt.decode(token, config.PP_SECRET_KEY,
+                                algorithms=config.PP_JWT_ALGO)
+        except jwt.exceptions.InvalidTokenError as error:
+            print(error)
+            return jsonify({"error": True, "message": "Invalid token"}), 400
+        
+        result=model.db.setNotify(member["ID"], TrackingID, TargetPrice)
+        if not result:
+            return jsonify({"error":True}),500
+        else:
+            msg=f'Hi {member["Name"]},\n 已設定-{ProdTitle}-價格低於{TargetPrice}會通知您！'
+            model.lineBot.sendmsg(token,msg)
+            if model.db.checkTargetPrice(TargetPrice,TrackingID):
+                msg = f'您追蹤的商品:{ProdTitle}\n 已經低於${TargetPrice}!'
+                model.lineBot.sendmsg(token, msg)
+
+        return jsonify({"ok":True}), 200
+    
+    def disableNotify(token,data):
+        try:
+            member = jwt.decode(token, config.PP_SECRET_KEY,
+                                algorithms=config.PP_JWT_ALGO)
+        except jwt.exceptions.InvalidTokenError as error:
+            print(error)
+            return jsonify({"error": True, "message": "Invalid token"}), 400
+        
+        result=model.db.cancelNotify(member['ID'],data['TrackingID'])
+        if result:
+            msg=f'Hi {member["Name"]}, 已取消-{data["ProdTitle"]}-到價通知。'
+            model.lineBot.sendmsg(token,msg)
+        return jsonify({"ok":True}),200
+
 

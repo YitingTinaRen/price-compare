@@ -35,3 +35,7 @@ client_secret=os.getenv("client_secret")
 #Price-Pick
 PP_SECRET_KEY=os.getenv("PP_SECRET_KEY")
 PP_JWT_ALGO=os.getenv("PP_JWT_ALGO")
+
+#Line bot
+Notify_client_id=os.getenv("Notify_client_id")
+Notify_channel_access_token=os.getenv("Notify_channel_access_token")
