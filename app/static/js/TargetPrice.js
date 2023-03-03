@@ -32,7 +32,6 @@ function closeTPModal(event) {
     document.getElementById('target-price-modal').style.display = 'none';
     document.querySelector(".button").setAttribute("data-arg3","");
     document.getElementById("TargetPrice").value="";
-    console.log(event.target);
     if(event.target.nodeName !=="BUTTON"){
         document.querySelector('input[type="checkbox"][data-arg3="' + TrackingID + '"]').checked = false;
     }
@@ -45,7 +44,6 @@ function enableNotify(event){
     fetch("/api/Notify?TrackingID="+event.target.getAttribute("data-arg3")+"&TargetPrice="+TargetPrice+"&ProdTitle="+ProductTitle).then(function(res){
         return res.json()
     }).then(function(data){
-        console.log(data);
     });
     TrackingID=event.target.getAttribute("data-arg3");
     document.querySelector('input[type="checkbox"][data-arg3="' + TrackingID + '"]').checked = true;
