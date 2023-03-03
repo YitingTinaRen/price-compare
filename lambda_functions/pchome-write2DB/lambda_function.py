@@ -4,6 +4,8 @@ import mysql.connector
 from mysql.connector import errorcode
 from datetime import datetime
 import re
+import boto3
+import random
 
 
 def lambda_handler(event, context):
@@ -142,9 +144,15 @@ def lambda_handler(event, context):
                 "url": "https://24h.pchome.com.tw/prod/"+prods[i]["Id"][0:-4]}
         NameWords=Generator.splitString(prod['Name'])
         NickWords=Generator.splitString(prod['Nick'])
-        NameWords["Chinese"]=NameWords["Chinese"]+NickWords["Chinese"]
-        NameWords['Chinese']=list(set(NameWords['Chinese']))
+        NameWords["Chinese"]=NameWords["Chinese"]+' '+NickWords["Chinese"]
+        NameWords["Chinese"]=' '.join(set(NameWords["Chinese"].split(' ')))
         prod.update(NameWords)
+
+        cursor.execute(
+            "select TrackingID, MemberID from ProductTracking where PCHProductID=%s and TargetPrice<=%s", (prods[i]['Id'], prods[i]["Price"]["P"],))
+        result = cursor.fetchall()
+        if result:
+            send2SQS(result)
 
         if prodSale:
             prod.update({"ButtonType": prodSale[i]["ButtonType"]})
@@ -160,7 +168,7 @@ def lambda_handler(event, context):
         result = cursor.fetchone()
         if result:
             # Update existing data
-            print(f'Update existing data, prodID={prod["Id"]}')
+            print(f'Update existing data, prod={prod}')
             updateListProd.append(prod)
             if prods[i]["Pic"]["B"]:
                 updateListPic.append({
@@ -199,6 +207,7 @@ def lambda_handler(event, context):
             "Id": prod["Id"], "CateCode": content[-3]['L2CategoryCode'], "CateName": content[-3]['L2CategoryName'], "CateLevel": 2})
     
     print("Uploading data to DB")
+    cursor.fast_executemany = True
     cursor.executemany(update_products, updateListProd)
     mydb.commit()
     cursor.executemany(add_products, addListProd)
@@ -301,3 +310,16 @@ class Generator:
         }
         print(words)
         return words
+
+
+def send2SQS(data):
+    randNum = int(1000*random.random() % 1000)
+    client = boto3.client('sqs')
+    message = client.send_message(
+        QueueUrl=os.environ['sqsUrl'],
+        MessageBody=(
+            json.dumps(data)
+        ),
+        MessageGroupId='momo-category',
+        MessageDeduplicationId='momo-category' + str(randNum)
+    )

@@ -183,21 +183,35 @@ class db:
 
     def getPCHPriceHistory(ID):
         sql="""
-            select DATE_FORMAT(Date,'%Y-%m-%d') as Date, Price
-            from PCHDaily_Price
-            where ProductID = %s;
+            select DATE_FORMAT(STR_TO_DATE(CONCAT(W.WeekNum, '1'), '%X%V%w'),'%Y-%m-%d') AS Date, W.Min_Price as Price, W.ProductID
+            from PCHWeekly_Price as W
+            where W.ProductID=%s
+            union
+            select DATE_FORMAT(D.Date,'%Y-%m-%d') AS Date, D.Price, D.ProductID
+            from PCHDaily_Price as D
+            where D.ProductID=%s and D.Date > (select MAX(DATE_FORMAT(STR_TO_DATE(CONCAT(WeekNum, '1'), '%X%V%w'),'%Y-%m-%d')) as Date
+            from PCHWeekly_Price
+            where ProductID=%s)
+            order by Date;
         """
-        val=(ID,)
+        val=(ID,ID,ID,)
         result=db.checkAllData(sql,val)
         return result
 
     def getMomoPriceHistory(ID):
         sql = """
-            select DATE_FORMAT(Date,'%Y-%m-%d') as Date, Price
-            from MomoDaily_Price
-            where ProductID = %s;
+            select DATE_FORMAT(STR_TO_DATE(CONCAT(W.WeekNum, '1'), '%X%V%w'),'%Y-%m-%d') AS Date, W.Min_Price as Price, W.ProductID
+            from MomoWeekly_Price as W
+            where W.ProductID=%s
+            union
+            select DATE_FORMAT(D.Date,'%Y-%m-%d') AS Date, D.Price, D.ProductID
+            from MomoDaily_Price as D
+            where D.ProductID=%s and D.Date > (select MAX(DATE_FORMAT(STR_TO_DATE(CONCAT(WeekNum, '1'), '%X%V%w'),'%Y-%m-%d')) as Date
+            from MomoWeekly_Price
+            where ProductID=%s)
+            order by Date;
         """
-        val = (ID,)
+        val = (ID,ID,ID,)
         result = db.checkAllData(sql, val)
         return result
     

@@ -51,12 +51,17 @@ class comparePrice:
     def getPriceHistory(momoID,PCHomeID):
         PCHomeHistory=model.db.getPCHPriceHistory(PCHomeID)
         MomoHistory=model.db.getMomoPriceHistory(momoID)
+        print("PCHome")
+        print(PCHomeHistory)
+        print("Momo")
+        print(MomoHistory)
         data={
             'PCHomeXLabels':[item['Date'] for item in PCHomeHistory],
             'PCHomeData':[item['Price'] for item in PCHomeHistory],
             'MomoXLabels':[item['Date'] for item in MomoHistory],
             'MomoData':[item['Price'] for item in MomoHistory]
         }
+        print(data)
         return data
     
     def trackProduct(token, momoID, PCHID):

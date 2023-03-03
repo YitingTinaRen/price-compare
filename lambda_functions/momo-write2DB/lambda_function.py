@@ -4,6 +4,8 @@ import mysql.connector
 from mysql.connector import errorcode
 from datetime import datetime
 import re
+import random
+import boto3
 
 
 def lambda_handler(event, context):
@@ -54,7 +56,7 @@ def lambda_handler(event, context):
         " `DateTime` DATETIME default CURRENT_TIMESTAMP,"
         " FOREIGN KEY (`ProductID`) REFERENCES `MomoProducts` (`ProductID`) ON DELETE CASCADE "
         ") ENGINE=InnoDB CHARACTER SET = utf8mb4")
-    
+
     # Connect to database
     DB_NAME = os.environ['DB_DB']
     mydb = mysql.connector.connect(
@@ -96,24 +98,24 @@ def lambda_handler(event, context):
 
     # Define data insertion statement
     add_products = ("INSERT INTO MomoProducts"
-                    "(ProductID, ProductName, CurrentPrice, ProductSalecount, ProductURL, Event), EnglishWords, ChineseWords "
+                    "(ProductID, ProductName, CurrentPrice, ProductSalecount, ProductURL, Event, EnglishWords, ChineseWords) "
                     "VALUES (%(Id)s, %(Name)s, %(Price)s, %(Salecount)s, %(Url)s, %(Event)s,%(English)s,%(Chinese)s)")
 
     add_pic = ("INSERT INTO MomoPic"
-            "(ProductID, PicURL) "
-            "VALUES (%(Id)s, %(Pic)s)")
+               "(ProductID, PicURL) "
+               "VALUES (%(Id)s, %(Pic)s)")
 
     add_category = ("INSERT INTO MomoProdCategory"
                     "(ProductID, CategoryCode, CategoryName, CategoryLevel) "
                     "VALUES (%(Id)s, %(CateCode)s, %(CateName)s, %(CateLevel)s)")
 
     update_products = ("UPDATE MomoProducts "
-                    " SET ProductName = %(Name)s, CurrentPrice=%(Price)s, ProductSalecount=%(Salecount)s, ProductURL=%(Url)s, Event=%(Event)s, EnglishWords=%(English)s, ChineseWords=%(Chinese)s "
-                    "WHERE ProductID=%(Id)s")
+                       " SET ProductName = %(Name)s, CurrentPrice=%(Price)s, ProductSalecount=%(Salecount)s, ProductURL=%(Url)s, Event=%(Event)s, EnglishWords=%(English)s, ChineseWords=%(Chinese)s "
+                       "WHERE ProductID=%(Id)s")
 
     update_pic = ("UPDATE MomoPic "
-                "SET PicURL=%(Pic)s "
-                "WHERE ProductID=%(Id)s")
+                  "SET PicURL=%(Pic)s "
+                  "WHERE ProductID=%(Id)s")
 
     # Read SQS msg
     prods = json.loads(event['Records'][0]['body'])
@@ -132,6 +134,11 @@ def lambda_handler(event, context):
         NameWords = Generator.splitString(prod['Name'])
         prod.update(NameWords)
         cursor.execute(
+            "select TrackingID, MemberID from ProductTracking where MomoProductID=%s and TargetPrice<=%s", (prods[i]['Id'], prods[i]["Price"],))
+        result = cursor.fetchall()
+        if result:
+            send2SQS(result)
+        cursor.execute(
             "select * from MomoProducts where ProductID=%s", (prod['Id'],))
         result = cursor.fetchone()
         if result:
@@ -141,6 +148,8 @@ def lambda_handler(event, context):
 
             if prods[i]["Pic"]:
                 for picLink in prods[i]["Pic"]:
+                    print(
+                        f'update ProductID: {prods[i]["Id"]}, Pic: {picLink}')
                     updateListPic.append({
                         "Id": prods[i]["Id"], "Pic": picLink})
             else:
@@ -163,6 +172,8 @@ def lambda_handler(event, context):
             mydb.commit()
             if prods[i]["Pic"]:
                 for picLink in prods[i]["Pic"]:
+                    print(
+                        f'Append ProductID: {prods[i]["Id"]}, Pic: {picLink}')
                     addListPic.append({
                         "Id": prods[i]["Id"], "Pic": picLink})
             else:
@@ -174,12 +185,16 @@ def lambda_handler(event, context):
             addListCate.append({
                 "Id": prods[i]["Id"], "CateCode": prods[-1]["Category"][cateList[2*j]], "CateName": prods[-1]["Category"][cateList[2*j+1]], "CateLevel": int(cateList[2*j][1])})
     print("Uploading data to DB")
+
+    cursor.fast_executemany = True
     cursor.executemany(update_products, updateListProd)
     mydb.commit()
     cursor.executemany(add_products, addListProd)
     mydb.commit()
+    print(f'updateListPic:{updateListPic}')
     cursor.executemany(update_pic, updateListPic)
     mydb.commit()
+    print(f'addListPic:{addListPic}')
     cursor.executemany(add_pic, addListPic)
     mydb.commit()
     cursor.executemany(add_category, addListCate)
@@ -192,6 +207,18 @@ def lambda_handler(event, context):
         'body': json.dumps('Hello from Lambda!')
     }
 
+
+def send2SQS(data):
+    randNum = int(1000*random.random() % 1000)
+    client = boto3.client('sqs')
+    message = client.send_message(
+        QueueUrl=os.environ['sqsUrl'],
+        MessageBody=(
+            json.dumps(data)
+        ),
+        MessageGroupId='momo-category',
+        MessageDeduplicationId='momo-category' + str(randNum)
+    )
 
 def create_database(cursor):
     try:
