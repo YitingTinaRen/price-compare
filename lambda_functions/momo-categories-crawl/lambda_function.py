@@ -167,7 +167,7 @@ class MomoSpider():
                         if result['isProd']:
                             print(f'Send SQS message:{subCategories[i]}')
                             self.send2SQS(subCategories[i])
-                        time.sleep(0.2)
+                        time.sleep(0.3)
 
                 return {'isProd': False}
             else:

@@ -8,11 +8,8 @@ import math
 
 def lambda_handler(event, context):
     # TODO implement
-    print(event['Records'][0]['body'])
-    print(type(event['Records'][0]['body']))
     L2Categories = json.loads(event['Records'][0]['body'])
     print(L2Categories)
-    print(type(L2Categories))
 
 
     pchome_spider = PchomeSpider()
@@ -25,6 +22,7 @@ def lambda_handler(event, context):
     ProdSale=[]
     ProdDescrip=[]
     for page in range(maxPage):
+        print(f"Page {page}/{maxPage}")
         if page == 0:
             Prod=pchome_spider.get_products(L2Categories['Id'], 0)
         else:
@@ -38,18 +36,24 @@ def lambda_handler(event, context):
         ProdSaleStatus = pchome_spider.get_products_sale_status(ProIdList)
         ProdSale=ProdSale+ProdSaleStatus
 
-        ProdDesc = pchome_spider.get_products_description(ProIdList)
-        ProdDescrip.append(ProdDesc)
+        # ProdDesc = pchome_spider.get_products_description(ProIdList)
+        # ProdDescrip.append(ProdDesc)
         Products=Products+Prod
         if isExceedMessageSize(Products, ProdSale,ProdDescrip,L2Categories):
-            Send2SQS(Products, ProdSale, ProdDescrip, L2Categories)
+            print(
+                f"Exceed msg size limit, send2SQS! Products= {Products}")
+            Send2SQS(Products,ProdSale, ProdDescrip, L2Categories)
+            print("Complete sending msg to SQS!")
             Products=[]
             ProdSale=[]
             ProdDescrip=[]
-        time.sleep(0.3)
+        time.sleep(0.2)
     
+    print(f'About to leave lambda function, Products size= {len(Products)}')
     if Products:
+        print(f"Send to SQS, Product={Products}")
         Send2SQS(Products, ProdSale, ProdDescrip, L2Categories)
+        print("Complete sending msg to SQS!")
     
     # # Organize product id lists for calling sale status and product description function
     # ProIdList = [sub['Id'] for sub in Products]
@@ -76,9 +80,6 @@ def lambda_handler(event, context):
     #     MessageDeduplicationId='pchome-prod-'+L2Categories['Id']
     # )
 
-    time.sleep(0.2)
-
-
     return {
         'statusCode': 200,
         'body': json.dumps('Hello from Lambda!')
@@ -101,10 +102,11 @@ def Send2SQS(Products, ProdSale, ProdDescrip, L2Categories):
     )
 
 def isExceedMessageSize(Products, ProdSale, ProdDescrip, L2Categories):
-    Products.append(L2Categories['Category'])
-    Products.append({"salestatus": ProdSale})
-    Products.append({"description": ProdDescrip})
-    if len(json.dumps(Products).encode('utf-8'))>200:
+    PRODUCTS=Products
+    PRODUCTS.append(L2Categories['Category'])
+    PRODUCTS.append({"salestatus": ProdSale})
+    PRODUCTS.append({"description": ProdDescrip})
+    if len(json.dumps(PRODUCTS).encode('utf-8'))>200:
         return True
     else:
         return False

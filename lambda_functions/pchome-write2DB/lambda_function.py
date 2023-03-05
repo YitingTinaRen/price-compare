@@ -124,11 +124,9 @@ def lambda_handler(event, context):
     # content=json.loads(json.dumps(event['Records'][0]['body']))
     content=json.loads(event['Records'][0]['body'])
     prods = content[0:len(content)-3]
-    print(content[-1])
-    print(content[-2])
     prodDesc = content[-1]['description']
-    print(f'prodDesc:{prodDesc}')
     prodSale = content[-2]['salestatus']
+    print(f"Msg from SQS= {content}")
 
     # Insert PChome Data to DB
     addListProd = []
@@ -152,7 +150,9 @@ def lambda_handler(event, context):
             "select TrackingID, MemberID from ProductTracking where PCHProductID=%s and TargetPrice<=%s", (prods[i]['Id'], prods[i]["Price"]["P"],))
         result = cursor.fetchall()
         if result:
+            print(f"Send msg to SQS for Price Alert!")
             send2SQS(result)
+            print("Complete msg sending!")
 
         if prodSale:
             prod.update({"ButtonType": prodSale[i]["ButtonType"]})
@@ -218,6 +218,7 @@ def lambda_handler(event, context):
     mydb.commit()
     cursor.executemany(add_category, addListCate)
     mydb.commit()
+    print("Complete uploading data to DB!")
 
     cursor.close()
     mydb.close()
@@ -308,7 +309,6 @@ class Generator:
             "English": EngStr,
             "Chinese": ChiStr
         }
-        print(words)
         return words
 
 

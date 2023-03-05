@@ -157,12 +157,18 @@ class MomoSpider():
                 # Handle Product SaleCounts
                 ProdIdList = [sub['Id'] for sub in Products]
                 # print(ProdIdList)
-                saleCount = self.get_sale_counts(ProdIdList)
-                for key in list(saleCount.keys()):
-                    # print(key)
-                    Products[ProdIdList.index(key)].update(
-                        {'Salecount': saleCount[key]})
-                    # print(Products[ProdIdList.index(key)])
+                try:
+                    saleCount = self.get_sale_counts(ProdIdList)
+                except:
+                    saleCount=[]
+                    print("Cannot access saleCount!")
+                if saleCount:
+                    for key in list(saleCount.keys()):
+                        # print(key)
+                        Products[ProdIdList.index(key)].update(
+                            {'Salecount': saleCount[key]})
+                        # print(Products[ProdIdList.index(key)])
+
 
                 # Handle next page
                 # Find maxPage
@@ -183,6 +189,7 @@ class MomoSpider():
                     if currentPage < maxPage and currentPage<=35:
                         print(f'Current page: {currentPage}/{maxPage}')
                         nextPageURL = f'https://m.momoshop.com.tw/cateGoods.momo?cn={prod_CatePath[-1]["cn"]}&page={str(currentPage+1)}&sourcePageType=4'
+                        time.sleep(0.2)
                         result = self.get_products(nextPageURL)
                         print(result)
                         

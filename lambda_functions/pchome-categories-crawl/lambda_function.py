@@ -11,22 +11,28 @@ def lambda_handler(event, context):
     pchome_spider = PchomeSpider()
     Categories=pchome_spider.get_categories_L2()
     
-    wishlist=["奶瓶","奶嘴","消毒","溫奶器","嬰兒床","澡盆","尿布","紙尿褲","汽座",
-                "推車","餐盤","餐碗","兒童餐椅","副食品","口水","圍兜","固齒器","水杯",
-                "遊戲地墊", "地墊", "圍欄", "牙刷", "安全座椅", "NB(約5kg以下)",
-                "黏貼型M(約6-11kg)", "褲型M(約6-11kg)", "6個月", "褲型L(約9-14kg)", 
-                "黏貼型L(約9-14kg)", "褲型XL(約12kg以上)"]
+    # wishlist=["奶瓶","奶嘴","消毒","溫奶器","嬰兒床","澡盆","尿布","紙尿褲","汽座",
+    #             "推車","餐盤","餐碗","餐椅","副食品","口水","圍兜","固齒器","水杯",
+    #             "遊戲地墊", "地墊", "圍欄", "牙刷", "安全座椅", "NB(約5kg以下)",
+    #             "黏貼型M(約6-11kg)", "褲型M(約6-11kg)", "6個月", "褲型L(約9-14kg)", 
+    #             "黏貼型L(約9-14kg)", "褲型XL(約12kg以上)","餐具"]
     L0Category={"DECH": "嬰童", "DEAI": "婦幼", "DEAU": "推車汽座", "DAAO": "尿布"}
     hatelist=["活動專區","折價券","滿額","狂銷","每日","玩水褲", "期間","哈燒話題",
                 "特價","教具","書包","免運","本月","童裝","內著","織品","包屁衣","連身裝","上衣",
                 "襯衫", "背心", "外套", "褲/裙/吊帶/洋裝", "眼鏡", "玩具", "三輪車",
                 "手推車配件", "品牌總覽", "汽座配件", "兒童雨具雨衣", "防蚊／除臭／除菌", "防蚊／除臭／除菌",
-                "媽媽包", "親子包", "泳具", "親子野餐日", "護理保健", "抗菌", "防蚊", "清潔用品", "沐浴保養潔牙", "濕巾護理巾"]
+                "媽媽包", "親子包", "泳具", "親子野餐日", "護理保健", "抗菌", "防蚊", "清潔用品", "沐浴保養潔牙", "濕巾護理巾",
+                "學習筷/兒童筷", "湯匙/叉子/叉匙組", "食物咬咬樂", "保鮮盒/便當盒", "便當袋/保冷袋", "涼蓆涼墊", "床包 / 枕頭套", "嬰兒枕 /兒童枕", "兒童睡袋",
+                "防蚊帳 / 防蚊門簾", "兒童遊戲屋/帳篷", "兒童衣架。掛鉤", "成長紀錄/相框/壁貼", "Cheeky Chompers", "防走失帶", "空氣清淨設備", "安全監控設備",
+                "哺乳用品", "沐浴保養潔牙", "清潔用品用具", "抗菌防蚊用品", "護理保健", "寶寶食品館", "寶寶。教具", "滿額免運", "吸乳器", "孕產婦用品 "]
     
     visitedlist=[]
     
     for L0CategoryId in Categories:
         print('Category ID: {}'.format(L0CategoryId))
+        if L0CategoryId not in L0Category:
+            print(f"{L0CategoryId} is not an interested category!")
+            continue
         
         for L1Categories in Categories[L0CategoryId]:
             print('Level 1 category ID: {}, Name:{}'.format(
@@ -42,32 +48,36 @@ def lambda_handler(event, context):
                 continue
             
             for L2Categories in L1Categories['Nodes']:
-                if any(L2Categories['Id'] in item for item in visitedlist):
-                    continue
                 print('Level 2 ID: {}, Name:{}'.format(
                     L2Categories['Id'], L2Categories['Name']))
-
-                if any(item in L2Categories['Name'] for item in wishlist):
-                    print("Category in wishlist, save to sqs")
-                    
-                    client = boto3.client('sqs')
-                    message= client.send_message(
-                        QueueUrl=os.environ['sqsUrl'],
-                        MessageBody=(
-                            json.dumps(
-                                {
-                                    "Id":L2Categories['Id'],
-                                    'Category':{
-                                        'L0CategoryCode': L0CategoryId, 'L0CategoryName': L0Category[L0CategoryId],
-                                        'L1CategoryCode': L1Categories['Id'], 'L1CategoryName': L1Categories['Name'],
-                                        'L2CategoryCode': L2Categories['Id'], 'L2CategoryName': L2Categories['Name']
-                                    }
+                
+                if any(L2Categories['Id'] in item for item in visitedlist):
+                    print("Visited category, skip!")
+                    continue
+                elif any(L2Categories['Id'] in item for item in hatelist):
+                    print("In hatelist, skip!")
+                    continue
+                
+                print("Save to sqs")
+                client = boto3.client('sqs')
+                message= client.send_message(
+                    QueueUrl=os.environ['sqsUrl'],
+                    MessageBody=(
+                        json.dumps(
+                            {
+                                "Id":L2Categories['Id'],
+                                'Category':{
+                                    'L0CategoryCode': L0CategoryId, 'L0CategoryName': L0Category[L0CategoryId],
+                                    'L1CategoryCode': L1Categories['Id'], 'L1CategoryName': L1Categories['Name'],
+                                    'L2CategoryCode': L2Categories['Id'], 'L2CategoryName': L2Categories['Name']
                                 }
-                            )
-                        ),
-                        MessageGroupId='pchome-category',
-                        MessageDeduplicationId='pchome-category'+L2Categories['Id']
-                    )
+                            }
+                        )
+                    ),
+                    MessageGroupId='pchome-category',
+                    MessageDeduplicationId='pchome-category'+L2Categories['Id']
+                )
+                print("Complete msg sending!")
 
     return {
         'statusCode': 200,
