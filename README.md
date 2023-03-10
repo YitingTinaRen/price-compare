@@ -6,10 +6,10 @@ This is a website that compares baby utility products available on two main e-co
 
 ## Demo
 
-Before login with Line:
+##### Before login with Line:
 ![Before Login](https://d1pp7d431dp3ag.cloudfront.net/BeforeLogin.gif)
 
-After login with Line:
+##### After login with Line:
 ![After Login](https://d1pp7d431dp3ag.cloudfront.net/AfterLogin.gif)
 
 
@@ -27,8 +27,33 @@ After login with Line:
 
 - **Client:** HTML, CSS, JavaScript, Chart.js
 
-- **Server:** Python, Flask
+- **Server:** Python, Flask, Docker, AWS EC2, AWS RDS MySQL, Nginx, AWS lambda, AWS SQS, AWS EventBridge
 
+![Back-end architecture](/SomeImgs/BackEndArchitect.png)
+
+## Database structure
+![Database structure](/SomeImgs/PricePick_DB_fig.png)
+- ProductIDs in `MomoProducts` and in `PCHomeProducts` are using index to increase query efficiency.
+- Tables are in 3NF.
+- Tables that are related to products are referenced to each other through the ProductID using forign keys.
+
+## Product matching between PCHome, Momo
+#### The matching process involves 3 steps:
+1. Word split:
+    - Create keywords
+2. MySQL fulltext search
+    - Narrow down data range
+3. Find max matching point and matching rate > 0.6
+    - Max matching point:
+      - Number of intersection words
+    - Matching rate > 0.6
+      - Number of intersection words/number of union words
+    - Best fit
+
+#### An example
+![step 1](/SomeImgs/ProductMatching1.png)
+![step 2](/SomeImgs/ProductMatching2.png)
+![step 3](/SomeImgs/ProductMatching3.png)
 
 ## API Reference
 
@@ -154,8 +179,3 @@ Redirect user to official line login authentication website.
 | `token` | `String` | **Required**. The user JWT token |
 | `TrackingID` | `Integer` | **Required**.The tracking ID of the tracked product by the member. |
 
-## Database structure
-![Database structure](/PricePick_DB_fig.png)
-- ProductIDs in `MomoProducts` and in `PCHomeProducts` are using index to increase query efficiency.
-- Tables are in 3NF.
-- Tables that are related to products are referenced to each other through the ProductID using forign keys.
