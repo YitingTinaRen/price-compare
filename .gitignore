@@ -1,17 +1,5 @@
-/Users/renyiting/Library/CloudStorage/OneDrive-個人/文件/GitHub/price-compare/pchome-prod/*
-/Users/renyiting/Library/CloudStorage/OneDrive-個人/文件/GitHub/price-compare/pchome-desc/*
-/Users/renyiting/Library/CloudStorage/OneDrive-個人/文件/GitHub/price-compare/pchome-salestatus/*
-/Users/renyiting/Library/CloudStorage/OneDrive-個人/文件/GitHub/price-compare/momo-categories/*
-/Users/renyiting/Library/CloudStorage/OneDrive-個人/文件/GitHub/price-compare/momo-prod/*
-<<<<<<< HEAD
-/Users/renyiting/Library/CloudStorage/OneDrive-個人/文件/GitHub/price-compare/price-pick-env/
+*price-pick-env
 *.env
 Price-Pick.xmind
-pchome-L1categories.txt
-=======
-/Users/renyiting/Library/CloudStorage/OneDrive-個人/文件/GitHub/price-compare/app/price-pick-env/*
-*.env
-Price-Pick.xmind
-pchome-L1categories.txt
-/Users/renyiting/Library/CloudStorage/OneDrive-個人/文件/GitHub/price-compare/app/static/img/Firefox
->>>>>>> e3b6a26 (Line login & web crawl on AWS lamda)
+obsolete
+PricePick_DB_fig.png

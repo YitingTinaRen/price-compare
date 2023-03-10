@@ -10,7 +10,6 @@ app.config.from_object(config)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 app.register_blueprint(api.api_compare, url_prefix="/")
 app.register_blueprint(api.api_member, url_prefix="/")
-app.register_blueprint(api.api_linebot, url_prefix="/")
 
 # Pages
 @app.route("/")
