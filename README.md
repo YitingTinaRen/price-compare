@@ -12,7 +12,7 @@ This is a website that compares baby utility products available on two main e-co
 <img src="https://d1pp7d431dp3ag.cloudfront.net/BeforeLogin.gif" width="640px" height="360px">
 
 ##### After login with Line:
-<img src="https://d1pp7d431dp3ag.cloudfront.net/AfterLogin.gif" width="640px" height="360px">
+<img src="SomeImgs/AfterLogin.gif" width="640px" height="360px">
 
 
 ## Features
