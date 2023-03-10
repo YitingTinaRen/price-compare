@@ -9,10 +9,10 @@ This is a website that compares baby utility products available on two main e-co
 ## Demo
 
 ##### Before login with Line:
-![Before Login](https://d1pp7d431dp3ag.cloudfront.net/BeforeLogin.gif)
+<img src="https://d1pp7d431dp3ag.cloudfront.net/BeforeLogin.gif" width="640px" height="360px">
 
 ##### After login with Line:
-![After Login](https://d1pp7d431dp3ag.cloudfront.net/AfterLogin.gif)
+<img src="https://d1pp7d431dp3ag.cloudfront.net/AfterLogin.gif" width="640px" height="360px">
 
 
 ## Features
@@ -181,3 +181,6 @@ Redirect user to official line login authentication website.
 | `token` | `String` | **Required**. The user JWT token |
 | `TrackingID` | `Integer` | **Required**.The tracking ID of the tracked product by the member. |
 
+
+
+[def]: https://d1pp7d431dp3ag.cloudfront.net/AfterLogin.gif
