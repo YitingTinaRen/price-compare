@@ -134,7 +134,7 @@ def lambda_handler(event, context):
         NameWords = Generator.splitString(prod['Name'])
         prod.update(NameWords)
         cursor.execute(
-            "select TrackingID, MemberID from ProductTracking where MomoProductID=%s and TargetPrice<=%s", (prods[i]['Id'], prods[i]["Price"],))
+            "select TrackingID, MemberID from ProductTracking where MomoProductID=%s and TargetPrice>=%s", (prods[i]['Id'], prods[i]["Price"],))
         result = cursor.fetchall()
         if result:
             send2SQS(result)

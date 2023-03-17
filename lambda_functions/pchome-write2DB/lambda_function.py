@@ -147,7 +147,7 @@ def lambda_handler(event, context):
         prod.update(NameWords)
 
         cursor.execute(
-            "select TrackingID, MemberID from ProductTracking where PCHProductID=%s and TargetPrice<=%s", (prods[i]['Id'], prods[i]["Price"]["P"],))
+            "select TrackingID, MemberID from ProductTracking where PCHProductID=%s and TargetPrice>=%s", (prods[i]['Id'], prods[i]["Price"]["P"],))
         result = cursor.fetchall()
         if result:
             print(f"Send msg to SQS for Price Alert!")

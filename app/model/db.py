@@ -292,14 +292,14 @@ class db:
 
     def checkTargetPrice(TargetPrice,TrackingID):
         sql="""
-    select M.CurrentPrice, P.CurrentPrice
-    from ProductTracking as PT
-    inner join MomoProducts as M
-    on PT.MomoProductID=M.ProductID
-    inner join PCHomeProducts as P
-    on PT.PCHProductID=P.ProductID
-    where PT.TrackingID=%s 
-    and (M.CurrentPrice <= %s or P.CurrentPrice <= %s)
+            select M.CurrentPrice, P.CurrentPrice
+            from ProductTracking as PT
+            inner join MomoProducts as M
+            on PT.MomoProductID=M.ProductID
+            inner join PCHomeProducts as P
+            on PT.PCHProductID=P.ProductID
+            where PT.TrackingID=%s 
+            and (M.CurrentPrice <= %s or P.CurrentPrice <= %s)
         """
         val=(TrackingID, TargetPrice, TargetPrice,)
         result=db.checkAllData(sql,val)
