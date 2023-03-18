@@ -183,9 +183,10 @@ class db:
 
     def getPCHPriceHistory(ID):
         sql="""
-            select DATE_FORMAT(STR_TO_DATE(CONCAT(W.WeekNum, '1'), '%X%V%w'),'%Y-%m-%d') AS Date, W.Min_Price as Price, W.ProductID
+            select DATE_FORMAT(STR_TO_DATE(CONCAT(W.WeekNum, '1'), '%X%V%w'),'%Y-%m-%d') AS Date, MIN(W.Min_Price) as Price, W.ProductID
             from PCHWeekly_Price as W
             where W.ProductID=%s
+            group by W.ProductID, Date
             union
             select DATE_FORMAT(D.Date,'%Y-%m-%d') AS Date, D.Price, D.ProductID
             from PCHDaily_Price as D
@@ -200,9 +201,10 @@ class db:
 
     def getMomoPriceHistory(ID):
         sql = """
-            select DATE_FORMAT(STR_TO_DATE(CONCAT(W.WeekNum, '1'), '%X%V%w'),'%Y-%m-%d') AS Date, W.Min_Price as Price, W.ProductID
+            select DATE_FORMAT(STR_TO_DATE(CONCAT(W.WeekNum, '1'), '%X%V%w'),'%Y-%m-%d') AS Date, MIN(W.Min_Price) as Price, W.ProductID
             from MomoWeekly_Price as W
             where W.ProductID=%s
+            group by W.ProductID, Date
             union
             select DATE_FORMAT(D.Date,'%Y-%m-%d') AS Date, D.Price, D.ProductID
             from MomoDaily_Price as D
