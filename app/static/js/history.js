@@ -30,7 +30,7 @@ function showChart(event){
         return res.json()
     }).then(function(data){
         const ctx = document.getElementById('myChart')
-        console.log(data)
+        // console.log(data)
         lineChart = new Chart(ctx, {
             type:'line',
             xLabel: '日期', // optional

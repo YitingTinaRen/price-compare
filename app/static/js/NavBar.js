@@ -6,12 +6,12 @@ async function checkAuth() {
         const response = await fetch('/api/auth');
         const auth = await response.json();
         if (auth.hasOwnProperty('error')) {
-            console.log(auth['errormsg']);
+            // console.log(auth['errormsg']);
             document.getElementById('logout-btn').style.display = 'none';
             document.getElementById('Linelogin-btn').style.display = 'block';
             isLogin = false;
         } else {
-            console.log('have auth');
+            // console.log('have auth');
             memID = auth.data.id;
             // console.log(memID);
             document.getElementById('logout-btn').style.display = 'block';
@@ -44,7 +44,7 @@ function logout() {
     ).then(function (res) {
         return res.json();
     }).then(function (result) { 
-        console.log(result);
+        // console.log(result);
         if (result) {
             window.location.reload();
         }

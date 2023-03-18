@@ -35,7 +35,7 @@ function getMemberData(){
         return res.json();
     }).then(function(data){
         isLoading=false;
-        console.log(data)
+        // console.log(data)
         if(data.TrackProduct){
             if (page == 0) {
                 profilePic = document.querySelector('.profile-pic');

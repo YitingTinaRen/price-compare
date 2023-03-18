@@ -92,7 +92,7 @@ const displayData = (data)=>{
     .join('');
 
     if(page-1==0){
-        console.log("in page-1==0")
+        // console.log("in page-1==0")
         CompareList[0].innerHTML =  htmlString;
     }else{
         oldString = CompareList[0].innerHTML;
@@ -110,7 +110,7 @@ function LoadData(){
         } else {
             lastPage = true;
             page++;
-            console.log("final page!")
+            // console.log("final page!")
         }
         if(Boolean(document.querySelector(".compare-list>span"))){
             document.querySelector('.compare-list>span').remove();
