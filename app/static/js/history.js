@@ -30,26 +30,35 @@ function showChart(event){
         return res.json()
     }).then(function(data){
         const ctx = document.getElementById('myChart')
-        // console.log(data)
+        console.log(data)
 
         // Create two datasets
         var PCHData = {
             label: 'PCHome',
             data: data["PCHomeData"],
             borderDash: [5, 5],
+            borderColor: `rgb(54, 162, 235)`,
         };
 
         var MomoData = {
             label: 'Momo',
             data: data["MomoData"],
+            borderColor: `rgb(255, 99, 132)`,
         };
+        
+        let DataSets;
+        if (data["PCHomeData"].length >= data["MomoData"].length){
+            DataSets = [PCHData, MomoData];
+        }else{
+            DataSets = [MomoData, PCHData];
+        }
 
         lineChart = new Chart(ctx, {
             type:'line',
             xLabel: '日期', // optional
             yLabel: '$ TWD', // optional
             data: {
-                datasets: [PCHData, MomoData]
+                datasets: DataSets
             },
             options: {
                 responsive: true,
@@ -81,7 +90,6 @@ function closeModal(){
     document.querySelector(".close").style.display = 'none';
 
 }
-
 
 
 
