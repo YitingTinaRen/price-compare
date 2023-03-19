@@ -31,20 +31,25 @@ function showChart(event){
     }).then(function(data){
         const ctx = document.getElementById('myChart')
         // console.log(data)
+
+        // Create two datasets
+        var PCHData = {
+            label: 'PCHome',
+            data: data["PCHomeData"],
+            borderDash: [5, 5],
+        };
+
+        var MomoData = {
+            label: 'Momo',
+            data: data["MomoData"],
+        };
+
         lineChart = new Chart(ctx, {
             type:'line',
             xLabel: '日期', // optional
             yLabel: '$ TWD', // optional
             data: {
-                labels: data.PCHomeXLabels,
-                datasets: [{
-                    label: 'PCHome',
-                    borderDash: [5, 5],
-                    data: data.PCHomeData,
-                }, {
-                    label: 'Momo',
-                    data: data.MomoData,
-                }],
+                datasets: [PCHData, MomoData]
             },
             options: {
                 responsive: true,
