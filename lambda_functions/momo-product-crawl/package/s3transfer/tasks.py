@@ -187,7 +187,8 @@ class Task:
             # If the pending main keyword arg is a list then extend the list.
             if isinstance(future, list):
                 futures_to_wait_on.extend(future)
-            # If the pending main keyword arg is a future append it to the list.
+            # If the pending main keyword arg is a future append it to the
+            # list.
             else:
                 futures_to_wait_on.append(future)
         # Now wait for all of the futures to complete.

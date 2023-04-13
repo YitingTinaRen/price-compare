@@ -57,7 +57,8 @@ class WaiterResourceDocumenter(NestedDocumenter):
                 service_waiter_model=self._service_waiter_model,
             )
             # Write waiters in individual/nested files.
-            # Path: <root>/reference/services/<service>/<resource_name>/<waiter_name>.rst
+            # Path:
+            # <root>/reference/services/<service>/<resource_name>/<waiter_name>.rst
             waiters_dir_path = os.path.join(
                 self._root_docs_path,
                 f'{self._service_name}',

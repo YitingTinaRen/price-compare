@@ -16,6 +16,7 @@ from . import (
 if SOUP_SIEVE_PRESENT:
     from soupsieve import SelectorSyntaxError
 
+
 class TestEncoding(SoupTest):
     """Test the ability to encode objects into strings."""
 
@@ -62,19 +63,19 @@ class TestEncoding(SoupTest):
         soup = self.soup(html)
         assert html == repr(soup)
 
-        
+
 class TestFormatters(SoupTest):
     """Test the formatting feature, used by methods like decode() and
     prettify(), and the formatters themselves.
     """
-    
+
     def test_default_formatter_is_minimal(self):
         markup = "<b>&lt;&lt;Sacr\N{LATIN SMALL LETTER E WITH ACUTE} bleu!&gt;&gt;</b>"
         soup = self.soup(markup)
         decoded = soup.decode(formatter="minimal")
         # The < is converted back into &lt; but the e-with-acute is left alone.
         assert decoded == self.document_for(
-                "<b>&lt;&lt;Sacr\N{LATIN SMALL LETTER E WITH ACUTE} bleu!&gt;&gt;</b>"
+            "<b>&lt;&lt;Sacr\N{LATIN SMALL LETTER E WITH ACUTE} bleu!&gt;&gt;</b>"
         )
 
     def test_formatter_html(self):
@@ -92,14 +93,14 @@ class TestFormatters(SoupTest):
         assert decoded == self.document_for(
             "<br><b>&lt;&lt;Sacr&eacute; bleu!&gt;&gt;</b>"
         )
-        
+
     def test_formatter_minimal(self):
         markup = "<b>&lt;&lt;Sacr\N{LATIN SMALL LETTER E WITH ACUTE} bleu!&gt;&gt;</b>"
         soup = self.soup(markup)
         decoded = soup.decode(formatter="minimal")
         # The < is converted back into &lt; but the e-with-acute is left alone.
         assert decoded == self.document_for(
-                "<b>&lt;&lt;Sacr\N{LATIN SMALL LETTER E WITH ACUTE} bleu!&gt;&gt;</b>"
+            "<b>&lt;&lt;Sacr\N{LATIN SMALL LETTER E WITH ACUTE} bleu!&gt;&gt;</b>"
         )
 
     def test_formatter_null(self):
@@ -115,7 +116,7 @@ class TestFormatters(SoupTest):
     def test_formatter_custom(self):
         markup = "<b>&lt;foo&gt;</b><b>bar</b><br/>"
         soup = self.soup(markup)
-        decoded = soup.decode(formatter = lambda x: x.upper())
+        decoded = soup.decode(formatter=lambda x: x.upper())
         # Instead of normal entity conversion code, the custom
         # callable is called on every string.
         assert decoded == self.document_for("<b><FOO></b><b>BAR</b><br/>")
@@ -156,23 +157,24 @@ class TestFormatters(SoupTest):
         assert b"< < hey > >" in encoded
 
     def test_prettify_leaves_preformatted_text_alone(self):
-        soup = self.soup("<div>  foo  <pre>  \tbar\n  \n  </pre>  baz  <textarea> eee\nfff\t</textarea></div>")
+        soup = self.soup(
+            "<div>  foo  <pre>  \tbar\n  \n  </pre>  baz  <textarea> eee\nfff\t</textarea></div>")
         # Everything outside the <pre> tag is reformatted, but everything
         # inside is left alone.
         assert '<div>\n foo\n <pre>  \tbar\n  \n  </pre>\n baz\n <textarea> eee\nfff\t</textarea>\n</div>' == soup.div.prettify()
 
     def test_prettify_accepts_formatter_function(self):
         soup = BeautifulSoup("<html><body>foo</body></html>", 'html.parser')
-        pretty = soup.prettify(formatter = lambda x: x.upper())
+        pretty = soup.prettify(formatter=lambda x: x.upper())
         assert "FOO" in pretty
 
     def test_prettify_outputs_unicode_by_default(self):
         soup = self.soup("<a></a>")
-        assert str == type(soup.prettify())
+        assert isinstance(soup.prettify(), str)
 
     def test_prettify_can_encode_data(self):
         soup = self.soup("<a></a>")
-        assert bytes == type(soup.prettify("utf-8"))
+        assert isinstance(soup.prettify("utf-8"), bytes)
 
     def test_html_entity_substitution_off_by_default(self):
         markup = "<b>Sacr\N{LATIN SMALL LETTER E WITH ACUTE} bleu!</b>"
@@ -206,7 +208,7 @@ class TestFormatters(SoupTest):
 
     def test_encoding_substitution_doesnt_happen_if_tag_is_strained(self):
         markup = ('<head><meta content="text/html; charset=x-sjis" '
-                    'http-equiv="Content-type"/></head><pre>foo</pre>')
+                  'http-equiv="Content-type"/></head><pre>foo</pre>')
 
         # Beautiful Soup used to try to rewrite the meta tag even if the
         # meta tag got filtered out by the strainer. This test makes
@@ -278,12 +280,11 @@ class TestCSSSelectors(SoupTest):
         self.soup = BeautifulSoup(self.HTML, 'html.parser')
 
     def assert_selects(self, selector, expected_ids, **kwargs):
-        el_ids = [el['id'] for el in self.soup.select(selector, **kwargs)]
-        el_ids.sort()
+        el_ids = sorted([el['id']
+                        for el in self.soup.select(selector, **kwargs)])
         expected_ids.sort()
         assert expected_ids == el_ids, "Selector %s, expected [%s], got [%s]" % (
-                selector, ', '.join(expected_ids), ', '.join(el_ids)
-        )
+            selector, ', '.join(expected_ids), ', '.join(el_ids))
 
     assertSelect = assert_selects
 
@@ -308,8 +309,7 @@ class TestCSSSelectors(SoupTest):
 
     def test_select_one_returns_none_if_no_match(self):
         match = self.soup.select_one('nonexistenttag')
-        assert None == match
-
+        assert None is match
 
     def test_tag_in_tag_one(self):
         els = self.soup.select('div div')
@@ -319,12 +319,11 @@ class TestCSSSelectors(SoupTest):
         for selector in ('html div', 'html body div', 'body div'):
             self.assert_selects(selector, ['data1', 'main', 'inner', 'footer'])
 
-
     def test_limit(self):
         self.assert_selects('html div', ['main'], limit=1)
         self.assert_selects('html body div', ['inner', 'main'], limit=2)
         self.assert_selects('body div', ['data1', 'main', 'inner', 'footer'],
-                           limit=10)
+                            limit=10)
 
     def test_tag_no_match(self):
         assert len(self.soup.select('del')) == 0
@@ -342,10 +341,12 @@ class TestCSSSelectors(SoupTest):
         assert dashed[0]['id'] == 'dash2'
 
     def test_dashed_tag_text(self):
-        assert self.soup.select('body > custom-dashed-tag')[0].text == 'Hello there.'
+        assert self.soup.select(
+            'body > custom-dashed-tag')[0].text == 'Hello there.'
 
     def test_select_dashed_matches_find_all(self):
-        assert self.soup.select('custom-dashed-tag') == self.soup.find_all('custom-dashed-tag')
+        assert self.soup.select(
+            'custom-dashed-tag') == self.soup.find_all('custom-dashed-tag')
 
     def test_header_tags(self):
         self.assert_select_multiple(
@@ -385,8 +386,15 @@ class TestCSSSelectors(SoupTest):
             assert len(self.soup.select(selector)) == 0
 
     def test_multi_class_support(self):
-        for selector in ('.class1', 'p.class1', '.class2', 'p.class2',
-            '.class3', 'p.class3', 'html p.class2', 'div#inner .class2'):
+        for selector in (
+            '.class1',
+            'p.class1',
+            '.class2',
+            'p.class2',
+            '.class3',
+            'p.class3',
+            'html p.class2',
+                'div#inner .class2'):
             self.assert_selects(selector, ['pmulti'])
 
     def test_multi_class_selection(self):
@@ -477,7 +485,8 @@ class TestCSSSelectors(SoupTest):
             ('[href*=".css"]', ['l1']),
             ('link[href*=".css"]', ['l1']),
             ('link[id*="1"]', ['l1']),
-            ('[id*="1"]', ['data1', 'l1', 'p1', 'header1', 's1a1', 's1a2', 's2a1', 's1a2s1', 'dash1']),
+            ('[id*="1"]', ['data1', 'l1', 'p1', 'header1',
+             's1a1', 's1a2', 's2a1', 's1a2s1', 'dash1']),
             ('div[id*="1"]', ['data1']),
             ('[id*="noending"]', []),
             # New for this test
@@ -582,7 +591,9 @@ class TestCSSSelectors(SoupTest):
             self.soup.select('h1 >')
 
     def test_sibling_combinator_wont_select_same_tag_twice(self):
-        self.assert_selects('p[lang] ~ p', ['lang-en-gb', 'lang-en-us', 'lang-fr'])
+        self.assert_selects(
+            'p[lang] ~ p', [
+                'lang-en-gb', 'lang-en-us', 'lang-fr'])
 
     # Test the selector grouping operator (the comma)
     def test_multiple_select(self):
@@ -604,10 +615,14 @@ class TestCSSSelectors(SoupTest):
         self.assert_selects('x, y > z', ['xid', 'zidb'])
 
     def test_multiple_select_direct_descendant_and_tags(self):
-        self.assert_selects('div > x, y, z', ['xid', 'yid', 'zida', 'zidb', 'zidab', 'zidac'])
+        self.assert_selects(
+            'div > x, y, z', [
+                'xid', 'yid', 'zida', 'zidb', 'zidab', 'zidac'])
 
     def test_multiple_select_indirect_descendant(self):
-        self.assert_selects('div x,y,  z', ['xid', 'yid', 'zida', 'zidb', 'zidab', 'zidac'])
+        self.assert_selects(
+            'div x,y,  z', [
+                'xid', 'yid', 'zida', 'zidb', 'zidab', 'zidac'])
 
     def test_invalid_multiple_select(self):
         with pytest.raises(SelectorSyntaxError):
@@ -616,10 +631,13 @@ class TestCSSSelectors(SoupTest):
             self.soup.select('x,,y')
 
     def test_multiple_select_attrs(self):
-        self.assert_selects('p[lang=en], p[lang=en-gb]', ['lang-en', 'lang-en-gb'])
+        self.assert_selects('p[lang=en], p[lang=en-gb]',
+                            ['lang-en', 'lang-en-gb'])
 
     def test_multiple_select_ids(self):
-        self.assert_selects('x, y > z[id=zida], z[id=zidab], z[id=zidb]', ['xid', 'zidb', 'zidab'])
+        self.assert_selects(
+            'x, y > z[id=zida], z[id=zidab], z[id=zidb]', [
+                'xid', 'zidb', 'zidab'])
 
     def test_multiple_select_nested(self):
         self.assert_selects('body > div > x, y > z', ['xid', 'zidb'])
@@ -688,7 +706,7 @@ class TestPersistence(SoupTest):
         # Simulate a tag obtained from a source file.
         tag.sourceline = 10
         tag.sourcepos = 33
-        
+
         copied = tag.__copy__()
 
         # The TreeBuilder object is no longer availble, but information
@@ -699,7 +717,7 @@ class TestPersistence(SoupTest):
         assert tag.cdata_list_attributes == copied.cdata_list_attributes
         assert tag.preserve_whitespace_tags == copied.preserve_whitespace_tags
         assert tag.interesting_string_types == copied.interesting_string_types
-        
+
     def test_unicode_pickle(self):
         # A tree containing Unicode characters can be pickled.
         html = "<b>\N{SNOWMAN}</b>"
@@ -714,11 +732,11 @@ class TestPersistence(SoupTest):
         s1 = soup.find(string="Foo")
         s2 = copy.copy(s1)
         assert s1 == s2
-        assert None == s2.parent
-        assert None == s2.next_element
-        assert None != s1.next_sibling
-        assert None == s2.next_sibling
-        assert None == s2.previous_element
+        assert None is s2.parent
+        assert None is s2.next_element
+        assert None is not s1.next_sibling
+        assert None is s2.next_sibling
+        assert None is s2.previous_element
 
     def test_copy_navigablestring_subclass_has_same_type(self):
         html = "<b><!--Foo--></b>"
@@ -749,8 +767,7 @@ class TestPersistence(SoupTest):
 
         # And they don't have the same relation to the parse tree. The
         # copy is not associated with a parse tree at all.
-        assert None == div_copy.parent
-        assert None == div_copy.previous_element
-        assert None == div_copy.find(string='Bar').next_element
-        assert None != div.find(string='Bar').next_element
-
+        assert None is div_copy.parent
+        assert None is div_copy.previous_element
+        assert None is div_copy.find(string='Bar').next_element
+        assert None is not div.find(string='Bar').next_element

@@ -8,6 +8,7 @@ class JMESPathError(ValueError):
 @with_str_method
 class ParseError(JMESPathError):
     _ERROR_MESSAGE = 'Invalid jmespath expression'
+
     def __init__(self, lex_position, token_value, token_type,
                  msg=_ERROR_MESSAGE):
         super(ParseError, self).__init__(lex_position, token_value, token_type)

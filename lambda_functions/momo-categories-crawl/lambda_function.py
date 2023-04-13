@@ -16,7 +16,6 @@ def lambda_handler(event, context):
     url = f'https://m.momoshop.com.tw/category.momo?cn=2700000000&cid=dir&oid=dir&sourcePageType=4&imgSH=fourCardType'
     momo_spider.get_search_category(url)
 
-
     return {
         'statusCode': 200,
         'body': json.dumps('pchome category crawling is successfull!')
@@ -38,8 +37,7 @@ class MomoSpider():
             'sec-ch-ua-mobile': '?0',
         }
         self.get_headers1 = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'
-        }
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'}
         self.get_headers2 = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
         }
@@ -143,21 +141,85 @@ class MomoSpider():
                     }
                     subCategories.append(item)
 
-                HateList = ["濕紙巾", "玩具", "積木", "模型/公仔", "桌遊", "兒童成長傢俱", "寢具/睡袋",
-                            "書包/童包", "文具用品", "TOP30", "館長推薦", "活動專區", "品牌總攬(A~Z)",
-                            "主打活動", "品牌推薦", "披風", "披巾", "背帶口水墊", "揹巾保護墊", "品牌總覽(A~Z)",
-                            "授乳用品", "便器/便盆/馬桶", "精選大牌", "沐浴網架/床", "床配件", "品牌強打", "新生兒禮盒",
-                            "枕類", "被毯類", "孕產期用品", "品牌總覽", "安全防護用品", "戲水褲", "尿片尿墊",
-                            "本月主打活動", "快閃折扣", "限時出清", "特規超值組", "週期訂購", "登機車", "傘車",
-                            "置物袋", "枕", "輔助墊", "提籃蓋巾", "洗澡用品", "清潔劑", "哺乳巾", "奶瓶吸管配件",
-                            "奶瓶刷", "奶粉盒", "收納盒", "鍊夾", "輔助器", "肚圍", "涼感巾", "睡箱/抱袋", "吸管刷",
-                            "靠墊", "沙發墊", "睡袍", "零食杯碗", "其他配件", "水瓶", "水壺", "包巾/紗布巾", "防踢背心",
-                            "包巾/抱袋", "安撫躺/搖椅", "床墊", "清潔/配件", "畫畫衣圍裙", "推車座墊"]
-
+                HateList = [
+                    "濕紙巾",
+                    "玩具",
+                    "積木",
+                    "模型/公仔",
+                    "桌遊",
+                    "兒童成長傢俱",
+                    "寢具/睡袋",
+                    "書包/童包",
+                    "文具用品",
+                    "TOP30",
+                    "館長推薦",
+                    "活動專區",
+                    "品牌總攬(A~Z)",
+                    "主打活動",
+                    "品牌推薦",
+                    "披風",
+                    "披巾",
+                    "背帶口水墊",
+                    "揹巾保護墊",
+                    "品牌總覽(A~Z)",
+                    "授乳用品",
+                    "便器/便盆/馬桶",
+                    "精選大牌",
+                    "沐浴網架/床",
+                    "床配件",
+                    "品牌強打",
+                    "新生兒禮盒",
+                    "枕類",
+                    "被毯類",
+                    "孕產期用品",
+                    "品牌總覽",
+                    "安全防護用品",
+                    "戲水褲",
+                    "尿片尿墊",
+                    "本月主打活動",
+                    "快閃折扣",
+                    "限時出清",
+                    "特規超值組",
+                    "週期訂購",
+                    "登機車",
+                    "傘車",
+                    "置物袋",
+                    "枕",
+                    "輔助墊",
+                    "提籃蓋巾",
+                    "洗澡用品",
+                    "清潔劑",
+                    "哺乳巾",
+                    "奶瓶吸管配件",
+                    "奶瓶刷",
+                    "奶粉盒",
+                    "收納盒",
+                    "鍊夾",
+                    "輔助器",
+                    "肚圍",
+                    "涼感巾",
+                    "睡箱/抱袋",
+                    "吸管刷",
+                    "靠墊",
+                    "沙發墊",
+                    "睡袍",
+                    "零食杯碗",
+                    "其他配件",
+                    "水瓶",
+                    "水壺",
+                    "包巾/紗布巾",
+                    "防踢背心",
+                    "包巾/抱袋",
+                    "安撫躺/搖椅",
+                    "床墊",
+                    "清潔/配件",
+                    "畫畫衣圍裙",
+                    "推車座墊"]
 
                 for i in range(len(subCategories)):
                     print(f'{subCategories[i]["Name"]}')
-                    if not any(item in subCategories[i]["Name"] for item in HateList):
+                    if not any(
+                            item in subCategories[i]["Name"] for item in HateList):
                         print("Not in HateList")
                         subURL = f'https://m.momoshop.com.tw/cateGoods.momo?cn={subCategories[i]["Code"]}&sourcePageType=4'
                         print(
@@ -173,9 +235,9 @@ class MomoSpider():
             else:
                 print("Reach bottom category!")
                 return {'isProd': True}
-   
-    def send2SQS(self,data):
-        randNum=int(1000*random.random()%1000)
+
+    def send2SQS(self, data):
+        randNum = int(1000 * random.random() % 1000)
         client = boto3.client('sqs')
         message = client.send_message(
             QueueUrl=os.environ['sqsUrl'],
@@ -183,5 +245,5 @@ class MomoSpider():
                 json.dumps(data)
             ),
             MessageGroupId='momo-category',
-            MessageDeduplicationId='momo-category' +str(randNum)
+            MessageDeduplicationId='momo-category' + str(randNum)
         )

@@ -66,8 +66,10 @@ class _timelex(object):
         if isinstance(instream, text_type):
             instream = StringIO(instream)
         elif getattr(instream, 'read', None) is None:
-            raise TypeError('Parser must be a string or character stream, not '
-                            '{itype}'.format(itype=instream.__class__.__name__))
+            raise TypeError(
+                'Parser must be a string or character stream, not '
+                '{itype}'.format(
+                    itype=instream.__class__.__name__))
 
         self.instream = instream
         self.charstack = []
@@ -383,7 +385,7 @@ class parserinfo(object):
             res.year = self.convertyear(res.year, res.century_specified)
 
         if ((res.tzoffset == 0 and not res.tzname) or
-             (res.tzname == 'Z' or res.tzname == 'z')):
+                (res.tzname == 'Z' or res.tzname == 'z')):
             res.tzname = "UTC"
             res.tzoffset = 0
         elif res.tzoffset != 0 and res.tzname and self.utczone(res.tzname):
@@ -661,7 +663,7 @@ class parser(object):
     class _result(_resultbase):
         __slots__ = ["year", "month", "day", "weekday",
                      "hour", "minute", "second", "microsecond",
-                     "tzname", "tzoffset", "ampm","any_unused_tokens"]
+                     "tzname", "tzoffset", "ampm", "any_unused_tokens"]
 
     def _parse(self, timestr, dayfirst=None, yearfirst=None, fuzzy=False,
                fuzzy_with_tokens=False):
@@ -820,7 +822,8 @@ class parser(object):
                     elif i + 2 < len_l and l[i + 2] == ':':
                         # -03:00
                         hour_offset = int(l[i + 1])
-                        min_offset = int(l[i + 3])  # TODO: Check that l[i+3] is minute-like?
+                        # TODO: Check that l[i+3] is minute-like?
+                        min_offset = int(l[i + 3])
                         i += 2
                     elif len_li <= 2:
                         # -[0]3
@@ -829,7 +832,8 @@ class parser(object):
                     else:
                         raise ValueError(timestr)
 
-                    res.tzoffset = signal * (hour_offset * 3600 + min_offset * 60)
+                    res.tzoffset = signal * \
+                        (hour_offset * 3600 + min_offset * 60)
 
                     # Look for a timezone name between parenthesis
                     if (i + 5 < len_l and
@@ -938,7 +942,8 @@ class parser(object):
         elif idx + 2 < len_l and tokens[idx + 1] == ':':
             # HH:MM[:SS[.ss]]
             res.hour = int(value)
-            value = self._to_decimal(tokens[idx + 2])  # TODO: try/except for this?
+            # TODO: try/except for this?
+            value = self._to_decimal(tokens[idx + 2])
             (res.minute, res.second) = self._parse_min_sec(value)
 
             if idx + 4 < len_l and tokens[idx + 3] == ':':
@@ -1006,27 +1011,27 @@ class parser(object):
     def _find_hms_idx(self, idx, tokens, info, allow_jump):
         len_l = len(tokens)
 
-        if idx+1 < len_l and info.hms(tokens[idx+1]) is not None:
+        if idx + 1 < len_l and info.hms(tokens[idx + 1]) is not None:
             # There is an "h", "m", or "s" label following this token.  We take
             # assign the upcoming label to the current token.
             # e.g. the "12" in 12h"
             hms_idx = idx + 1
 
-        elif (allow_jump and idx+2 < len_l and tokens[idx+1] == ' ' and
-              info.hms(tokens[idx+2]) is not None):
+        elif (allow_jump and idx + 2 < len_l and tokens[idx + 1] == ' ' and
+              info.hms(tokens[idx + 2]) is not None):
             # There is a space and then an "h", "m", or "s" label.
             # e.g. the "12" in "12 h"
             hms_idx = idx + 2
 
-        elif idx > 0 and info.hms(tokens[idx-1]) is not None:
+        elif idx > 0 and info.hms(tokens[idx - 1]) is not None:
             # There is a "h", "m", or "s" preceding this token.  Since neither
             # of the previous cases was hit, there is no label following this
             # token, so we use the previous label.
             # e.g. the "04" in "12h04"
-            hms_idx = idx-1
+            hms_idx = idx - 1
 
-        elif (1 < idx == len_l-1 and tokens[idx-1] == ' ' and
-              info.hms(tokens[idx-2]) is not None):
+        elif (1 < idx == len_l - 1 and tokens[idx - 1] == ' ' and
+              info.hms(tokens[idx - 2]) is not None):
             # If we are looking at the final token, we allow for a
             # backward-looking check to skip over a space.
             # TODO: Are we sure this is the right condition here?
@@ -1045,7 +1050,7 @@ class parser(object):
             # Hour
             res.hour = int(value)
             if value % 1:
-                res.minute = int(60*(value % 1))
+                res.minute = int(60 * (value % 1))
 
         elif hms == 1:
             (res.minute, res.second) = self._parse_min_sec(value)
@@ -1389,7 +1394,7 @@ class _tzparser(object):
 
     def parse(self, tzstr):
         res = self._result()
-        l = [x for x in re.split(r'([,:.]|[a-zA-Z]+|[0-9]+)',tzstr) if x]
+        l = [x for x in re.split(r'([,:.]|[a-zA-Z]+|[0-9]+)', tzstr) if x]
         used_idxs = list()
         try:
 
@@ -1447,7 +1452,6 @@ class _tzparser(object):
                         break
                 else:
                     break
-
 
             if i < len_l:
                 for j in range(i, len_l):
@@ -1575,7 +1579,8 @@ class _tzparser(object):
             return None
 
         unused_idxs = set(range(len_l)).difference(used_idxs)
-        res.any_unused_tokens = not {l[n] for n in unused_idxs}.issubset({",",":"})
+        res.any_unused_tokens = not {l[n]
+                                     for n in unused_idxs}.issubset({",", ":"})
         return res
 
 
@@ -1594,6 +1599,7 @@ class ParserError(ValueError):
 
     .. versionadded:: 2.8.1
     """
+
     def __str__(self):
         try:
             return self.args[0] % self.args[1:]

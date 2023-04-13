@@ -113,7 +113,8 @@ class SharedExampleDocumenter:
                 item_section.style.new_line()
             item_section.write("'%s': " % key)
 
-            # Shape could be none if there is no output besides ResponseMetadata
+            # Shape could be none if there is no output besides
+            # ResponseMetadata
             item_shape = None
             if shape:
                 if shape.type_name == 'structure':

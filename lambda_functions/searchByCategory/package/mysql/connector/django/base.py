@@ -99,6 +99,7 @@ def adapt_datetime_with_timezone_support(value):
 
 class DjangoMySQLConverter(MySQLConverter):
     """Custom converter for Django for MySQLConnection"""
+
     def _TIME_to_python(self, value, dsc=None):
         """Return MySQL TIME data type as datetime.time()
 
@@ -136,6 +137,7 @@ class DjangoMySQLConverter(MySQLConverter):
 
 class DjangoCMySQLConverter(MySQLConverterBase):
     """Custom converter for Django for CMySQLConnection"""
+
     def _TIME_to_python(self, value, dsc=None):
         """Return MySQL TIME data type as datetime.time()
 

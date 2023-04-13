@@ -217,8 +217,7 @@ class SSOTokenProvider:
             error_msg = (
                 f'The profile "{self._profile_name}" is configured to use the SSO '
                 f'token provider but the "{sso_session_name}" sso_session '
-                f"configuration does not exist."
-            )
+                f"configuration does not exist.")
             raise InvalidConfigError(error_msg=error_msg)
 
         missing_configs = []
@@ -230,8 +229,7 @@ class SSOTokenProvider:
             error_msg = (
                 f'The profile "{self._profile_name}" is configured to use the SSO '
                 f"token provider but is missing the following configuration: "
-                f"{missing_configs}."
-            )
+                f"{missing_configs}.")
             raise InvalidConfigError(error_msg=error_msg)
 
         return {

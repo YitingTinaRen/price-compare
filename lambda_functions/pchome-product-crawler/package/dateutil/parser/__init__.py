@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from ._parser import _tzparser, _parsetz
+from ._parser import _timelex, _resultbase
 from ._parser import parse, parser, parserinfo, ParserError
 from ._parser import DEFAULTPARSER, DEFAULTTZPARSER
 from ._parser import UnknownTimezoneWarning
@@ -33,6 +35,7 @@ def __deprecated_private_func(f):
 
     return deprecated_func
 
+
 def __deprecate_private_class(c):
     import warnings
 
@@ -51,9 +54,6 @@ def __deprecate_private_class(c):
 
     return private_class
 
-
-from ._parser import _timelex, _resultbase
-from ._parser import _tzparser, _parsetz
 
 _timelex = __deprecate_private_class(_timelex)
 _tzparser = __deprecate_private_class(_tzparser)

@@ -27,14 +27,13 @@ DB API v2.0 (PEP-249).
 """
 
 # Python Db API v2
+from . import constants
+import datetime
+import time
 apilevel = '2.0'
 threadsafety = 1
 paramstyle = 'pyformat'
 
-import time
-import datetime
-
-from . import constants
 
 class _DBAPITypeObject(object):
 
@@ -53,18 +52,23 @@ class _DBAPITypeObject(object):
         else:
             return True
 
+
 Date = datetime.date
 Time = datetime.time
 Timestamp = datetime.datetime
 
+
 def DateFromTicks(ticks):
     return Date(*time.localtime(ticks)[:3])
+
 
 def TimeFromTicks(ticks):
     return Time(*time.localtime(ticks)[3:6])
 
+
 def TimestampFromTicks(ticks):
     return Timestamp(*time.localtime(ticks)[:6])
+
 
 Binary = bytes
 

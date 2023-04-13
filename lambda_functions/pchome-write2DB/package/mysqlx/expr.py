@@ -98,6 +98,7 @@ class TokenType:
     ORDERBY_DESC = 64
     AS = 65
 
+
 interval_units = set([
     TokenType.MICROSECOND,
     TokenType.SECOND,
@@ -111,36 +112,36 @@ interval_units = set([
 
 # map of reserved word to token type
 reservedWords = {
-    "and":      TokenType.AND,
-    "or":       TokenType.OR,
-    "xor":      TokenType.XOR,
-    "is":       TokenType.IS,
-    "not":      TokenType.NOT,
-    "like":     TokenType.LIKE,
-    "in":       TokenType.IN,
-    "regexp":   TokenType.REGEXP,
-    "between":  TokenType.BETWEEN,
+    "and": TokenType.AND,
+    "or": TokenType.OR,
+    "xor": TokenType.XOR,
+    "is": TokenType.IS,
+    "not": TokenType.NOT,
+    "like": TokenType.LIKE,
+    "in": TokenType.IN,
+    "regexp": TokenType.REGEXP,
+    "between": TokenType.BETWEEN,
     "interval": TokenType.INTERVAL,
-    "escape":   TokenType.ESCAPE,
-    "cast":     TokenType.CAST,
-    "div":      TokenType.DIV,
-    "hex":      TokenType.HEX,
-    "bin":      TokenType.BIN,
-    "true":     TokenType.TRUE,
-    "false":    TokenType.FALSE,
-    "null":     TokenType.NULL,
-    "second":   TokenType.SECOND,
-    "minute":   TokenType.MINUTE,
-    "hour":     TokenType.HOUR,
-    "day":      TokenType.DAY,
-    "week":     TokenType.WEEK,
-    "month":    TokenType.MONTH,
-    "quarter":  TokenType.QUARTER,
-    "year":     TokenType.YEAR,
+    "escape": TokenType.ESCAPE,
+    "cast": TokenType.CAST,
+    "div": TokenType.DIV,
+    "hex": TokenType.HEX,
+    "bin": TokenType.BIN,
+    "true": TokenType.TRUE,
+    "false": TokenType.FALSE,
+    "null": TokenType.NULL,
+    "second": TokenType.SECOND,
+    "minute": TokenType.MINUTE,
+    "hour": TokenType.HOUR,
+    "day": TokenType.DAY,
+    "week": TokenType.WEEK,
+    "month": TokenType.MONTH,
+    "quarter": TokenType.QUARTER,
+    "year": TokenType.YEAR,
     "microsecond": TokenType.MICROSECOND,
-    "asc":      TokenType.ORDERBY_ASC,
-    "desc":     TokenType.ORDERBY_DESC,
-    "as":       TokenType.AS
+    "asc": TokenType.ORDERBY_ASC,
+    "desc": TokenType.ORDERBY_DESC,
+    "as": TokenType.AS
 }
 
 
@@ -274,9 +275,9 @@ class ExprParser:
             raise ValueError("Unterminated quoted string starting at {0}"
                              "".format(start))
         if quote_char == "`":
-            return Token(TokenType.IDENT, val, len(val)+2)
+            return Token(TokenType.IDENT, val, len(val) + 2)
         else:
-            return Token(TokenType.LSTRING, val, len(val)+2)
+            return Token(TokenType.LSTRING, val, len(val) + 2)
 
     def lex(self):
         i = 0
@@ -494,7 +495,7 @@ class ExprParser:
             else:
                 break
         items = len(docpath)
-        if items > 0 and docpath[items-1].type == \
+        if items > 0 and docpath[items - 1].type == \
            DocumentPathItem.DOUBLE_ASTERISK:
             raise ValueError("JSON path may not end in '**' at {0}"
                              "".format(self.pos))

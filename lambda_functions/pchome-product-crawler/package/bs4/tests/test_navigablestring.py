@@ -15,12 +15,13 @@ from bs4.element import (
 
 from . import SoupTest
 
+
 class TestNavigableString(SoupTest):
 
     def test_text_acquisition_methods(self):
         # These methods are intended for use against Tag, but they
         # work on NavigableString as well,
-        
+
         s = NavigableString("fee ")
         cdata = CData("fie ")
         comment = Comment("foe ")
@@ -36,7 +37,7 @@ class TestNavigableString(SoupTest):
         assert ["fie "] == list(cdata.strings)
         assert ["fie"] == list(cdata.stripped_strings)
         assert ["fie "] == list(cdata._all_strings())
-        
+
         # Since a Comment isn't normally considered 'text',
         # these methods generally do nothing.
         assert "" == comment.get_text()
@@ -51,9 +52,10 @@ class TestNavigableString(SoupTest):
     def test_string_has_immutable_name_property(self):
         # string.name is defined as None and can't be modified
         string = self.soup("s").string
-        assert None == string.name
+        assert None is string.name
         with pytest.raises(AttributeError):
             string.name = 'foo'
+
 
 class TestNavigableStringSubclasses(SoupTest):
 
@@ -74,6 +76,7 @@ class TestNavigableStringSubclasses(SoupTest):
         """
 
         self.count = 0
+
         def increment(*args):
             self.count += 1
             return "BITTER FAILURE"
@@ -116,7 +119,7 @@ class TestNavigableStringSubclasses(SoupTest):
             isinstance(x, TemplateString)
             for x in soup.template._all_strings(types=None)
         )
-        
+
         # Once the <template> tag closed, we went back to using
         # NavigableString.
         outside = soup.template.next_sibling

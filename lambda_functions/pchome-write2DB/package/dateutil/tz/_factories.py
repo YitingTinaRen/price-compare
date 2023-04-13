@@ -65,8 +65,8 @@ class _TzStrFactory(_TzFactory):
         instance = cls.__instances.get(key, None)
 
         if instance is None:
-            instance = cls.__instances.setdefault(key,
-                cls.instance(s, posix_offset))
+            instance = cls.__instances.setdefault(
+                key, cls.instance(s, posix_offset))
 
         # This lock may not be necessary in Python 3. See GH issue #901
         with cls.__cache_lock:
@@ -77,4 +77,3 @@ class _TzStrFactory(_TzFactory):
                 cls.__strong_cache.popitem(last=False)
 
         return instance
-

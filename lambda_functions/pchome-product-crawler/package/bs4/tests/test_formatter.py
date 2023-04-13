@@ -8,6 +8,7 @@ from bs4.formatter import (
 )
 from . import SoupTest
 
+
 class TestFormatter(SoupTest):
 
     def test_default_attributes(self):
@@ -28,7 +29,7 @@ class TestFormatter(SoupTest):
         assert [] == formatter.attributes(tag)
 
         assert ' ' == formatter.indent
-        
+
     def test_sort_attributes(self):
         # Test the ability to override Formatter.attributes() to,
         # e.g., disable the normal sorting of attributes.
@@ -38,7 +39,7 @@ class TestFormatter(SoupTest):
                 for k, v in sorted(tag.attrs.items()):
                     if k == 'ignore':
                         continue
-                    yield k,v
+                    yield k, v
 
         soup = self.soup('<p cval="1" aval="2" ignore="ignored"></p>')
         formatter = UnsortedFormatter()
@@ -52,7 +53,7 @@ class TestFormatter(SoupTest):
     def test_empty_attributes_are_booleans(self):
         # Test the behavior of empty_attributes_are_booleans as well
         # as which Formatters have it enabled.
-        
+
         for name in ('html', 'minimal', None):
             formatter = HTMLFormatter.REGISTRY[name]
             assert False == formatter.empty_attributes_are_booleans
@@ -74,8 +75,10 @@ class TestFormatter(SoupTest):
         ):
             soup = self.soup(markup)
             for formatter in ('html', 'minimal', 'xml', None):
-                assert b'<option selected=""></option>' == soup.option.encode(formatter='html')
-                assert b'<option selected></option>' == soup.option.encode(formatter='html5')
+                assert b'<option selected=""></option>' == soup.option.encode(
+                    formatter='html')
+                assert b'<option selected></option>' == soup.option.encode(
+                    formatter='html5')
 
     @pytest.mark.parametrize(
         "indent,expect",
@@ -106,8 +109,7 @@ class TestFormatter(SoupTest):
         # Pretty-printing only happens with prettify(), not
         # encode().
         assert soup.encode(formatter=formatter) != expect
-        
+
     def test_default_indent_value(self):
         formatter = Formatter()
         assert formatter.indent == ' '
-

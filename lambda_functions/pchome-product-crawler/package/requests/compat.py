@@ -8,7 +8,31 @@ compatibility until the next major version.
 """
 
 try:
-    import chardet
+from urllib.request import (
+    getproxies,
+    getproxies_environment,
+    parse_http_list,
+    proxy_bypass,
+    proxy_bypass_environment,
+)
+from urllib.parse import (
+    quote,
+    quote_plus,
+    unquote,
+    unquote_plus,
+    urldefrag,
+    urlencode,
+    urljoin,
+    urlparse,
+    urlsplit,
+    urlunparse,
+)
+from io import StringIO
+from http.cookies import Morsel
+from http import cookiejar as cookielib
+from collections.abc import Callable, Mapping, MutableMapping
+from collections import OrderedDict
+import chardet
 except ImportError:
     import charset_normalizer as chardet
 
@@ -42,34 +66,10 @@ else:
     from json import JSONDecodeError
 
 # Keep OrderedDict for backwards compatibility.
-from collections import OrderedDict
-from collections.abc import Callable, Mapping, MutableMapping
-from http import cookiejar as cookielib
-from http.cookies import Morsel
-from io import StringIO
 
 # --------------
 # Legacy Imports
 # --------------
-from urllib.parse import (
-    quote,
-    quote_plus,
-    unquote,
-    unquote_plus,
-    urldefrag,
-    urlencode,
-    urljoin,
-    urlparse,
-    urlsplit,
-    urlunparse,
-)
-from urllib.request import (
-    getproxies,
-    getproxies_environment,
-    parse_http_list,
-    proxy_bypass,
-    proxy_bypass_environment,
-)
 
 builtin_str = str
 str = str

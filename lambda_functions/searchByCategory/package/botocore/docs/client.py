@@ -188,29 +188,23 @@ class ClientExceptionsDocumenter:
         documentation=('Normalized access to common exception attributes.'),
         members=OrderedDict(
             [
-                (
-                    'Code',
-                    DocumentedShape(
-                        name='Code',
-                        type_name='string',
-                        documentation=(
-                            'An identifier specifying the exception type.'
-                        ),
-                    ),
-                ),
-                (
-                    'Message',
-                    DocumentedShape(
-                        name='Message',
-                        type_name='string',
-                        documentation=(
-                            'A descriptive message explaining why the exception '
-                            'occured.'
-                        ),
-                    ),
-                ),
-            ]
-        ),
+                ('Code',
+                 DocumentedShape(
+                  name='Code',
+                     type_name='string',
+                     documentation=('An identifier specifying the exception type.'),
+                 ),
+                 ),
+                ('Message',
+                 DocumentedShape(
+                     name='Message',
+                     type_name='string',
+                     documentation=(
+                         'A descriptive message explaining why the exception '
+                         'occured.'),
+                 ),
+                 ),
+            ]),
     )
 
     def __init__(self, client):

@@ -286,6 +286,7 @@ class tzrangebase(_tzinfo):
 
     .. versionadded:: 2.6.0
     """
+
     def __init__(self):
         raise NotImplementedError('tzrangebase is an abstract base class')
 

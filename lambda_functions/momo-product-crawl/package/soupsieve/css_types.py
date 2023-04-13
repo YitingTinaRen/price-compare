@@ -56,18 +56,14 @@ class Immutable:
     def __eq__(self, other: Any) -> bool:
         """Equal."""
 
-        return (
-            isinstance(other, self.__base__()) and
-            all([getattr(other, key) == getattr(self, key) for key in self.__slots__ if key != '_hash'])
-        )
+        return (isinstance(other, self.__base__()) and all([getattr(
+            other, key) == getattr(self, key) for key in self.__slots__ if key != '_hash']))
 
     def __ne__(self, other: Any) -> bool:
         """Equal."""
 
-        return (
-            not isinstance(other, self.__base__()) or
-            any([getattr(other, key) != getattr(self, key) for key in self.__slots__ if key != '_hash'])
-        )
+        return (not isinstance(other, self.__base__()) or any([getattr(
+            other, key) != getattr(self, key) for key in self.__slots__ if key != '_hash']))
 
     def __hash__(self) -> int:
         """Hash."""
@@ -77,14 +73,15 @@ class Immutable:
     def __setattr__(self, name: str, value: Any) -> None:
         """Prevent mutability."""
 
-        raise AttributeError("'{}' is immutable".format(self.__class__.__name__))
+        raise AttributeError(
+            "'{}' is immutable".format(
+                self.__class__.__name__))
 
     def __repr__(self) -> str:  # pragma: no cover
         """Representation."""
 
-        return "{}({})".format(
-            self.__class__.__name__, ', '.join(["{}={!r}".format(k, getattr(self, k)) for k in self.__slots__[:-1]])
-        )
+        return "{}({})".format(self.__class__.__name__, ', '.join(
+            ["{}={!r}".format(k, getattr(self, k)) for k in self.__slots__[:-1]]))
 
     __str__ = __repr__
 
@@ -105,16 +102,22 @@ class ImmutableDict(Mapping[Any, Any]):
 
         self._validate(arg)
         self._d = dict(arg)
-        self._hash = hash(tuple([(type(x), x, type(y), y) for x, y in sorted(self._d.items())]))
+        self._hash = hash(tuple([(type(x), x, type(y), y)
+                          for x, y in sorted(self._d.items())]))
 
-    def _validate(self, arg: Union[Dict[Any, Any], Iterable[Tuple[Any, Any]]]) -> None:
+    def _validate(self, arg: Union[Dict[Any, Any],
+                  Iterable[Tuple[Any, Any]]]) -> None:
         """Validate arguments."""
 
         if isinstance(arg, dict):
             if not all([isinstance(v, Hashable) for v in arg.values()]):
-                raise TypeError('{} values must be hashable'.format(self.__class__.__name__))
+                raise TypeError(
+                    '{} values must be hashable'.format(
+                        self.__class__.__name__))
         elif not all([isinstance(k, Hashable) and isinstance(v, Hashable) for k, v in arg]):
-            raise TypeError('{} values must be hashable'.format(self.__class__.__name__))
+            raise TypeError(
+                '{} values must be hashable'.format(
+                    self.__class__.__name__))
 
     def __iter__(self) -> Iterator[Any]:
         """Iterator."""
@@ -147,37 +150,49 @@ class ImmutableDict(Mapping[Any, Any]):
 class Namespaces(ImmutableDict):
     """Namespaces."""
 
-    def __init__(self, arg: Union[Dict[str, str], Iterable[Tuple[str, str]]]) -> None:
+    def __init__(self, arg: Union[Dict[str, str],
+                 Iterable[Tuple[str, str]]]) -> None:
         """Initialize."""
 
         super().__init__(arg)
 
-    def _validate(self, arg: Union[Dict[str, str], Iterable[Tuple[str, str]]]) -> None:
+    def _validate(self, arg: Union[Dict[str, str],
+                  Iterable[Tuple[str, str]]]) -> None:
         """Validate arguments."""
 
         if isinstance(arg, dict):
             if not all([isinstance(v, str) for v in arg.values()]):
-                raise TypeError('{} values must be hashable'.format(self.__class__.__name__))
+                raise TypeError(
+                    '{} values must be hashable'.format(
+                        self.__class__.__name__))
         elif not all([isinstance(k, str) and isinstance(v, str) for k, v in arg]):
-            raise TypeError('{} keys and values must be Unicode strings'.format(self.__class__.__name__))
+            raise TypeError(
+                '{} keys and values must be Unicode strings'.format(
+                    self.__class__.__name__))
 
 
 class CustomSelectors(ImmutableDict):
     """Custom selectors."""
 
-    def __init__(self, arg: Union[Dict[str, str], Iterable[Tuple[str, str]]]) -> None:
+    def __init__(self, arg: Union[Dict[str, str],
+                 Iterable[Tuple[str, str]]]) -> None:
         """Initialize."""
 
         super().__init__(arg)
 
-    def _validate(self, arg: Union[Dict[str, str], Iterable[Tuple[str, str]]]) -> None:
+    def _validate(self, arg: Union[Dict[str, str],
+                  Iterable[Tuple[str, str]]]) -> None:
         """Validate arguments."""
 
         if isinstance(arg, dict):
             if not all([isinstance(v, str) for v in arg.values()]):
-                raise TypeError('{} values must be hashable'.format(self.__class__.__name__))
+                raise TypeError(
+                    '{} values must be hashable'.format(
+                        self.__class__.__name__))
         elif not all([isinstance(k, str) and isinstance(v, str) for k, v in arg]):
-            raise TypeError('{} keys and values must be Unicode strings'.format(self.__class__.__name__))
+            raise TypeError(
+                '{} keys and values must be Unicode strings'.format(
+                    self.__class__.__name__))
 
 
 class Selector(Immutable):
@@ -307,7 +322,14 @@ class SelectorNth(Immutable):
     last: bool
     selectors: 'SelectorList'
 
-    def __init__(self, a: int, n: bool, b: int, of_type: bool, last: bool, selectors: 'SelectorList') -> None:
+    def __init__(
+        self,
+        a: int,
+        n: bool,
+        b: int,
+        of_type: bool,
+        last: bool,
+            selectors: 'SelectorList') -> None:
         """Initialize."""
 
         super().__init__(

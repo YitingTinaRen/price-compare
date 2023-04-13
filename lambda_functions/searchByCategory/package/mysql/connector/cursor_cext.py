@@ -41,6 +41,7 @@ from .cursor import (
 
 from _mysql_connector import MySQLInterfaceError  # pylint: disable=F0401
 
+
 class _ParamSubstitutor(object):
 
     """
@@ -297,7 +298,8 @@ class CMySQLCursor(MySQLCursorAbstract):
                 prepared = self._cnx.prepare_for_mysql(params)
                 if isinstance(prepared, dict):
                     for key, value in prepared.items():
-                        tmp = tmp.replace("%({0})s".format(key).encode(), value)
+                        tmp = tmp.replace(
+                            "%({0})s".format(key).encode(), value)
                 elif isinstance(prepared, (list, tuple)):
                     psub = _ParamSubstitutor(prepared)
                     tmp = RE_PY_PARAM.sub(psub, tmp)
@@ -317,7 +319,6 @@ class CMySQLCursor(MySQLCursorAbstract):
         except Exception as err:
             raise errors.InterfaceError(
                 "Failed executing the operation; %s" % err)
-
 
     def executemany(self, operation, seq_params):
         """Execute the given operation multiple times"""
@@ -807,4 +808,3 @@ class CMySQLCursorPrepared(CMySQLCursor):
         super(CMySQLCursorPrepared, self).__init__(connection)
         raise NotImplementedError(
             "Alternative: Use connection.MySQLCursorPrepared")
-

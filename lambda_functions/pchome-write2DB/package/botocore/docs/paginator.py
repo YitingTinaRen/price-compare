@@ -52,13 +52,15 @@ class PaginatorDocumenter:
             section.style.tocitem(
                 f'{self._service_name}/paginator/{paginator_name}'
             )
-            # Create a new DocumentStructure for each paginator and add contents.
+            # Create a new DocumentStructure for each paginator and add
+            # contents.
             paginator_doc_structure = DocumentStructure(
                 paginator_name, target='html'
             )
             self._add_paginator(paginator_doc_structure, paginator_name)
             # Write paginators in individual/nested files.
-            # Path: <root>/reference/services/<service>/paginator/<paginator_name>.rst
+            # Path:
+            # <root>/reference/services/<service>/paginator/<paginator_name>.rst
             paginator_dir_path = os.path.join(
                 self._root_docs_path, self._service_name, 'paginator'
             )

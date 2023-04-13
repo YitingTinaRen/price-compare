@@ -28,10 +28,10 @@ class DatabaseOperations(BaseDatabaseOperations):
 
     # MySQL stores positive fields as UNSIGNED ints.
     if django.VERSION >= (1, 7):
-        integer_field_ranges = dict(BaseDatabaseOperations.integer_field_ranges,
-                                    PositiveSmallIntegerField=(0, 4294967295),
-                                    PositiveIntegerField=(
-                                        0, 18446744073709551615),)
+        integer_field_ranges = dict(
+            BaseDatabaseOperations.integer_field_ranges, PositiveSmallIntegerField=(
+                0, 4294967295), PositiveIntegerField=(
+                0, 18446744073709551615),)
 
     def date_extract_sql(self, lookup_type, field_name):
         # http://dev.mysql.com/doc/mysql/en/date-and-time-functions.html
@@ -232,13 +232,13 @@ class DatabaseOperations(BaseDatabaseOperations):
         def year_lookup_bounds_for_datetime_field(self, value):
             # Django 1.6
             # Again, no microseconds
-            first, second = super(DatabaseOperations,
-                self).year_lookup_bounds_for_datetime_field(value)
+            first, second = super(
+                DatabaseOperations, self).year_lookup_bounds_for_datetime_field(value)
             if self.connection.mysql_version >= (5, 6, 4):
                 return [first.replace(microsecond=0), second]
             else:
                 return [first.replace(microsecond=0),
-                    second.replace(microsecond=0)]
+                        second.replace(microsecond=0)]
 
         def sequence_reset_by_name_sql(self, style, sequences):
             # Truncate already resets the AUTO_INCREMENT field from
@@ -249,10 +249,10 @@ class DatabaseOperations(BaseDatabaseOperations):
                     alter=style.SQL_KEYWORD('ALTER'),
                     table=style.SQL_KEYWORD('TABLE'),
                     auto_inc=style.SQL_KEYWORD('AUTO_INCREMENT'),
-                    field=style.SQL_FIELD('= 1')
-                )
+                    field=style.SQL_FIELD('= 1'))
                 for sequence in sequences:
-                    tablename = style.SQL_TABLE(self.quote_name(sequence['table']))
+                    tablename = style.SQL_TABLE(
+                        self.quote_name(sequence['table']))
                     res.append(fmt.format(tablename=tablename))
                 return res
             return res

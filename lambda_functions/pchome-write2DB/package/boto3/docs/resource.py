@@ -155,7 +155,8 @@ class ResourceDocumenter(BaseDocumenter):
             )
         for identifier in identifiers:
             member_list.append(identifier.name)
-            # Create a new DocumentStructure for each identifier and add contents.
+            # Create a new DocumentStructure for each identifier and add
+            # contents.
             identifier_doc = DocumentStructure(identifier.name, target='html')
             identifier_doc.add_title_section(identifier.name)
             identifier_section = identifier_doc.add_new_section(
@@ -167,7 +168,8 @@ class ResourceDocumenter(BaseDocumenter):
                 identifier_model=identifier,
             )
             # Write identifiers in individual/nested files.
-            # Path: <root>/reference/services/<service>/<resource_name>/<identifier_name>.rst
+            # Path:
+            # <root>/reference/services/<service>/<resource_name>/<identifier_name>.rst
             identifiers_dir_path = os.path.join(
                 self._root_docs_path,
                 f'{self._service_name}',
@@ -206,7 +208,8 @@ class ResourceDocumenter(BaseDocumenter):
         for attr_name in sorted(attributes):
             _, attr_shape = attributes[attr_name]
             attribute_list.append(attr_name)
-            # Create a new DocumentStructure for each attribute and add contents.
+            # Create a new DocumentStructure for each attribute and add
+            # contents.
             attribute_doc = DocumentStructure(attr_name, target='html')
             attribute_doc.add_title_section(attr_name)
             attribute_section = attribute_doc.add_new_section(attr_name)
@@ -219,7 +222,8 @@ class ResourceDocumenter(BaseDocumenter):
                 attr_model=attr_shape,
             )
             # Write attributes in individual/nested files.
-            # Path: <root>/reference/services/<service>/<resource_name>/<attribute_name>.rst
+            # Path:
+            # <root>/reference/services/<service>/<resource_name>/<attribute_name>.rst
             attributes_dir_path = os.path.join(
                 self._root_docs_path,
                 f'{self._service_name}',
@@ -247,7 +251,8 @@ class ResourceDocumenter(BaseDocumenter):
             self._add_overview_of_member_type(section, 'references')
         for reference in references:
             reference_list.append(reference.name)
-            # Create a new DocumentStructure for each reference and add contents.
+            # Create a new DocumentStructure for each reference and add
+            # contents.
             reference_doc = DocumentStructure(reference.name, target='html')
             reference_doc.add_title_section(reference.name)
             reference_section = reference_doc.add_new_section(reference.name)
@@ -255,7 +260,8 @@ class ResourceDocumenter(BaseDocumenter):
                 section=reference_section, reference_model=reference
             )
             # Write references in individual/nested files.
-            # Path: <root>/reference/services/<service>/<resource_name>/<reference_name>.rst
+            # Path:
+            # <root>/reference/services/<service>/<resource_name>/<reference_name>.rst
             references_dir_path = os.path.join(
                 self._root_docs_path,
                 f'{self._service_name}',
@@ -316,8 +322,7 @@ class ResourceDocumenter(BaseDocumenter):
         section.write(
             "Before using anything on this page, please refer to the resources "
             ":doc:`user guide <../../../../guide/resources>` for the most recent "
-            "guidance on using resources."
-        )
+            "guidance on using resources.")
         section.style.end_note()
 
 

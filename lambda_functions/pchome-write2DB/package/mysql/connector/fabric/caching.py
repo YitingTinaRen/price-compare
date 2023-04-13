@@ -123,7 +123,7 @@ class CacheShardTable(CacheEntry):
                     key = datetime.strptime(key, "%Y-%m-%d %H:%M:%S")
                 else:
                     key = datetime.strptime(key, "%Y-%m-%d").date()
-            except:
+            except BaseException:
                 raise ValueError(
                     "RANGE_DATETIME key could not be parsed, was: {0}".format(
                         key
@@ -159,6 +159,7 @@ class CacheShardTable(CacheEntry):
 
 class CacheGroup(CacheEntry):
     """Cache entry for a Fabric group"""
+
     def __init__(self, group_name, servers):
         super(CacheGroup, self).__init__(version=None, fabric_uuid=None)
         self.group_name = group_name
@@ -175,11 +176,13 @@ class CacheGroup(CacheEntry):
             group=self.group_name,
         )
 
+
 class FabricCache(object):
     """Singleton class for caching Fabric data
 
     Only one instance of this class can exists globally.
     """
+
     def __init__(self, ttl=_CACHE_TTL):
         self._ttl = ttl
         self._sharding = {}

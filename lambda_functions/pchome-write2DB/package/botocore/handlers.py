@@ -452,7 +452,7 @@ def _quote_source_header(value):
     if result is None:
         return percent_encode(value, safe=SAFE_CHARS + '/')
     else:
-        first, version_id = value[: result.start()], value[result.start() :]
+        first, version_id = value[: result.start()], value[result.start():]
         return percent_encode(first, safe=SAFE_CHARS + '/') + version_id
 
 
@@ -980,9 +980,7 @@ class HeaderToHostHoister:
             raise ParamValidationError(
                 report=(
                     'Hostnames must contain only - and alphanumeric characters, '
-                    'and between 1 and 63 characters long.'
-                )
-            )
+                    'and between 1 and 63 characters long.'))
 
     def _prepend_to_host(self, url, prefix):
         url_components = urlsplit(url)
@@ -1049,7 +1047,7 @@ def remove_bucket_from_url_paths_from_model(params, model, context, **kwargs):
     req_uri = model.http['requestUri']
     bucket_path = '/{Bucket}'
     if req_uri.startswith(bucket_path):
-        model.http['requestUri'] = req_uri[len(bucket_path) :]
+        model.http['requestUri'] = req_uri[len(bucket_path):]
         # If the request URI is ONLY a bucket, the auth_path must be
         # terminated with a '/' character to generate a signature that the
         # server will accept.

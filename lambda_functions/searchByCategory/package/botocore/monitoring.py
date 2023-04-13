@@ -367,8 +367,7 @@ class CSMSerializer:
         if len(csm_client_id) > self._MAX_CLIENT_ID_LENGTH:
             raise ValueError(
                 f'The value provided for csm_client_id: {csm_client_id} exceeds '
-                f'the maximum length of {self._MAX_CLIENT_ID_LENGTH} characters'
-            )
+                f'the maximum length of {self._MAX_CLIENT_ID_LENGTH} characters')
 
     def serialize(self, event):
         """Serializes a monitor event to the CSM format

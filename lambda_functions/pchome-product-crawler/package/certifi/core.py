@@ -39,7 +39,8 @@ if sys.version_info >= (3, 11):
         return _CACERT_PATH
 
     def contents() -> str:
-        return files("certifi").joinpath("cacert.pem").read_text(encoding="ascii")
+        return files("certifi").joinpath(
+            "cacert.pem").read_text(encoding="ascii")
 
 elif sys.version_info >= (3, 7):
 

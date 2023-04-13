@@ -32,7 +32,7 @@ import zlib
 
 try:
     import ssl
-except:
+except BaseException:
     # If import fails, we don't have SSL support.
     pass
 
@@ -210,10 +210,19 @@ class BaseMySQLSocket(object):
             pllen = len(pkt)
             if pllen > 50:
                 zbuf = zlib.compress(pkt)
-                zpkts.append(struct.pack('<I', len(zbuf))[0:3]
-                             + struct.pack('<B', self._compressed_packet_number)
-                             + struct.pack('<I', pllen)[0:3]
-                             + zbuf)
+                zpkts.append(
+                    struct.pack(
+                        '<I',
+                        len(zbuf))[
+                        0:3] +
+                    struct.pack(
+                        '<B',
+                        self._compressed_packet_number) +
+                    struct.pack(
+                        '<I',
+                        pllen)[
+                        0:3] +
+                    zbuf)
             else:
                 header = (struct.pack('<I', pllen)[0:3]
                           + struct.pack('<B', self._compressed_packet_number)
@@ -314,7 +323,8 @@ class BaseMySQLSocket(object):
                     "<I",
                     packet_bunch[0:3] + b'\x00')[0]  # pylint: disable=E0602
             else:
-                payload_length = struct.unpack("<I", packet_bunch[0:3] + b'\x00')[0]
+                payload_length = struct.unpack(
+                    "<I", packet_bunch[0:3] + b'\x00')[0]
 
             self._packet_queue.append(packet_bunch[0:payload_length + 4])
             packet_bunch = packet_bunch[payload_length + 4:]
@@ -385,7 +395,8 @@ class BaseMySQLSocket(object):
         for payload_length, payload in packets:
             # payload_length can not be 0; this was previously handled
             if PY2:
-                tmp += zlib.decompress(buffer(payload))  # pylint: disable=E0602
+                tmp += zlib.decompress(buffer(payload)
+                                       )  # pylint: disable=E0602
             else:
                 tmp += zlib.decompress(payload)
         self._split_zipped_payload(tmp)

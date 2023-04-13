@@ -155,8 +155,12 @@ CIPHER_SUITES = [
 # TLSv1 and a high of TLSv1.2. For everything else, we pin to that version.
 # TLSv1 to 1.2 are supported on macOS 10.8+
 _protocol_to_min_max = {
-    util.PROTOCOL_TLS: (SecurityConst.kTLSProtocol1, SecurityConst.kTLSProtocol12),
-    PROTOCOL_TLS_CLIENT: (SecurityConst.kTLSProtocol1, SecurityConst.kTLSProtocol12),
+    util.PROTOCOL_TLS: (
+        SecurityConst.kTLSProtocol1,
+        SecurityConst.kTLSProtocol12),
+    PROTOCOL_TLS_CLIENT: (
+        SecurityConst.kTLSProtocol1,
+        SecurityConst.kTLSProtocol12),
 }
 
 if hasattr(ssl, "PROTOCOL_SSLv2"):
@@ -377,7 +381,11 @@ class WrappedSocket(object):
         custom and doesn't allow changing at this time, mostly because parsing
         OpenSSL cipher strings is going to be a freaking nightmare.
         """
-        ciphers = (Security.SSLCipherSuite * len(CIPHER_SUITES))(*CIPHER_SUITES)
+        ciphers = (
+            Security.SSLCipherSuite *
+            len(CIPHER_SUITES))(
+            *
+            CIPHER_SUITES)
         result = Security.SSLSetEnabledCiphers(
             self.context, ciphers, len(CIPHER_SUITES)
         )
@@ -448,7 +456,8 @@ class WrappedSocket(object):
             # created for this connection, shove our CAs into it, tell ST to
             # ignore everything else it knows, and then ask if it can build a
             # chain. This is a buuuunch of code.
-            result = Security.SSLCopyPeerTrust(self.context, ctypes.byref(trust))
+            result = Security.SSLCopyPeerTrust(
+                self.context, ctypes.byref(trust))
             _assert_no_error(result)
             if not trust:
                 raise ssl.SSLError("Failed to copy trust reference")
@@ -460,7 +469,8 @@ class WrappedSocket(object):
             _assert_no_error(result)
 
             trust_result = Security.SecTrustResultType()
-            result = Security.SecTrustEvaluate(trust, ctypes.byref(trust_result))
+            result = Security.SecTrustEvaluate(
+                trust, ctypes.byref(trust_result))
             _assert_no_error(result)
         finally:
             if trust:
@@ -538,8 +548,7 @@ class WrappedSocket(object):
         # authing in that case.
         if not verify or trust_bundle is not None:
             result = Security.SSLSetSessionOption(
-                self.context, SecurityConst.kSSLSessionOptionBreakOnServerAuth, True
-            )
+                self.context, SecurityConst.kSSLSessionOptionBreakOnServerAuth, True)
             _assert_no_error(result)
 
         # If there's a client cert, we need to use it.
@@ -548,7 +557,8 @@ class WrappedSocket(object):
             self._client_cert_chain = _load_client_cert_chain(
                 self._keychain, client_cert, client_key
             )
-            result = Security.SSLSetCertificate(self.context, self._client_cert_chain)
+            result = Security.SSLSetCertificate(
+                self.context, self._client_cert_chain)
             _assert_no_error(result)
 
         while True:
@@ -649,7 +659,8 @@ class WrappedSocket(object):
     def sendall(self, data):
         total_sent = 0
         while total_sent < len(data):
-            sent = self.send(data[total_sent : total_sent + SSL_WRITE_BLOCKSIZE])
+            sent = self.send(
+                data[total_sent: total_sent + SSL_WRITE_BLOCKSIZE])
             total_sent += sent
 
     def shutdown(self):
@@ -696,14 +707,16 @@ class WrappedSocket(object):
         # instead to just flag to urllib3 that it shouldn't do its own hostname
         # validation when using SecureTransport.
         if not binary_form:
-            raise ValueError("SecureTransport only supports dumping binary certs")
+            raise ValueError(
+                "SecureTransport only supports dumping binary certs")
         trust = Security.SecTrustRef()
         certdata = None
         der_bytes = None
 
         try:
             # Grab the trust store.
-            result = Security.SSLCopyPeerTrust(self.context, ctypes.byref(trust))
+            result = Security.SSLCopyPeerTrust(
+                self.context, ctypes.byref(trust))
             _assert_no_error(result)
             if not trust:
                 # Probably we haven't done the handshake yet. No biggie.
@@ -856,12 +869,14 @@ class SecureTransportContext(object):
     def set_ciphers(self, ciphers):
         # For now, we just require the default cipher string.
         if ciphers != util.ssl_.DEFAULT_CIPHERS:
-            raise ValueError("SecureTransport doesn't support custom cipher strings")
+            raise ValueError(
+                "SecureTransport doesn't support custom cipher strings")
 
     def load_verify_locations(self, cafile=None, capath=None, cadata=None):
         # OK, we only really support cadata and cafile.
         if capath is not None:
-            raise ValueError("SecureTransport does not support cert directories")
+            raise ValueError(
+                "SecureTransport does not support cert directories")
 
         # Raise if cafile does not exist.
         if cafile is not None:

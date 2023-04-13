@@ -64,6 +64,7 @@ class _ParamSubstitutor(object):
     """
     Substitutes parameters into SQL statement.
     """
+
     def __init__(self, params):
         self.params = params
         self.index = 0
@@ -102,7 +103,7 @@ def _bytestr_format_dict(bytestr, value_dict):
             value = b"%"
         if groups["conversion_type"] == b"s":
             key = groups["mapping_key"].encode("utf-8") \
-                  if PY2 else groups["mapping_key"]
+                if PY2 else groups["mapping_key"]
             value = value_dict[key]
         if value is None:
             raise ValueError("Unsupported conversion_type: {0}"
@@ -110,6 +111,7 @@ def _bytestr_format_dict(bytestr, value_dict):
         return value.decode("utf-8") if PY2 else value
     return RE_PY_MAPPING_PARAM.sub(replace, bytestr.decode("utf-8")
                                    if PY2 else bytestr)
+
 
 class CursorBase(MySQLCursorAbstract):
     """
@@ -304,6 +306,7 @@ class MySQLCursor(CursorBase):
 
     Implements the Python Database API Specification v2.0 (PEP-249)
     """
+
     def __init__(self, connection=None):
         CursorBase.__init__(self)
         self._connection = None
@@ -595,7 +598,7 @@ class MySQLCursor(CursorBase):
                     if psub.remaining != 0:
                         raise errors.ProgrammingError(
                             "Not all parameters were used in the SQL statement")
-                    #for p in self._process_params(params):
+                    # for p in self._process_params(params):
                     #    tmp = tmp.replace(b'%s',p,1)
                 values.append(tmp)
             if fmt in stmt:
@@ -663,7 +666,7 @@ class MySQLCursor(CursorBase):
         except (ValueError, TypeError) as err:
             raise errors.InterfaceError(
                 "Failed executing the operation; {0}".format(err))
-        except:
+        except BaseException:
             # Raise whatever execute() raises
             raise
         self._rowcount = rowcnt
@@ -759,7 +762,7 @@ class MySQLCursor(CursorBase):
                 if 'columns' in result:
                     results.append(tmp)
             self._connection._consume_results = can_consume_results
-            #pylint: enable=W0212
+            # pylint: enable=W0212
 
             if argnames:
                 select = "SELECT {0}".format(','.join(argtypes))
@@ -963,7 +966,7 @@ class MySQLCursorBuffered(MySQLCursor):
         self._next_row = 0
         try:
             self._connection.unread_result = False
-        except:
+        except BaseException:
             pass
 
     def reset(self, free=True):
@@ -973,7 +976,7 @@ class MySQLCursorBuffered(MySQLCursor):
         row = None
         try:
             row = self._rows[self._next_row]
-        except:
+        except BaseException:
             return None
         else:
             self._next_row += 1
@@ -1063,6 +1066,7 @@ class MySQLCursorBufferedRaw(MySQLCursorBuffered):
 class MySQLCursorPrepared(MySQLCursor):
     """Cursor using MySQL Prepared Statements
     """
+
     def __init__(self, connection=None):
         super(MySQLCursorPrepared, self).__init__(connection)
         self._rows = None
@@ -1149,7 +1153,7 @@ class MySQLCursorPrepared(MySQLCursor):
         elif len(self._prepared['parameters']) != len(params):
             raise errors.ProgrammingError(
                 errno=1210,
-                msg="Incorrect number of arguments " \
+                msg="Incorrect number of arguments "
                     "executing prepared statement")
 
         res = self._connection.cmd_stmt_execute(
@@ -1179,7 +1183,7 @@ class MySQLCursorPrepared(MySQLCursor):
         except (ValueError, TypeError) as err:
             raise errors.InterfaceError(
                 "Failed executing the operation; {error}".format(error=err))
-        except:
+        except BaseException:
             # Raise whatever execute() raises
             raise
         self._rowcount = rowcnt
@@ -1222,6 +1226,7 @@ class MySQLCursorDict(MySQLCursor):
             "col2": value2
         }
     """
+
     def _row_to_python(self, rowdata, desc=None):
         """Convert a MySQL text result row to Python types
 
@@ -1271,6 +1276,7 @@ class MySQLCursorNamedTuple(MySQLCursor):
     Each row is returned as a namedtuple and the values can be accessed as:
     row.col1, row.col2
     """
+
     def _row_to_python(self, rowdata, desc=None):
         """Convert a MySQL text result row to Python types
 
@@ -1322,6 +1328,7 @@ class MySQLCursorBufferedDict(MySQLCursorDict, MySQLCursorBuffered):
     """
     Buffered Cursor fetching rows as dictionaries.
     """
+
     def fetchone(self):
         """Returns next row of a query result set
         """
@@ -1343,10 +1350,13 @@ class MySQLCursorBufferedDict(MySQLCursorDict, MySQLCursorBuffered):
         return res
 
 
-class MySQLCursorBufferedNamedTuple(MySQLCursorNamedTuple, MySQLCursorBuffered):
+class MySQLCursorBufferedNamedTuple(
+        MySQLCursorNamedTuple,
+        MySQLCursorBuffered):
     """
     Buffered Cursor fetching rows as named tuple.
     """
+
     def fetchone(self):
         """Returns next row of a query result set
         """

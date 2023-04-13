@@ -155,9 +155,8 @@ def _cert_array_from_pem(pem_bundle):
     # Normalize the PEM bundle's line endings.
     pem_bundle = pem_bundle.replace(b"\r\n", b"\n")
 
-    der_certs = [
-        base64.b64decode(match.group(1)) for match in _PEM_CERTS_RE.finditer(pem_bundle)
-    ]
+    der_certs = [base64.b64decode(match.group(1))
+                 for match in _PEM_CERTS_RE.finditer(pem_bundle)]
     if not der_certs:
         raise ssl.SSLError("No root certificates specified")
 
@@ -236,8 +235,12 @@ def _temporary_keychain():
     # We now want to create the keychain itself.
     keychain = Security.SecKeychainRef()
     status = Security.SecKeychainCreate(
-        keychain_path, len(password), password, False, None, ctypes.byref(keychain)
-    )
+        keychain_path,
+        len(password),
+        password,
+        False,
+        None,
+        ctypes.byref(keychain))
     _assert_no_error(status)
 
     # Having created the keychain, we want to pass it off to the caller.
@@ -339,7 +342,8 @@ def _load_client_cert_chain(keychain, *paths):
 
     try:
         for file_path in paths:
-            new_identities, new_certs = _load_items_from_file(keychain, file_path)
+            new_identities, new_certs = _load_items_from_file(
+                keychain, file_path)
             identities.extend(new_identities)
             certificates.extend(new_certs)
 
@@ -393,5 +397,10 @@ def _build_tls_unknown_ca_alert(version):
     msg = struct.pack(">BB", severity_fatal, description_unknown_ca)
     msg_len = len(msg)
     record_type_alert = 0x15
-    record = struct.pack(">BBBH", record_type_alert, ver_maj, ver_min, msg_len) + msg
+    record = struct.pack(
+        ">BBBH",
+        record_type_alert,
+        ver_maj,
+        ver_min,
+        msg_len) + msg
     return record

@@ -351,7 +351,7 @@ class Protocol(object):
                     return MySQLxExpr.Expr(type=MySQLxExpr.Expr.LITERAL,
                                            literal=build_string_scalar(value))
                 return expression
-            except:
+            except BaseException:
                 return MySQLxExpr.Expr(type=MySQLxExpr.Expr.LITERAL,
                                        literal=build_string_scalar(value))
         elif isinstance(value, DbDoc):

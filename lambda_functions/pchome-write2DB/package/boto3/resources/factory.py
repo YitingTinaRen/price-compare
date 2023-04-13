@@ -374,6 +374,7 @@ class ResourceFactory:
         # been loaded and return the cached value if possible. If not, then
         # it first checks to see if it CAN be loaded (raise if not), then
         # calls the load before returning the value.
+
         def property_loader(self):
             if self.meta.data is None:
                 if hasattr(self, 'load'):

@@ -22,7 +22,7 @@ if LXML_PRESENT:
     from bs4.builder import (
         LXMLTreeBuilderForXML,
         LXMLTreeBuilder,
-        )
+    )
 
 
 # TODO: Split out the lxml and html5lib tests into their own classes
@@ -34,7 +34,8 @@ class TestBuiltInRegistry(object):
         assert registry.lookup('strict', 'html') == HTMLParserTreeBuilder
         if LXML_PRESENT:
             assert registry.lookup('fast', 'html') == LXMLTreeBuilder
-            assert registry.lookup('permissive', 'xml') == LXMLTreeBuilderForXML
+            assert registry.lookup(
+                'permissive', 'xml') == LXMLTreeBuilderForXML
         if HTML5LIB_PRESENT:
             assert registry.lookup('html5lib', 'html') == HTML5TreeBuilder
 
@@ -43,7 +44,7 @@ class TestBuiltInRegistry(object):
             assert registry.lookup('html') == LXMLTreeBuilder
             assert registry.lookup('xml') == LXMLTreeBuilderForXML
         else:
-            assert registry.lookup('xml') == None
+            assert registry.lookup('xml') is None
             if HTML5LIB_PRESENT:
                 assert registry.lookup('html') == HTML5TreeBuilder
             else:
@@ -69,11 +70,12 @@ class TestBuiltInRegistry(object):
             # Or a list of strings.
             BeautifulSoup("", features=["html", "fast"])
             pass
-            
+
         # You'll get an exception if BS can't find an appropriate
         # builder.
         with pytest.raises(ValueError):
             BeautifulSoup("", features="no-such-feature")
+
 
 class TestRegistry(object):
     """Test the TreeBuilderRegistry class in general."""
@@ -83,7 +85,7 @@ class TestRegistry(object):
 
     def builder_for_features(self, *feature_list):
         cls = type('Builder_' + '_'.join(feature_list),
-                   (object,), {'features' : feature_list})
+                   (object,), {'features': feature_list})
 
         self.registry.register(cls)
         return cls
@@ -108,7 +110,8 @@ class TestRegistry(object):
         builder = self.builder_for_features('foo', 'bar')
         assert self.registry.lookup('baz') is None
 
-    def test_lookup_gets_most_recent_registration_when_no_feature_specified(self):
+    def test_lookup_gets_most_recent_registration_when_no_feature_specified(
+            self):
         builder1 = self.builder_for_features('foo')
         builder2 = self.builder_for_features('bar')
         assert self.registry.lookup() == builder2

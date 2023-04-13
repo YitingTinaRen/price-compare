@@ -98,6 +98,7 @@ def custom_error_exception(error=None, exception=None):
 
     return _CUSTOM_ERROR_EXCEPTIONS
 
+
 def get_mysql_exception(errno, msg=None, sqlstate=None):
     """Get the exception matching the MySQL error
 
@@ -132,6 +133,7 @@ def get_mysql_exception(errno, msg=None, sqlstate=None):
     except KeyError:
         # Return default InterfaceError
         return DatabaseError(msg=msg, errno=errno, sqlstate=sqlstate)
+
 
 def get_exception(packet):
     """Returns an exception object based on the MySQL error
@@ -171,6 +173,7 @@ def get_exception(packet):
 
 class Error(Exception):
     """Exception that is base class for all other error exceptions"""
+
     def __init__(self, msg=None, errno=None, values=None, sqlstate=None):
         super(Error, self).__init__()
         self.msg = msg
@@ -258,6 +261,7 @@ class PoolError(Error):
 
 class MySQLFabricError(Error):
     """Exception for errors relating to MySQL Fabric"""
+
 
 _SQLSTATE_CLASS_EXCEPTION = {
     '02': DataError,  # no data

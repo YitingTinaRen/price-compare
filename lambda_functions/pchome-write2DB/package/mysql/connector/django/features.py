@@ -73,7 +73,9 @@ class DatabaseFeatures(BaseDatabaseFeatures):
         droptable = 'DROP TABLE IF EXISTS {table}'.format(table=tblname)
         with self.connection.cursor() as cursor:
             cursor.execute(droptable)
-            cursor.execute('CREATE TABLE {table} (X INT)'.format(table=tblname))
+            cursor.execute(
+                'CREATE TABLE {table} (X INT)'.format(
+                    table=tblname))
 
             if self.connection.mysql_version >= (5, 0, 0):
                 cursor.execute(

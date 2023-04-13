@@ -83,6 +83,7 @@ class PooledMySQLConnection(object):
     method set_config(). Using config() on pooled connection will raise a
     PoolError.
     """
+
     def __init__(self, pool, cnx):
         """Initialize
 
@@ -134,6 +135,7 @@ class PooledMySQLConnection(object):
 
 class MySQLConnectionPool(object):
     """Class defining a pool of MySQL connections"""
+
     def __init__(self, pool_size=5, pool_name=None, pool_reset_session=True,
                  **kwargs):
         """Initialize

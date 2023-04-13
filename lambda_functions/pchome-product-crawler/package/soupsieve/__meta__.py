@@ -36,7 +36,10 @@ DEV_STATUS = {
 PRE_REL_MAP = {"a": 'alpha', "b": 'beta', "rc": 'candidate'}
 
 
-class Version(namedtuple("Version", ["major", "minor", "micro", "release", "pre", "post", "dev"])):
+class Version(
+    namedtuple(
+        "Version", [
+            "major", "minor", "micro", "release", "pre", "post", "dev"])):
     """
     Get the version (PEP 440).
 
@@ -89,10 +92,12 @@ class Version(namedtuple("Version", ["major", "minor", "micro", "release", "pre"
         # Ensure all parts are positive integers.
         for value in (major, minor, micro, pre, post):
             if not (isinstance(value, int) and value >= 0):
-                raise ValueError("All version parts except 'release' should be integers.")
+                raise ValueError(
+                    "All version parts except 'release' should be integers.")
 
         if release not in REL_MAP:
-            raise ValueError("'{}' is not a valid release type.".format(release))
+            raise ValueError(
+                "'{}' is not a valid release type.".format(release))
 
         # Ensure valid pre-release (we do not allow implicit pre-releases).
         if ".dev-candidate" < release < "final":
@@ -101,14 +106,16 @@ class Version(namedtuple("Version", ["major", "minor", "micro", "release", "pre"
             elif dev:
                 raise ValueError("Version is not a development release.")
             elif post:
-                raise ValueError("Post-releases are not allowed with pre-releases.")
+                raise ValueError(
+                    "Post-releases are not allowed with pre-releases.")
 
         # Ensure valid development or development/pre release
         elif release < "alpha":
             if release > ".dev" and pre == 0:
                 raise ValueError("Implicit pre-release not allowed.")
             elif post:
-                raise ValueError("Post-releases are not allowed with pre-releases.")
+                raise ValueError(
+                    "Post-releases are not allowed with pre-releases.")
 
         # Ensure a valid normal release
         else:
@@ -117,7 +124,17 @@ class Version(namedtuple("Version", ["major", "minor", "micro", "release", "pre"
             elif dev:
                 raise ValueError("Version is not a development release.")
 
-        return super(Version, cls).__new__(cls, major, minor, micro, release, pre, post, dev)
+        return super(
+            Version,
+            cls).__new__(
+            cls,
+            major,
+            minor,
+            micro,
+            release,
+            pre,
+            post,
+            dev)
 
     def _is_pre(self) -> bool:
         """Is prerelease."""
@@ -142,7 +159,8 @@ class Version(namedtuple("Version", ["major", "minor", "micro", "release", "pre"
     def _get_canonical(self) -> str:
         """Get the canonical output string."""
 
-        # Assemble major, minor, micro version and append `pre`, `post`, or `dev` if needed..
+        # Assemble major, minor, micro version and append `pre`, `post`, or
+        # `dev` if needed..
         if self.micro == 0:
             ver = "{}.{}".format(self.major, self.minor)
         else:

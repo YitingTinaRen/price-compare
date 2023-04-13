@@ -93,8 +93,8 @@ class MySQLProtocol(object):
             username_bytes = username
         packet = struct.pack('<IIB{filler}{usrlen}sx'.format(
             filler='x' * 23, usrlen=len(username_bytes)),
-                             client_flags, max_allowed_packet, charset,
-                             username_bytes)
+            client_flags, max_allowed_packet, charset,
+            username_bytes)
 
         packet += self._auth_response(client_flags, username, password,
                                       database,
@@ -112,9 +112,9 @@ class MySQLProtocol(object):
                       max_allowed_packet=1073741824):
         """Make a SSL authentication packet"""
         return utils.int4store(client_flags) + \
-               utils.int4store(max_allowed_packet) + \
-               utils.int1store(charset) + \
-               b'\x00' * 23
+            utils.int4store(max_allowed_packet) + \
+            utils.int1store(charset) + \
+            b'\x00' * 23
 
     def make_command(self, command, argument=None):
         """Make a MySQL packet containing a command"""
@@ -173,7 +173,7 @@ class MySQLProtocol(object):
          res['server_status'],
          capabilities2,
          auth_data_length
-        ) = struct_unpack('<I8sx2sBH2sBxxxxxxxxxx', packet[0:31])
+         ) = struct_unpack('<I8sx2sBH2sBxxxxxxxxxx', packet[0:31])
         res['server_version_original'] = res['server_version_original'].decode()
 
         packet = packet[31:]
@@ -211,7 +211,8 @@ class MySQLProtocol(object):
         ok_packet = {}
         try:
             ok_packet['field_count'] = struct_unpack('<xxxxB', packet[0:5])[0]
-            (packet, ok_packet['affected_rows']) = utils.read_lc_int(packet[5:])
+            (packet, ok_packet['affected_rows']
+             ) = utils.read_lc_int(packet[5:])
             (packet, ok_packet['insert_id']) = utils.read_lc_int(packet)
             (ok_packet['status_flag'],
              ok_packet['warning_count']) = struct_unpack('<HH', packet[0:4])
@@ -291,17 +292,17 @@ class MySQLProtocol(object):
         for pair in pairs:
             try:
                 (lbl, val) = [v.strip() for v in pair.split(b':', 2)]
-            except:
+            except BaseException:
                 raise errors.InterfaceError(errmsg)
 
             # It's either an integer or a decimal
             lbl = lbl.decode('utf-8')
             try:
                 res[lbl] = int(val)
-            except:
+            except BaseException:
                 try:
                     res[lbl] = Decimal(val.decode('utf-8'))
-                except:
+                except BaseException:
                     raise errors.InterfaceError(
                         "{0} ({1}:{2}).".format(errmsg, lbl, val))
         return res
@@ -335,7 +336,8 @@ class MySQLProtocol(object):
                 eof = self.parse_eof(packet)
                 rowdata = None
             elif eof57 and (packet[4] == 0 and packet[0] > 9):
-                # EOF deprecation: make sure we catch it whether flag is set or not
+                # EOF deprecation: make sure we catch it whether flag is set or
+                # not
                 eof = self.parse_ok(packet)
                 rowdata = None
             else:
@@ -429,7 +431,7 @@ class MySQLProtocol(object):
 
         values = []
         for pos, field in enumerate(fields):
-            if null_bitmap[int((pos+2)/8)] & (1 << (pos + 2) % 8):
+            if null_bitmap[int((pos + 2) / 8)] & (1 << (pos + 2) % 8):
                 values.append(None)
                 continue
             elif field[1] in (FieldType.TINY, FieldType.SHORT,

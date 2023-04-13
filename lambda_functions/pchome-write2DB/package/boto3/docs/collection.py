@@ -41,7 +41,8 @@ class CollectionDocumenter(NestedDocumenter):
         self.member_map['collections'] = collections_list
         for collection in collections:
             collections_list.append(collection.name)
-            # Create a new DocumentStructure for each collection and add contents.
+            # Create a new DocumentStructure for each collection and add
+            # contents.
             collection_doc = DocumentStructure(collection.name, target='html')
             collection_doc.add_title_section(collection.name)
             collection_section = collection_doc.add_new_section(
@@ -50,7 +51,8 @@ class CollectionDocumenter(NestedDocumenter):
             self._document_collection(collection_section, collection)
 
             # Write collections in individual/nested files.
-            # Path: <root>/reference/services/<service>/<resource_name>/<collection_name>.rst
+            # Path:
+            # <root>/reference/services/<service>/<resource_name>/<collection_name>.rst
             collections_dir_path = os.path.join(
                 self._root_docs_path,
                 f'{self._service_name}',

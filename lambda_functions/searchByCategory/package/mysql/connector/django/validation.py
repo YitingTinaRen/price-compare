@@ -25,9 +25,12 @@ class DatabaseValidation(BaseDatabaseValidation):
             varchar_fields = (models.CharField,
                               models.CommaSeparatedIntegerField,
                               models.SlugField)
-            if isinstance(f, varchar_fields) and f.max_length > 255 and f.unique:
-                msg = ('"%(name)s": %(cls)s cannot have a "max_length" greater '
-                       'than 255 when using "unique=True".')
+            if isinstance(
+                    f,
+                    varchar_fields) and f.max_length > 255 and f.unique:
+                msg = (
+                    '"%(name)s": %(cls)s cannot have a "max_length" greater '
+                    'than 255 when using "unique=True".')
                 errors.add(opts, msg % {'name': f.name,
                                         'cls': f.__class__.__name__})
 
@@ -52,7 +55,7 @@ class DatabaseValidation(BaseDatabaseValidation):
                 if (field_type.startswith('varchar')  # Look for CharFields...
                         and field.unique  # ... that are unique
                         and (field.max_length is None or
-                                     int(field.max_length) > 255)):
+                             int(field.max_length) > 255)):
                     errors.append(
                         checks.Error(
                             ('MySQL does not allow unique CharFields to have a '
@@ -60,6 +63,5 @@ class DatabaseValidation(BaseDatabaseValidation):
                             hint=None,
                             obj=field,
                             id='mysql.E001',
-                        )
-                )
+                        ))
             return errors

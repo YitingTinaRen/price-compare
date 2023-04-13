@@ -11,6 +11,7 @@ from . import (
     SoupTest,
 )
 
+
 @pytest.mark.skipif(
     not HTML5LIB_PRESENT,
     reason="html5lib seems not to be present, not testing its tree builder."
@@ -33,7 +34,8 @@ class TestHTML5LibBuilder(SoupTest, HTML5TreeBuilderSmokeTest):
 
         [warning] = w
         assert warning.filename == __file__
-        assert "the html5lib tree builder doesn't support parse_only" in str(warning.message)
+        assert "the html5lib tree builder doesn't support parse_only" in str(
+            warning.message)
 
     def test_correctly_nested_tables(self):
         """html5lib inserts <tbody> tags where other parsers don't."""
@@ -66,7 +68,8 @@ class TestHTML5LibBuilder(SoupTest, HTML5TreeBuilderSmokeTest):
   </body>
 </html>'''
         soup = self.soup(markup)
-        # Verify that we can reach the <p> tag; this means the tree is connected.
+        # Verify that we can reach the <p> tag; this means the tree is
+        # connected.
         assert b"<p>foo</p>" == soup.p.encode()
 
     def test_reparented_markup(self):
@@ -74,7 +77,6 @@ class TestHTML5LibBuilder(SoupTest, HTML5TreeBuilderSmokeTest):
         soup = self.soup(markup)
         assert "<body><p><em>foo</em></p><em>\n</em><p><em>bar<a></a></em></p></body>" == soup.body.decode()
         assert 2 == len(soup.find_all('p'))
-
 
     def test_reparented_markup_ends_with_whitespace(self):
         markup = '<p><em>foo</p>\n<p>bar<a></a></em></p>\n'
@@ -108,7 +110,7 @@ class TestHTML5LibBuilder(SoupTest, HTML5TreeBuilderSmokeTest):
         # (second) 'aftermath' string.
         assert final_aftermath == target.next_element
         assert target == final_aftermath.previous_element
-        
+
     def test_processing_instruction(self):
         """Processing instructions become comments."""
         markup = b"""<?PITarget PIContent?>"""
@@ -207,7 +209,7 @@ class TestHTML5LibBuilder(SoupTest, HTML5TreeBuilderSmokeTest):
                 ('&there4;', '\u2234', b'&there4;'),
                 ('&Therefore;', '\u2234', b'&there4;'),
                 ('&therefore;', '\u2234', b'&there4;'),
-                ("&fjlig;", 'fj', b'fj'),                
+                ("&fjlig;", 'fj', b'fj'),
                 ("&sqcup;", '\u2294', b'&sqcup;'),
                 ("&sqcups;", '\u2294\ufe00', b'&sqcups;'),
                 ("&apos;", "'", b"'"),

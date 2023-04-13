@@ -34,6 +34,7 @@ from .dbdoc import DbDoc
 from .protobuf import mysqlx_crud_pb2 as MySQLxCrud
 from .result import SqlResult, Result, ColumnType
 
+
 class Expr(object):
     def __init__(self, expr):
         self.expr = expr
@@ -112,6 +113,7 @@ class Statement(object):
                          :class:`mysqlx.Collection` or :class:`mysqlx.Table`.
         doc_based (bool): `True` if it is document based.
     """
+
     def __init__(self, target, doc_based=True):
         self._target = target
         self._doc_based = doc_based
@@ -149,6 +151,7 @@ class FilterableStatement(Statement):
         condition (Optional[str]): Sets the search condition to filter
                                    documents or records.
     """
+
     def __init__(self, target, doc_based=True, condition=None):
         super(FilterableStatement, self).__init__(target=target,
                                                   doc_based=doc_based)
@@ -185,7 +188,8 @@ class FilterableStatement(Statement):
         fields = flexible_params(*fields)
         self._has_projection = True
         self._projection_str = ",".join(fields)
-        self._projection_expr = ExprParser(self._projection_str,
+        self._projection_expr = ExprParser(
+            self._projection_str,
             not self._doc_based).parse_table_select_projection()
         return self
 
@@ -279,6 +283,7 @@ class SqlStatement(Statement):
         connection (mysqlx.connection.Connection): Connection object.
         sql (string): The sql statement to be executed.
     """
+
     def __init__(self, connection, sql):
         super(SqlStatement, self).__init__(target=None, doc_based=False)
         self._connection = connection
@@ -300,6 +305,7 @@ class AddStatement(Statement):
     Args:
         collection (mysqlx.Collection): The Collection object.
     """
+
     def __init__(self, collection):
         super(AddStatement, self).__init__(target=collection)
         self._values = []
@@ -363,6 +369,7 @@ class ModifyStatement(FilterableStatement):
         condition (Optional[str]): Sets the search condition to identify the
                                    documents to be updated.
     """
+
     def __init__(self, collection, condition=None):
         super(ModifyStatement, self).__init__(target=collection,
                                               condition=condition)
@@ -466,6 +473,7 @@ class FindStatement(FilterableStatement):
                                    all the documents will be included on the
                                    result unless a limit is set.
     """
+
     def __init__(self, collection, condition=None):
         super(FindStatement, self).__init__(collection, True, condition)
 
@@ -523,6 +531,7 @@ class SelectStatement(FilterableStatement):
         table (mysqlx.Table): The Table object.
         *fields: The fields to be retrieved.
     """
+
     def __init__(self, table, *fields):
         super(SelectStatement, self).__init__(table, False)
         self._projection(*fields)
@@ -568,16 +577,27 @@ class SelectStatement(FilterableStatement):
         having = " HAVING {0}".format(self._having) if self._has_having else ""
         order_by = " ORDER BY {0}".format(self._sort_str) if self._has_sort \
             else ""
-        limit = " LIMIT {0} OFFSET {1}".format(self._limit_row_count,
+        limit = " LIMIT {0} OFFSET {1}".format(
+            self._limit_row_count,
             self._limit_offset) if self._has_limit else ""
 
-        stmt = ("SELECT {select} FROM {schema}.{table}{where}{group}{having}"
-                "{order}{limit}".format(
-                select=getattr(self, '_projection_str', "*"),
-                schema=self.schema.name, table=self.target.name, limit=limit,
-                where=where, group=group_by, having=having, order=order_by))
+        stmt = (
+            "SELECT {select} FROM {schema}.{table}{where}{group}{having}"
+            "{order}{limit}".format(
+                select=getattr(
+                    self,
+                    '_projection_str',
+                    "*"),
+                schema=self.schema.name,
+                table=self.target.name,
+                limit=limit,
+                where=where,
+                group=group_by,
+                having=having,
+                order=order_by))
 
         return stmt
+
 
 class InsertStatement(Statement):
     """A statement for insert operations on Table.
@@ -586,6 +606,7 @@ class InsertStatement(Statement):
         table (mysqlx.Table): The Table object.
         *fields: The fields to be inserted.
     """
+
     def __init__(self, table, *fields):
         super(InsertStatement, self).__init__(target=table, doc_based=False)
         self._fields = flexible_params(*fields)
@@ -619,6 +640,7 @@ class UpdateStatement(FilterableStatement):
         table (mysqlx.Table): The Table object.
         *fields: The fields to be updated.
     """
+
     def __init__(self, table, *fields):
         super(UpdateStatement, self).__init__(target=table, doc_based=False)
         self._update_ops = []
@@ -652,6 +674,7 @@ class RemoveStatement(FilterableStatement):
     Args:
         collection (mysqlx.Collection): The Collection object.
     """
+
     def __init__(self, collection):
         super(RemoveStatement, self).__init__(target=collection)
 
@@ -672,6 +695,7 @@ class DeleteStatement(FilterableStatement):
         condition (Optional[str]): The string with the filter expression of
                                    the rows to be deleted.
     """
+
     def __init__(self, table, condition=None):
         super(DeleteStatement, self).__init__(target=table,
                                               condition=condition,
@@ -694,6 +718,7 @@ class CreateCollectionIndexStatement(Statement):
         index_name (string): Index name.
         is_unique (bool): `True` if the index is unique.
     """
+
     def __init__(self, collection, index_name, is_unique):
         super(CreateCollectionIndexStatement, self).__init__(target=collection)
         self._index_name = index_name
@@ -735,6 +760,7 @@ class DropCollectionIndexStatement(Statement):
         collection (mysqlx.Collection): The Collection object.
         index_name (string): The index name.
     """
+
     def __init__(self, collection, index_name):
         super(DropCollectionIndexStatement, self).__init__(target=collection)
         self._index_name = index_name
@@ -753,6 +779,7 @@ class DropCollectionIndexStatement(Statement):
 class TableIndex(object):
     UNIQUE_INDEX = 1
     INDEX = 2
+
     def __init__(self, name, index_type, columns):
         self._name = name
         self._index_type = index_type
@@ -773,6 +800,7 @@ class CreateViewStatement(Statement):
         view (mysqlx.View): The View object.
         replace (Optional[bool]): `True` to add replace.
     """
+
     def __init__(self, view, replace=False):
         super(CreateViewStatement, self).__init__(target=view, doc_based=False)
         self._view = view
@@ -891,6 +919,7 @@ class AlterViewStatement(CreateViewStatement):
     Args:
         view (mysqlx.View): The View object.
     """
+
     def __init__(self, view):
         super(AlterViewStatement, self).__init__(view)
 
@@ -918,6 +947,7 @@ class AlterViewStatement(CreateViewStatement):
         self._connection.execute_nonquery("sql", sql)
         return self._view
 
+
 class CreateTableStatement(Statement):
     """A statement that creates a new table if it doesn't exist already.
 
@@ -925,7 +955,10 @@ class CreateTableStatement(Statement):
         collection (mysqlx.Schema): The Schema object.
         table_name (string): The name for the new table.
     """
-    tbl_frmt = re.compile(r"(from\s+)([`\"].+[`\"]|[^\.]+)(\s|$)", re.IGNORECASE)
+    tbl_frmt = re.compile(
+        r"(from\s+)([`\"].+[`\"]|[^\.]+)(\s|$)",
+        re.IGNORECASE)
+
     def __init__(self, schema, table_name):
         super(CreateTableStatement, self).__init__(schema)
         self._charset = None
@@ -962,8 +995,11 @@ class CreateTableStatement(Statement):
             options.append("COMMENT = '{comment}'")
 
         table_opts = ",".join(options)
-        return table_opts.format(inc=self._auto_inc, charset=self._charset,
-            collation=self._collation, comment=self._comment)
+        return table_opts.format(
+            inc=self._auto_inc,
+            charset=self._charset,
+            collation=self._collation,
+            comment=self._comment)
 
     def _get_create_def(self):
         defs = []
@@ -1004,7 +1040,8 @@ class CreateTableStatement(Statement):
             mysqlx.CreateTableStatement: CreateTableStatement object.
         """
         if isinstance(select, STRING_TYPES):
-            self._as = CreateTableStatement.tbl_frmt.sub(self._tbl_repl, select)
+            self._as = CreateTableStatement.tbl_frmt.sub(
+                self._tbl_repl, select)
         elif isinstance(select, SelectStatement):
             self._as = select.get_sql()
         return self
@@ -1046,7 +1083,7 @@ class CreateTableStatement(Statement):
             mysqlx.CreateTableStatement: CreateTableStatement object.
         """
         self._indices.append(TableIndex(index_name, TableIndex.INDEX,
-            flexible_params(*cols)))
+                                        flexible_params(*cols)))
         return self
 
     def add_unique_index(self, index_name, *cols):
@@ -1060,7 +1097,7 @@ class CreateTableStatement(Statement):
             mysqlx.CreateTableStatement: CreateTableStatement object.
         """
         self._u_indices.append(TableIndex(index_name, TableIndex.UNIQUE_INDEX,
-            flexible_params(*cols)))
+                                          flexible_params(*cols)))
         return self
 
     def add_foreign_key(self, name, key):
@@ -1140,8 +1177,8 @@ class CreateTableStatement(Statement):
         Returns:
             mysqlx.Table: Table object.
         """
-        create = "CREATE {table_type} {name}".format(name=self.table_name,
-            table_type="TEMPORARY TABLE" if self._temp else "TABLE")
+        create = "CREATE {table_type} {name}".format(
+            name=self.table_name, table_type="TEMPORARY TABLE" if self._temp else "TABLE")
         if self._like:
             stmt = "{create} LIKE {query}"
         else:
@@ -1165,6 +1202,7 @@ class ColumnDefBase(object):
         type (MySQLx.ColumnType): Type of the column.
         size (int): Size of the column.
     """
+
     def __init__(self, name, type, size):
         self._default_schema = None
         self._not_null = False
@@ -1226,6 +1264,7 @@ class ColumnDef(ColumnDefBase):
         type (MySQL.ColumnType): Type of the column.
         size (int): Size of the column.
     """
+
     def __init__(self, name, type, size=None):
         super(ColumnDef, self).__init__(name, type, size)
         self._ref = None
@@ -1245,8 +1284,11 @@ class ColumnDef(ColumnDefBase):
 
     def _data_type(self):
         type_def = ""
-        if self._size and (ColumnType.is_numeric(self._type) or \
-            ColumnType.is_char(self._type) or ColumnType.is_binary(self._type)):
+        if self._size and (
+            ColumnType.is_numeric(
+                self._type) or ColumnType.is_char(
+                self._type) or ColumnType.is_binary(
+                self._type)):
             type_def = "({0})".format(self._size)
         elif ColumnType.is_decimals(self._type) and self._size:
             type_def = "({0}, {1})".format(self._size, self._decimals or 0)
@@ -1271,7 +1313,7 @@ class ColumnDef(ColumnDefBase):
         comment = " COMMENT '{comment}'" if self._comment else ""
 
         defn = "{0}{1}{2}{3}{4}".format(self._data_type(), null, default,
-            auto_inc, comment)
+                                        auto_inc, comment)
 
         if self._p_key:
             defn = "{0} PRIMARY KEY".format(defn)
@@ -1280,8 +1322,8 @@ class ColumnDef(ColumnDefBase):
         if self._ref_table and self._ref_fields:
             ref_table = quote_multipart_identifier(parse_table_name(
                 self._default_schema, self._ref_table))
-            defn = "{0} REFERENCES {1} ({2})".format(defn, ref_table,
-                ",".join(self._ref_fields))
+            defn = "{0} REFERENCES {1} ({2})".format(
+                defn, ref_table, ",".join(self._ref_fields))
 
         return defn.format(default=self._default, comment=self._comment)
 
@@ -1405,6 +1447,7 @@ class GeneratedColumnDef(ColumnDef):
         col_type: Type of the column.
         expr: The Expression used to generate the value of this column.
     """
+
     def __init__(self, name, col_type, expr):
         super(GeneratedColumnDef, self).__init__(name, col_type)
         assert isinstance(expr, Expr)
@@ -1523,6 +1566,6 @@ class ForeignKeyDef(object):
         delete = "ON DELETE {0}".format(self._delete_action)
         key = "FOREIGN KEY {0}({1}) REFERENCES {2} ({3})".format(
             self._name, ",".join(self._fields), quote_multipart_identifier(
-            parse_table_name(self._default_schema, self._f_table)),
+                parse_table_name(self._default_schema, self._f_table)),
             ",".join(self._f_fields))
         return "{0} {1} {2}".format(key, update, delete)

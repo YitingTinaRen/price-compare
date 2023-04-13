@@ -446,7 +446,8 @@ class CloudFrontSigner:
         # 2. Albeit the order in custom policy is not required by CloudFront,
         #    we still use OrderedDict internally to ensure the result is stable
         #    and also matches canned policy requirement.
-        #    SEE: http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-creating-signed-url-custom-policy.html
+        # SEE:
+        # http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-creating-signed-url-custom-policy.html
         moment = int(datetime2timestamp(date_less_than))
         condition = OrderedDict({"DateLessThan": {"AWS:EpochTime": moment}})
         if ip_address:
@@ -526,7 +527,7 @@ def generate_db_auth_token(self, DBHostname, Port, DBUsername, Region=None):
         expires_in=900,
         signing_name='rds-db',
     )
-    return presigned_url[len(scheme) :]
+    return presigned_url[len(scheme):]
 
 
 class S3PostPresigner:

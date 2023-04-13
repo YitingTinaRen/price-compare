@@ -75,8 +75,13 @@ class BaseAdapter:
         super().__init__()
 
     def send(
-        self, request, stream=False, timeout=None, verify=True, cert=None, proxies=None
-    ):
+            self,
+            request,
+            stream=False,
+            timeout=None,
+            verify=True,
+            cert=None,
+            proxies=None):
         """Sends PreparedRequest object. Returns Response object.
 
         :param request: The :class:`PreparedRequest <PreparedRequest>` being sent.
@@ -429,13 +434,19 @@ class HTTPAdapter(BaseAdapter):
         username, password = get_auth_from_url(proxy)
 
         if username:
-            headers["Proxy-Authorization"] = _basic_auth_str(username, password)
+            headers["Proxy-Authorization"] = _basic_auth_str(
+                username, password)
 
         return headers
 
     def send(
-        self, request, stream=False, timeout=None, verify=True, cert=None, proxies=None
-    ):
+            self,
+            request,
+            stream=False,
+            timeout=None,
+            verify=True,
+            cert=None,
+            proxies=None):
         """Sends PreparedRequest object. Returns Response object.
 
         :param request: The :class:`PreparedRequest <PreparedRequest>` being sent.
@@ -468,7 +479,8 @@ class HTTPAdapter(BaseAdapter):
             proxies=proxies,
         )
 
-        chunked = not (request.body is None or "Content-Length" in request.headers)
+        chunked = not (
+            request.body is None or "Content-Length" in request.headers)
 
         if isinstance(timeout, tuple):
             try:
@@ -477,8 +489,7 @@ class HTTPAdapter(BaseAdapter):
             except ValueError:
                 raise ValueError(
                     f"Invalid timeout {timeout}. Pass a (connect, read) timeout tuple, "
-                    f"or a single float to set both timeouts to the same value."
-                )
+                    f"or a single float to set both timeouts to the same value.")
         elif isinstance(timeout, TimeoutSauce):
             pass
         else:

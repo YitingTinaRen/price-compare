@@ -9,6 +9,7 @@ from bs4.dammit import (
     UnicodeDammit,
 )
 
+
 class TestUnicodeDammit(object):
     """Standalone tests of UnicodeDammit."""
 
@@ -23,7 +24,7 @@ class TestUnicodeDammit(object):
          ("xml", "&#x2018;&#x2019;&#x201C;&#x201D;"),
          ("html", "&lsquo;&rsquo;&ldquo;&rdquo;"),
          ("ascii", "''" + '""'),
-        ]
+         ]
     )
     def test_smart_quotes_to(self, smart_quotes_to, expect_converted):
         """Verify the functionality of the smart_quotes_to argument
@@ -34,7 +35,7 @@ class TestUnicodeDammit(object):
             smart_quotes_to=smart_quotes_to
         ).unicode_markup
         assert converted == "<foo>{}</foo>".format(expect_converted)
-        
+
     def test_detect_utf8(self):
         utf8 = b"Sacr\xc3\xa9 bleu! \xe2\x98\x83"
         dammit = UnicodeDammit(utf8)
@@ -76,11 +77,13 @@ class TestUnicodeDammit(object):
         # And if we exclude that, there is no valid guess at all.
         dammit = UnicodeDammit(
             utf8_data, exclude_encodings=["utf-8", "windows-1252"])
-        assert dammit.original_encoding == None
+        assert dammit.original_encoding is None
+
 
 class TestEncodingDetector(object):
-        
-    def test_encoding_detector_replaces_junk_in_encoding_name_with_replacement_character(self):
+
+    def test_encoding_detector_replaces_junk_in_encoding_name_with_replacement_character(
+            self):
         detected = EncodingDetector(
             b'<?xml version="1.0" encoding="UTF-\xdb" ?>')
         encodings = list(detected.encodings)
@@ -92,7 +95,7 @@ class TestEncodingDetector(object):
             b'<html><meta charset="euc-jp" /></html>',
             b"<html><meta charset='euc-jp' /></html>",
             b"<html><meta charset=euc-jp /></html>",
-            b"<html><meta charset=euc-jp/></html>"):
+                b"<html><meta charset=euc-jp/></html>"):
             dammit = UnicodeDammit(data, is_html=True)
             assert "euc-jp" == dammit.original_encoding
 
@@ -132,12 +135,13 @@ class TestEncodingDetector(object):
             bs4.dammit.chardet_dammit = chardet
 
     def test_byte_order_mark_removed(self):
-        # A document written in UTF-16LE will have its byte order marker stripped.
+        # A document written in UTF-16LE will have its byte order marker
+        # stripped.
         data = b'\xff\xfe<\x00a\x00>\x00\xe1\x00\xe9\x00<\x00/\x00a\x00>\x00'
         dammit = UnicodeDammit(data)
         assert "<a>áé</a>" == dammit.unicode_markup
         assert "utf-16le" == dammit.original_encoding
-       
+
     def test_known_definite_versus_user_encodings(self):
         # The known_definite_encodings are used before sniffing the
         # byte-order mark; the user_encodings are used afterwards.
@@ -150,25 +154,26 @@ class TestEncodingDetector(object):
         # definite encoding.
         before = UnicodeDammit(data, known_definite_encodings=["utf-16"])
         assert "utf-16" == before.original_encoding
-        
+
         # If we pass UTF-18 as a user encoding, it's not even
         # tried--the encoding sniffed from the byte-order mark takes
         # precedence.
         after = UnicodeDammit(data, user_encodings=["utf-8"])
         assert "utf-16le" == after.original_encoding
         assert ["utf-16le"] == [x[0] for x in dammit.tried_encodings]
-        
+
         # Here's a document in ISO-8859-8.
         hebrew = b"\xed\xe5\xec\xf9"
         dammit = UnicodeDammit(hebrew, known_definite_encodings=["utf-8"],
                                user_encodings=["iso-8859-8"])
-        
+
         # The known_definite_encodings don't work, BOM sniffing does
         # nothing (it only works for a few UTF encodings), but one of
         # the user_encodings does work.
         assert "iso-8859-8" == dammit.original_encoding
-        assert ["utf-8", "iso-8859-8"] == [x[0] for x in dammit.tried_encodings]
-        
+        assert ["utf-8", "iso-8859-8"] == [x[0]
+                                           for x in dammit.tried_encodings]
+
     def test_deprecated_override_encodings(self):
         # override_encodings is a deprecated alias for
         # known_definite_encodings.
@@ -216,10 +221,10 @@ class TestEncodingDetector(object):
         # Windows-1252. But our code knows to skip over multibyte
         # UTF-8 characters, so they'll survive the process unscathed.
         for tricky_unicode_char in (
-            "\N{LATIN SMALL LIGATURE OE}", # 2-byte char '\xc5\x93'
-            "\N{LATIN SUBSCRIPT SMALL LETTER X}", # 3-byte char '\xe2\x82\x93'
-            "\xf0\x90\x90\x93", # This is a CJK character, not sure which one.
-            ):
+            "\N{LATIN SMALL LIGATURE OE}",  # 2-byte char '\xc5\x93'
+            "\N{LATIN SUBSCRIPT SMALL LETTER X}",  # 3-byte char '\xe2\x82\x93'
+            "\xf0\x90\x90\x93",  # This is a CJK character, not sure which one.
+        ):
             input = tricky_unicode_char.encode("utf8")
             assert input.endswith(b'\x93')
             output = UnicodeDammit.detwingle(input)
@@ -236,7 +241,7 @@ class TestEncodingDetector(object):
         html_unicode = '<html><head><meta charset="utf-8"></head></html>'
         html_bytes = html_unicode.encode("ascii")
 
-        xml_unicode= '<?xml version="1.0" encoding="ISO-8859-1" ?>'
+        xml_unicode = '<?xml version="1.0" encoding="ISO-8859-1" ?>'
         xml_bytes = xml_unicode.encode("ascii")
 
         m = EncodingDetector.find_declared_encoding
@@ -270,9 +275,9 @@ class TestEncodingDetector(object):
 
 class TestEntitySubstitution(object):
     """Standalone tests of the EntitySubstitution class."""
+
     def setup_method(self):
         self.sub = EntitySubstitution
-
 
     @pytest.mark.parametrize(
         "original,substituted",
@@ -284,12 +289,12 @@ class TestEntitySubstitution(object):
 
             # MS smart quotes are a common source of frustration, so we
             # give them a special test.
-            ('‘’foo“”', "&lsquo;&rsquo;foo&ldquo;&rdquo;"),           
+            ('‘’foo“”', "&lsquo;&rsquo;foo&ldquo;&rdquo;"),
         ]
     )
     def test_substitute_html(self, original, substituted):
         assert self.sub.substitute_html(original) == substituted
-        
+
     def test_html5_entity(self):
         for entity, u in (
             # A few spot checks of our ability to recognize
@@ -300,7 +305,7 @@ class TestEntitySubstitution(object):
             ('&ngeqq;', '\u2267\u0338'),
             ('&not;', '\xac'),
             ('&Not;', '\u2aec'),
-                
+
             # We _could_ convert | to &verbarr;, but we don't, because
             # | is an ASCII character.
             ('|' '|'),
@@ -319,7 +324,7 @@ class TestEntitySubstitution(object):
             raw = template % u
             with_entities = template % entity
             assert self.sub.substitute_html(raw) == with_entities
-            
+
     def test_html5_entity_with_variation_selector(self):
         # Some HTML5 entities correspond either to a single-character
         # Unicode sequence _or_ to the same character plus U+FE00,
@@ -331,8 +336,9 @@ class TestEntitySubstitution(object):
         data = "fjords \u2294\ufe00 penguins"
         markup = "fjords &sqcups; penguins"
         assert self.sub.substitute_html(data) == markup
-        
-    def test_xml_converstion_includes_no_quotes_if_make_quoted_attribute_is_false(self):
+
+    def test_xml_converstion_includes_no_quotes_if_make_quoted_attribute_is_false(
+            self):
         s = 'Welcome to "my bar"'
         assert self.sub.substitute_xml(s, False) == s
 
@@ -340,13 +346,16 @@ class TestEntitySubstitution(object):
         assert self.sub.substitute_xml("Welcome", True) == '"Welcome"'
         assert self.sub.substitute_xml("Bob's Bar", True) == '"Bob\'s Bar"'
 
-    def test_xml_attribute_quoting_uses_single_quotes_when_value_contains_double_quotes(self):
+    def test_xml_attribute_quoting_uses_single_quotes_when_value_contains_double_quotes(
+            self):
         s = 'Welcome to "my bar"'
         assert self.sub.substitute_xml(s, True) == "'Welcome to \"my bar\"'"
 
-    def test_xml_attribute_quoting_escapes_single_quotes_when_value_contains_both_single_and_double_quotes(self):
+    def test_xml_attribute_quoting_escapes_single_quotes_when_value_contains_both_single_and_double_quotes(
+            self):
         s = 'Welcome to "Bob\'s Bar"'
-        assert self.sub.substitute_xml(s, True) == '"Welcome to &quot;Bob\'s Bar&quot;"'
+        assert self.sub.substitute_xml(
+            s, True) == '"Welcome to &quot;Bob\'s Bar&quot;"'
 
     def test_xml_quotes_arent_escaped_when_value_is_not_being_quoted(self):
         quoted = 'Welcome to "Bob\'s Bar"'
@@ -358,12 +367,15 @@ class TestEntitySubstitution(object):
     def test_xml_quoting_handles_ampersands(self):
         assert self.sub.substitute_xml("AT&T") == "AT&amp;T"
 
-    def test_xml_quoting_including_ampersands_when_they_are_part_of_an_entity(self):
+    def test_xml_quoting_including_ampersands_when_they_are_part_of_an_entity(
+            self):
         assert self.sub.substitute_xml("&Aacute;T&T") == "&amp;Aacute;T&amp;T"
 
-    def test_xml_quoting_ignoring_ampersands_when_they_are_part_of_an_entity(self):
-        assert self.sub.substitute_xml_containing_entities("&Aacute;T&T") == "&Aacute;T&amp;T"
-       
+    def test_xml_quoting_ignoring_ampersands_when_they_are_part_of_an_entity(
+            self):
+        assert self.sub.substitute_xml_containing_entities(
+            "&Aacute;T&T") == "&Aacute;T&amp;T"
+
     def test_quotes_not_html_substituted(self):
         """There's no need to do this except inside attribute values."""
         text = 'Bob\'s "bar"'

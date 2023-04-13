@@ -54,7 +54,8 @@ class CharsetMatch:
 
         # Below 1% difference --> Use Coherence
         if chaos_difference < 0.01 and coherence_difference > 0.02:
-            # When having a tough decision, use the result that decoded as many multi-byte as possible.
+            # When having a tough decision, use the result that decoded as many
+            # multi-byte as possible.
             if chaos_difference == 0.0 and self.coherence == other.coherence:
                 return self.multi_byte_usage > other.multi_byte_usage
             return self.coherence > other.coherence
@@ -72,15 +73,14 @@ class CharsetMatch:
         return self._string
 
     def __repr__(self) -> str:
-        return "<CharsetMatch '{}' bytes({})>".format(self.encoding, self.fingerprint)
+        return "<CharsetMatch '{}' bytes({})>".format(
+            self.encoding, self.fingerprint)
 
     def add_submatch(self, other: "CharsetMatch") -> None:
         if not isinstance(other, CharsetMatch) or other == self:
             raise ValueError(
                 "Unable to add instance <{}> as a submatch of a CharsetMatch".format(
-                    other.__class__
-                )
-            )
+                    other.__class__))
 
         other._string = None  # Unload RAM usage; dirty trick.
         self._leaves.append(other)
@@ -126,7 +126,8 @@ class CharsetMatch:
         """
         if not self._languages:
             # Trying to infer the language based on the given encoding
-            # Its either English or we should not pronounce ourselves in certain cases.
+            # Its either English or we should not pronounce ourselves in
+            # certain cases.
             if "ascii" in self.could_be_from_charset:
                 return "English"
 
@@ -262,7 +263,8 @@ class CharsetMatches:
                     str(item.__class__)
                 )
             )
-        # We should disable the submatch factoring when the input file is too heavy (conserve RAM usage)
+        # We should disable the submatch factoring when the input file is too
+        # heavy (conserve RAM usage)
         if len(item.raw) <= TOO_BIG_SEQUENCE:
             for match in self._results:
                 if match.fingerprint == item.fingerprint and match.chaos == item.chaos:

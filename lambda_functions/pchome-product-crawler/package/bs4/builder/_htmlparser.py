@@ -6,7 +6,7 @@ __license__ = "MIT"
 
 __all__ = [
     'HTMLParserTreeBuilder',
-    ]
+]
 
 from html.parser import HTMLParser
 
@@ -19,7 +19,7 @@ from bs4.element import (
     Declaration,
     Doctype,
     ProcessingInstruction,
-    )
+)
 from bs4.dammit import EntitySubstitution, UnicodeDammit
 
 from bs4.builder import (
@@ -27,10 +27,11 @@ from bs4.builder import (
     HTML,
     HTMLTreeBuilder,
     STRICT,
-    )
+)
 
 
 HTMLPARSER = 'html.parser'
+
 
 class BeautifulSoupHTMLParser(HTMLParser, DetectsXMLParsedAsHTML):
     """A subclass of the Python standard library's HTMLParser class, which
@@ -41,7 +42,7 @@ class BeautifulSoupHTMLParser(HTMLParser, DetectsXMLParsedAsHTML):
     # Strategies for handling duplicate attributes
     IGNORE = 'ignore'
     REPLACE = 'replace'
-    
+
     def __init__(self, *args, **kwargs):
         """Constructor.
 
@@ -52,7 +53,7 @@ class BeautifulSoupHTMLParser(HTMLParser, DetectsXMLParsedAsHTML):
             encountered), or a callable. A callable must take three
             arguments: the dictionary of attributes already processed,
             the name of the duplicate attribute, and the most recent value
-            encountered.           
+            encountered.
         """
         self.on_duplicate_attribute = kwargs.pop(
             'on_duplicate_attribute', self.REPLACE
@@ -84,7 +85,7 @@ class BeautifulSoupHTMLParser(HTMLParser, DetectsXMLParsedAsHTML):
         # handle_endtag ourselves.
         tag = self.handle_starttag(name, attrs, handle_empty_element=False)
         self.handle_endtag(name)
-        
+
     def handle_starttag(self, name, attrs, handle_empty_element=True):
         """Handle an opening tag, e.g. '<tag>'
 
@@ -115,7 +116,7 @@ class BeautifulSoupHTMLParser(HTMLParser, DetectsXMLParsedAsHTML):
             else:
                 attr_dict[key] = value
             attrvalue = '""'
-        #print("START", name)
+        # print("START", name)
         sourceline, sourcepos = self.getpos()
         tag = self.soup.handle_starttag(
             name, None, None, attr_dict, sourceline=sourceline,
@@ -139,25 +140,25 @@ class BeautifulSoupHTMLParser(HTMLParser, DetectsXMLParsedAsHTML):
 
         if self._root_tag is None:
             self._root_tag_encountered(name)
-            
+
     def handle_endtag(self, name, check_already_closed=True):
         """Handle a closing tag, e.g. '</tag>'
-        
+
         :param name: A tag name.
         :param check_already_closed: True if this tag is expected to
            be the closing portion of an empty-element tag,
            e.g. '<tag></tag>'.
         """
-        #print("END", name)
+        # print("END", name)
         if check_already_closed and name in self.already_closed_empty_element:
             # This is a redundant end tag for an empty-element tag.
             # We've already called handle_endtag() for it, so just
             # check it off the list.
-            #print("ALREADY CLOSED", name)
+            # print("ALREADY CLOSED", name)
             self.already_closed_empty_element.remove(name)
         else:
             self.soup.handle_endtag(name)
-            
+
     def handle_data(self, data):
         """Handle some textual data that shows up between tags."""
         self.soup.handle_data(data)
@@ -217,7 +218,8 @@ class BeautifulSoupHTMLParser(HTMLParser, DetectsXMLParsedAsHTML):
             # was an character entity reference with a missing
             # semicolon or the literal string "&foo". Since this is
             # HTML, we have a complete list of all character entity references,
-            # and this one wasn't found, so assume it's the literal string "&foo".
+            # and this one wasn't found, so assume it's the literal string
+            # "&foo".
             data = "&%s" % name
         self.handle_data(data)
 
@@ -281,10 +283,10 @@ class HTMLParserTreeBuilder(HTMLTreeBuilder):
     def __init__(self, parser_args=None, parser_kwargs=None, **kwargs):
         """Constructor.
 
-        :param parser_args: Positional arguments to pass into 
+        :param parser_args: Positional arguments to pass into
             the BeautifulSoupHTMLParser constructor, once it's
             invoked.
-        :param parser_kwargs: Keyword arguments to pass into 
+        :param parser_kwargs: Keyword arguments to pass into
             the BeautifulSoupHTMLParser constructor, once it's
             invoked.
         :param kwargs: Keyword arguments for the superclass constructor.
@@ -302,10 +304,13 @@ class HTMLParserTreeBuilder(HTMLTreeBuilder):
         parser_kwargs.update(extra_parser_kwargs)
         parser_kwargs['convert_charrefs'] = False
         self.parser_args = (parser_args, parser_kwargs)
-        
-    def prepare_markup(self, markup, user_specified_encoding=None,
-                       document_declared_encoding=None, exclude_encodings=None):
 
+    def prepare_markup(
+            self,
+            markup,
+            user_specified_encoding=None,
+            document_declared_encoding=None,
+            exclude_encodings=None):
         """Run any preliminary steps necessary to make incoming markup
         acceptable to the parser.
 
@@ -321,7 +326,7 @@ class HTMLParserTreeBuilder(HTMLTreeBuilder):
           has undergone character replacement)
 
          Each 4-tuple represents a strategy for converting the
-         document to Unicode and parsing it. Each strategy will be tried 
+         document to Unicode and parsing it. Each strategy will be tried
          in turn.
         """
         if isinstance(markup, str):

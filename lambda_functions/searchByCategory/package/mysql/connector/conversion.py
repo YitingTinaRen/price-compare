@@ -211,7 +211,7 @@ class MySQLConverter(MySQLConverterBase):
             raise ValueError("%s (field %s)" % (err, vtype[0]))
         except TypeError as err:
             raise TypeError("%s (field %s)" % (err, vtype[0]))
-        except:
+        except BaseException:
             raise
 
     def _int_to_mysql(self, value):
@@ -383,7 +383,7 @@ class MySQLConverter(MySQLConverterBase):
         Returns a tuple.
         """
         i = 0
-        result = [None]*len(fields)
+        result = [None] * len(fields)
 
         if not self._cache_field_types:
             self._cache_field_types = {}

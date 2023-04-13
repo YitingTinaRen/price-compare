@@ -515,7 +515,9 @@ Module_six_moves_urllib_robotparser._moved_attributes = (
 )
 
 _importer._add_module(
-    Module_six_moves_urllib_robotparser(__name__ + ".moves.urllib.robotparser"),
+    Module_six_moves_urllib_robotparser(
+        __name__ +
+        ".moves.urllib.robotparser"),
     "moves.urllib_robotparser",
     "moves.urllib.robotparser",
 )
@@ -622,8 +624,8 @@ else:
 
     callable = callable
 _add_doc(
-    get_unbound_function, """Get the function out of a possibly unbound function"""
-)
+    get_unbound_function,
+    """Get the function out of a possibly unbound function""")
 
 
 get_method_function = operator.attrgetter(_meth_func)
@@ -675,10 +677,12 @@ else:
 
 _add_doc(iterkeys, "Return an iterator over the keys of a dictionary.")
 _add_doc(itervalues, "Return an iterator over the values of a dictionary.")
-_add_doc(iteritems, "Return an iterator over the (key, value) pairs of a dictionary.")
 _add_doc(
-    iterlists, "Return an iterator over the (key, [values]) pairs of a dictionary."
-)
+    iteritems,
+    "Return an iterator over the (key, value) pairs of a dictionary.")
+_add_doc(
+    iterlists,
+    "Return an iterator over the (key, [values]) pairs of a dictionary.")
 
 
 if PY3:
@@ -784,7 +788,7 @@ else:
             del frame
         elif _locs_ is None:
             _locs_ = _globs_
-        exec ("""exec _code_ in _globs_, _locs_""")
+        exec("""exec _code_ in _globs_, _locs_""")
 
     exec_(
         """def reraise(tp, value, tb=None):
@@ -917,8 +921,10 @@ if sys.version_info[0:2] < (3, 4):
         updated=functools.WRAPPER_UPDATES,
     ):
         return functools.partial(
-            _update_wrapper, wrapped=wrapped, assigned=assigned, updated=updated
-        )
+            _update_wrapper,
+            wrapped=wrapped,
+            assigned=assigned,
+            updated=updated)
 
     wraps.__doc__ = functools.wraps.__doc__
 
@@ -1000,7 +1006,7 @@ def ensure_str(s, encoding="utf-8", errors="strict"):
       - `bytes` -> decoded to `str`
     """
     # Optimization: Fast return for the common case.
-    if type(s) is str:
+    if isinstance(s, str):
         return s
     if PY2 and isinstance(s, text_type):
         return s.encode(encoding, errors)

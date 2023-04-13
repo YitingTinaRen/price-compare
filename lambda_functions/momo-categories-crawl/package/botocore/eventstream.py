@@ -483,24 +483,24 @@ class EventStreamBuffer:
         return prelude
 
     def _parse_headers(self):
-        header_bytes = self._data[_PRELUDE_LENGTH : self._prelude.headers_end]
+        header_bytes = self._data[_PRELUDE_LENGTH: self._prelude.headers_end]
         return self._header_parser.parse(header_bytes)
 
     def _parse_payload(self):
         prelude = self._prelude
-        payload_bytes = self._data[prelude.headers_end : prelude.payload_end]
+        payload_bytes = self._data[prelude.headers_end: prelude.payload_end]
         return payload_bytes
 
     def _parse_message_crc(self):
         prelude = self._prelude
-        crc_bytes = self._data[prelude.payload_end : prelude.total_length]
+        crc_bytes = self._data[prelude.payload_end: prelude.total_length]
         message_crc, _ = DecodeUtils.unpack_uint32(crc_bytes)
         return message_crc
 
     def _parse_message_bytes(self):
         # The minus 4 includes the prelude crc to the bytes to be checked
         message_bytes = self._data[
-            _PRELUDE_LENGTH - 4 : self._prelude.payload_end
+            _PRELUDE_LENGTH - 4: self._prelude.payload_end
         ]
         return message_bytes
 
@@ -520,7 +520,7 @@ class EventStreamBuffer:
 
     def _prepare_for_next_message(self):
         # Advance the data and reset the current prelude
-        self._data = self._data[self._prelude.total_length :]
+        self._data = self._data[self._prelude.total_length:]
         self._prelude = None
 
     def next(self):

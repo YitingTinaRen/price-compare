@@ -45,7 +45,8 @@ class SubResourceDocumenter(NestedDocumenter):
         self.member_map['sub-resources'] = sub_resources_list
         for sub_resource in sub_resources:
             sub_resources_list.append(sub_resource.name)
-            # Create a new DocumentStructure for each sub_resource and add contents.
+            # Create a new DocumentStructure for each sub_resource and add
+            # contents.
             sub_resource_doc = DocumentStructure(
                 sub_resource.name, target='html'
             )
@@ -61,7 +62,8 @@ class SubResourceDocumenter(NestedDocumenter):
             )
 
             # Write sub_resources in individual/nested files.
-            # Path: <root>/reference/services/<service>/<resource_name>/<sub_resource_name>.rst
+            # Path:
+            # <root>/reference/services/<service>/<resource_name>/<sub_resource_name>.rst
             sub_resources_dir_path = os.path.join(
                 self._root_docs_path,
                 f'{self._service_name}',

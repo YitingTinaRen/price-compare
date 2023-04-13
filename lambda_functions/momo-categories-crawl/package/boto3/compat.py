@@ -10,6 +10,7 @@
 # distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
+import collections.abc as collections_abc
 import sys
 import os
 import errno
@@ -23,8 +24,6 @@ from boto3.exceptions import PythonDeprecationWarning
 # In py3 all the socket related errors are in a newly created
 # ConnectionError
 SOCKET_ERROR = ConnectionError
-
-import collections.abc as collections_abc
 
 
 if sys.platform.startswith('win'):
@@ -77,6 +76,6 @@ def _warn_deprecated_python():
             "Boto3 will no longer support Python {}.{} "
             "starting {}. To continue receiving service updates, "
             "bug fixes, and security updates please upgrade to Python 3.7 or "
-            "later. More information can be found here: {}"
-        ).format(py_version[0], py_version[1], params['date'], params['blog_link'])
+            "later. More information can be found here: {}").format(
+            py_version[0], py_version[1], params['date'], params['blog_link'])
         warnings.warn(warning, PythonDeprecationWarning)

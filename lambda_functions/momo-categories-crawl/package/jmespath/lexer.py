@@ -89,7 +89,7 @@ class Lexer(object):
             elif self._current == '=':
                 if self._next() == '=':
                     yield {'type': 'eq', 'value': '==',
-                        'start': self._position - 1, 'end': self._position}
+                           'start': self._position - 1, 'end': self._position}
                     self._next()
                 else:
                     if self._current is None:

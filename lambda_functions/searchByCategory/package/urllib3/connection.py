@@ -26,7 +26,8 @@ except (ImportError, AttributeError):  # Platform-specific: No SSL.
 
 
 try:
-    # Python 3: not a no-op, we're adding this to the namespace so it can be imported.
+    # Python 3: not a no-op, we're adding this to the namespace so it can be
+    # imported.
     ConnectionError = ConnectionError
 except NameError:
     # Python 2
@@ -121,7 +122,8 @@ class HTTPConnection(_HTTPConnection, object):
 
         #: The socket options provided by the user. If no options are
         #: provided, we use the default options.
-        self.socket_options = kw.pop("socket_options", self.default_socket_options)
+        self.socket_options = kw.pop(
+            "socket_options", self.default_socket_options)
 
         # Proxy options provided by the user.
         self.proxy = kw.pop("proxy", None)
@@ -212,9 +214,8 @@ class HTTPConnection(_HTTPConnection, object):
         match = _CONTAINS_CONTROL_CHAR_RE.search(method)
         if match:
             raise ValueError(
-                "Method cannot contain non-token characters %r (found at least %r)"
-                % (method, match.group())
-            )
+                "Method cannot contain non-token characters %r (found at least %r)" %
+                (method, match.group()))
 
         return _HTTPConnection.putrequest(self, method, url, *args, **kwargs)
 
@@ -236,7 +237,13 @@ class HTTPConnection(_HTTPConnection, object):
             headers = headers.copy()
         if "user-agent" not in (six.ensure_str(k.lower()) for k in headers):
             headers["User-Agent"] = _get_default_user_agent()
-        super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+        super(
+            HTTPConnection,
+            self).request(
+            method,
+            url,
+            body=body,
+            headers=headers)
 
     def request_chunked(self, method, url, body=None, headers=None):
         """
@@ -248,8 +255,10 @@ class HTTPConnection(_HTTPConnection, object):
         skip_accept_encoding = "accept-encoding" in header_keys
         skip_host = "host" in header_keys
         self.putrequest(
-            method, url, skip_accept_encoding=skip_accept_encoding, skip_host=skip_host
-        )
+            method,
+            url,
+            skip_accept_encoding=skip_accept_encoding,
+            skip_host=skip_host)
         if "user-agent" not in header_keys:
             self.putheader("User-Agent", _get_default_user_agent())
         for header, value in headers.items():
@@ -308,7 +317,13 @@ class HTTPSConnection(HTTPConnection):
         **kw
     ):
 
-        HTTPConnection.__init__(self, host, port, strict=strict, timeout=timeout, **kw)
+        HTTPConnection.__init__(
+            self,
+            host,
+            port,
+            strict=strict,
+            timeout=timeout,
+            **kw)
 
         self.key_file = key_file
         self.cert_file = cert_file
@@ -443,8 +458,9 @@ class HTTPSConnection(HTTPConnection):
 
         if self.assert_fingerprint:
             assert_fingerprint(
-                self.sock.getpeercert(binary_form=True), self.assert_fingerprint
-            )
+                self.sock.getpeercert(
+                    binary_form=True),
+                self.assert_fingerprint)
         elif (
             context.verify_mode != ssl.CERT_NONE
             and not getattr(context, "check_hostname", False)
@@ -456,14 +472,10 @@ class HTTPSConnection(HTTPConnection):
             cert = self.sock.getpeercert()
             if not cert.get("subjectAltName", ()):
                 warnings.warn(
-                    (
-                        "Certificate for {0} has no `subjectAltName`, falling back to check for a "
-                        "`commonName` for now. This feature is being removed by major browsers and "
-                        "deprecated by RFC 2818. (See https://github.com/urllib3/urllib3/issues/497 "
-                        "for details.)".format(hostname)
-                    ),
-                    SubjectAltNameWarning,
-                )
+                    ("Certificate for {0} has no `subjectAltName`, falling back to check for a "
+                     "`commonName` for now. This feature is being removed by major browsers and "
+                     "deprecated by RFC 2818. (See https://github.com/urllib3/urllib3/issues/497 "
+                     "for details.)".format(hostname)), SubjectAltNameWarning, )
             _match_hostname(cert, self.assert_hostname or server_hostname)
 
         self.is_verified = (
@@ -514,14 +526,10 @@ class HTTPSConnection(HTTPConnection):
             cert = socket.getpeercert()
             if not cert.get("subjectAltName", ()):
                 warnings.warn(
-                    (
-                        "Certificate for {0} has no `subjectAltName`, falling back to check for a "
-                        "`commonName` for now. This feature is being removed by major browsers and "
-                        "deprecated by RFC 2818. (See https://github.com/urllib3/urllib3/issues/497 "
-                        "for details.)".format(hostname)
-                    ),
-                    SubjectAltNameWarning,
-                )
+                    ("Certificate for {0} has no `subjectAltName`, falling back to check for a "
+                     "`commonName` for now. This feature is being removed by major browsers and "
+                     "deprecated by RFC 2818. (See https://github.com/urllib3/urllib3/issues/497 "
+                     "for details.)".format(hostname)), SubjectAltNameWarning, )
             _match_hostname(cert, hostname)
 
         self.proxy_is_verified = ssl_context.verify_mode == ssl.CERT_REQUIRED

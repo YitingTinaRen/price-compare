@@ -12,7 +12,7 @@ if LXML_PRESENT:
 from bs4 import (
     BeautifulSoup,
     BeautifulStoneSoup,
-    )
+)
 from bs4.element import Comment, Doctype, SoupStrainer
 from . import (
     HTMLTreeBuilderSmokeTest,
@@ -20,6 +20,7 @@ from . import (
     SOUP_SIEVE_PRESENT,
     SoupTest,
 )
+
 
 @pytest.mark.skipif(
     not LXML_PRESENT,
@@ -39,18 +40,18 @@ class TestLXMLTreeBuilder(SoupTest, HTMLTreeBuilderSmokeTest):
             "<p>foo&#x10000000000000;bar</p>", "<p>foobar</p>")
         self.assert_soup(
             "<p>foo&#1000000000;bar</p>", "<p>foobar</p>")
-        
+
     def test_entities_in_foreign_document_encoding(self):
         # We can't implement this case correctly because by the time we
         # hear about markup like "&#147;", it's been (incorrectly) converted into
         # a string like u'\x93'
         pass
-        
+
     # In lxml < 2.3.5, an empty doctype causes a segfault. Skip this
     # test if an old version of lxml is installed.
 
     @pytest.mark.skipif(
-        not LXML_PRESENT or LXML_VERSION < (2,3,5,0),
+        not LXML_PRESENT or LXML_VERSION < (2, 3, 5, 0),
         reason="Skipping doctype test for old version of lxml to avoid segfault."
     )
     def test_empty_doctype(self):
@@ -78,11 +79,11 @@ class TestLXMLTreeBuilder(SoupTest, HTMLTreeBuilderSmokeTest):
         # giving you a numeric answer.
         soup = self.soup(
             "\n   <p>\n\n<sourceline>\n<b>text</b></sourceline><sourcepos></p>",
-            store_line_numbers=True
-        )
+            store_line_numbers=True)
         assert "sourceline" == soup.p.sourceline.name
         assert "sourcepos" == soup.p.sourcepos.name
-        
+
+
 @pytest.mark.skipif(
     not LXML_PRESENT,
     reason="lxml seems not to be present, not testing its XML tree builder."
@@ -104,8 +105,7 @@ class TestLXMLXMLTreeBuilder(SoupTest, XMLTreeBuilderSmokeTest):
             '<subtag xmlns="http://another-unprefixed-namespace.com">'
             '<subsubtag xmlns="http://yet-another-unprefixed-namespace.com">'
             '</prefix2:tag3>'
-            '</root>'
-        )
+            '</root>')
 
         # The BeautifulSoup object includes every namespace prefix
         # defined in the entire document. This is the default set of
@@ -146,24 +146,22 @@ class TestLXMLXMLTreeBuilder(SoupTest, XMLTreeBuilderSmokeTest):
             'xml': 'http://www.w3.org/XML/1998/namespace',
         }
 
-
     @pytest.mark.skipif(
         not SOUP_SIEVE_PRESENT, reason="Soup Sieve not installed"
     )
     def test_namespace_interaction_with_select_and_find(self):
         # Demonstrate how namespaces interact with select* and
         # find* methods.
-        
+
         soup = self.soup(
             '<?xml version="1.1"?>\n'
             '<root>'
             '<tag xmlns="http://unprefixed-namespace.com">content</tag>'
             '<prefix:tag2 xmlns:prefix="http://prefixed-namespace.com">content</tag>'
             '<subtag xmlns:prefix="http://another-namespace-same-prefix.com">'
-             '<prefix:tag3>'
+            '<prefix:tag3>'
             '</subtag>'
-            '</root>'
-        )
+            '</root>')
 
         # soupselect uses namespace URIs.
         assert soup.select_one('tag').name == 'tag'
@@ -180,7 +178,7 @@ class TestLXMLXMLTreeBuilder(SoupTest, XMLTreeBuilderSmokeTest):
 
         # And a Tag (as opposed to the BeautifulSoup object) will
         # have a set of default namespaces scoped to that Tag.
-        assert soup.subtag.select_one('prefix|tag3').name=='tag3'
+        assert soup.subtag.select_one('prefix|tag3').name == 'tag3'
 
         # the find() methods aren't fully namespace-aware; they just
         # look at prefixes.

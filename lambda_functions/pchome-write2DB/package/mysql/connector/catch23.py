@@ -63,7 +63,6 @@ def init_bytearray(payload=b'', encoding='utf-8'):
         except AttributeError:
             raise ValueError("payload must be a str or bytes")
 
-
     return bytearray(payload)
 
 
@@ -73,6 +72,7 @@ def isstr(obj):
         return isinstance(obj, basestring)
     else:
         return isinstance(obj, str)
+
 
 def isunicode(obj):
     """Returns whether a variable is a of unicode type"""

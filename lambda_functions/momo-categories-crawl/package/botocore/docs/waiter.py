@@ -40,8 +40,7 @@ class WaiterDocumenter:
     def _add_single_waiter(self, section, waiter_name):
         section = section.add_new_section(waiter_name)
         section.style.start_sphinx_py_class(
-            class_name=f"{self._client.__class__.__name__}.Waiter.{waiter_name}"
-        )
+            class_name=f"{self._client.__class__.__name__}.Waiter.{waiter_name}")
 
         # Add example on how to instantiate waiter.
         section.style.start_codeblock()

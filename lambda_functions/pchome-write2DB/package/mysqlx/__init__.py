@@ -56,9 +56,10 @@ def _parse_address_list(address_list):
         Returns a dict with parsed values of host, port and priority if
         specified.
     """
-    is_list  = re.compile(r'^\[(?![^,]*\]).*]$')
+    is_list = re.compile(r'^\[(?![^,]*\]).*]$')
     hst_list = re.compile(r',(?![^\(\)]*\))')
-    pri_addr = re.compile(r'^\(address\s*=\s*(?P<address>.+)\s*,\s*priority\s*=\s*(?P<priority>\d+)\)$')
+    pri_addr = re.compile(
+        r'^\(address\s*=\s*(?P<address>.+)\s*,\s*priority\s*=\s*(?P<priority>\d+)\)$')
 
     routers = []
     if is_list.match(address_list):
@@ -87,7 +88,8 @@ def _parse_address_list(address_list):
         router["port"] = match.port
         routers.append(router)
 
-    return { "routers": routers }
+    return {"routers": routers}
+
 
 def _parse_connection_uri(uri):
     """Parses the connection string and returns a dictionary with the
@@ -127,6 +129,7 @@ def _parse_connection_uri(uri):
         settings[opt] = unquote(val.strip("()")) or True
     return settings
 
+
 def _validate_settings(settings):
     """Validates the settings to be passed to a Session object
     the port values are converted to int if specified or set to 33060
@@ -149,6 +152,7 @@ def _validate_settings(settings):
             raise InterfaceError("Invalid port")
     elif "host" in settings:
         settings["port"] = 33060
+
 
 def _get_connection_settings(*args, **kwargs):
     """Parses the connection string and returns a dictionary with the
@@ -184,6 +188,7 @@ def _get_connection_settings(*args, **kwargs):
 
     return settings
 
+
 def get_session(*args, **kwargs):
     """Creates a XSession instance using the provided connection data.
 
@@ -216,7 +221,8 @@ def get_node_session(*args, **kwargs):
     """
     settings = _get_connection_settings(*args, **kwargs)
     if "routers" in settings:
-        raise InterfaceError("NodeSession expects only one pair of host and port")
+        raise InterfaceError(
+            "NodeSession expects only one pair of host and port")
 
     return NodeSession(settings)
 

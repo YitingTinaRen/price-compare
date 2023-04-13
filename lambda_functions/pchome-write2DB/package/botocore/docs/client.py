@@ -127,7 +127,8 @@ class ClientDocumenter:
 
     def _add_client_methods(self, client_methods):
         for method_name in sorted(client_methods):
-            # Create a new DocumentStructure for each client method and add contents.
+            # Create a new DocumentStructure for each client method and add
+            # contents.
             method_doc_structure = DocumentStructure(
                 method_name, target='html'
             )
@@ -135,7 +136,8 @@ class ClientDocumenter:
                 method_doc_structure, method_name, client_methods[method_name]
             )
             # Write client methods in individual/nested files.
-            # Path: <root>/reference/services/<service>/client/<method_name>.rst
+            # Path:
+            # <root>/reference/services/<service>/client/<method_name>.rst
             client_dir_path = os.path.join(
                 self._root_docs_path, self._service_name, 'client'
             )
@@ -204,29 +206,23 @@ class ClientExceptionsDocumenter:
         documentation=('Normalized access to common exception attributes.'),
         members=OrderedDict(
             [
-                (
-                    'Code',
-                    DocumentedShape(
-                        name='Code',
-                        type_name='string',
-                        documentation=(
-                            'An identifier specifying the exception type.'
-                        ),
-                    ),
-                ),
-                (
-                    'Message',
-                    DocumentedShape(
-                        name='Message',
-                        type_name='string',
-                        documentation=(
-                            'A descriptive message explaining why the exception '
-                            'occured.'
-                        ),
-                    ),
-                ),
-            ]
-        ),
+                ('Code',
+                 DocumentedShape(
+                  name='Code',
+                     type_name='string',
+                     documentation=('An identifier specifying the exception type.'),
+                 ),
+                 ),
+                ('Message',
+                 DocumentedShape(
+                     name='Message',
+                     type_name='string',
+                     documentation=(
+                         'A descriptive message explaining why the exception '
+                         'occured.'),
+                 ),
+                 ),
+            ]),
     )
 
     def __init__(self, client, root_docs_path):
@@ -279,13 +275,15 @@ class ClientExceptionsDocumenter:
 
     def _add_exception_classes(self):
         for shape in self._client.meta.service_model.error_shapes:
-            # Create a new DocumentStructure for each exception method and add contents.
+            # Create a new DocumentStructure for each exception method and add
+            # contents.
             exception_doc_structure = DocumentStructure(
                 shape.name, target='html'
             )
             self._add_exception_class(exception_doc_structure, shape)
             # Write exceptions in individual/nested files.
-            # Path: <root>/reference/services/<service>/client/exceptions/<exception_name>.rst
+            # Path:
+            # <root>/reference/services/<service>/client/exceptions/<exception_name>.rst
             exception_dir_path = os.path.join(
                 self._root_docs_path,
                 self._service_name,

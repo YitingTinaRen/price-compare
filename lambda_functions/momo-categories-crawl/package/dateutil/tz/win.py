@@ -116,7 +116,7 @@ class tzres(object):
         name_splt = tzname_str.split(',-')
         try:
             offset = int(name_splt[1])
-        except:
+        except BaseException:
             raise ValueError("Malformed timezone string.")
 
         return self.load_name(offset)
@@ -124,6 +124,7 @@ class tzres(object):
 
 class tzwinbase(tzrangebase):
     """tzinfo class based on win32's timezones available in the registry."""
+
     def __init__(self):
         raise NotImplementedError('tzwinbase is an abstract base class')
 
@@ -132,18 +133,18 @@ class tzwinbase(tzrangebase):
         if not isinstance(other, tzwinbase):
             return NotImplemented
 
-        return  (self._std_offset == other._std_offset and
-                 self._dst_offset == other._dst_offset and
-                 self._stddayofweek == other._stddayofweek and
-                 self._dstdayofweek == other._dstdayofweek and
-                 self._stdweeknumber == other._stdweeknumber and
-                 self._dstweeknumber == other._dstweeknumber and
-                 self._stdhour == other._stdhour and
-                 self._dsthour == other._dsthour and
-                 self._stdminute == other._stdminute and
-                 self._dstminute == other._dstminute and
-                 self._std_abbr == other._std_abbr and
-                 self._dst_abbr == other._dst_abbr)
+        return (self._std_offset == other._std_offset and
+                self._dst_offset == other._dst_offset and
+                self._stddayofweek == other._stddayofweek and
+                self._dstdayofweek == other._dstdayofweek and
+                self._stdweeknumber == other._stdweeknumber and
+                self._dstweeknumber == other._dstweeknumber and
+                self._stdhour == other._stdhour and
+                self._dsthour == other._dsthour and
+                self._stdminute == other._stdminute and
+                self._dstminute == other._dstminute and
+                self._std_abbr == other._std_abbr and
+                self._dst_abbr == other._dst_abbr)
 
     @staticmethod
     def list():
@@ -216,7 +217,8 @@ class tzwin(tzwinbase):
         self._name = name
 
         with winreg.ConnectRegistry(None, winreg.HKEY_LOCAL_MACHINE) as handle:
-            tzkeyname = text_type("{kn}\\{name}").format(kn=TZKEYNAME, name=name)
+            tzkeyname = text_type("{kn}\\{name}").format(
+                kn=TZKEYNAME, name=name)
             with winreg.OpenKey(handle, tzkeyname) as tzkey:
                 keydict = valuestodict(tzkey)
 
@@ -227,8 +229,8 @@ class tzwin(tzwinbase):
 
         # See http://ww_winreg.jsiinc.com/SUBA/tip0300/rh0398.htm
         tup = struct.unpack("=3l16h", keydict["TZI"])
-        stdoffset = -tup[0]-tup[1]          # Bias + StandardBias * -1
-        dstoffset = stdoffset-tup[2]        # + DaylightBias * -1
+        stdoffset = -tup[0] - tup[1]          # Bias + StandardBias * -1
+        dstoffset = stdoffset - tup[2]        # + DaylightBias * -1
         self._std_offset = datetime.timedelta(minutes=stdoffset)
         self._dst_offset = datetime.timedelta(minutes=dstoffset)
 
@@ -273,6 +275,7 @@ class tzwinlocal(tzwinbase):
     Because ``tzwinlocal`` reads the registry directly, it is unaffected by
     this issue.
     """
+
     def __init__(self):
         with winreg.ConnectRegistry(None, winreg.HKEY_LOCAL_MACHINE) as handle:
             with winreg.OpenKey(handle, TZLOCALKEYNAME) as tzlocalkey:
@@ -283,15 +286,15 @@ class tzwinlocal(tzwinbase):
 
             try:
                 tzkeyname = text_type('{kn}\\{sn}').format(kn=TZKEYNAME,
-                                                          sn=self._std_abbr)
+                                                           sn=self._std_abbr)
                 with winreg.OpenKey(handle, tzkeyname) as tzkey:
                     _keydict = valuestodict(tzkey)
                     self._display = _keydict["Display"]
             except OSError:
                 self._display = None
 
-        stdoffset = -keydict["Bias"]-keydict["StandardBias"]
-        dstoffset = stdoffset-keydict["DaylightBias"]
+        stdoffset = -keydict["Bias"] - keydict["StandardBias"]
+        dstoffset = stdoffset - keydict["DaylightBias"]
 
         self._std_offset = datetime.timedelta(minutes=stdoffset)
         self._dst_offset = datetime.timedelta(minutes=dstoffset)

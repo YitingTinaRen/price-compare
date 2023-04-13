@@ -33,6 +33,7 @@ from .constants import ClientFlag, CharacterSet, DEFAULT_CONFIGURATION
 from .optionfiles import MySQLOptionsParser
 from . import errors
 
+
 @make_abc(ABCMeta)
 class MySQLConnectionAbstract(object):
 
@@ -136,7 +137,8 @@ class MySQLConnectionAbstract(object):
             for option, value in config_options.items():
                 if option not in config:
                     try:
-                        config[option] = eval(value[0])  # pylint: disable=W0123
+                        config[option] = eval(
+                            value[0])  # pylint: disable=W0123
                     except (NameError, SyntaxError):
                         config[option] = value[0]
         return config
@@ -561,7 +563,6 @@ class MySQLConnectionAbstract(object):
         self._raise_on_warnings = value
         self._get_warnings = value
 
-
     @property
     def unread_result(self):
         """Get whether there is an unread result
@@ -645,7 +646,7 @@ class MySQLConnectionAbstract(object):
                     "charset should be either integer, string or None")
         elif collation:
             (self._charset_id, charset_name, collation_name) = \
-                    CharacterSet.get_charset_info(collation=collation)
+                CharacterSet.get_charset_info(collation=collation)
 
         self._execute_query("SET NAMES '{0}' COLLATE '{1}'".format(
             charset_name, collation_name))
@@ -976,6 +977,7 @@ class MySQLCursorAbstract(object):
     Abstract class defining cursor class with method and members
     required by the Python Database API Specification v2.0.
     """
+
     def __init__(self):
         """Initialization"""
         self._description = None

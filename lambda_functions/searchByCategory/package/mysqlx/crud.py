@@ -50,6 +50,7 @@ class DatabaseObject(object):
         schema (mysqlx.Schema): The Schema object.
         name (str): The database object name.
     """
+
     def __init__(self, schema, name):
         self._schema = schema
         self._name = name
@@ -109,6 +110,7 @@ class Schema(DatabaseObject):
         session (mysqlx.XSession): Session object.
         name (str): The Schema name.
     """
+
     def __init__(self, session, name):
         self._session = session
         super(Schema, self).__init__(self, name)
@@ -313,6 +315,7 @@ class Collection(DatabaseObject):
         schema (mysqlx.Schema): The Schema object.
         name (str): The collection name.
     """
+
     def __init__(self, schema, name):
         super(Collection, self).__init__(schema, name)
 
@@ -420,6 +423,7 @@ class Table(DatabaseObject):
         schema (mysqlx.Schema): The Schema object.
         name (str): The table name.
     """
+
     def __init__(self, schema, name):
         super(Table, self).__init__(schema, name)
 

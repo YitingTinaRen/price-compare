@@ -35,6 +35,7 @@ from . import (
     SoupTest,
 )
 
+
 class TestFind(SoupTest):
     """Basic tests of the find() method.
 
@@ -55,7 +56,6 @@ class TestFind(SoupTest):
         str(soup)
         assert "here it is" == soup.find(id='Räksmörgås').text
 
-
     def test_find_everything(self):
         """Test an optimization that finds all tags."""
         soup = self.soup("<a>foo</a><b>bar</b>")
@@ -66,6 +66,7 @@ class TestFind(SoupTest):
         soup = self.soup("<a>foo</a><b>bar</b><a>baz</a>")
         assert 2 == len(soup.find_all('a'))
 
+
 class TestFindAll(SoupTest):
     """Basic tests of the find_all() method."""
 
@@ -75,7 +76,6 @@ class TestFindAll(SoupTest):
         # Exact match.
         assert soup.find_all(string="bar") == ["bar"]
 
-       
         # Match any of a number of strings.
         assert soup.find_all(string=["Foo", "bar"]) == ["Foo", "bar"]
         # Match a regular expression.
@@ -100,7 +100,8 @@ class TestFindAll(SoupTest):
         self.assert_selects(soup('a', limit=1), ["1"])
         self.assert_selects(soup.b(id="foo"), ["3"])
 
-    def test_find_all_with_self_referential_data_structure_does_not_cause_infinite_recursion(self):
+    def test_find_all_with_self_referential_data_structure_does_not_cause_infinite_recursion(
+            self):
         soup = self.soup("<a></a>")
         # Create a self-referential list.
         l = []
@@ -128,14 +129,14 @@ class TestFindAllBasicNamespaces(SoupTest):
     def test_find_by_namespaced_name(self):
         soup = self.soup('<mathml:msqrt>4</mathml:msqrt><a svg:fill="red">')
         assert "4" == soup.find("mathml:msqrt").string
-        assert "a" == soup.find(attrs= { "svg:fill" : "red" }).name
+        assert "a" == soup.find(attrs={"svg:fill": "red"}).name
 
 
 class TestFindAllByName(SoupTest):
     """Test ways of finding tags by tag name."""
 
     def setup_method(self):
-        self.tree =  self.soup("""<a>First tag.</a>
+        self.tree = self.soup("""<a>First tag.</a>
                                   <b>Second tag.</b>
                                   <c>Third <a>Nested tag.</a> tag.</c>""")
 
@@ -149,12 +150,13 @@ class TestFindAllByName(SoupTest):
             self.tree.find_all('a', string='First tag.'), ['First tag.'])
 
         self.assert_selects(
-            self.tree.find_all('a', string=True), ['First tag.', 'Nested tag.'])
+            self.tree.find_all(
+                'a', string=True), [
+                'First tag.', 'Nested tag.'])
 
         self.assert_selects(
             self.tree.find_all('a', string=re.compile("tag")),
             ['First tag.', 'Nested tag.'])
-
 
     def test_find_all_on_non_root_element(self):
         # You can call find_all on any node, not just the root.
@@ -175,7 +177,7 @@ class TestFindAllByName(SoupTest):
 
     def test_find_all_by_tag_dict(self):
         self.assert_selects(
-            self.tree.find_all({'a' : True, 'b' : True}),
+            self.tree.find_all({'a': True, 'b': True}),
             ['First tag.', 'Second tag.', 'Nested tag.'])
 
     def test_find_all_by_tag_re(self):
@@ -200,15 +202,15 @@ class TestFindAllByName(SoupTest):
         soup = self.soup(
             "<div class='a b'>1</div><div class='a c'>2</div><div class='a d'>3</div>"
         )
-        r1 = soup.find('div', 'a d');
-        r2 = soup.find('div', re.compile(r'a d'));
-        r3, r4 = soup.find_all('div', ['a b', 'a d']);
+        r1 = soup.find('div', 'a d')
+        r2 = soup.find('div', re.compile(r'a d'))
+        r3, r4 = soup.find_all('div', ['a b', 'a d'])
         assert '3' == r1.string
         assert '3' == r2.string
         assert '1' == r3.string
         assert '3' == r4.string
 
-        
+
 class TestFindAllByAttribute(SoupTest):
 
     def test_find_all_by_attribute_name(self):
@@ -220,7 +222,7 @@ class TestFindAllByAttribute(SoupTest):
                           Non-matching <b id="first">Matching b.</b>a.
                          </a>""")
         self.assert_selects(tree.find_all(id='first'),
-                           ["Matching a.", "Matching b."])
+                            ["Matching a.", "Matching b."])
 
     def test_find_all_by_utf8_attribute_value(self):
         peace = "םולש".encode("utf8")
@@ -243,13 +245,13 @@ class TestFindAllByAttribute(SoupTest):
 
         # This doesn't do what you want.
         self.assert_selects(tree.find_all(name='name1'),
-                           ["A tag called 'name1'."])
+                            ["A tag called 'name1'."])
         # This does what you want.
-        self.assert_selects(tree.find_all(attrs={'name' : 'name1'}),
-                           ["Name match."])
+        self.assert_selects(tree.find_all(attrs={'name': 'name1'}),
+                            ["Name match."])
 
-        self.assert_selects(tree.find_all(attrs={'class' : 'class2'}),
-                           ["Class match."])
+        self.assert_selects(tree.find_all(attrs={'class': 'class2'}),
+                            ["Class match."])
 
     def test_find_all_by_class(self):
         tree = self.soup("""
@@ -318,7 +320,7 @@ class TestFindAllByAttribute(SoupTest):
                          <a id="first">Match.</a>
                          <a id="second">Non-match.</a>""")
 
-        strainer = SoupStrainer(attrs={'id' : 'first'})
+        strainer = SoupStrainer(attrs={'id': 'first'})
         self.assert_selects(tree.find_all(strainer), ['Match.'])
 
     def test_find_all_with_missing_attribute(self):
@@ -355,7 +357,7 @@ class TestFindAllByAttribute(SoupTest):
                             <a id="3">3</a>
                             <a>No ID.</a>""")
         self.assert_selects(tree.find_all(id=["1", "3", "4"]),
-                           ["1", "3"])
+                            ["1", "3"])
 
     def test_find_all_with_regular_expression_attribute_value(self):
         # You can pass a regular expression as an attribute value, and
@@ -368,7 +370,7 @@ class TestFindAllByAttribute(SoupTest):
                             <a>No ID.</a>""")
 
         self.assert_selects(tree.find_all(id=re.compile("^a+$")),
-                           ["One a.", "Two as."])
+                            ["One a.", "Two as."])
 
     def test_find_by_name_and_containing_string(self):
         soup = self.soup("<b>foo</b><b>bar</b><a>foo</a>")
@@ -412,7 +414,7 @@ class TestSmooth(SoupTest):
         # output.
 
         # Since the <span> tag has two children, its .string is None.
-        assert None == div.span.string
+        assert None is div.span.string
 
         assert 7 == len(div.contents)
         div.smooth()
@@ -435,6 +437,7 @@ class TestSmooth(SoupTest):
 
 class TestIndex(SoupTest):
     """Test Tag.index"""
+
     def test_index(self):
         tree = self.soup("""<div>
                             <a>Identical</a>
@@ -465,7 +468,6 @@ class TestParentOperations(SoupTest):
                                   </ul>''')
         self.start = self.tree.b
 
-
     def test_parent(self):
         assert self.start.parent['id'] == 'bottom'
         assert self.start.parent.parent['id'] == 'middle'
@@ -476,7 +478,7 @@ class TestParentOperations(SoupTest):
         assert top_tag.parent == self.tree
 
     def test_soup_object_has_no_parent(self):
-        assert None == self.tree.parent
+        assert None is self.tree.parent
 
     def test_find_parents(self):
         self.assert_selects_ids(
@@ -521,11 +523,11 @@ class TestNextOperations(ProximityTest):
 
     def test_next_of_last_item_is_none(self):
         last = self.tree.find(string="Three")
-        assert last.next_element == None
+        assert last.next_element is None
 
     def test_next_of_root_is_none(self):
         # The document root is outside the next/previous chain.
-        assert self.tree.next_element == None
+        assert self.tree.next_element is None
 
     def test_find_all_next(self):
         self.assert_selects(self.start.find_all_next('b'), ["Two", "Three"])
@@ -549,6 +551,7 @@ class TestNextOperations(ProximityTest):
         assert tag['id'] == '3'
         assert contents == "Three"
 
+
 class TestPreviousOperations(ProximityTest):
 
     def setup_method(self):
@@ -561,11 +564,11 @@ class TestPreviousOperations(ProximityTest):
 
     def test_previous_of_first_item_is_none(self):
         first = self.tree.find('html')
-        assert first.previous_element == None
+        assert first.previous_element is None
 
     def test_previous_of_root_is_none(self):
         # The document root is outside the next/previous chain.
-        assert self.tree.previous_element == None
+        assert self.tree.previous_element is None
 
     def test_find_all_previous(self):
         # The <b> tag containing the "Three" node is the predecessor
@@ -626,7 +629,7 @@ class TestNextSibling(SiblingTest):
         self.start = self.tree.find(id="1")
 
     def test_next_sibling_of_root_is_none(self):
-        assert self.tree.next_sibling == None
+        assert self.tree.next_sibling is None
 
     def test_next_sibling(self):
         assert self.start.next_sibling['id'] == '2'
@@ -636,20 +639,20 @@ class TestNextSibling(SiblingTest):
         assert self.start.next_element['id'] == '1.1'
 
     def test_next_sibling_may_not_exist(self):
-        assert self.tree.html.next_sibling == None
+        assert self.tree.html.next_sibling is None
 
         nested_span = self.tree.find(id="1.1")
-        assert nested_span.next_sibling == None
+        assert nested_span.next_sibling is None
 
         last_span = self.tree.find(id="4")
-        assert last_span.next_sibling == None
+        assert last_span.next_sibling is None
 
     def test_find_next_sibling(self):
         assert self.start.find_next_sibling('span')['id'] == '2'
 
     def test_next_siblings(self):
         self.assert_selects_ids(self.start.find_next_siblings("span"),
-                              ['2', '3', '4'])
+                                ['2', '3', '4'])
 
         self.assert_selects_ids(self.start.find_next_siblings(id='3'), ['3'])
 
@@ -661,7 +664,7 @@ class TestNextSibling(SiblingTest):
 
         self.assert_selects(start.find_next_siblings('b'), ['bar'])
         assert start.find_next_sibling(string="baz") == "baz"
-        assert start.find_next_sibling(string="nonesuch") == None
+        assert start.find_next_sibling(string="nonesuch") is None
 
 
 class TestPreviousSibling(SiblingTest):
@@ -671,7 +674,7 @@ class TestPreviousSibling(SiblingTest):
         self.end = self.tree.find(id="4")
 
     def test_previous_sibling_of_root_is_none(self):
-        assert self.tree.previous_sibling == None
+        assert self.tree.previous_sibling is None
 
     def test_previous_sibling(self):
         assert self.end.previous_sibling['id'] == '3'
@@ -681,20 +684,20 @@ class TestPreviousSibling(SiblingTest):
         assert self.end.previous_element['id'] == '3.1'
 
     def test_previous_sibling_may_not_exist(self):
-        assert self.tree.html.previous_sibling == None
+        assert self.tree.html.previous_sibling is None
 
         nested_span = self.tree.find(id="1.1")
-        assert nested_span.previous_sibling == None
+        assert nested_span.previous_sibling is None
 
         first_span = self.tree.find(id="1")
-        assert first_span.previous_sibling == None
+        assert first_span.previous_sibling is None
 
     def test_find_previous_sibling(self):
         assert self.end.find_previous_sibling('span')['id'] == '3'
 
     def test_previous_siblings(self):
         self.assert_selects_ids(self.end.find_previous_siblings("span"),
-                              ['3', '2', '1'])
+                                ['3', '2', '1'])
 
         self.assert_selects_ids(self.end.find_previous_siblings(id='1'), ['1'])
 
@@ -706,7 +709,7 @@ class TestPreviousSibling(SiblingTest):
 
         self.assert_selects(start.find_previous_siblings('b'), ['bar'])
         assert start.find_previous_sibling(string="Foo") == "Foo"
-        assert start.find_previous_sibling(string="nonesuch") == None
+        assert start.find_previous_sibling(string="nonesuch") is None
 
 
 class TestTreeModification(SoupTest):
@@ -715,7 +718,7 @@ class TestTreeModification(SoupTest):
         soup = self.soup('<a id="1"></a>')
         soup.a['id'] = 2
         assert soup.decode() == self.document_for('<a id="2"></a>')
-        del(soup.a['id'])
+        del (soup.a['id'])
         assert soup.decode() == self.document_for('<a></a>')
         soup.a['id2'] = 'foo'
         assert soup.decode() == self.document_for('<a id2="foo"></a>')
@@ -744,8 +747,8 @@ class TestTreeModification(SoupTest):
         assert bold.parent == second_para
 
         assert soup.decode() == self.document_for(
-                '<p id="1">Don\'t leave me .</p>\n'
-                '<p id="2">Don\'t leave!<b>here</b></p>'
+            '<p id="1">Don\'t leave me .</p>\n'
+            '<p id="2">Don\'t leave!<b>here</b></p>'
         )
 
     def test_replace_with_returns_thing_that_was_replaced(self):
@@ -762,11 +765,12 @@ class TestTreeModification(SoupTest):
         new_a = a.unwrap()
         assert a == new_a
 
-    def test_replace_with_and_unwrap_give_useful_exception_when_tag_has_no_parent(self):
+    def test_replace_with_and_unwrap_give_useful_exception_when_tag_has_no_parent(
+            self):
         soup = self.soup("<a><b>Foo</b></a><c>Bar</c>")
         a = soup.a
         a.extract()
-        assert None == a.parent
+        assert None is a.parent
         with pytest.raises(ValueError):
             a.unwrap()
         with pytest.raises(ValueError):
@@ -796,21 +800,20 @@ class TestTreeModification(SoupTest):
         of its children -- you'll never combine BeautifulSoup objects.
         """
         soup = self.soup("<p>And now, a word:</p><p>And we're back.</p>")
-        
+
         text = "<p>p2</p><p>p3</p>"
         to_insert = self.soup(text)
         soup.insert(1, to_insert)
 
         for i in soup.descendants:
             assert not isinstance(i, BeautifulSoup)
-        
+
         p1, p2, p3, p4 = list(soup.children)
         assert "And now, a word:" == p1.string
         assert "p2" == p2.string
         assert "p3" == p3.string
         assert "And we're back." == p4.string
-        
-        
+
     def test_replace_with_maintains_next_element_throughout(self):
         soup = self.soup('<p><a>one</a><b>three</b></p>')
         a = soup.a
@@ -834,7 +837,7 @@ class TestTreeModification(SoupTest):
         assert new_text.previous_element == b
         assert new_text.parent == b
         assert new_text.previous_element.next_element == new_text
-        assert new_text.next_element == None
+        assert new_text.next_element is None
 
     def test_consecutive_text_nodes(self):
         # A builder should never create two consecutive text nodes,
@@ -854,7 +857,7 @@ class TestTreeModification(SoupTest):
         assert new_text.previous_sibling == "Argh!"
         assert new_text.previous_sibling.next_sibling == new_text
 
-        assert new_text.next_sibling == None
+        assert new_text.next_sibling is None
         assert new_text.next_element == soup.c
 
     def test_insert_string(self):
@@ -875,7 +878,7 @@ class TestTreeModification(SoupTest):
         soup.a.insert(1, magic_tag)
 
         assert soup.decode() == self.document_for(
-                "<a><b>Find</b><magictag>the</magictag><c>lady!</c><d></d></a>"
+            "<a><b>Find</b><magictag>the</magictag><c>lady!</c><d></d></a>"
         )
 
         # Make sure all the relationships are hooked up correctly.
@@ -921,7 +924,7 @@ class TestTreeModification(SoupTest):
         d2.extend(tags)
         assert '<div id="d1"></div>' == d1.decode()
         assert '<div id="d2"><a>1</a><a>2</a><a>3</a><a>4</a></div>' == d2.decode()
-        
+
     def test_move_tag_to_beginning_of_parent(self):
         data = "<a><b></b><c></c><d></d></a>"
         soup = self.soup(data)
@@ -963,7 +966,7 @@ class TestTreeModification(SoupTest):
         soup.a.insert_before(soup.new_tag("a"))
 
         # TODO: OK but what happens?
-        
+
     def test_insert_multiple_before(self):
         soup = self.soup("<a>foo</a><b>bar</b>")
         soup.b.insert_before("BAZ", " ", "QUUX")
@@ -1002,7 +1005,7 @@ class TestTreeModification(SoupTest):
         soup.a.insert_before(soup.new_tag("a"))
 
         # TODO: OK but what does it look like?
-        
+
     def test_insert_multiple_after(self):
         soup = self.soup("<a>foo</a><b>bar</b>")
         soup.b.insert_after("BAZ", " ", "QUUX")
@@ -1026,7 +1029,8 @@ class TestTreeModification(SoupTest):
         with pytest.raises(ValueError):
             tag.insert_after(tag)
 
-    def test_insert_before_raises_notimplementederror_if_before_has_no_meaning(self):
+    def test_insert_before_raises_notimplementederror_if_before_has_no_meaning(
+            self):
         soup = self.soup("")
         tag = soup.new_tag("a")
         string = soup.new_string("")
@@ -1039,14 +1043,14 @@ class TestTreeModification(SoupTest):
 
     def test_replace_with(self):
         soup = self.soup(
-                "<p>There's <b>no</b> business like <b>show</b> business</p>")
+            "<p>There's <b>no</b> business like <b>show</b> business</p>")
         no, show = soup.find_all('b')
         show.replace_with(no)
         assert soup.decode() == self.document_for(
             "<p>There's  business like <b>no</b> business</p>"
         )
 
-        assert show.parent == None
+        assert show.parent is None
         assert no.parent == soup.p
         assert no.next_element == "no"
         assert no.next_sibling == " business"
@@ -1065,7 +1069,7 @@ class TestTreeModification(SoupTest):
         # Or with a list that includes its parent.
         with pytest.raises(ValueError):
             a_tag.b.replace_with("string1", a_tag, "string2")
-        
+
     def test_replace_with_multiple(self):
         data = "<a><b></b><c></c></a>"
         soup = self.soup(data)
@@ -1077,10 +1081,10 @@ class TestTreeModification(SoupTest):
         soup.c.replace_with(d_tag, e_tag, a_string, f_tag)
         assert soup.decode() == "<a><b></b><d>Text In D Tag</d><e></e>Random Text<f></f></a>"
         assert soup.b.next_element == d_tag
-        assert d_tag.string.next_element==e_tag
+        assert d_tag.string.next_element == e_tag
         assert e_tag.next_element.string == a_string
         assert e_tag.next_element.next_element == f_tag
-        
+
     def test_replace_first_child(self):
         data = "<a><b></b><c></c></a>"
         soup = self.soup(data)
@@ -1108,17 +1112,17 @@ class TestTreeModification(SoupTest):
         )
 
         # The <b> tag is now an orphan.
-        assert remove_tag.parent == None
-        assert remove_tag.find(string="right").next_element == None
-        assert remove_tag.previous_element == None
-        assert remove_tag.next_sibling == None
-        assert remove_tag.previous_sibling == None
+        assert remove_tag.parent is None
+        assert remove_tag.find(string="right").next_element is None
+        assert remove_tag.previous_element is None
+        assert remove_tag.next_sibling is None
+        assert remove_tag.previous_sibling is None
 
         # The <f> tag is now connected to the <a> tag.
         assert move_tag.parent == soup.a
         assert move_tag.previous_element == "We"
         assert move_tag.next_element.next_element == soup.e
-        assert move_tag.next_sibling == None
+        assert move_tag.next_sibling is None
 
         # The gap where the <f> tag used to be has been mended, and
         # the word "to" is now connected to the <g> tag.
@@ -1134,7 +1138,7 @@ class TestTreeModification(SoupTest):
             <p>Unneeded <em>formatting</em> is unneeded</p>
             """)
         tree.em.unwrap()
-        assert tree.em == None
+        assert tree.em is None
         assert tree.p.text == "Unneeded formatting is unneeded"
 
     def test_wrap(self):
@@ -1168,9 +1172,9 @@ class TestTreeModification(SoupTest):
 
         # The extracted tag is now an orphan.
         assert len(soup.body.contents) == 2
-        assert extracted.parent == None
-        assert extracted.previous_element == None
-        assert extracted.next_element.next_element == None
+        assert extracted.parent is None
+        assert extracted.previous_element is None
+        assert extracted.next_element.next_element is None
 
         # The gap where the extracted tag used to be has been mended.
         content_1 = soup.find(string="Some content. ")
@@ -1212,19 +1216,19 @@ class TestTreeModification(SoupTest):
         [soup.script.extract() for i in soup.find_all("script")]
         assert "<body>\n\n<a></a>\n</body>" == str(soup.body)
 
-
-    def test_extract_works_when_element_is_surrounded_by_identical_strings(self):
+    def test_extract_works_when_element_is_surrounded_by_identical_strings(
+            self):
         soup = self.soup(
- '<html>\n'
- '<body>hi</body>\n'
- '</html>')
+            '<html>\n'
+            '<body>hi</body>\n'
+            '</html>')
         soup.find('body').extract()
-        assert None == soup.find('body')
-
+        assert None is soup.find('body')
 
     def test_clear(self):
         """Tag.clear()"""
-        soup = self.soup("<p><a>String <em>Italicized</em></a> and another</p>")
+        soup = self.soup(
+            "<p><a>String <em>Italicized</em></a> and another</p>")
         # clear using extract()
         a = soup.a
         soup.p.clear()
@@ -1236,10 +1240,10 @@ class TestTreeModification(SoupTest):
         a.clear(decompose=True)
         assert 0 == len(em.contents)
 
-       
     def test_decompose(self):
         # Test PageElement.decompose() and PageElement.decomposed
-        soup = self.soup("<p><a>String <em>Italicized</em></a></p><p>Another para</p>")
+        soup = self.soup(
+            "<p><a>String <em>Italicized</em></a></p><p>Another para</p>")
         p1, p2 = soup.find_all('p')
         a = p1.a
         text = p1.em.string
@@ -1252,7 +1256,7 @@ class TestTreeModification(SoupTest):
             assert True == i.decomposed
         # p2 is unaffected.
         assert False == p2.decomposed
-            
+
     def test_string_set(self):
         """Tag.string = 'string'"""
         soup = self.soup("<a></a> <b><c></c></b>")
@@ -1301,4 +1305,3 @@ class TestDeprecatedArguments(SoupTest):
             msg = str(warning.message)
             assert warning.filename == __file__
             assert msg == "The 'text' argument to the SoupStrainer constructor is deprecated. Use 'string' instead."
-

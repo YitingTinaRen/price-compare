@@ -140,7 +140,7 @@ class BatchWriter:
 
     def _flush(self):
         items_to_send = self._items_buffer[: self._flush_amount]
-        self._items_buffer = self._items_buffer[self._flush_amount :]
+        self._items_buffer = self._items_buffer[self._flush_amount:]
         response = self._client.batch_write_item(
             RequestItems={self._table_name: items_to_send}
         )

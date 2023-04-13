@@ -295,17 +295,17 @@ class ColumnType(object):
     @classmethod
     def is_text(cls, col_type):
         return col_type in (cls.TEXT, cls.TINYTEXT, cls.MEDIUMTEXT,
-            cls.LONGTEXT,)
+                            cls.LONGTEXT,)
 
     @classmethod
     def is_decimals(cls, col_type):
         return col_type in (cls.REAL, cls.DOUBLE, cls.FLOAT, cls.DECIMAL,
-            cls.NUMERIC,)
+                            cls.NUMERIC,)
 
     @classmethod
     def is_numeric(cls, col_type):
         return col_type in (cls.BIT, cls.TINYINT, cls.SMALLINT, cls.MEDIUMINT,
-            cls.INT, cls.BIGINT,)
+                            cls.INT, cls.BIGINT,)
 
     @classmethod
     def is_finite_set(cls, col_type):
@@ -564,7 +564,9 @@ class ColumnMetaData(object):
         elif self._proto_type == ColumnProtoType.BIT:
             self._col_type = ColumnType.BIT
         else:
-            raise ValueError("Unknown column type {0}".format(self._proto_type))
+            raise ValueError(
+                "Unknown column type {0}".format(
+                    self._proto_type))
 
 
 class Warning(object):
@@ -593,6 +595,7 @@ class Row(object):
         rs (mysqlx.Result): The Result set.
         fields (list): The list of fields.
     """
+
     def __init__(self, rs, fields):
         self._fields = fields
         self._resultset = rs
@@ -624,6 +627,7 @@ class BaseResult(object):
     Args:
         connection (mysqlx.connection.Connection): The Connection object.
     """
+
     def __init__(self, connection):
         self._connection = connection
         self._closed = False
@@ -662,6 +666,7 @@ class Result(BaseResult):
         connection (mysqlx.connection.Connection): The Connection object.
         ids (list): A list of IDs.
     """
+
     def __init__(self, connection=None, ids=None):
         super(Result, self).__init__(connection)
         self._ids = ids
@@ -790,6 +795,7 @@ class RowResult(BufferingResult):
     Args:
         connection (mysqlx.connection.Connection): The Connection object.
     """
+
     def __init__(self, connection):
         super(RowResult, self).__init__(connection)
 
@@ -806,6 +812,7 @@ class SqlResult(RowResult):
     Args:
         connection (mysqlx.connection.Connection): The Connection object.
     """
+
     def __init__(self, connection):
         super(SqlResult, self).__init__(connection)
         self._has_more_results = False
@@ -830,6 +837,7 @@ class DocResult(BufferingResult):
     Args:
         connection (mysqlx.connection.Connection): The Connection object.
     """
+
     def __init__(self, connection):
         super(DocResult, self).__init__(connection)
 

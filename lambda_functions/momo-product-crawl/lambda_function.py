@@ -14,14 +14,13 @@ def lambda_handler(event, context):
     # TODO implement
     momo_spider = MomoSpider()
 
-    Category=json.loads(event['Records'][0]['body'])
+    Category = json.loads(event['Records'][0]['body'])
     print(f'Category is {Category}')
     print(f'Category  code is {Category["Code"]}')
     url = f"https://m.momoshop.com.tw/cateGoods.momo?cn={Category['Code']}&sourcePageType=4"
-    result=momo_spider.get_products(url)
+    result = momo_spider.get_products(url)
     print(f' Send to SQS: {result}')
     momo_spider.send2SQS(result['content'])
-
 
     return {
         'statusCode': 200,
@@ -44,8 +43,7 @@ class MomoSpider():
             'sec-ch-ua-mobile': '?0',
         }
         self.get_headers1 = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'
-        }
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'}
         self.get_headers2 = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
         }
@@ -114,7 +112,6 @@ class MomoSpider():
             return None
         return data
 
-   
     def get_products(self, url):
         data = self.request_get(url)
         if data:
@@ -159,8 +156,8 @@ class MomoSpider():
                 # print(ProdIdList)
                 try:
                     saleCount = self.get_sale_counts(ProdIdList)
-                except:
-                    saleCount=[]
+                except BaseException:
+                    saleCount = []
                     print("Cannot access saleCount!")
                 if saleCount:
                     for key in list(saleCount.keys()):
@@ -169,14 +166,13 @@ class MomoSpider():
                             {'Salecount': saleCount[key]})
                         # print(Products[ProdIdList.index(key)])
 
-
                 # Handle next page
                 # Find maxPage
-                pattern = re.compile('var _maxPage =\"\d+\";')
+                pattern = re.compile('var _maxPage =\"\\d+\";')
                 scriptTag = data.find_all("script", text=pattern)
                 jsscript = scriptTag[0].string
                 maxPageString = pattern.search(jsscript).group()
-                pattern4PageNum = re.compile("\d+")
+                pattern4PageNum = re.compile("\\d+")
                 maxPage = int(pattern4PageNum.search(maxPageString).group())
 
                 # Find category path
@@ -186,19 +182,19 @@ class MomoSpider():
                 if data.find(class_="pageArea"):
                     currentPage = int(data.find(class_="pageArea").find(
                         class_="selected").a.getText())
-                    if currentPage < maxPage and currentPage<=35:
+                    if currentPage < maxPage and currentPage <= 35:
                         print(f'Current page: {currentPage}/{maxPage}')
                         nextPageURL = f'https://m.momoshop.com.tw/cateGoods.momo?cn={prod_CatePath[-1]["cn"]}&page={str(currentPage+1)}&sourcePageType=4'
                         time.sleep(0.2)
                         result = self.get_products(nextPageURL)
                         print(result)
-                        
-                        Products = Products+result['content']
+
+                        Products = Products + result['content']
                         if self.isExceedMessageSize(Products):
                             print("Exceed msg size limitation")
                             print(f' Send to SQS: {Products}')
                             self.send2SQS(Products)
-                            Products=[]
+                            Products = []
                             # Record Product category path
                             Products.append({'Category': {}})
                             for element in prod_CatePath:
@@ -210,7 +206,7 @@ class MomoSpider():
                         Products.append({'Category': {}})
                         for element in prod_CatePath:
                             Products[-1]['Category'].update({f'L{element["catelevel"]}CateCode': element["cn"],
-                                                             f'L{element["catelevel"]}Category': element.getText()})       
+                                                             f'L{element["catelevel"]}Category': element.getText()})
                 else:
                     print(f'Only one page: {maxPage}')
                     # Record Product category path
@@ -227,8 +223,8 @@ class MomoSpider():
                 f'\n----------\nURL:{url}\n Request return no data!\n----------\n')
             return {'isProd': False, 'content': {}}
 
-    def send2SQS(self,data):
-        randNum=int(1000*random.random()%1000)
+    def send2SQS(self, data):
+        randNum = int(1000 * random.random() % 1000)
         client = boto3.client('sqs')
         message = client.send_message(
             QueueUrl=os.environ['sqsUrl'],
@@ -236,10 +232,10 @@ class MomoSpider():
                 json.dumps(data)
             ),
             MessageGroupId='momo-category',
-            MessageDeduplicationId='momo-category' +str(randNum)
+            MessageDeduplicationId='momo-category' + str(randNum)
         )
 
-    def isExceedMessageSize(self,Products):
+    def isExceedMessageSize(self, Products):
         if len(json.dumps(Products).encode('utf-8')) > 200:
             return True
         else:
@@ -248,10 +244,10 @@ class MomoSpider():
     def get_sale_counts(self, i_codes):
 
         url = f'https://eccapi.momoshop.com.tw/user/getGoodsSaleCounts'
-        payload = {"host": "mobile", "goodsCode":i_codes}
+        payload = {"host": "mobile", "goodsCode": i_codes}
         payload_json = json.dumps(payload)
         data = self.request_post(url, payload=payload_json)
-        data=json.loads(data)
+        data = json.loads(data)
 
         if data["success"]:
             return data["saleCount"]

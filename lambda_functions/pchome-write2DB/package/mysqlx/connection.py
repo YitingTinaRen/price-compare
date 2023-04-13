@@ -26,7 +26,7 @@
 try:
     import ssl
     SSL_AVAILABLE = True
-except:
+except BaseException:
     SSL_AVAILABLE = False
 
 import sys
@@ -52,7 +52,8 @@ class SocketStream(object):
         self._is_ssl = False
 
     def connect(self, params):
-        s_type = socket.AF_INET if isinstance(params, tuple) else socket.AF_UNIX
+        s_type = socket.AF_INET if isinstance(
+            params, tuple) else socket.AF_UNIX
         self._socket = socket.socket(s_type, socket.SOCK_STREAM)
         self._socket.connect(params)
 
@@ -104,7 +105,7 @@ class SocketStream(object):
         if "ssl-cert" in ssl_opts:
             try:
                 context.load_cert_chain(ssl_opts["ssl-cert"],
-                    ssl_opts.get("ssl-key", None))
+                                        ssl_opts.get("ssl-key", None))
             except (IOError, ssl.SSLError):
                 self.close()
                 raise InterfaceError("Invalid Client Certificate/Key.")
@@ -169,7 +170,7 @@ class Connection(object):
             if self.settings.get("ssl-enable", False):
                 self.close()
                 raise RuntimeError("The support for SSL is not available for "
-                    "this Python version.")
+                                   "this Python version.")
             return
 
         self.protocol.set_capabilities(tls=True)
@@ -287,11 +288,12 @@ class XConnection(Connection):
                 router["priority"] = priority
             elif pri > 100:
                 raise ProgrammingError("The priorities must be between 0 and "
-                    "100", 4007)
+                                       "100", 4007)
             priority -= 1
 
         if 0 < priority_count < len(self._routers):
-            raise ProgrammingError("You must either assign no priority to any "
+            raise ProgrammingError(
+                "You must either assign no priority to any "
                 "of the routers or give a priority for every router", 4000)
 
     def _connection_params(self):
@@ -311,7 +313,7 @@ class XConnection(Connection):
         port = self._routers[self._cur_router]["port"]
 
         if self._cur_router > 0:
-            self._routers[self._cur_router-1]["available"] = False
+            self._routers[self._cur_router - 1]["available"] = False
         if self._cur_router >= len(self._routers) - 1:
             self._can_failover = False
 
@@ -369,6 +371,7 @@ class BaseSession(object):
     Args:
         settings (dict): Connection data used to connect to the database.
     """
+
     def __init__(self, settings):
         self._settings = settings
 
@@ -455,6 +458,7 @@ class XSession(BaseSession):
     Args:
         settings (dict): Connection data used to connect to the database.
     """
+
     def __init__(self, settings):
         super(XSession, self).__init__(settings)
         self._connection = XConnection(self._settings)
@@ -483,6 +487,7 @@ class NodeSession(BaseSession):
     Args:
         settings (dict): Connection data used to connect to the database.
     """
+
     def __init__(self, settings):
         super(NodeSession, self).__init__(settings)
         self._connection = NodeConnection(self._settings)

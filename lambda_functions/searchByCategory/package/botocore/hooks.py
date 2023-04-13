@@ -366,8 +366,8 @@ class HierarchicalEmitter(BaseEventHooks):
                     raise ValueError(
                         "Initial registration of unique id %s was specified to "
                         "use a counter. Subsequent unregister calls to unique "
-                        "id must specify use of a counter as well." % unique_id
-                    )
+                        "id must specify use of a counter as well." %
+                        unique_id)
                 elif count == 1:
                     handler = self._unique_id_handlers.pop(unique_id)[
                         'handler'
@@ -493,9 +493,9 @@ class EventAliaser(BaseEventHooks):
         for i in range(len(sections)):
             if (
                 sections[i] == old_parts[0]
-                and sections[i : i + len(old_parts)] == old_parts
+                and sections[i: i + len(old_parts)] == old_parts
             ):
-                sections[i : i + len(old_parts)] = [new_part]
+                sections[i: i + len(old_parts)] = [new_part]
                 return
 
     def __copy__(self):

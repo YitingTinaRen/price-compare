@@ -38,7 +38,8 @@ PSEUDO_SIMPLE = {
     ':defined'
 }
 
-# Supported, simple pseudo classes that match nothing in the Soup Sieve environment
+# Supported, simple pseudo classes that match nothing in the Soup Sieve
+# environment
 PSEUDO_SIMPLE_NO_MATCH = {
     ':active',
     ':current',
@@ -76,7 +77,8 @@ PSEUDO_COMPLEX_NO_MATCH = {
     ':host-context'
 }
 
-# Complex pseudo classes that take very specific parameters and are handled special
+# Complex pseudo classes that take very specific parameters and are
+# handled special
 PSEUDO_SPECIAL = {
     ':dir',
     ':lang',
@@ -98,14 +100,16 @@ COMMENTS = r'(?:/\*[^*]*\*+(?:[^/*][^*]*\*+)*/)'
 WSC = r'(?:{ws}|{comments})'.format(ws=WS, comments=COMMENTS)
 # CSS escapes
 CSS_ESCAPES = r'(?:\\(?:[a-f0-9]{{1,6}}{ws}?|[^\r\n\f]|$))'.format(ws=WS)
-CSS_STRING_ESCAPES = r'(?:\\(?:[a-f0-9]{{1,6}}{ws}?|[^\r\n\f]|$|{nl}))'.format(ws=WS, nl=NEWLINE)
+CSS_STRING_ESCAPES = r'(?:\\(?:[a-f0-9]{{1,6}}{ws}?|[^\r\n\f]|$|{nl}))'.format(
+    ws=WS, nl=NEWLINE)
 # CSS Identifier
 IDENTIFIER = r'''
 (?:(?:-?(?:[^\x00-\x2f\x30-\x40\x5B-\x5E\x60\x7B-\x9f]|{esc})+|--)
 (?:[^\x00-\x2c\x2e\x2f\x3A-\x40\x5B-\x5E\x60\x7B-\x9f]|{esc})*)
 '''.format(esc=CSS_ESCAPES)
 # `nth` content
-NTH = r'(?:[-+])?(?:[0-9]+n?|n)(?:(?<=n){ws}*(?:[-+]){ws}*(?:[0-9]+))?'.format(ws=WSC)
+NTH = r'(?:[-+])?(?:[0-9]+n?|n)(?:(?<=n){ws}*(?:[-+]){ws}*(?:[0-9]+))?'.format(
+    ws=WSC)
 # Value: quoted string or identifier
 VALUE = r'''
 (?:"(?:\\(?:.|{nl})|[^\\"\r\n\f]+)*?"|'(?:\\(?:.|{nl})|[^\\'\r\n\f]+)*?'|{ident}+)
@@ -121,15 +125,19 @@ PAT_ID = r'\#{ident}'.format(ident=IDENTIFIER)
 # Classes (`.class`)
 PAT_CLASS = r'\.{ident}'.format(ident=IDENTIFIER)
 # Prefix:Tag (`prefix|tag`)
-PAT_TAG = r'(?P<tag_ns>(?:{ident}|\*)?\|)?(?P<tag_name>{ident}|\*)'.format(ident=IDENTIFIER)
+PAT_TAG = r'(?P<tag_ns>(?:{ident}|\*)?\|)?(?P<tag_name>{ident}|\*)'.format(
+    ident=IDENTIFIER)
 # Attributes (`[attr]`, `[attr=value]`, etc.)
 PAT_ATTR = r'''
 \[{ws}*(?P<attr_ns>(?:{ident}|\*)?\|)?(?P<attr_name>{ident}){attr}
 '''.format(ws=WSC, ident=IDENTIFIER, attr=ATTR)
 # Pseudo class (`:pseudo-class`, `:pseudo-class(`)
-PAT_PSEUDO_CLASS = r'(?P<name>:{ident})(?P<open>\({ws}*)?'.format(ws=WSC, ident=IDENTIFIER)
-# Pseudo class special patterns. Matches `:pseudo-class(` for special case pseudo classes.
-PAT_PSEUDO_CLASS_SPECIAL = r'(?P<name>:{ident})(?P<open>\({ws}*)'.format(ws=WSC, ident=IDENTIFIER)
+PAT_PSEUDO_CLASS = r'(?P<name>:{ident})(?P<open>\({ws}*)?'.format(
+    ws=WSC, ident=IDENTIFIER)
+# Pseudo class special patterns. Matches `:pseudo-class(` for special case
+# pseudo classes.
+PAT_PSEUDO_CLASS_SPECIAL = r'(?P<name>:{ident})(?P<open>\({ws}*)'.format(
+    ws=WSC, ident=IDENTIFIER)
 # Custom pseudo class (`:--custom-pseudo`)
 PAT_PSEUDO_CLASS_CUSTOM = r'(?P<name>:(?=--){ident})'.format(ident=IDENTIFIER)
 # Closing pseudo group (`)`)
@@ -150,20 +158,21 @@ PAT_PSEUDO_NTH_TYPE = r'''
 '''.format(name=PAT_PSEUDO_CLASS_SPECIAL, ws=WSC, nth=NTH)
 # Pseudo class language (`:lang("*-de", en)`)
 PAT_PSEUDO_LANG = r'{name}(?P<values>{value}(?:{ws}*,{ws}*{value})*){ws}*\)'.format(
-    name=PAT_PSEUDO_CLASS_SPECIAL, ws=WSC, value=VALUE
-)
+    name=PAT_PSEUDO_CLASS_SPECIAL, ws=WSC, value=VALUE)
 # Pseudo class direction (`:dir(ltr)`)
-PAT_PSEUDO_DIR = r'{name}(?P<dir>ltr|rtl){ws}*\)'.format(name=PAT_PSEUDO_CLASS_SPECIAL, ws=WSC)
+PAT_PSEUDO_DIR = r'{name}(?P<dir>ltr|rtl){ws}*\)'.format(
+    name=PAT_PSEUDO_CLASS_SPECIAL, ws=WSC)
 # Combining characters (`>`, `~`, ` `, `+`, `,`)
-PAT_COMBINE = r'{wsc}*?(?P<relation>[,+>~]|{ws}(?![,+>~])){wsc}*'.format(ws=WS, wsc=WSC)
+PAT_COMBINE = r'{wsc}*?(?P<relation>[,+>~]|{ws}(?![,+>~])){wsc}*'.format(
+    ws=WS, wsc=WSC)
 # Extra: Contains (`:contains(text)`)
 PAT_PSEUDO_CONTAINS = r'{name}(?P<values>{value}(?:{ws}*,{ws}*{value})*){ws}*\)'.format(
-    name=PAT_PSEUDO_CLASS_SPECIAL, ws=WSC, value=VALUE
-)
+    name=PAT_PSEUDO_CLASS_SPECIAL, ws=WSC, value=VALUE)
 
 # Regular expressions
 # CSS escape pattern
-RE_CSS_ESC = re.compile(r'(?:(\\[a-f0-9]{{1,6}}{ws}?)|(\\[^\r\n\f])|(\\$))'.format(ws=WSC), re.I)
+RE_CSS_ESC = re.compile(
+    r'(?:(\\[a-f0-9]{{1,6}}{ws}?)|(\\[^\r\n\f])|(\\$))'.format(ws=WSC), re.I)
 RE_CSS_STR_ESC = re.compile(
     r'(?:(\\[a-f0-9]{{1,6}}{ws}?)|(\\[^\r\n\f])|(\\$)|(\\{nl}))'.format(ws=WS, nl=NEWLINE), re.I
 )
@@ -173,7 +182,8 @@ RE_NTH = re.compile(
     re.I
 )
 # Pattern to iterate multiple values.
-RE_VALUES = re.compile(r'(?:(?P<value>{value})|(?P<split>{ws}*,{ws}*))'.format(ws=WSC, value=VALUE), re.X)
+RE_VALUES = re.compile(
+    r'(?:(?P<value>{value})|(?P<split>{ws}*,{ws}*))'.format(ws=WSC, value=VALUE), re.X)
 # Whitespace checks
 RE_WS = re.compile(WS)
 RE_WS_BEGIN = re.compile('^{}*'.format(WSC))
@@ -232,7 +242,8 @@ def _purge_cache() -> None:
     _cached_css_compile.cache_clear()
 
 
-def process_custom(custom: Optional[ct.CustomSelectors]) -> Dict[str, Union[str, ct.SelectorList]]:
+def process_custom(
+        custom: Optional[ct.CustomSelectors]) -> Dict[str, Union[str, ct.SelectorList]]:
     """Process custom."""
 
     custom_selectors = {}
@@ -240,9 +251,11 @@ def process_custom(custom: Optional[ct.CustomSelectors]) -> Dict[str, Union[str,
         for key, value in custom.items():
             name = util.lower(key)
             if RE_CUSTOM.match(name) is None:
-                raise SelectorSyntaxError("The name '{}' is not a valid custom pseudo-class name".format(name))
+                raise SelectorSyntaxError(
+                    "The name '{}' is not a valid custom pseudo-class name".format(name))
             if name in custom_selectors:
-                raise KeyError("The custom selector '{}' has already been registered".format(name))
+                raise KeyError(
+                    "The custom selector '{}' has already been registered".format(name))
             custom_selectors[css_unescape(name)] = value
     return custom_selectors
 
@@ -281,7 +294,8 @@ def escape(ident: str) -> str:
     length = len(ident)
     start_dash = length > 0 and ident[0] == '-'
     if length == 1 and start_dash:
-        # Need to escape identifier that is a single `-` with no other characters
+        # Need to escape identifier that is a single `-` with no other
+        # characters
         string.append('\\{}'.format(ident))
     else:
         for index, c in enumerate(ident):
@@ -316,7 +330,8 @@ class SelectorPattern:
 
         return self.name
 
-    def match(self, selector: str, index: int, flags: int) -> Optional[Match[str]]:
+    def match(self, selector: str, index: int,
+              flags: int) -> Optional[Match[str]]:
         """Match the selector."""
 
         return self.re_pattern.match(selector, index)
@@ -325,7 +340,8 @@ class SelectorPattern:
 class SpecialPseudoPattern(SelectorPattern):
     """Selector pattern."""
 
-    def __init__(self, patterns: Tuple[Tuple[str, Tuple[str, ...], str, Type[SelectorPattern]], ...]) -> None:
+    def __init__(
+            self, patterns: Tuple[Tuple[str, Tuple[str, ...], str, Type[SelectorPattern]], ...]) -> None:
         """Initialize."""
 
         self.patterns = {}
@@ -336,14 +352,16 @@ class SpecialPseudoPattern(SelectorPattern):
                 self.patterns[pseudo] = pattern
 
         self.matched_name = None  # type: Optional[SelectorPattern]
-        self.re_pseudo_name = re.compile(PAT_PSEUDO_CLASS_SPECIAL, re.I | re.X | re.U)
+        self.re_pseudo_name = re.compile(
+            PAT_PSEUDO_CLASS_SPECIAL, re.I | re.X | re.U)
 
     def get_name(self) -> str:
         """Get name."""
 
         return '' if self.matched_name is None else self.matched_name.get_name()
 
-    def match(self, selector: str, index: int, flags: int) -> Optional[Match[str]]:
+    def match(self, selector: str, index: int,
+              flags: int) -> Optional[Match[str]]:
         """Match the selector."""
 
         pseudo = None
@@ -374,17 +392,22 @@ class _Selector:
         self.tag = kwargs.get('tag', None)  # type: Optional[ct.SelectorTag]
         self.ids = kwargs.get('ids', [])  # type: List[str]
         self.classes = kwargs.get('classes', [])  # type: List[str]
-        self.attributes = kwargs.get('attributes', [])  # type: List[ct.SelectorAttribute]
+        # type: List[ct.SelectorAttribute]
+        self.attributes = kwargs.get('attributes', [])
         self.nth = kwargs.get('nth', [])  # type: List[ct.SelectorNth]
-        self.selectors = kwargs.get('selectors', [])  # type: List[ct.SelectorList]
+        # type: List[ct.SelectorList]
+        self.selectors = kwargs.get('selectors', [])
         self.relations = kwargs.get('relations', [])  # type: List[_Selector]
         self.rel_type = kwargs.get('rel_type', None)  # type: Optional[str]
-        self.contains = kwargs.get('contains', [])  # type: List[ct.SelectorContains]
+        # type: List[ct.SelectorContains]
+        self.contains = kwargs.get('contains', [])
         self.lang = kwargs.get('lang', [])  # type: List[ct.SelectorLang]
         self.flags = kwargs.get('flags', 0)  # type: int
         self.no_match = kwargs.get('no_match', False)  # type: bool
 
-    def _freeze_relations(self, relations: List['_Selector']) -> ct.SelectorList:
+    def _freeze_relations(
+            self,
+            relations: List['_Selector']) -> ct.SelectorList:
         """Freeze relation."""
 
         if relations:
@@ -432,31 +455,63 @@ class CSSParser:
     """Parse CSS selectors."""
 
     css_tokens = (
-        SelectorPattern("pseudo_close", PAT_PSEUDO_CLOSE),
+        SelectorPattern(
+            "pseudo_close",
+            PAT_PSEUDO_CLOSE),
         SpecialPseudoPattern(
-            (
-                (
-                    "pseudo_contains",
-                    (':contains', ':-soup-contains', ':-soup-contains-own'),
-                    PAT_PSEUDO_CONTAINS,
-                    SelectorPattern
-                ),
-                ("pseudo_nth_child", (':nth-child', ':nth-last-child'), PAT_PSEUDO_NTH_CHILD, SelectorPattern),
-                ("pseudo_nth_type", (':nth-of-type', ':nth-last-of-type'), PAT_PSEUDO_NTH_TYPE, SelectorPattern),
-                ("pseudo_lang", (':lang',), PAT_PSEUDO_LANG, SelectorPattern),
-                ("pseudo_dir", (':dir',), PAT_PSEUDO_DIR, SelectorPattern)
-            )
-        ),
-        SelectorPattern("pseudo_class_custom", PAT_PSEUDO_CLASS_CUSTOM),
-        SelectorPattern("pseudo_class", PAT_PSEUDO_CLASS),
-        SelectorPattern("pseudo_element", PAT_PSEUDO_ELEMENT),
-        SelectorPattern("at_rule", PAT_AT_RULE),
-        SelectorPattern("id", PAT_ID),
-        SelectorPattern("class", PAT_CLASS),
-        SelectorPattern("tag", PAT_TAG),
-        SelectorPattern("attribute", PAT_ATTR),
-        SelectorPattern("combine", PAT_COMBINE)
-    )
+            (("pseudo_contains",
+                (':contains',
+                 ':-soup-contains',
+                 ':-soup-contains-own'),
+                PAT_PSEUDO_CONTAINS,
+                SelectorPattern),
+                ("pseudo_nth_child",
+             (':nth-child',
+              ':nth-last-child'),
+             PAT_PSEUDO_NTH_CHILD,
+             SelectorPattern),
+                ("pseudo_nth_type",
+             (':nth-of-type',
+              ':nth-last-of-type'),
+             PAT_PSEUDO_NTH_TYPE,
+             SelectorPattern),
+                ("pseudo_lang",
+             (':lang',
+              ),
+             PAT_PSEUDO_LANG,
+             SelectorPattern),
+                ("pseudo_dir",
+             (':dir',
+              ),
+             PAT_PSEUDO_DIR,
+             SelectorPattern))),
+        SelectorPattern(
+            "pseudo_class_custom",
+            PAT_PSEUDO_CLASS_CUSTOM),
+        SelectorPattern(
+            "pseudo_class",
+            PAT_PSEUDO_CLASS),
+        SelectorPattern(
+            "pseudo_element",
+            PAT_PSEUDO_ELEMENT),
+        SelectorPattern(
+            "at_rule",
+            PAT_AT_RULE),
+        SelectorPattern(
+            "id",
+            PAT_ID),
+        SelectorPattern(
+            "class",
+            PAT_CLASS),
+        SelectorPattern(
+            "tag",
+            PAT_TAG),
+        SelectorPattern(
+            "attribute",
+            PAT_ATTR),
+        SelectorPattern(
+            "combine",
+            PAT_COMBINE))
 
     def __init__(
         self,
@@ -471,13 +526,19 @@ class CSSParser:
         self.debug = self.flags & util.DEBUG
         self.custom = {} if custom is None else custom
 
-    def parse_attribute_selector(self, sel: _Selector, m: Match[str], has_selector: bool) -> bool:
+    def parse_attribute_selector(
+            self,
+            sel: _Selector,
+            m: Match[str],
+            has_selector: bool) -> bool:
         """Create attribute selector from the returned regex match."""
 
         inverse = False
         op = m.group('cmp')
         case = util.lower(m.group('case')) if m.group('case') else None
-        ns = css_unescape(m.group('attr_ns')[:-1]) if m.group('attr_ns') else ''
+        ns = css_unescape(
+            m.group('attr_ns')[
+                :-1]) if m.group('attr_ns') else ''
         attr = css_unescape(m.group('attr_name'))
         is_type = False
         pattern2 = None
@@ -512,9 +573,13 @@ class CSSParser:
         elif op.startswith('~'):
             # Value contains word within space separated list
             # `~=` should match nothing if it is empty or contains whitespace,
-            # so if either of these cases is present, use `[^\s\S]` which cannot be matched.
-            value = r'[^\s\S]' if not value or RE_WS.search(value) else re.escape(value)
-            pattern = re.compile(r'.*?(?:(?<=^)|(?<=[ \t\r\n\f]))%s(?=(?:[ \t\r\n\f]|$)).*' % value, flags)
+            # so if either of these cases is present, use `[^\s\S]` which
+            # cannot be matched.
+            value = r'[^\s\S]' if not value or RE_WS.search(
+                value) else re.escape(value)
+            pattern = re.compile(
+                r'.*?(?:(?<=^)|(?<=[ \t\r\n\f]))%s(?=(?:[ \t\r\n\f]|$)).*' %
+                value, flags)
         elif op.startswith('|'):
             # Value starts with word in dash separated list
             pattern = re.compile(r'^%s(?:-.*)?$' % re.escape(value), flags)
@@ -530,7 +595,8 @@ class CSSParser:
         # Append the attribute selector
         sel_attr = ct.SelectorAttribute(attr, ns, pattern, pattern2)
         if inverse:
-            # If we are using `!=`, we need to nest the pattern under a `:not()`.
+            # If we are using `!=`, we need to nest the pattern under a
+            # `:not()`.
             sub_sel = _Selector()
             sub_sel.attributes.append(sel_attr)
             not_list = ct.SelectorList([sub_sel.freeze()], True, False)
@@ -541,16 +607,26 @@ class CSSParser:
         has_selector = True
         return has_selector
 
-    def parse_tag_pattern(self, sel: _Selector, m: Match[str], has_selector: bool) -> bool:
+    def parse_tag_pattern(
+            self,
+            sel: _Selector,
+            m: Match[str],
+            has_selector: bool) -> bool:
         """Parse tag pattern from regex match."""
 
-        prefix = css_unescape(m.group('tag_ns')[:-1]) if m.group('tag_ns') else None
+        prefix = css_unescape(
+            m.group('tag_ns')[
+                :-1]) if m.group('tag_ns') else None
         tag = css_unescape(m.group('tag_name'))
         sel.tag = ct.SelectorTag(tag, prefix)
         has_selector = True
         return has_selector
 
-    def parse_pseudo_class_custom(self, sel: _Selector, m: Match[str], has_selector: bool) -> bool:
+    def parse_pseudo_class_custom(
+            self,
+            sel: _Selector,
+            m: Match[str],
+            has_selector: bool) -> bool:
         """
         Parse custom pseudo class alias.
 
@@ -562,10 +638,8 @@ class CSSParser:
         selector = self.custom.get(pseudo)
         if selector is None:
             raise SelectorSyntaxError(
-                "Undefined custom selector '{}' found at position {}".format(pseudo, m.end(0)),
-                self.pattern,
-                m.end(0)
-            )
+                "Undefined custom selector '{}' found at position {}".format(
+                    pseudo, m.end(0)), self.pattern, m.end(0))
 
         if not isinstance(selector, ct.SelectorList):
             del self.custom[pseudo]
@@ -593,7 +667,8 @@ class CSSParser:
         if m.group('open'):
             complex_pseudo = True
         if complex_pseudo and pseudo in PSEUDO_COMPLEX:
-            has_selector = self.parse_pseudo_open(sel, pseudo, has_selector, iselector, m.end(0))
+            has_selector = self.parse_pseudo_open(
+                sel, pseudo, has_selector, iselector, m.end(0))
         elif not complex_pseudo and pseudo in PSEUDO_SIMPLE:
             if pseudo == ':root':
                 sel.flags |= ct.SEL_ROOT
@@ -631,13 +706,41 @@ class CSSParser:
             elif pseudo == ":placeholder-shown":
                 sel.selectors.append(CSS_PLACEHOLDER_SHOWN)
             elif pseudo == ':first-child':
-                sel.nth.append(ct.SelectorNth(1, False, 0, False, False, ct.SelectorList()))
+                sel.nth.append(
+                    ct.SelectorNth(
+                        1,
+                        False,
+                        0,
+                        False,
+                        False,
+                        ct.SelectorList()))
             elif pseudo == ':last-child':
-                sel.nth.append(ct.SelectorNth(1, False, 0, False, True, ct.SelectorList()))
+                sel.nth.append(
+                    ct.SelectorNth(
+                        1,
+                        False,
+                        0,
+                        False,
+                        True,
+                        ct.SelectorList()))
             elif pseudo == ':first-of-type':
-                sel.nth.append(ct.SelectorNth(1, False, 0, True, False, ct.SelectorList()))
+                sel.nth.append(
+                    ct.SelectorNth(
+                        1,
+                        False,
+                        0,
+                        True,
+                        False,
+                        ct.SelectorList()))
             elif pseudo == ':last-of-type':
-                sel.nth.append(ct.SelectorNth(1, False, 0, True, True, ct.SelectorList()))
+                sel.nth.append(
+                    ct.SelectorNth(
+                        1,
+                        False,
+                        0,
+                        True,
+                        True,
+                        ct.SelectorList()))
             elif pseudo == ':only-child':
                 sel.nth.extend(
                     [
@@ -668,8 +771,7 @@ class CSSParser:
             )
         else:
             raise NotImplementedError(
-                "'{}' pseudo-class is not implemented at this time".format(pseudo)
-            )
+                "'{}' pseudo-class is not implemented at this time".format(pseudo))
 
         return has_selector, is_html
 
@@ -701,7 +803,8 @@ class CSSParser:
             var = True
         else:
             nth_parts = cast(Match[str], RE_NTH.match(content))
-            _s1 = '-' if nth_parts.group('s1') and nth_parts.group('s1') == '-' else ''
+            _s1 = '-' if nth_parts.group(
+                's1') and nth_parts.group('s1') == '-' else ''
             a = nth_parts.group('a')
             var = a.endswith('n')
             if a.startswith('n'):
@@ -710,7 +813,8 @@ class CSSParser:
                 _s1 += a[:-1]
             else:
                 _s1 += a
-            _s2 = '-' if nth_parts.group('s2') and nth_parts.group('s2') == '-' else ''
+            _s2 = '-' if nth_parts.group(
+                's2') and nth_parts.group('s2') == '-' else ''
             if nth_parts.group('b'):
                 _s2 += nth_parts.group('b')
             else:
@@ -722,19 +826,48 @@ class CSSParser:
         if postfix == '_child':
             if m.group('of'):
                 # Parse the rest of `of S`.
-                nth_sel = self.parse_selectors(iselector, m.end(0), FLG_PSEUDO | FLG_OPEN)
+                nth_sel = self.parse_selectors(
+                    iselector, m.end(0), FLG_PSEUDO | FLG_OPEN)
             else:
                 # Use default `*|*` for `of S`.
                 nth_sel = CSS_NTH_OF_S_DEFAULT
             if pseudo_sel == ':nth-child':
-                sel.nth.append(ct.SelectorNth(s1, var, s2, False, False, nth_sel))
+                sel.nth.append(
+                    ct.SelectorNth(
+                        s1,
+                        var,
+                        s2,
+                        False,
+                        False,
+                        nth_sel))
             elif pseudo_sel == ':nth-last-child':
-                sel.nth.append(ct.SelectorNth(s1, var, s2, False, True, nth_sel))
+                sel.nth.append(
+                    ct.SelectorNth(
+                        s1,
+                        var,
+                        s2,
+                        False,
+                        True,
+                        nth_sel))
         else:
             if pseudo_sel == ':nth-of-type':
-                sel.nth.append(ct.SelectorNth(s1, var, s2, True, False, ct.SelectorList()))
+                sel.nth.append(
+                    ct.SelectorNth(
+                        s1,
+                        var,
+                        s2,
+                        True,
+                        False,
+                        ct.SelectorList()))
             elif pseudo_sel == ':nth-last-of-type':
-                sel.nth.append(ct.SelectorNth(s1, var, s2, True, True, ct.SelectorList()))
+                sel.nth.append(
+                    ct.SelectorNth(
+                        s1,
+                        var,
+                        s2,
+                        True,
+                        True,
+                        ct.SelectorList()))
         has_selector = True
         return has_selector
 
@@ -778,7 +911,8 @@ class CSSParser:
         if combinator == COMMA_COMBINATOR:
             if not has_selector:
                 # If we've not captured any selector parts, the comma is either at the beginning of the pattern
-                # or following another comma, both of which are unexpected. But shouldn't fail the pseudo-class.
+                # or following another comma, both of which are unexpected. But
+                # shouldn't fail the pseudo-class.
                 sel.no_match = True
 
             sel.rel_type = rel_type
@@ -787,7 +921,8 @@ class CSSParser:
             selectors.append(_Selector())
         else:
             if has_selector:
-                # End the current selector and associate the leading combinator with this selector.
+                # End the current selector and associate the leading combinator
+                # with this selector.
                 sel.rel_type = rel_type
                 selectors[-1].relations.append(sel)
             elif rel_type[1:] != WS_COMBINATOR:
@@ -795,7 +930,8 @@ class CSSParser:
                 # will gobble up trailing whitespace. It is also impossible to have a whitespace
                 # combinator after any other kind for the same reason. But we could have
                 # multiple non-whitespace combinators. So if the current combinator is not a whitespace,
-                # then we've hit the multiple combinator case, so we should fail.
+                # then we've hit the multiple combinator case, so we should
+                # fail.
                 raise SelectorSyntaxError(
                     'The multiple combinators at position {}'.format(index),
                     self.pattern,
@@ -828,12 +964,11 @@ class CSSParser:
         if not has_selector:
             if not is_forgive or combinator != COMMA_COMBINATOR:
                 raise SelectorSyntaxError(
-                    "The combinator '{}' at position {}, must have a selector before it".format(combinator, index),
-                    self.pattern,
-                    index
-                )
+                    "The combinator '{}' at position {}, must have a selector before it".format(
+                        combinator, index), self.pattern, index)
 
-            # If we are in a forgiving pseudo class, just make the selector a "no match"
+            # If we are in a forgiving pseudo class, just make the selector a
+            # "no match"
             if combinator == COMMA_COMBINATOR:
                 sel.no_match = True
                 del relations[:]
@@ -857,7 +992,11 @@ class CSSParser:
 
         return has_selector, sel
 
-    def parse_class_id(self, sel: _Selector, m: Match[str], has_selector: bool) -> bool:
+    def parse_class_id(
+            self,
+            sel: _Selector,
+            m: Match[str],
+            has_selector: bool) -> bool:
         """Parse HTML classes and ids."""
 
         selector = m.group(0)
@@ -868,15 +1007,18 @@ class CSSParser:
         has_selector = True
         return has_selector
 
-    def parse_pseudo_contains(self, sel: _Selector, m: Match[str], has_selector: bool) -> bool:
+    def parse_pseudo_contains(
+            self,
+            sel: _Selector,
+            m: Match[str],
+            has_selector: bool) -> bool:
         """Parse contains."""
 
         pseudo = util.lower(css_unescape(m.group('name')))
         if pseudo == ":contains":
             warnings.warn(
                 "The pseudo class ':contains' is deprecated, ':-soup-contains' should be used moving forward.",
-                FutureWarning
-            )
+                FutureWarning)
         contains_own = pseudo == ":-soup-contains-own"
         values = css_unescape(m.group('values'))
         patterns = []
@@ -893,7 +1035,11 @@ class CSSParser:
         has_selector = True
         return has_selector
 
-    def parse_pseudo_lang(self, sel: _Selector, m: Match[str], has_selector: bool) -> bool:
+    def parse_pseudo_lang(
+            self,
+            sel: _Selector,
+            m: Match[str],
+            has_selector: bool) -> bool:
         """Parse pseudo language."""
 
         values = m.group('values')
@@ -914,10 +1060,15 @@ class CSSParser:
 
         return has_selector
 
-    def parse_pseudo_dir(self, sel: _Selector, m: Match[str], has_selector: bool) -> bool:
+    def parse_pseudo_dir(
+            self,
+            sel: _Selector,
+            m: Match[str],
+            has_selector: bool) -> bool:
         """Parse pseudo direction."""
 
-        value = ct.SEL_DIR_LTR if util.lower(m.group('dir')) == 'ltr' else ct.SEL_DIR_RTL
+        value = ct.SEL_DIR_LTR if util.lower(
+            m.group('dir')) == 'ltr' else ct.SEL_DIR_RTL
         sel.flags |= value
         has_selector = True
         return has_selector
@@ -976,7 +1127,8 @@ class CSSParser:
             if is_forgive:
                 print('    is_forgive: True')
 
-        # The algorithm for relative selectors require an initial selector in the selector list
+        # The algorithm for relative selectors require an initial selector in
+        # the selector list
         if is_relative:
             selectors.append(_Selector())
 
@@ -986,17 +1138,23 @@ class CSSParser:
 
                 # Handle parts
                 if key == "at_rule":
-                    raise NotImplementedError("At-rules found at position {}".format(m.start(0)))
+                    raise NotImplementedError(
+                        "At-rules found at position {}".format(m.start(0)))
                 elif key == 'pseudo_class_custom':
-                    has_selector = self.parse_pseudo_class_custom(sel, m, has_selector)
+                    has_selector = self.parse_pseudo_class_custom(
+                        sel, m, has_selector)
                 elif key == 'pseudo_class':
-                    has_selector, is_html = self.parse_pseudo_class(sel, m, has_selector, iselector, is_html)
+                    has_selector, is_html = self.parse_pseudo_class(
+                        sel, m, has_selector, iselector, is_html)
                 elif key == 'pseudo_element':
-                    raise NotImplementedError("Pseudo-element found at position {}".format(m.start(0)))
+                    raise NotImplementedError(
+                        "Pseudo-element found at position {}".format(m.start(0)))
                 elif key == 'pseudo_contains':
-                    has_selector = self.parse_pseudo_contains(sel, m, has_selector)
+                    has_selector = self.parse_pseudo_contains(
+                        sel, m, has_selector)
                 elif key in ('pseudo_nth_type', 'pseudo_nth_child'):
-                    has_selector = self.parse_pseudo_nth(sel, m, has_selector, iselector)
+                    has_selector = self.parse_pseudo_nth(
+                        sel, m, has_selector, iselector)
                 elif key == 'pseudo_lang':
                     has_selector = self.parse_pseudo_lang(sel, m, has_selector)
                 elif key == 'pseudo_dir':
@@ -1007,10 +1165,8 @@ class CSSParser:
                     if not has_selector:
                         if not is_forgive:
                             raise SelectorSyntaxError(
-                                "Expected a selector at position {}".format(m.start(0)),
-                                self.pattern,
-                                m.start(0)
-                            )
+                                "Expected a selector at position {}".format(
+                                    m.start(0)), self.pattern, m.start(0))
                         sel.no_match = True
                     if is_open:
                         closed = True
@@ -1024,21 +1180,18 @@ class CSSParser:
                 elif key == 'combine':
                     if is_relative:
                         has_selector, sel, rel_type = self.parse_has_combinator(
-                            sel, m, has_selector, selectors, rel_type, index
-                        )
+                            sel, m, has_selector, selectors, rel_type, index)
                     else:
                         has_selector, sel = self.parse_combinator(
-                            sel, m, has_selector, selectors, relations, is_pseudo, is_forgive, index
-                        )
+                            sel, m, has_selector, selectors, relations, is_pseudo, is_forgive, index)
                 elif key == 'attribute':
-                    has_selector = self.parse_attribute_selector(sel, m, has_selector)
+                    has_selector = self.parse_attribute_selector(
+                        sel, m, has_selector)
                 elif key == 'tag':
                     if has_selector:
                         raise SelectorSyntaxError(
-                            "Tag name found at position {} instead of at the start".format(m.start(0)),
-                            self.pattern,
-                            m.start(0)
-                        )
+                            "Tag name found at position {} instead of at the start".format(
+                                m.start(0)), self.pattern, m.start(0))
                     has_selector = self.parse_tag_pattern(sel, m, has_selector)
                 elif key in ('class', 'id'):
                     has_selector = self.parse_class_id(sel, m, has_selector)
@@ -1068,10 +1221,12 @@ class CSSParser:
                 del relations[:]
                 selectors.append(sel)
 
-        # Forgive empty slots in pseudo-classes that have lists (and are forgiving)
+        # Forgive empty slots in pseudo-classes that have lists (and are
+        # forgiving)
         elif is_forgive:
             if is_relative:
-                # Handle relative selectors pseudo-classes with empty slots like `:has()`
+                # Handle relative selectors pseudo-classes with empty slots
+                # like `:has()`
                 if selectors and selectors[-1].rel_type is None and rel_type == ': ':
                     sel.rel_type = rel_type
                     sel.no_match = True
@@ -1110,7 +1265,8 @@ class CSSParser:
             selectors[-1].flags = ct.SEL_PLACEHOLDER_SHOWN
 
         # Return selector list
-        return ct.SelectorList([s.freeze() for s in selectors], is_not, is_html)
+        return ct.SelectorList([s.freeze()
+                               for s in selectors], is_not, is_html)
 
     def selector_iter(self, pattern: str) -> Iterator[Tuple[str, Match[str]]]:
         """Iterate selector tokens."""
@@ -1130,7 +1286,8 @@ class CSSParser:
                 if m:
                     name = v.get_name()
                     if self.debug:  # pragma: no cover
-                        print("TOKEN: '{}' --> {!r} at position {}".format(name, m.group(0), m.start(0)))
+                        print(
+                            "TOKEN: '{}' --> {!r} at position {}".format(name, m.group(0), m.start(0)))
                     index = m.end(0)
                     yield name, m
                     break
@@ -1140,23 +1297,31 @@ class CSSParser:
                 # throw an exception mentioning that the known selector type is in error;
                 # otherwise, report the invalid character.
                 if c == '[':
-                    msg = "Malformed attribute selector at position {}".format(index)
+                    msg = "Malformed attribute selector at position {}".format(
+                        index)
                 elif c == '.':
-                    msg = "Malformed class selector at position {}".format(index)
+                    msg = "Malformed class selector at position {}".format(
+                        index)
                 elif c == '#':
                     msg = "Malformed id selector at position {}".format(index)
                 elif c == ':':
-                    msg = "Malformed pseudo-class selector at position {}".format(index)
+                    msg = "Malformed pseudo-class selector at position {}".format(
+                        index)
                 else:
                     msg = "Invalid character {!r} position {}".format(c, index)
                 raise SelectorSyntaxError(msg, self.pattern, index)
         if self.debug:  # pragma: no cover
             print('## END PARSING')
 
-    def process_selectors(self, index: int = 0, flags: int = 0) -> ct.SelectorList:
+    def process_selectors(
+            self,
+            index: int = 0,
+            flags: int = 0) -> ct.SelectorList:
         """Process selectors."""
 
-        return self.parse_selectors(self.selector_iter(self.pattern), index, flags)
+        return self.parse_selectors(
+            self.selector_iter(
+                self.pattern), index, flags)
 
 
 # Precompile CSS selector lists for pseudo-classes (additional logic may be required beyond the pattern)

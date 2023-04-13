@@ -6,62 +6,63 @@ import os
 import time
 import math
 
+
 def lambda_handler(event, context):
     # TODO implement
     L2Categories = json.loads(event['Records'][0]['body'])
     print(L2Categories)
 
-
     pchome_spider = PchomeSpider()
     Total_prod_num = pchome_spider.get_products_count(
         L2Categories['Id'])
-    maxPage = math.ceil(Total_prod_num/36)
+    maxPage = math.ceil(Total_prod_num / 36)
 
     # Collect products information here
     Products = []
-    ProdSale=[]
-    ProdDescrip=[]
+    ProdSale = []
+    ProdDescrip = []
     for page in range(maxPage):
         print(f"Page {page}/{maxPage}")
         if page == 0:
-            Prod=pchome_spider.get_products(L2Categories['Id'], 0)
+            Prod = pchome_spider.get_products(L2Categories['Id'], 0)
         else:
             Prod = pchome_spider.get_products(
-                L2Categories['Id'], 36*page+1)
-        
-        # Organize product id lists for calling sale status and product description function
+                L2Categories['Id'], 36 * page + 1)
+
+        # Organize product id lists for calling sale status and product
+        # description function
         ProIdList = [sub['Id'] for sub in Prod]
         ProIdList = [sub.replace('-000', '') for sub in ProIdList]
-        
+
         ProdSaleStatus = pchome_spider.get_products_sale_status(ProIdList)
-        ProdSale=ProdSale+ProdSaleStatus
+        ProdSale = ProdSale + ProdSaleStatus
 
         # ProdDesc = pchome_spider.get_products_description(ProIdList)
         # ProdDescrip.append(ProdDesc)
-        Products=Products+Prod
-        if isExceedMessageSize(Products, ProdSale,ProdDescrip,L2Categories):
+        Products = Products + Prod
+        if isExceedMessageSize(Products, ProdSale, ProdDescrip, L2Categories):
             print(
                 f"Exceed msg size limit, send2SQS! Products= {Products}")
-            Send2SQS(Products,ProdSale, ProdDescrip, L2Categories)
+            Send2SQS(Products, ProdSale, ProdDescrip, L2Categories)
             print("Complete sending msg to SQS!")
-            Products=[]
-            ProdSale=[]
-            ProdDescrip=[]
+            Products = []
+            ProdSale = []
+            ProdDescrip = []
         time.sleep(0.2)
-    
+
     print(f'About to leave lambda function, Products size= {len(Products)}')
     if Products:
         print(f"Send to SQS, Product={Products}")
         Send2SQS(Products, ProdSale, ProdDescrip, L2Categories)
         print("Complete sending msg to SQS!")
-    
+
     # # Organize product id lists for calling sale status and product description function
     # ProIdList = [sub['Id'] for sub in Products]
     # ProIdList = [sub.replace('-000', '') for sub in ProIdList]
-    
+
     # # append categories into the product list data
     # Products.append(L2Categories['Category'])
-    
+
     # # Get salestatus of products
     # ProdSaleStatus = pchome_spider.get_products_sale_status(ProIdList)
     # Products.append({"salestatus":ProdSaleStatus})
@@ -98,15 +99,16 @@ def Send2SQS(Products, ProdSale, ProdDescrip, L2Categories):
             json.dumps(Products)
         ),
         MessageGroupId='pchome-prod',
-        MessageDeduplicationId='pchome-prod-'+L2Categories['Id']
+        MessageDeduplicationId='pchome-prod-' + L2Categories['Id']
     )
 
+
 def isExceedMessageSize(Products, ProdSale, ProdDescrip, L2Categories):
-    PRODUCTS=Products
+    PRODUCTS = Products
     PRODUCTS.append(L2Categories['Category'])
     PRODUCTS.append({"salestatus": ProdSale})
     PRODUCTS.append({"description": ProdDescrip})
-    if len(json.dumps(PRODUCTS).encode('utf-8'))>200:
+    if len(json.dumps(PRODUCTS).encode('utf-8')) > 200:
         return True
     else:
         return False
@@ -134,12 +136,12 @@ class PchomeSpider():
         :param to_json: 是否要轉為 JSON 格式
         :return data: requests 回應資料
         """
-        #用亂數去切換每次request的user agent來增加爬蟲成功率
-        list4rand=[1,2,3]
-        randNum= random.choice(list4rand)
+        # 用亂數去切換每次request的user agent來增加爬蟲成功率
+        list4rand = [1, 2, 3]
+        randNum = random.choice(list4rand)
         if randNum == 1:
             r = requests.get(url, params, headers=self.headers1)
-        elif randNum ==2:
+        elif randNum == 2:
             r = requests.get(url, params, headers=self.headers2)
         else:
             r = requests.get(url, params, headers=self.headers3)
@@ -148,20 +150,20 @@ class PchomeSpider():
             print(f'[Request error]網頁載入發生問題：{url}')
         try:
             data = r.text
-            data=self.remove_js(data,url)
-            data=json.loads(data)
+            data = self.remove_js(data, url)
+            data = json.loads(data)
         except Exception as e:
             print(e)
             return None
         return data
 
     def remove_js(self, str, url):
-        str_1 = str.replace("try{jsonp_"+url[url.find("jsonp_")+6:]+"(", "")
+        str_1 = str.replace(
+            "try{jsonp_" + url[url.find("jsonp_") + 6:] + "(", "")
         str_replaced = str_1.replace(
             ");}catch(e){if(window.console){console.log(e);}}", "")
 
         return str_replaced
-
 
     def get_products_sale_status(self, products_id):
         """取得商品販售狀態
@@ -186,7 +188,7 @@ class PchomeSpider():
             "SpecialQty": 0,
             "Device": []
         """
-        if type(products_id) == list:
+        if isinstance(products_id, list):
             products_id = ','.join(products_id)
         url = f'https://ecapi.pchome.com.tw/ecshop/prodapi/v2/prod/button&id={products_id}&fields=Id,ButtonType&_callback=jsonp_prodtop_button'
         data = self.request_get(url)
@@ -201,23 +203,22 @@ class PchomeSpider():
         :param products_id: 商品 ID
         :return data: 商品規格種類
         """
-        if type(products_id) == list:
+        if isinstance(products_id, list):
             products_id = ','.join(products_id)
         url = f'https://ecapi.pchome.com.tw/ecshop/prodapi/v2/prod/spec&id={products_id}&_callback=jsonpcb_spec'
         data = self.request_get(url)
         return data
 
     def get_products_description(self, products_id):
-        if type(products_id) == list:
+        if isinstance(products_id, list):
             products_id = ','.join(products_id)
         url = f'https://ecapi-cdn.pchome.com.tw/cdn/ecshop/prodapi/v2/prod/desc&id={products_id}&fields=Id,Slogan&_callback=jsonp_prodtop_slogan'
         data = self.request_get(url)
         return data
 
-
     def get_products(self, categoryID, offsetNum):
         """取得分類底下產品列表
-            可取得資訊: 
+            可取得資訊:
             ProductID
             ProductNickname
             ProductName
@@ -230,7 +231,7 @@ class PchomeSpider():
         """
         url = f'https://ecapi-cdn.pchome.com.tw/cdn/ecshop/prodapi/v2/store/{categoryID}/prod&offset={offsetNum}&limit=36&fields=Id,Nick,Pic,Price,Discount,Name,OriginPrice&_callback=jsonp_prodgrid'
         data = self.request_get(url)
-        
+
         if not data:
             print(f'請求發生錯誤：{url}')
             return []
@@ -239,6 +240,6 @@ class PchomeSpider():
     def get_products_count(self, categoryID):
         """取得分類底下一共有多少個產品"""
         url = f'https://ecapi-cdn.pchome.com.tw/cdn/ecshop/prodapi/v2/store/{categoryID}/prod/count&_callback=jsonp_prodcount'
-        data=self.request_get(url)
+        data = self.request_get(url)
 
         return data

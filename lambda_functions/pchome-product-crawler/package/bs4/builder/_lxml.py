@@ -4,10 +4,10 @@ __license__ = "MIT"
 __all__ = [
     'LXMLTreeBuilderForXML',
     'LXMLTreeBuilder',
-    ]
+]
 
 try:
-    from collections.abc import Callable # Python 3.6
+    from collections.abc import Callable  # Python 3.6
 except ImportError as e:
     from collections import Callable
 
@@ -34,9 +34,11 @@ from bs4.dammit import EncodingDetector
 
 LXML = 'lxml'
 
+
 def _invert(d):
     "Invert a dictionary."
-    return dict((v,k) for k, v in list(d.items()))
+    return dict((v, k) for k, v in list(d.items()))
+
 
 class LXMLTreeBuilderForXML(TreeBuilder):
     DEFAULT_PARSER_CLASS = etree.XMLParser
@@ -64,7 +66,7 @@ class LXMLTreeBuilderForXML(TreeBuilder):
     # as the target of parse messages, and those messages don't include
     # line numbers.
     # See: https://bugs.launchpad.net/lxml/+bug/1846906
-    
+
     def initialize_soup(self, soup):
         """Let the BeautifulSoup object know about the standard namespace
         mapping.
@@ -97,7 +99,7 @@ class LXMLTreeBuilderForXML(TreeBuilder):
                 # If there are multiple namespaces defined with the same
                 # prefix, the first one in the document takes precedence.
                 self.soup._namespaces[key] = value
-                
+
     def default_parser(self, encoding):
         """Find the default parser for the given encoding.
 
@@ -137,7 +139,7 @@ class LXMLTreeBuilderForXML(TreeBuilder):
         self.nsmaps = [self.DEFAULT_NSMAPS_INVERTED]
         self.active_namespace_prefixes = [dict(self.DEFAULT_NSMAPS)]
         super(LXMLTreeBuilderForXML, self).__init__(**kwargs)
-        
+
     def _getNsTag(self, tag):
         # Split the namespace URL out of a fully-qualified lxml tag
         # name. Copied from lxml's src/lxml/sax.py.
@@ -171,7 +173,7 @@ class LXMLTreeBuilderForXML(TreeBuilder):
           has undergone character replacement)
 
          Each 4-tuple represents a strategy for converting the
-         document to Unicode and parsing it. Each strategy will be tried 
+         document to Unicode and parsing it. Each strategy will be tried
          in turn.
         """
         is_html = not self.is_xml
@@ -241,15 +243,16 @@ class LXMLTreeBuilderForXML(TreeBuilder):
         self.nsmaps = [self.DEFAULT_NSMAPS_INVERTED]
 
     def start(self, name, attrs, nsmap={}):
-        # Make sure attrs is a mutable dict--lxml may send an immutable dictproxy.
+        # Make sure attrs is a mutable dict--lxml may send an immutable
+        # dictproxy.
         attrs = dict(attrs)
         nsprefix = None
         # Invert each namespace map as it comes in.
         if len(nsmap) == 0 and len(self.nsmaps) > 1:
-                # There are no new namespaces for this tag, but
-                # non-default namespaces are in play, so we need a
-                # separate tag stack to know when they end.
-                self.nsmaps.append(None)
+            # There are no new namespaces for this tag, but
+            # non-default namespaces are in play, so we need a
+            # separate tag stack to know when they end.
+            self.nsmaps.append(None)
         elif len(nsmap) > 0:
             # A new namespace mapping has come into play.
 
@@ -273,7 +276,7 @@ class LXMLTreeBuilderForXML(TreeBuilder):
             if '' in current_mapping:
                 del current_mapping['']
             self.active_namespace_prefixes.append(current_mapping)
-            
+
             # Also treat the namespace mapping as a set of attributes on the
             # tag, so we can recreate it later.
             attrs = attrs.copy()
@@ -302,7 +305,7 @@ class LXMLTreeBuilderForXML(TreeBuilder):
             name, namespace, nsprefix, attrs,
             namespaces=self.active_namespace_prefixes[-1]
         )
-        
+
     def _prefix_for_namespace(self, namespace):
         """Find the currently active prefix for the given namespace."""
         if namespace is None:
@@ -333,13 +336,13 @@ class LXMLTreeBuilderForXML(TreeBuilder):
                 # longer in scope. Recalculate the currently active
                 # namespace prefixes.
                 self.active_namespace_prefixes.pop()
-            
+
     def pi(self, target, data):
         self.soup.endData()
         data = target + ' ' + data
         self.soup.handle_data(data)
         self.soup.endData(self.processing_instruction_class)
-        
+
     def data(self, content):
         self.soup.handle_data(content)
 
@@ -379,7 +382,6 @@ class LXMLTreeBuilder(HTMLTreeBuilder, LXMLTreeBuilderForXML):
             self.parser.close()
         except (UnicodeDecodeError, LookupError, etree.ParserError) as e:
             raise ParserRejectedMarkup(e)
-
 
     def test_fragment_to_document(self, fragment):
         """See `TreeBuilder`."""

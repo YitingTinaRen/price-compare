@@ -30,7 +30,7 @@ function showChart(event){
         return res.json()
     }).then(function(data){
         const ctx = document.getElementById('myChart')
-        console.log(data)
+        // console.log(data)
 
         // Create two datasets
         var PCHData = {

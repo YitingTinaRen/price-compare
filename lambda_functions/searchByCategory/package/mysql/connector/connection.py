@@ -50,6 +50,7 @@ from .abstracts import MySQLConnectionAbstract
 
 class MySQLConnection(MySQLConnectionAbstract):
     """Connection to a MySQL Server"""
+
     def __init__(self, *args, **kwargs):
         self._protocol = None
         self._socket = None
@@ -440,14 +441,16 @@ class MySQLConnection(MySQLConnectionAbstract):
                 rows = self._protocol.read_binary_result(
                     self._socket, columns, count)
             else:
-                rows = self._protocol.read_text_result(self._socket, self._server_version, count=count)
+                rows = self._protocol.read_text_result(
+                    self._socket, self._server_version, count=count)
         except errors.Error as err:
             self.unread_result = False
             raise err
 
         if rows[-1] is not None:
-            ek = rows[-1] # OK or EOF
-            self._handle_server_status(ek['status_flag'] if 'status_flag' in ek else ek['server_status'])
+            ek = rows[-1]  # OK or EOF
+            self._handle_server_status(
+                ek['status_flag'] if 'status_flag' in ek else ek['server_status'])
             self.unread_result = False
 
         return rows
@@ -656,7 +659,7 @@ class MySQLConnection(MySQLConnectionAbstract):
             if not (self._client_flags & ClientFlag.CONNECT_WITH_DB) \
                     and database:
                 self.cmd_init_db(database)
-        except:
+        except BaseException:
             raise
 
         self._charset_id = charset
@@ -685,7 +688,7 @@ class MySQLConnection(MySQLConnectionAbstract):
         """
         try:
             self.cmd_ping()
-        except:
+        except BaseException:
             return False  # This method does not raise
         return True
 
@@ -767,7 +770,7 @@ class MySQLConnection(MySQLConnectionAbstract):
         """
         try:
             self.cmd_ping()
-        except:
+        except BaseException:
             if reconnect:
                 self.reconnect(attempts=attempts, delay=delay)
             else:

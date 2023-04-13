@@ -34,7 +34,8 @@ class DocStringParser(HTMLParser):
         self.tree = HTMLTree(self.doc)
 
     def feed(self, data):
-        # HTMLParser is an old style class, so the super() method will not work.
+        # HTMLParser is an old style class, so the super() method will not
+        # work.
         HTMLParser.feed(self, data)
         self.tree.write()
         self.tree = HTMLTree(self.doc)
@@ -168,7 +169,8 @@ class TagNode(StemNode):
         handler_name = 'end_%s' % self.tag
         if hasattr(doc.style, handler_name):
             if handler_name == 'end_a':
-                # We use lookahead to determine if a space is needed after a link node
+                # We use lookahead to determine if a space is needed after a
+                # link node
                 getattr(doc.style, handler_name)(next_child)
             else:
                 getattr(doc.style, handler_name)()

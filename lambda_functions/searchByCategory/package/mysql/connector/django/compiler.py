@@ -23,7 +23,8 @@ class SQLCompiler(compiler.SQLCompiler):
             qn = compiler.quote_name_unless_alias
             qn2 = self.connection.ops.quote_name
             sql, params = self.as_sql()
-            return '(%s) IN (%s)' % (', '.join('%s.%s' % (qn(alias), qn2(column)) for column in columns), sql), params
+            return '(%s) IN (%s)' % (', '.join('%s.%s' %
+                                               (qn(alias), qn2(column)) for column in columns), sql), params
     else:
         def as_subquery_condition(self, alias, columns, qn):
             # Django 1.6
@@ -48,6 +49,7 @@ class SQLUpdateCompiler(compiler.SQLUpdateCompiler, SQLCompiler):
 
 class SQLAggregateCompiler(compiler.SQLAggregateCompiler, SQLCompiler):
     pass
+
 
 if django.VERSION < (1, 8):
     class SQLDateCompiler(compiler.SQLDateCompiler, SQLCompiler):

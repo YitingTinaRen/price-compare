@@ -26,7 +26,11 @@ def lower(string: str) -> str:
 class SelectorSyntaxError(Exception):
     """Syntax error in a CSS selector."""
 
-    def __init__(self, msg: str, pattern: Optional[str] = None, index: Optional[int] = None) -> None:
+    def __init__(
+            self,
+            msg: str,
+            pattern: Optional[str] = None,
+            index: Optional[int] = None) -> None:
         """Initialize."""
 
         self.line = None
@@ -35,7 +39,8 @@ class SelectorSyntaxError(Exception):
 
         if pattern is not None and index is not None:
             # Format pattern to show line and column position
-            self.context, self.line, self.col = get_pattern_context(pattern, index)
+            self.context, self.line, self.col = get_pattern_context(
+                pattern, index)
             msg = '{}\n  line {}:\n{}'.format(msg, self.line, self.context)
 
         super().__init__(msg)

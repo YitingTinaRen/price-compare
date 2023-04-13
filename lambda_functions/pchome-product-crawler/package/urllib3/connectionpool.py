@@ -81,7 +81,8 @@ class ConnectionPool(object):
         self.port = port
 
     def __str__(self):
-        return "%s(host=%r, port=%r)" % (type(self).__name__, self.host, self.port)
+        return "%s(host=%r, port=%r)" % (
+            type(self).__name__, self.host, self.port)
 
     def __enter__(self):
         return self
@@ -98,7 +99,8 @@ class ConnectionPool(object):
         pass
 
 
-# This is taken from http://hg.python.org/cpython/file/7aaba721ebc0/Lib/socket.py#l252
+# This is taken from
+# http://hg.python.org/cpython/file/7aaba721ebc0/Lib/socket.py#l252
 _blocking_errnos = {errno.EAGAIN, errno.EWOULDBLOCK}
 
 
@@ -263,9 +265,7 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
         except queue.Empty:
             if self.block:
                 raise EmptyPoolError(
-                    self,
-                    "Pool reached maximum size and no more connections are allowed.",
-                )
+                    self, "Pool reached maximum size and no more connections are allowed.", )
             pass  # Oh well, we'll create a new connection then
 
         # If this is a persistent connection, check if it got disconnected
@@ -359,8 +359,13 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
             )
 
     def _make_request(
-        self, conn, method, url, timeout=_Default, chunked=False, **httplib_request_kw
-    ):
+            self,
+            conn,
+            method,
+            url,
+            timeout=_Default,
+            chunked=False,
+            **httplib_request_kw):
         """
         Perform a request on a given urllib connection object taken from our
         pool.
@@ -385,7 +390,8 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
         try:
             self._validate_conn(conn)
         except (SocketTimeout, BaseSSLError) as e:
-            # Py2 raises this as a BaseSSLError, Py3 raises it as socket timeout.
+            # Py2 raises this as a BaseSSLError, Py3 raises it as socket
+            # timeout.
             self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
             raise
 
@@ -426,8 +432,8 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
             # timeouts, check for a zero timeout before making the request.
             if read_timeout == 0:
                 raise ReadTimeoutError(
-                    self, url, "Read timed out. (read timeout=%s)" % read_timeout
-                )
+                    self, url, "Read timed out. (read timeout=%s)" %
+                    read_timeout)
             if read_timeout is Timeout.DEFAULT_TIMEOUT:
                 conn.sock.settimeout(socket.getdefaulttimeout())
             else:  # None or a value
@@ -478,7 +484,11 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
         return httplib_response
 
     def _absolute_url(self, path):
-        return Url(scheme=self.scheme, host=self.host, port=self.port, path=path).url
+        return Url(
+            scheme=self.scheme,
+            host=self.host,
+            port=self.port,
+            path=path).url
 
     def close(self):
         """
@@ -635,7 +645,8 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
             headers = self.headers
 
         if not isinstance(retries, Retry):
-            retries = Retry.from_int(retries, redirect=redirect, default=self.retries)
+            retries = Retry.from_int(
+                retries, redirect=redirect, default=self.retries)
 
         if release_conn is None:
             release_conn = response_kw.get("preload_content", True)
@@ -756,8 +767,7 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
                 # so we try to cover our bases here!
                 message = " ".join(re.split("[^a-z]", str(ssl_error).lower()))
                 return (
-                    "wrong version number" in message or "unknown protocol" in message
-                )
+                    "wrong version number" in message or "unknown protocol" in message)
 
             # Try to detect a common user error with proxies which is to
             # set an HTTP proxy to be HTTPS when it should be 'http://'
@@ -774,9 +784,7 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
                     "Your proxy appears to only use HTTP and not HTTPS, "
                     "try changing your proxy URL to be HTTP. See: "
                     "https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html"
-                    "#https-proxy-error-http-proxy",
-                    SSLError(e),
-                )
+                    "#https-proxy-error-http-proxy", SSLError(e), )
             elif isinstance(e, (BaseSSLError, CertificateError)):
                 e = SSLError(e)
             elif isinstance(e, (SocketError, NewConnectionError)) and self.proxy:
@@ -810,8 +818,10 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
         if not conn:
             # Try again
             log.warning(
-                "Retrying (%r) after connection broken by '%r': %s", retries, err, url
-            )
+                "Retrying (%r) after connection broken by '%r': %s",
+                retries,
+                err,
+                url)
             return self.urlopen(
                 method,
                 url,
@@ -835,7 +845,8 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
                 method = "GET"
 
             try:
-                retries = retries.increment(method, url, response=response, _pool=self)
+                retries = retries.increment(
+                    method, url, response=response, _pool=self)
             except MaxRetryError:
                 if retries.raise_on_redirect:
                     response.drain_conn()
@@ -865,7 +876,8 @@ class HTTPConnectionPool(ConnectionPool, RequestMethods):
         has_retry_after = bool(response.headers.get("Retry-After"))
         if retries.is_retry(method, response.status, has_retry_after):
             try:
-                retries = retries.increment(method, url, response=response, _pool=self)
+                retries = retries.increment(
+                    method, url, response=response, _pool=self)
             except MaxRetryError:
                 if retries.raise_on_status:
                     response.drain_conn()
@@ -1038,30 +1050,26 @@ class HTTPSConnectionPool(HTTPConnectionPool):
         super(HTTPSConnectionPool, self)._validate_conn(conn)
 
         # Force connect early to allow us to validate the connection.
-        if not getattr(conn, "sock", None):  # AppEngine might not have  `.sock`
+        if not getattr(
+            conn,
+            "sock",
+                None):  # AppEngine might not have  `.sock`
             conn.connect()
 
         if not conn.is_verified:
             warnings.warn(
-                (
-                    "Unverified HTTPS request is being made to host '%s'. "
-                    "Adding certificate verification is strongly advised. See: "
-                    "https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html"
-                    "#ssl-warnings" % conn.host
-                ),
-                InsecureRequestWarning,
-            )
+                ("Unverified HTTPS request is being made to host '%s'. "
+                 "Adding certificate verification is strongly advised. See: "
+                 "https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html"
+                 "#ssl-warnings" %
+                 conn.host), InsecureRequestWarning, )
 
         if getattr(conn, "proxy_is_verified", None) is False:
             warnings.warn(
-                (
-                    "Unverified HTTPS connection done to an HTTPS proxy. "
-                    "Adding certificate verification is strongly advised. See: "
-                    "https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html"
-                    "#ssl-warnings"
-                ),
-                InsecureRequestWarning,
-            )
+                ("Unverified HTTPS connection done to an HTTPS proxy. "
+                 "Adding certificate verification is strongly advised. See: "
+                 "https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html"
+                 "#ssl-warnings"), InsecureRequestWarning, )
 
 
 def connection_from_url(url, **kw):

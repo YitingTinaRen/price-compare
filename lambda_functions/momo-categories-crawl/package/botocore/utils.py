@@ -2034,8 +2034,7 @@ class S3EndpointSetter:
     def update_endpoint_to_s3_object_lambda(self, params, context, **kwargs):
         if self._use_accelerate_endpoint:
             raise UnsupportedS3ConfigurationError(
-                msg='S3 client does not support accelerate endpoints for S3 Object Lambda operations',
-            )
+                msg='S3 client does not support accelerate endpoints for S3 Object Lambda operations', )
 
         self._override_signing_name(context, 's3-object-lambda')
         if self._endpoint_url:

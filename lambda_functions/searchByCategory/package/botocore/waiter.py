@@ -189,9 +189,8 @@ class AcceptorConfig:
             )
         elif self.matcher == 'pathAny':
             return (
-                'For expression "%s" we matched expected path: "%s" at least once'
-                % (self.argument, self.expected)
-            )
+                'For expression "%s" we matched expected path: "%s" at least once' %
+                (self.argument, self.expected))
         elif self.matcher == 'status':
             return 'Matched expected HTTP status code: %s' % self.expected
         elif self.matcher == 'error':

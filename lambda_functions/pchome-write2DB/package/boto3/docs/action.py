@@ -78,7 +78,8 @@ class ActionDocumenter(NestedDocumenter):
                     action_section, action_name, resource_actions[action_name]
                 )
             # Write actions in individual/nested files.
-            # Path: <root>/reference/services/<service>/<resource_name>/<action_name>.rst
+            # Path:
+            # <root>/reference/services/<service>/<resource_name>/<action_name>.rst
             actions_dir_path = os.path.join(
                 self._root_docs_path,
                 f'{self._service_name}',

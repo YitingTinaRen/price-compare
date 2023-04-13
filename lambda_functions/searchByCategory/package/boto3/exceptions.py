@@ -41,8 +41,7 @@ class UnknownAPIVersionError(
     def __init__(self, service_name, bad_api_version, available_api_versions):
         msg = (
             f"The '{service_name}' resource does not an API version of: {bad_api_version}\n"
-            f"Valid API versions are: {available_api_versions}"
-        )
+            f"Valid API versions are: {available_api_versions}")
         # Not using super because we don't want the DataNotFoundError
         # to be called, it has a different __init__ signature.
         Boto3Error.__init__(self, msg)
@@ -92,8 +91,7 @@ class DynamoDBOperationNotSupportedError(Boto3Error):
         msg = (
             f'{operation} operation cannot be applied to value {value} of type '
             f'{type(value)} directly. Must use AttributeBase object methods '
-            f'(i.e. Attr().eq()). to generate ConditionBase instances first.'
-        )
+            f'(i.e. Attr().eq()). to generate ConditionBase instances first.')
         Exception.__init__(self, msg)
 
 
@@ -108,8 +106,7 @@ class DynamoDBNeedsConditionError(Boto3Error):
         msg = (
             f'Expecting a ConditionBase object. Got {value} of type {type(value)}. '
             f'Use AttributeBase object methods (i.e. Attr().eq()). to '
-            f'generate ConditionBase instances.'
-        )
+            f'generate ConditionBase instances.')
         Exception.__init__(self, msg)
 
 

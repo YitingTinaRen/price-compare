@@ -967,7 +967,7 @@ class BaseRestParser(ResponseParser):
             if header_name.lower().startswith(prefix):
                 # The key name inserted into the parsed hash
                 # strips off the prefix.
-                name = header_name[len(prefix) :]
+                name = header_name[len(prefix):]
                 parsed[name] = headers[header_name]
         return parsed
 

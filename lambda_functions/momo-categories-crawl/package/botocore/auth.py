@@ -199,8 +199,7 @@ class SigV3Auth(BaseSigner):
         encoded_signature = encodebytes(new_hmac.digest()).strip()
         signature = (
             f"AWS3-HTTPS AWSAccessKeyId={self.credentials.access_key},"
-            f"Algorithm=HmacSHA256,Signature={encoded_signature.decode('utf-8')}"
-        )
+            f"Algorithm=HmacSHA256,Signature={encoded_signature.decode('utf-8')}")
         if 'X-Amzn-Authorization' in request.headers:
             del request.headers['X-Amzn-Authorization']
         request.headers['X-Amzn-Authorization'] = signature

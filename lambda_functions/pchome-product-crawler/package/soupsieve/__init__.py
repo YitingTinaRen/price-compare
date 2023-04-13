@@ -52,16 +52,21 @@ def compile(  # noqa: A001
 ) -> cm.SoupSieve:
     """Compile CSS pattern."""
 
-    ns = ct.Namespaces(namespaces) if namespaces is not None else namespaces  # type: Optional[ct.Namespaces]
-    cs = ct.CustomSelectors(custom) if custom is not None else custom  # type: Optional[ct.CustomSelectors]
+    # type: Optional[ct.Namespaces]
+    ns = ct.Namespaces(namespaces) if namespaces is not None else namespaces
+    # type: Optional[ct.CustomSelectors]
+    cs = ct.CustomSelectors(custom) if custom is not None else custom
 
     if isinstance(pattern, SoupSieve):
         if flags:
-            raise ValueError("Cannot process 'flags' argument on a compiled selector list")
+            raise ValueError(
+                "Cannot process 'flags' argument on a compiled selector list")
         elif namespaces is not None:
-            raise ValueError("Cannot process 'namespaces' argument on a compiled selector list")
+            raise ValueError(
+                "Cannot process 'namespaces' argument on a compiled selector list")
         elif custom is not None:
-            raise ValueError("Cannot process 'custom' argument on a compiled selector list")
+            raise ValueError(
+                "Cannot process 'custom' argument on a compiled selector list")
         return pattern
 
     return cp._cached_css_compile(pattern, ns, cs, flags)

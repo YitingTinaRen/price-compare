@@ -43,6 +43,7 @@ else:
 
 class Error(Exception):
     """Exception that is base class for all other error exceptions."""
+
     def __init__(self, msg=None, errno=None, values=None, sqlstate=None):
         super(Error, self).__init__()
         self.msg = msg
@@ -142,7 +143,7 @@ def intread(buf):
         else:
             tmp = buf + b"\x00" * (8 - length)
             return struct_unpack("<Q", tmp)[0]
-    except:
+    except BaseException:
         raise
 
 
@@ -154,7 +155,7 @@ def read_int(buf, size):
 
     try:
         res = intread(buf[0:size])
-    except:
+    except BaseException:
         raise
 
     return (buf[size:], res)

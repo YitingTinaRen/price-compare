@@ -345,8 +345,7 @@ class ClientArgsCreator:
     def _validate_s3_regional_config(self, config_val):
         if config_val not in VALID_REGIONAL_ENDPOINTS_CONFIG:
             raise botocore.exceptions.InvalidS3UsEast1RegionalEndpointConfigError(
-                s3_us_east_1_regional_endpoint_config=config_val
-            )
+                s3_us_east_1_regional_endpoint_config=config_val)
 
     def _set_region_if_custom_s3_endpoint(
         self, endpoint_config, endpoint_bridge
@@ -427,7 +426,8 @@ class ClientArgsCreator:
         scoped_keepalive = scoped_config and self._ensure_boolean(
             scoped_config.get("tcp_keepalive", False)
         )
-        # Enables TCP Keepalive if specified in client config object or shared config file.
+        # Enables TCP Keepalive if specified in client config object or shared
+        # config file.
         if client_keepalive or scoped_keepalive:
             socket_options.append((socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1))
         return socket_options

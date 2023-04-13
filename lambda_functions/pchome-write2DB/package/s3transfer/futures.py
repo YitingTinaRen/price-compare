@@ -317,9 +317,7 @@ class TransferCoordinator:
         """
         logger.debug(
             "Submitting task {} to executor {} for transfer request: {}.".format(
-                task, executor, self.transfer_id
-            )
-        )
+                task, executor, self.transfer_id))
         future = executor.submit(task, tag=tag)
         # Add this created future to the list of associated future just
         # in case it is needed during cleanups.

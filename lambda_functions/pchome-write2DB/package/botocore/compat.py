@@ -11,6 +11,24 @@
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
 
+from urllib.parse import (
+    quote,
+    urlencode,
+    unquote,
+    unquote_plus,
+    urlparse,
+    urlsplit,
+    urlunsplit,
+    urljoin,
+    parse_qsl,
+    parse_qs,
+)
+import json
+from itertools import zip_longest
+from email.utils import formatdate
+from base64 import encodebytes
+from io import IOBase as _IOBase
+from http.client import HTTPResponse
 import copy
 import datetime
 import sys
@@ -37,29 +55,14 @@ logger = logging.getLogger(__name__)
 class HTTPHeaders(HTTPMessage):
     pass
 
-from urllib.parse import (
-    quote,
-    urlencode,
-    unquote,
-    unquote_plus,
-    urlparse,
-    urlsplit,
-    urlunsplit,
-    urljoin,
-    parse_qsl,
-    parse_qs,
-)
-from http.client import HTTPResponse
-from io import IOBase as _IOBase
-from base64 import encodebytes
-from email.utils import formatdate
-from itertools import zip_longest
+
 file_type = _IOBase
 zip = zip
 
 # In python3, unquote takes a str() object, url decodes it,
 # then takes the bytestring and decodes it to utf-8.
 unquote_str = unquote_plus
+
 
 def set_socket_timeout(http_response, timeout):
     """Set the timeout of the socket from an HTTPResponse.
@@ -69,14 +72,17 @@ def set_socket_timeout(http_response, timeout):
     """
     http_response._fp.fp.raw._sock.settimeout(timeout)
 
+
 def accepts_kwargs(func):
     # In python3.4.1, there's backwards incompatible
     # changes when using getargspec with functools.partials.
     return inspect.getfullargspec(func)[2]
 
+
 def ensure_unicode(s, encoding=None, errors=None):
     # NOOP in Python 3, because every string is already unicode
     return s
+
 
 def ensure_bytes(s, encoding='utf-8', errors='strict'):
     if isinstance(s, str):
@@ -92,7 +98,6 @@ except ImportError:
     # cElementTree does not exist from Python3.9+
     import xml.etree.ElementTree as ETree
 XMLParseError = ETree.ParseError
-import json
 
 
 def filter_ssl_warnings():

@@ -74,6 +74,7 @@ CNX_FABRIC_ARGS = ['fabric_host', 'fabric_username', 'fabric_password',
                    'fabric_ssl_ca', 'fabric_ssl_key', 'fabric_ssl_cert',
                    'fabric_user']
 
+
 def flag_is_set(flag, flags):
     """Checks if the flag is set
 
@@ -98,7 +99,7 @@ class _Constants(object):
         """Get description of given constant"""
         try:
             return cls.desc[name][1]
-        except:
+        except BaseException:
             return None
 
     @classmethod
@@ -602,7 +603,7 @@ class CharacterSet(_Constants):
         """
         try:
             return "%s/%s" % cls.get_info(setid)
-        except:
+        except BaseException:
             raise
 
     @classmethod
@@ -617,7 +618,7 @@ class CharacterSet(_Constants):
             try:
                 info = cls.desc[charset]
                 return info[1], info[0], charset
-            except:
+            except BaseException:
                 ProgrammingError("Character set ID '%s' unsupported." % (
                     charset))
 
@@ -663,7 +664,8 @@ class CharacterSet(_Constants):
                     continue
                 if collation == info[1]:
                     return (cid, info[0], info[1])
-            raise ProgrammingError("Collation '{0}' unknown.".format(collation))
+            raise ProgrammingError(
+                "Collation '{0}' unknown.".format(collation))
         else:
             for cid, info in enumerate(cls.desc):
                 if info is None:

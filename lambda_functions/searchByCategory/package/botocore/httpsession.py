@@ -151,7 +151,8 @@ def create_urllib3_context(
     # matter due to safe-guards SSLContext has to prevent an SSLContext with
     # check_hostname=True, verify_mode=NONE/OPTIONAL. This is made even more
     # complex because we don't know whether PROTOCOL_TLS_CLIENT will be used
-    # or not so we don't know the initial state of the freshly created SSLContext.
+    # or not so we don't know the initial state of the freshly created
+    # SSLContext.
     if cert_reqs == ssl.CERT_REQUIRED:
         context.verify_mode = cert_reqs
         disable_check_hostname()
@@ -413,7 +414,8 @@ class URLLib3Session:
 
         # HTTP proxies expect the request_target to be the absolute url to know
         # which host to establish a connection to. urllib3 also supports
-        # forwarding for HTTPS through the 'use_forwarding_for_https' parameter.
+        # forwarding for HTTPS through the 'use_forwarding_for_https'
+        # parameter.
         proxy_scheme = urlparse(proxy_url).scheme
         using_https_forwarding_proxy = (
             proxy_scheme == 'https'

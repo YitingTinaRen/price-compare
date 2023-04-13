@@ -232,13 +232,15 @@ class DocumentStructure(ReSTDocument):
                 self.style.new_paragraph()
                 for refname, link in self.hrefs.items():
                     self.style.link_target_definition(refname, link)
-        # Clear docs_link at the correct depth to prevent passing a non-related link.
+        # Clear docs_link at the correct depth to prevent passing a non-related
+        # link.
         elif path_length == SECTION_METHOD_PATH_DEPTH.get(self.path[1]):
             docs_link = None
         value = self.getvalue()
         for name, section in self._structure.items():
             # Checks is the AWS API Documentation link has been generated.
-            # If it has been generated, it gets passed as a the doc_link parameter.
+            # If it has been generated, it gets passed as a the doc_link
+            # parameter.
             match = DOCUMENTATION_LINK_REGEX.search(value.decode())
             docs_link = (
                 f'{match.group(0)}\n\n'.encode() if match else docs_link
@@ -246,7 +248,8 @@ class DocumentStructure(ReSTDocument):
             value += section.flush_structure(docs_link)
 
         # Replace response/request sections if the line number exceeds our limit.
-        # The section is replaced with a message linking to AWS API Documentation.
+        # The section is replaced with a message linking to AWS API
+        # Documentation.
         line_count = len(value.splitlines())
         section_config = SECTION_LINE_LIMIT_CONFIG.get(self.name)
         aws_docs_link = (

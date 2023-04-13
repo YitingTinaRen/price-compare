@@ -150,6 +150,7 @@ _LOGGER = logging.getLogger('myconnpy-fabric')
 class MySQLRPCProtocol(object):
     """Class using MySQL protocol to query Fabric.
     """
+
     def __init__(self, fabric, host, port, connect_attempts, connect_delay):
         self.converter = MySQLConverter()
         self.handler = FabricMySQLConnection(fabric, host, port,
@@ -242,6 +243,7 @@ class MySQLRPCProtocol(object):
 class XMLRPCProtocol(object):
     """Class using XML-RPC protocol to query Fabric.
     """
+
     def __init__(self, fabric, host, port, connect_attempts, connect_delay):
         self.handler = FabricXMLRPCConnection(fabric, host, port,
                                               connect_attempts, connect_delay)
@@ -277,6 +279,7 @@ class XMLRPCProtocol(object):
 class FabricMySQLResponse(object):
     """Class used to parse a response got from Fabric with MySQL protocol.
     """
+
     def __init__(self, data):
         info = data[0][0]
         (fabric_uuid_str, ttl, error) = (info['fabric_uuid'], info['ttl'],
@@ -293,6 +296,7 @@ class FabricMySQLSet(FabricMySQLResponse):
     """Iterator to navigate through the result set returned from Fabric
     with MySQL Protocol.
     """
+
     def __init__(self, data):
         """Initialize the FabricSet object.
         """
@@ -350,6 +354,7 @@ class FabricResponse(object):
 class FabricSet(FabricResponse):
     """Iterator to navigate through the result set returned from Fabric
     """
+
     def __init__(self, data):
         """Initialize the FabricSet object.
         """
@@ -358,7 +363,7 @@ class FabricSet(FabricResponse):
         self.__names = self.coded_rows[0]['info']['names']
         self.__rows = self.coded_rows[0]['rows']
         assert all(len(self.__names) == len(row) for row in self.__rows) or \
-               len(self.__rows) == 0
+            len(self.__rows) == 0
         self.__result = collections.namedtuple('ResultSet', self.__names)
 
     def rowcount(self):
@@ -455,7 +460,7 @@ if HAVE_SSL:
 
         """Class handling HTTPS connections"""
 
-        def __init__(self, ssl_config):  #pylint: disable=E1002
+        def __init__(self, ssl_config):  # pylint: disable=E1002
             """Initialize"""
             if PY2:
                 urllib2.HTTPSHandler.__init__(self)
@@ -482,7 +487,7 @@ class FabricTransport(Transport):
 
     user_agent = 'MySQL Connector Python/{0}'.format(version.VERSION_TEXT)
 
-    def __init__(self, username, password,  #pylint: disable=E1002
+    def __init__(self, username, password,  # pylint: disable=E1002
                  verbose=0, use_datetime=False, https_handler=None):
         """Initialize"""
         if PY2:
@@ -646,9 +651,12 @@ class Fabric(object):
 
         # Update the Fabric servers
         for fabric in fabrics:
-            inst = self._protocol_class(self, fabric['host'], fabric['port'],
-                                        connect_attempts=self._connect_attempts,
-                                        connect_delay=self._connect_delay)
+            inst = self._protocol_class(
+                self,
+                fabric['host'],
+                fabric['port'],
+                connect_attempts=self._connect_attempts,
+                connect_delay=self._connect_delay)
             inst_uuid = inst.handler.uuid
             if inst_uuid not in self._fabric_instances:
                 self._fabric_instances[inst_uuid] = inst
@@ -840,7 +848,9 @@ class Fabric(object):
             elif server.status == STATUS_PRIMARY:
                 primary = server
 
-        if mode in (MODE_WRITEONLY, MODE_READWRITE) or status == STATUS_PRIMARY:
+        if mode in (
+                MODE_WRITEONLY,
+                MODE_READWRITE) or status == STATUS_PRIMARY:
             if not primary:
                 self.reset_cache(group=group)
                 raise InterfaceError((errmsg + ' {query}={value}').format(
@@ -1020,6 +1030,7 @@ class Fabric(object):
 class FabricConnection(object):
     """Base Class for a class holding a connection to a MySQL Fabric server
     """
+
     def __init__(self, fabric, host,
                  port=MYSQL_FABRIC_PORT[DEFAULT_FABRIC_PROTOCOL],
                  connect_attempts=_CNX_ATTEMPT_MAX,
@@ -1166,6 +1177,7 @@ class FabricMySQLConnection(FabricConnection):
     """
     Class holding a connection to a MySQL Fabric server through MySQL protocol
     """
+
     def __init__(self, fabric, host, port=MYSQL_FABRIC_PORT['mysql'],
                  connect_attempts=_CNX_ATTEMPT_MAX,
                  connect_delay=_CNX_ATTEMPT_DELAY):
@@ -1472,8 +1484,8 @@ class MySQLFabricConnection(object):
                     "Trying to get MySQL server (attempt {0}; {1})".format(
                         counter, exc))
                 if counter == attempts:
-                    raise InterfaceError("Error getting connection: {0}".format(
-                        exc))
+                    raise InterfaceError(
+                        "Error getting connection: {0}".format(exc))
                 if attempt_delay > 0:
                     _LOGGER.debug("Waiting {0}".format(attempt_delay))
                     time.sleep(attempt_delay)
@@ -1511,7 +1523,12 @@ class MySQLFabricConnection(object):
             self._fabric_mysql_server = None
     close = disconnect
 
-    def cursor(self, buffered=None, raw=None, prepared=None, cursor_class=None):
+    def cursor(
+            self,
+            buffered=None,
+            raw=None,
+            prepared=None,
+            cursor_class=None):
         """Instantiates and returns a cursor
 
         This method is similar to MySQLConnection.cursor() except that

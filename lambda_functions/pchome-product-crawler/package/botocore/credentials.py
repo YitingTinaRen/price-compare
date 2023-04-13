@@ -1565,16 +1565,12 @@ class AssumeRoleProvider(CredentialProvider):
                 error_msg=(
                     f"The credential_source \"{credential_source}\" is specified "
                     f"in profile \"{parent_profile}\", "
-                    f"but no source provider was configured."
-                )
-            )
+                    f"but no source provider was configured."))
         if not self._credential_sourcer.is_supported(credential_source):
             raise InvalidConfigError(
                 error_msg=(
                     f"The credential source \"{credential_source}\" referenced "
-                    f"in profile \"{parent_profile}\" is not valid."
-                )
-            )
+                    f"in profile \"{parent_profile}\" is not valid."))
 
     def _source_profile_has_credentials(self, profile):
         return any(
@@ -1592,9 +1588,7 @@ class AssumeRoleProvider(CredentialProvider):
             raise InvalidConfigError(
                 error_msg=(
                     f"The source_profile \"{source_profile_name}\" referenced in "
-                    f"the profile \"{parent_profile_name}\" does not exist."
-                )
-            )
+                    f"the profile \"{parent_profile_name}\" does not exist."))
 
         source_profile = profiles[source_profile_name]
 
@@ -2222,7 +2216,8 @@ class SSOProvider(CredentialProvider):
         config = profile_config.copy()
         session = sso_sessions[sso_session_name]
         for config_var, val in session.items():
-            # Validate any keys referenced in both profile and sso_session match
+            # Validate any keys referenced in both profile and sso_session
+            # match
             if config.get(config_var, val) != val:
                 error_msg = (
                     f"The value for {config_var} is inconsistent between "

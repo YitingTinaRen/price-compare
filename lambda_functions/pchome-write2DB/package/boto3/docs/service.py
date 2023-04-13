@@ -107,7 +107,8 @@ class ServiceDocumenter(BaseServiceDocumenter):
         self._document_resources(section)
 
     def _document_service_resource(self, section):
-        # Create a new DocumentStructure for each Service Resource and add contents.
+        # Create a new DocumentStructure for each Service Resource and add
+        # contents.
         service_resource_doc = DocumentStructure(
             'service-resource', target='html'
         )
@@ -115,7 +116,8 @@ class ServiceDocumenter(BaseServiceDocumenter):
             self._service_resource, self._session, self._root_docs_path
         ).document_resource(service_resource_doc)
         # Write collections in individual/nested files.
-        # Path: <root>/reference/services/<service>/<resource_name>/<collection_name>.rst
+        # Path:
+        # <root>/reference/services/<service>/<resource_name>/<collection_name>.rst
         resource_name = self._service_resource.meta.resource_model.name
         if resource_name == self._service_name:
             resource_name = 'service-resource'
@@ -155,7 +157,8 @@ class ServiceDocumenter(BaseServiceDocumenter):
             for _ in identifiers:
                 args.append(temp_identifier_value)
             resource = resource_cls(*args, client=self._client)
-            # Create a new DocumentStructure for each Resource and add contents.
+            # Create a new DocumentStructure for each Resource and add
+            # contents.
             resource_name = resource.meta.resource_model.name.lower()
             resource_doc = DocumentStructure(resource_name, target='html')
             ResourceDocumenter(
@@ -164,7 +167,8 @@ class ServiceDocumenter(BaseServiceDocumenter):
                 resource_doc.add_new_section(resource.meta.resource_model.name)
             )
             # Write collections in individual/nested files.
-            # Path: <root>/reference/services/<service>/<resource_name>/<index>.rst
+            # Path:
+            # <root>/reference/services/<service>/<resource_name>/<index>.rst
             service_resource_dir_path = os.path.join(
                 self._root_docs_path,
                 f'{self._service_name}',

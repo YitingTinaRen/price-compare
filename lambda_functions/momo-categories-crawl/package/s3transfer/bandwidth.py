@@ -31,8 +31,7 @@ class RequestExceededException(Exception):
         self.requested_amt = requested_amt
         self.retry_time = retry_time
         msg = 'Request amount {} exceeded the amount available. Retry in {}'.format(
-            requested_amt, retry_time
-        )
+            requested_amt, retry_time)
         super().__init__(msg)
 
 

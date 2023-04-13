@@ -2,6 +2,7 @@ import pytest
 from unittest.mock import patch
 from bs4.builder import DetectsXMLParsedAsHTML
 
+
 class TestDetectsXMLParsedAsHTML(object):
 
     @pytest.mark.parametrize(
@@ -11,7 +12,7 @@ class TestDetectsXMLParsedAsHTML(object):
          ("<?xml ><html>Actually XHTML</html>", False),
          ("<?xml>            <    html>Tricky XHTML</html>", False),
          ("<?xml ><no-html-tag>", True),
-        ]
+         ]
     )
     def test_warn_if_markup_looks_like_xml(self, markup, looks_like_xml):
         # Test of our ability to guess at whether markup looks XML-ish

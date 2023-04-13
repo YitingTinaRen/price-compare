@@ -9,19 +9,19 @@
 # conditions of the GPLv2 as it is applied to this software, see the
 # FOSS License Exception
 # <http://www.mysql.com/about/legal/licensing/foss-exception.html>.
-# 
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation.
-# 
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
-# 
+#
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
-# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA 
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
 
 # This file was auto-generated.
 _GENERATED_ON = '2016-05-31'
@@ -92,4 +92,3 @@ CR_DUPLICATE_CONNECTION_ATTR = u"There is an attribute with the same name alread
 CR_AUTH_PLUGIN_ERR = u"Authentication plugin '%s' reported error: %s"
 CR_INSECURE_API_ERR = u"Insecure API function call: '%s' Use instead: '%s'"
 # End MySQL Error messages
-

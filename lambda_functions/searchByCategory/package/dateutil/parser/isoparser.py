@@ -158,8 +158,10 @@ class isoparser(object):
         """
         components, pos = self._parse_isodate(datestr)
         if pos < len(datestr):
-            raise ValueError('String contains unknown ISO ' +
-                             'components: {!r}'.format(datestr.decode('ascii')))
+            raise ValueError(
+                'String contains unknown ISO ' +
+                'components: {!r}'.format(
+                    datestr.decode('ascii')))
         return date(*components)
 
     @_takes_ascii
@@ -347,11 +349,11 @@ class isoparser(object):
                 pos = len_str
                 break
 
-            if comp == 1 and timestr[pos:pos+1] == self._TIME_SEP:
+            if comp == 1 and timestr[pos:pos + 1] == self._TIME_SEP:
                 has_sep = True
                 pos += 1
             elif comp == 2 and has_sep:
-                if timestr[pos:pos+1] != self._TIME_SEP:
+                if timestr[pos:pos + 1] != self._TIME_SEP:
                     raise ValueError('Inconsistent use of colon separator')
                 pos += 1
 
@@ -385,7 +387,8 @@ class isoparser(object):
             return tz.UTC
 
         if len(tzstr) not in {3, 5, 6}:
-            raise ValueError('Time zone offset must be 1, 3, 5 or 6 characters')
+            raise ValueError(
+                'Time zone offset must be 1, 3, 5 or 6 characters')
 
         if tzstr[0:1] == b'-':
             mult = -1

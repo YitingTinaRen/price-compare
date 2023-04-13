@@ -11,6 +11,7 @@ from bs4.builder import (
 from bs4.builder._htmlparser import BeautifulSoupHTMLParser
 from . import SoupTest, HTMLTreeBuilderSmokeTest
 
+
 class TestHTMLParserTreeBuilder(SoupTest, HTMLTreeBuilderSmokeTest):
 
     default_builder = HTMLParserTreeBuilder
@@ -67,7 +68,7 @@ class TestHTMLParserTreeBuilder(SoupTest, HTMLTreeBuilderSmokeTest):
         assert "url3" == soup.a['href']
         assert ["cls"] == soup.a['class']
         assert "id" == soup.a['id']
-        
+
         # You can also get this behavior explicitly.
         def assert_attribute(on_duplicate_attribute, expected):
             soup = self.soup(
@@ -89,7 +90,7 @@ class TestHTMLParserTreeBuilder(SoupTest, HTMLTreeBuilderSmokeTest):
             if not isinstance(attrs[key], list):
                 attrs[key] = [attrs[key]]
             attrs[key].append(value)
-        assert_attribute(accumulate, ["url1", "url2", "url3"])            
+        assert_attribute(accumulate, ["url1", "url2", "url3"])
 
     def test_html5_attributes(self):
         # The html.parser TreeBuilder can convert any entity named in
@@ -107,7 +108,7 @@ class TestHTMLParserTreeBuilder(SoupTest, HTMLTreeBuilderSmokeTest):
                 ('&there4;', '\u2234', b'&there4;'),
                 ('&Therefore;', '\u2234', b'&there4;'),
                 ('&therefore;', '\u2234', b'&there4;'),
-                ("&fjlig;", 'fj', b'fj'),                
+                ("&fjlig;", 'fj', b'fj'),
                 ("&sqcup;", '\u2294', b'&sqcup;'),
                 ("&sqcups;", '\u2294\ufe00', b'&sqcups;'),
                 ("&apos;", "'", b"'"),

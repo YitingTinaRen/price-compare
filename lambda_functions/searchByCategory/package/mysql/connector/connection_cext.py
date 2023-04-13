@@ -25,7 +25,7 @@
 """
 
 # Detection of abstract methods in pylint is not working correctly
-#pylint: disable=W0223
+# pylint: disable=W0223
 
 from . import errors
 from .catch23 import INT_TYPES
@@ -53,6 +53,7 @@ except ImportError as exc:
 else:
     HAVE_CMYSQL = True
 # pylint: enable=F0401,C0413
+
 
 class CMySQLConnection(MySQLConnectionAbstract):
 

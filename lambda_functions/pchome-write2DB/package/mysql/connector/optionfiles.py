@@ -108,7 +108,8 @@ def read_option_files(**config):
                     if option in not_evaluate:
                         config[option] = value[0]
                     else:
-                        config[option] = eval(value[0])  # pylint: disable=W0123
+                        config[option] = eval(
+                            value[0])  # pylint: disable=W0123
                 except (NameError, SyntaxError):
                     config[option] = value[0]
 
@@ -116,9 +117,9 @@ def read_option_files(**config):
             config['fabric'] = {}
             for option, value in fabric_options.items():
                 try:
-                     # pylint: disable=W0123
+                    # pylint: disable=W0123
                     config['fabric'][option.split('_', 1)[1]] = eval(value[0])
-                     # pylint: enable=W0123
+                    # pylint: enable=W0123
                 except (NameError, SyntaxError):
                     config['fabric'][option.split('_', 1)[1]] = value[0]
     return config
@@ -188,7 +189,7 @@ class MySQLOptionsParser(SafeConfigParser):  # pylint: disable=R0901
 
         for file_ in files:
             try:
-                if file_ in files[index+1:]:
+                if file_ in files[index + 1:]:
                     raise ValueError("Same option file '{0}' occurring more "
                                      "than once in the list".format(file_))
                 with open(file_, 'r') as op_file:
@@ -201,9 +202,9 @@ class MySQLOptionsParser(SafeConfigParser):  # pylint: disable=R0901
                                 if entry in files:
                                     raise ValueError(err_msg.format(
                                         entry, file_))
-                                if (os.path.isfile(entry) and
-                                        entry.endswith(self.default_extension)):
-                                    files.insert(index+1, entry)
+                                if (os.path.isfile(entry) and entry.endswith(
+                                        self.default_extension)):
+                                    files.insert(index + 1, entry)
 
                         elif line.startswith('!include'):
                             _, filename = line.split(None, 1)
@@ -211,7 +212,7 @@ class MySQLOptionsParser(SafeConfigParser):  # pylint: disable=R0901
                             if filename in files:
                                 raise ValueError(err_msg.format(
                                     filename, file_))
-                            files.insert(index+1, filename)
+                            files.insert(index + 1, filename)
 
                     index += 1
 
@@ -301,7 +302,7 @@ class MySQLOptionsParser(SafeConfigParser):  # pylint: disable=R0901
                 options[key] = options[key][0]
         return options
 
-    def get_groups_as_dict_with_priority(self, *args): # pylint: disable=C0103
+    def get_groups_as_dict_with_priority(self, *args):  # pylint: disable=C0103
         """Returns options as dictionary of dictionaries.
 
         Returns options from all the groups specified as arguments. For each

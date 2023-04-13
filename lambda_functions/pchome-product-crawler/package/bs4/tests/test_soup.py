@@ -34,7 +34,8 @@ from . import (
     SoupTest,
 )
 import warnings
-    
+
+
 class TestConstructor(SoupTest):
 
     def test_short_unicode_input(self):
@@ -63,18 +64,23 @@ class TestConstructor(SoupTest):
                 self.cdata_list_attributes = []
                 self.preserve_whitespace_tags = []
                 self.string_containers = {}
+
             def initialize_soup(self, soup):
                 pass
+
             def feed(self, markup):
                 self.fed = markup
+
             def reset(self):
                 pass
+
             def ignore(self, ignore):
                 pass
             set_up_substitutions = can_be_empty_element = ignore
+
             def prepare_markup(self, *args, **kwargs):
                 yield "prepared markup", "original encoding", "declared encoding", "contains replacement characters"
-                
+
         kwargs = dict(
             var="value",
             # This is a deprecated BS3-era keyword argument, which
@@ -86,7 +92,7 @@ class TestConstructor(SoupTest):
         assert isinstance(soup.builder, Mock)
         assert dict(var="value") == soup.builder.called_with
         assert "prepared markup" == soup.builder.fed
-        
+
         # You can also instantiate the TreeBuilder yourself. In this
         # case, that specific object is used and any keyword arguments
         # to the BeautifulSoup constructor are ignored.
@@ -96,7 +102,8 @@ class TestConstructor(SoupTest):
                 '', builder=builder, ignored_value=True,
             )
         msg = str(w[0].message)
-        assert msg.startswith("Keyword arguments to the BeautifulSoup constructor will be ignored.")
+        assert msg.startswith(
+            "Keyword arguments to the BeautifulSoup constructor will be ignored.")
         assert builder == soup.builder
         assert kwargs == builder.called_with
 
@@ -112,13 +119,13 @@ class TestConstructor(SoupTest):
             # but feed() will reject both of them.
             yield markup, None, None, False
             yield markup, None, None, False
-            
 
         import re
         with pytest.raises(ParserRejectedMarkup) as exc_info:
             BeautifulSoup('', builder=Mock)
-        assert "The markup you provided was rejected by the parser. Trying a different parser or a different encoding may help." in str(exc_info.value)
-        
+        assert "The markup you provided was rejected by the parser. Trying a different parser or a different encoding may help." in str(
+            exc_info.value)
+
     def test_cdata_list_attributes(self):
         # Most attribute values are represented as scalars, but the
         # HTML standard says that some attributes, like 'class' have
@@ -134,7 +141,10 @@ class TestConstructor(SoupTest):
         # TreeBuilder takes an argument called 'multi_valued_attributes'  which lets
         # you customize or disable this. As always, you can customize the TreeBuilder
         # by passing in a keyword argument to the BeautifulSoup constructor.
-        soup = self.soup(markup, builder=default_builder, multi_valued_attributes=None)
+        soup = self.soup(
+            markup,
+            builder=default_builder,
+            multi_valued_attributes=None)
         assert " a class " == soup.a['class']
 
         # Here are two ways of saying that `id` is a multi-valued
@@ -143,7 +153,10 @@ class TestConstructor(SoupTest):
             with warnings.catch_warnings(record=True) as w:
                 # This will create a warning about not explicitly
                 # specifying a parser, but we'll ignore it.
-                soup = self.soup(markup, builder=None, multi_valued_attributes=switcheroo)
+                soup = self.soup(
+                    markup,
+                    builder=None,
+                    multi_valued_attributes=switcheroo)
             a = soup.a
             assert ["an", "id"] == a['id']
             assert " a class " == a['class']
@@ -159,10 +172,10 @@ class TestConstructor(SoupTest):
 
         class CommentPlus(Comment):
             pass
-        
+
         soup = self.soup(
             "<a><b>foo</b>bar</a><!--whee-->",
-            element_classes = {
+            element_classes={
                 Tag: TagPlus,
                 NavigableString: StringPlus,
                 Comment: CommentPlus,
@@ -187,7 +200,7 @@ class TestConstructor(SoupTest):
 
         soup = self.soup(
             "<div>Hello.<p>Here is <b>some <i>bolded</i></b> text",
-            string_containers = {
+            string_containers={
                 'b': BString,
                 'p': PString,
             }
@@ -195,7 +208,7 @@ class TestConstructor(SoupTest):
 
         # The string before the <p> tag is a regular NavigableString.
         assert isinstance(soup.div.contents[0], NavigableString)
-        
+
         # The string inside the <p> tag, but not inside the <i> tag,
         # is a PString.
         assert isinstance(soup.p.contents[0], PString)
@@ -224,11 +237,12 @@ class TestWarnings(SoupTest):
                 assert w.filename == __file__
                 return w
         raise Exception("%s warning not found in %r" % (cls, warnings))
-    
+
     def _assert_no_parser_specified(self, w):
         warning = self._assert_warning(w, GuessedAtParserWarning)
         message = str(warning.message)
-        assert message.startswith(BeautifulSoup.NO_PARSER_SPECIFIED_WARNING[:60])
+        assert message.startswith(
+            BeautifulSoup.NO_PARSER_SPECIFIED_WARNING[:60])
 
     def test_warning_if_no_parser_specified(self):
         with warnings.catch_warnings(record=True) as w:
@@ -307,7 +321,7 @@ class TestWarnings(SoupTest):
         )
         assert "looks more like a URL" in str(warning.message)
         assert url not in str(warning.message).encode("utf8")
-        
+
     def test_url_warning_with_unicode_url(self):
         url = "http://www.crummyunicode.com/"
         with warnings.catch_warnings(record=True) as warning_list:
@@ -325,13 +339,13 @@ class TestWarnings(SoupTest):
         # is issued.
         with warnings.catch_warnings(record=True) as warning_list:
             soup = self.soup(b"http://www.crummybytes.com/ is great")
-        assert not any("looks more like a URL" in str(w.message) 
+        assert not any("looks more like a URL" in str(w.message)
                        for w in warning_list)
 
     def test_url_warning_with_unicode_and_space(self):
         with warnings.catch_warnings(record=True) as warning_list:
             soup = self.soup("http://www.crummyunicode.com/ is great")
-        assert not any("looks more like a URL" in str(w.message) 
+        assert not any("looks more like a URL" in str(w.message)
                        for w in warning_list)
 
 
@@ -343,16 +357,17 @@ class TestSelectiveParsing(SoupTest):
         soup = self.soup(markup, parse_only=strainer)
         assert soup.encode() == b"<b>Yes</b><b>Yes <c>Yes</c></b>"
 
-        
+
 class TestNewTag(SoupTest):
     """Test the BeautifulSoup.new_tag() method."""
+
     def test_new_tag(self):
         soup = self.soup("")
         new_tag = soup.new_tag("foo", bar="baz", attrs={"name": "a name"})
         assert isinstance(new_tag, Tag)
         assert "foo" == new_tag.name
         assert dict(bar="baz", name="a name") == new_tag.attrs
-        assert None == new_tag.parent
+        assert None is new_tag.parent
 
     @pytest.mark.skipif(
         not LXML_PRESENT,
@@ -378,8 +393,10 @@ class TestNewTag(SoupTest):
         assert b"<br/>" == html_br.encode()
         assert b"<p></p>" == html_p.encode()
 
+
 class TestNewString(SoupTest):
     """Test the BeautifulSoup.new_string() method."""
+
     def test_new_string_creates_navigablestring(self):
         soup = self.soup("")
         s = soup.new_string("foo")
@@ -401,7 +418,7 @@ class TestPickle(SoupTest):
         pickled = pickle.dumps(soup)
         unpickled = pickle.loads(pickled)
         assert "some markup" == unpickled.a.string
-        
+
     def test_pickle_with_no_builder(self):
         # We had a bug that prevented pickling from working if
         # the builder wasn't set.
@@ -410,6 +427,7 @@ class TestPickle(SoupTest):
         pickled = pickle.dumps(soup)
         unpickled = pickle.loads(pickled)
         assert "some markup" == unpickled.string
+
 
 class TestEncodingConversion(SoupTest):
     # Test Beautiful Soup's ability to decode and encode from various
@@ -447,7 +465,7 @@ class TestEncodingConversion(SoupTest):
         soup_from_unicode = self.soup(self.unicode_data)
         assert soup_from_unicode.decode() == self.unicode_data
         assert soup_from_unicode.foo.string == 'Sacr\xe9 bleu!'
-        assert soup_from_unicode.original_encoding == None
+        assert soup_from_unicode.original_encoding is None
 
     def test_utf8_in_unicode_out(self):
         # UTF-8 input is converted to Unicode. The original_encoding

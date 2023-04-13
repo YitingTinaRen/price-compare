@@ -12,9 +12,11 @@ if django.VERSION < (1, 7):
 else:
     from django.db.backends.utils import truncate_name
 
+
 class DatabaseCreation(BaseDatabaseCreation):
     """Maps Django Field object with MySQL data types
     """
+
     def __init__(self, connection):
         super(DatabaseCreation, self).__init__(connection)
 
@@ -135,7 +137,7 @@ class DatabaseCreation(BaseDatabaseCreation):
         return [
             style.SQL_KEYWORD("DROP INDEX") + " " +
             style.SQL_TABLE(qn(truncate_name(index_name,
-                self.connection.ops.max_name_length()))) + " " +
+                                             self.connection.ops.max_name_length()))) + " " +
             style.SQL_KEYWORD("ON") + " " +
             style.SQL_TABLE(qn(model._meta.db_table)) + ";",
         ]

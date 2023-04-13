@@ -42,7 +42,9 @@ def query_yes_no(question: str, default: str = "yes") -> bool:
         elif choice in valid:
             return valid[choice]
         else:
-            sys.stdout.write("Please respond with 'yes' or 'no' " "(or 'y' or 'n').\n")
+            sys.stdout.write(
+                "Please respond with 'yes' or 'no' "
+                "(or 'y' or 'n').\n")
 
 
 def cli_detect(argv: Optional[List[str]] = None) -> int:
@@ -57,9 +59,8 @@ def cli_detect(argv: Optional[List[str]] = None) -> int:
         "Normalize text to unicode."
     )
 
-    parser.add_argument(
-        "files", type=argparse.FileType("rb"), nargs="+", help="File(s) to be analysed"
-    )
+    parser.add_argument("files", type=argparse.FileType(
+        "rb"), nargs="+", help="File(s) to be analysed")
     parser.add_argument(
         "-v",
         "--verbose",
@@ -148,7 +149,10 @@ def cli_detect(argv: Optional[List[str]] = None) -> int:
 
     for my_file in args.files:
 
-        matches = from_fp(my_file, threshold=args.threshold, explain=args.verbose)
+        matches = from_fp(
+            my_file,
+            threshold=args.threshold,
+            explain=args.verbose)
 
         best_guess = matches.best()
 
@@ -226,10 +230,7 @@ def cli_detect(argv: Optional[List[str]] = None) -> int:
                 if best_guess.encoding.startswith("utf") is True:
                     print(
                         '"{}" file does not need to be normalized, as it already came from unicode.'.format(
-                            my_file.name
-                        ),
-                        file=sys.stderr,
-                    )
+                            my_file.name), file=sys.stderr, )
                     if my_file.closed is False:
                         my_file.close()
                     continue

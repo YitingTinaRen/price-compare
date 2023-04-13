@@ -178,7 +178,8 @@ class SuspiciousDuplicateAccentPlugin(MessDetectorPlugin):
             if character.isupper() and self._last_latin_character.isupper():
                 self._successive_count += 1
             # Worse if its the same char duplicated with different accent.
-            if remove_accent(character) == remove_accent(self._last_latin_character):
+            if remove_accent(character) == remove_accent(
+                    self._last_latin_character):
                 self._successive_count += 1
         self._last_latin_character = character
 
@@ -219,7 +220,8 @@ class SuspiciousRange(MessDetectorPlugin):
             self._last_printable_seen = character
             return
 
-        unicode_range_a: Optional[str] = unicode_range(self._last_printable_seen)
+        unicode_range_a: Optional[str] = unicode_range(
+            self._last_printable_seen)
         unicode_range_b: Optional[str] = unicode_range(character)
 
         if is_suspiciously_successive_range(unicode_range_a, unicode_range_b):
@@ -283,9 +285,8 @@ class SuperWeirdWordPlugin(MessDetectorPlugin):
             return
         if not self._buffer:
             return
-        if (
-            character.isspace() or is_punctuation(character) or is_separator(character)
-        ) and self._buffer:
+        if (character.isspace() or is_punctuation(character)
+                or is_separator(character)) and self._buffer:
             self._word_count += 1
             buffer_length: int = len(self._buffer)
 
@@ -295,8 +296,10 @@ class SuperWeirdWordPlugin(MessDetectorPlugin):
                 if self._buffer_accent_count / buffer_length > 0.34:
                     self._is_current_word_bad = True
                 # Word/Buffer ending with a upper case accentuated letter are so rare,
-                # that we will consider them all as suspicious. Same weight as foreign_long suspicious.
-                if is_accentuated(self._buffer[-1]) and self._buffer[-1].isupper():
+                # that we will consider them all as suspicious. Same weight as
+                # foreign_long suspicious.
+                if is_accentuated(
+                        self._buffer[-1]) and self._buffer[-1].isupper():
                     self._foreign_long_count += 1
                     self._is_current_word_bad = True
             if buffer_length >= 24 and self._foreign_long_watch:
@@ -555,11 +558,9 @@ def mess_ratio(
         logger = getLogger("charset_normalizer")
 
         logger.log(
-            TRACE,
-            "Mess-detector extended-analysis start. "
+            TRACE, "Mess-detector extended-analysis start. "
             f"intermediary_mean_mess_ratio_calc={intermediary_mean_mess_ratio_calc} mean_mess_ratio={mean_mess_ratio} "
-            f"maximum_threshold={maximum_threshold}",
-        )
+            f"maximum_threshold={maximum_threshold}", )
 
         if len(decoded_sequence) > 16:
             logger.log(TRACE, f"Starting with: {decoded_sequence[:16]}")

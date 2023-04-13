@@ -43,20 +43,20 @@ class db:
 
     def SearchProductbyCategory(CateLevel, CateName, ProdName):
         sql = """
-            select P.ProductID, P.ProductName, P.CurrentPrice, P.ProductURL,C.CategoryName, P.EnglishWords, P.ChineseWords 
-            from MomoProdCategory as C 
-            inner join MomoProducts as P 
-            on C.ProductID=P.ProductID 
-            where C.CategoryLevel=%s and C.CategoryName like %s and P.ProductName like %s 
+            select P.ProductID, P.ProductName, P.CurrentPrice, P.ProductURL,C.CategoryName, P.EnglishWords, P.ChineseWords
+            from MomoProdCategory as C
+            inner join MomoProducts as P
+            on C.ProductID=P.ProductID
+            where C.CategoryLevel=%s and C.CategoryName like %s and P.ProductName like %s
             ;
             """
-        val = (CateLevel, "%"+CateName+"%", "%"+ProdName+"%",)
+        val = (CateLevel, "%" + CateName + "%", "%" + ProdName + "%",)
         result = db.checkAllData(sql, val)
         return result
 
 
 def send2SQS(data):
-    randNum = int(1000*random.random() % 1000)
+    randNum = int(1000 * random.random() % 1000)
     client = boto3.client('sqs')
     message = client.send_message(
         QueueUrl=os.environ['sqsUrl'],
@@ -87,11 +87,13 @@ def lambda_handler(event, context):
     )
     mydb.close()
 
-    match_condition=json.loads(event['Records'][0]['body'])
+    match_condition = json.loads(event['Records'][0]['body'])
     print(match_condition)
 
     result = db.SearchProductbyCategory(
-        match_condition['CateLevel'], match_condition['CateName'], match_condition['ProdName'])
+        match_condition['CateLevel'],
+        match_condition['CateName'],
+        match_condition['ProdName'])
 
     for j in range(len(result)):
         print(

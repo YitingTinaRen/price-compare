@@ -1,4 +1,5 @@
 # Use of this source code is governed by the MIT license.
+from . import _htmlparser
 __license__ = "MIT"
 
 from collections import defaultdict
@@ -22,7 +23,7 @@ __all__ = [
     'SAXTreeBuilder',
     'TreeBuilder',
     'TreeBuilderRegistry',
-    ]
+]
 
 # Some useful features for a TreeBuilder to have.
 FAST = 'fast'
@@ -31,6 +32,7 @@ STRICT = 'strict'
 XML = 'xml'
 HTML = 'html'
 HTML_5 = 'html5'
+
 
 class XMLParsedAsHTMLWarning(UserWarning):
     """The warning issued when an HTML parser is used to parse
@@ -43,7 +45,7 @@ class TreeBuilderRegistry(object):
     """A way of looking up TreeBuilder subclasses by their name or by desired
     features.
     """
-    
+
     def __init__(self):
         self.builders_for_feature = defaultdict(list)
         self.builders = []
@@ -104,9 +106,11 @@ class TreeBuilderRegistry(object):
                 return candidate
         return None
 
+
 # The BeautifulSoup class will take feature lists from developers and use them
 # to look up builders in this registry.
 builder_registry = TreeBuilderRegistry()
+
 
 class TreeBuilder(object):
     """Turn a textual document into a Beautiful Soup object tree."""
@@ -117,9 +121,9 @@ class TreeBuilder(object):
 
     is_xml = False
     picklable = False
-    empty_element_tags = None # A tag will be considered an empty-element
-                              # tag when and only when it has no contents.
-    
+    empty_element_tags = None  # A tag will be considered an empty-element
+    # tag when and only when it has no contents.
+
     # A value for these tag/attribute combinations is a space- or
     # comma-separated list of CDATA, rather than a single CDATA.
     DEFAULT_CDATA_LIST_ATTRIBUTES = defaultdict(list)
@@ -130,17 +134,17 @@ class TreeBuilder(object):
     # The textual contents of tags with these names should be
     # instantiated with some class other than NavigableString.
     DEFAULT_STRING_CONTAINERS = {}
-    
+
     USE_DEFAULT = object()
 
     # Most parsers don't keep track of line numbers.
     TRACKS_LINE_NUMBERS = False
-    
+
     def __init__(self, multi_valued_attributes=USE_DEFAULT,
                  preserve_whitespace_tags=USE_DEFAULT,
                  store_line_numbers=USE_DEFAULT,
                  string_containers=USE_DEFAULT,
-    ):
+                 ):
         """Constructor.
 
         :param multi_valued_attributes: If this is set to None, the
@@ -168,7 +172,7 @@ class TreeBuilder(object):
          line numbers and positions of the original markup, that
          information will, by default, be stored in each corresponding
          `Tag` object. You can turn this off by passing
-         store_line_numbers=False. If the parser you're using doesn't 
+         store_line_numbers=False. If the parser you're using doesn't
          keep track of this information, then setting store_line_numbers=True
          will do nothing.
         """
@@ -181,11 +185,11 @@ class TreeBuilder(object):
         self.preserve_whitespace_tags = preserve_whitespace_tags
         if store_line_numbers == self.USE_DEFAULT:
             store_line_numbers = self.TRACKS_LINE_NUMBERS
-        self.store_line_numbers = store_line_numbers 
+        self.store_line_numbers = store_line_numbers
         if string_containers == self.USE_DEFAULT:
             string_containers = self.DEFAULT_STRING_CONTAINERS
         self.string_containers = string_containers
-        
+
     def initialize_soup(self, soup):
         """The BeautifulSoup object has been initialized and is now
         being associated with the TreeBuilder.
@@ -193,7 +197,7 @@ class TreeBuilder(object):
         :param soup: A BeautifulSoup object.
         """
         self.soup = soup
-        
+
     def reset(self):
         """Do any work necessary to reset the underlying parser
         for a new document.
@@ -224,7 +228,7 @@ class TreeBuilder(object):
         if self.empty_element_tags is None:
             return True
         return tag_name in self.empty_element_tags
-    
+
     def feed(self, markup):
         """Run some incoming markup through some parsing process,
         populating the `BeautifulSoup` object in self.soup.
@@ -236,8 +240,12 @@ class TreeBuilder(object):
         """
         raise NotImplementedError()
 
-    def prepare_markup(self, markup, user_specified_encoding=None,
-                       document_declared_encoding=None, exclude_encodings=None):
+    def prepare_markup(
+            self,
+            markup,
+            user_specified_encoding=None,
+            document_declared_encoding=None,
+            exclude_encodings=None):
         """Run any preliminary steps necessary to make incoming markup
         acceptable to the parser.
 
@@ -254,7 +262,7 @@ class TreeBuilder(object):
           has undergone character replacement)
 
          Each 4-tuple represents a strategy for converting the
-         document to Unicode and parsing it. Each strategy will be tried 
+         document to Unicode and parsing it. Each strategy will be tried
          in turn.
 
          By default, the only strategy is to parse the markup
@@ -281,7 +289,7 @@ class TreeBuilder(object):
         return fragment
 
     def set_up_substitutions(self, tag):
-        """Set up any substitutions that will need to be performed on 
+        """Set up any substitutions that will need to be performed on
         a `Tag` when it's output as a string.
 
         By default, this does nothing. See `HTMLTreeBuilder` for a
@@ -312,7 +320,8 @@ class TreeBuilder(object):
             tag_specific = self.cdata_list_attributes.get(
                 tag_name.lower(), None)
             for attr in list(attrs.keys()):
-                if attr in universal or (tag_specific and attr in tag_specific):
+                if attr in universal or (
+                        tag_specific and attr in tag_specific):
                     # We have a "class"-type attribute whose string
                     # value is a whitespace-separated list of
                     # values. Split it into a list.
@@ -329,7 +338,8 @@ class TreeBuilder(object):
                         values = value
                     attrs[attr] = values
         return attrs
-    
+
+
 class SAXTreeBuilder(TreeBuilder):
     """A Beautiful Soup treebuilder that listens for SAX events.
 
@@ -345,11 +355,11 @@ class SAXTreeBuilder(TreeBuilder):
 
     def startElement(self, name, attrs):
         attrs = dict((key[1], value) for key, value in list(attrs.items()))
-        #print("Start %s, %r" % (name, attrs))
+        # print("Start %s, %r" % (name, attrs))
         self.soup.handle_starttag(name, attrs)
 
     def endElement(self, name):
-        #print("End %s" % name)
+        # print("End %s" % name)
         self.soup.handle_endtag(name)
 
     def startElementNS(self, nsTuple, nodeName, attrs):
@@ -359,7 +369,7 @@ class SAXTreeBuilder(TreeBuilder):
     def endElementNS(self, nsTuple, nodeName):
         # Throw away (ns, nodeName) for now.
         self.endElement(nodeName)
-        #handler.endElementNS((ns, node.nodeName), node.nodeName)
+        # handler.endElementNS((ns, node.nodeName), node.nodeName)
 
     def startPrefixMapping(self, prefix, nodeValue):
         # Ignore the prefix for now.
@@ -389,7 +399,7 @@ class HTMLTreeBuilder(TreeBuilder):
     empty_element_tags = set([
         # These are from HTML5.
         'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'keygen', 'link', 'menuitem', 'meta', 'param', 'source', 'track', 'wbr',
-        
+
         # These are from earlier versions of HTML and are removed in HTML5.
         'basefont', 'bgsound', 'command', 'frame', 'image', 'isindex', 'nextid', 'spacer'
     ])
@@ -398,7 +408,41 @@ class HTMLTreeBuilder(TreeBuilder):
     # Soup does not treat these elements differently from other elements,
     # but it may do so eventually, and this information is available if
     # you need to use it.
-    block_elements = set(["address", "article", "aside", "blockquote", "canvas", "dd", "div", "dl", "dt", "fieldset", "figcaption", "figure", "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "header", "hr", "li", "main", "nav", "noscript", "ol", "output", "p", "pre", "section", "table", "tfoot", "ul", "video"])
+    block_elements = set(["address",
+                          "article",
+                          "aside",
+                          "blockquote",
+                          "canvas",
+                          "dd",
+                          "div",
+                          "dl",
+                          "dt",
+                          "fieldset",
+                          "figcaption",
+                          "figure",
+                          "footer",
+                          "form",
+                          "h1",
+                          "h2",
+                          "h3",
+                          "h4",
+                          "h5",
+                          "h6",
+                          "header",
+                          "hr",
+                          "li",
+                          "main",
+                          "nav",
+                          "noscript",
+                          "ol",
+                          "output",
+                          "p",
+                          "pre",
+                          "section",
+                          "table",
+                          "tfoot",
+                          "ul",
+                          "video"])
 
     # These HTML tags need special treatment so they can be
     # represented by a string class other than NavigableString.
@@ -417,13 +461,13 @@ class HTMLTreeBuilder(TreeBuilder):
     # TODO: Arguably <noscript> could go here but it seems
     # qualitatively different from the other tags.
     DEFAULT_STRING_CONTAINERS = {
-        'rt' : RubyTextString,
-        'rp' : RubyParenthesisString,
+        'rt': RubyTextString,
+        'rp': RubyParenthesisString,
         'style': Stylesheet,
         'script': Script,
         'template': TemplateString,
-    }    
-    
+    }
+
     # The HTML standard defines these attributes as containing a
     # space-separated list of values, not a single value. That is,
     # class="foo bar" means that the 'class' attribute has two values,
@@ -432,21 +476,21 @@ class HTMLTreeBuilder(TreeBuilder):
     # a list of values if possible. Upon output, the list will be
     # converted back into a string.
     DEFAULT_CDATA_LIST_ATTRIBUTES = {
-        "*" : ['class', 'accesskey', 'dropzone'],
-        "a" : ['rel', 'rev'],
-        "link" :  ['rel', 'rev'],
-        "td" : ["headers"],
-        "th" : ["headers"],
-        "td" : ["headers"],
-        "form" : ["accept-charset"],
-        "object" : ["archive"],
+        "*": ['class', 'accesskey', 'dropzone'],
+        "a": ['rel', 'rev'],
+        "link": ['rel', 'rev'],
+        "td": ["headers"],
+        "th": ["headers"],
+        "td": ["headers"],
+        "form": ["accept-charset"],
+        "object": ["archive"],
 
         # These are HTML5 specific, as are *.accesskey and *.dropzone above.
-        "area" : ["rel"],
-        "icon" : ["sizes"],
-        "iframe" : ["sandbox"],
-        "output" : ["for"],
-        }
+        "area": ["rel"],
+        "icon": ["sizes"],
+        "iframe": ["sandbox"],
+        "output": ["for"],
+    }
 
     DEFAULT_PRESERVE_WHITESPACE_TAGS = set(['pre', 'textarea'])
 
@@ -493,6 +537,7 @@ class HTMLTreeBuilder(TreeBuilder):
 
         return (meta_encoding is not None)
 
+
 class DetectsXMLParsedAsHTML(object):
     """A mixin class for any class (a TreeBuilder, or some class used by a
     TreeBuilder) that's in a position to detect whether an XML
@@ -512,7 +557,7 @@ class DetectsXMLParsedAsHTML(object):
 
     XML_PREFIX = '<?xml'
     XML_PREFIX_B = b'<?xml'
-    
+
     @classmethod
     def warn_if_markup_looks_like_xml(cls, markup):
         """Perform a check on some markup to see if it looks like XML
@@ -530,11 +575,11 @@ class DetectsXMLParsedAsHTML(object):
         else:
             prefix = cls.XML_PREFIX
             looks_like_html = cls.LOOKS_LIKE_HTML
-        
+
         if (markup is not None
-            and markup.startswith(prefix)
-            and not looks_like_html.search(markup[:500])
-        ):
+                and markup.startswith(prefix)
+                and not looks_like_html.search(markup[:500])
+                ):
             cls._warn()
             return True
         return False
@@ -545,18 +590,18 @@ class DetectsXMLParsedAsHTML(object):
         warnings.warn(
             XMLParsedAsHTMLWarning.MESSAGE, XMLParsedAsHTMLWarning
         )
-        
+
     def _initialize_xml_detector(self):
         """Call this method before parsing a document."""
         self._first_processing_instruction = None
         self._root_tag = None
-       
+
     def _document_might_be_xml(self, processing_instruction):
         """Call this method when encountering an XML declaration, or a
         "processing instruction" that might be an XML declaration.
         """
         if (self._first_processing_instruction is not None
-            or self._root_tag is not None):
+                or self._root_tag is not None):
             # The document has already started. Don't bother checking
             # anymore.
             return
@@ -565,7 +610,7 @@ class DetectsXMLParsedAsHTML(object):
 
         # We won't know until we encounter the first tag whether or
         # not this is actually a problem.
-        
+
     def _root_tag_encountered(self, name):
         """Call this when you encounter the document's root tag.
 
@@ -579,13 +624,13 @@ class DetectsXMLParsedAsHTML(object):
 
         self._root_tag = name
         if (name != 'html' and self._first_processing_instruction is not None
-            and self._first_processing_instruction.lower().startswith('xml ')):
+                and self._first_processing_instruction.lower().startswith('xml ')):
             # We encountered an XML declaration and then a tag other
             # than 'html'. This is a reliable indicator that a
             # non-XHTML document is being parsed as XML.
             self._warn()
 
-    
+
 def register_treebuilders_from(module):
     """Copy TreeBuilders from the given module into this module."""
     this_module = sys.modules[__name__]
@@ -598,10 +643,12 @@ def register_treebuilders_from(module):
             # Register the builder while we're at it.
             this_module.builder_registry.register(obj)
 
+
 class ParserRejectedMarkup(Exception):
     """An Exception to be raised when the underlying parser simply
     refuses to parse the given markup.
     """
+
     def __init__(self, message_or_exception):
         """Explain why the parser rejected the given markup, either
         with a textual explanation or another exception.
@@ -610,12 +657,12 @@ class ParserRejectedMarkup(Exception):
             e = message_or_exception
             message_or_exception = "%s: %s" % (e.__class__.__name__, str(e))
         super(ParserRejectedMarkup, self).__init__(message_or_exception)
-            
+
+
 # Builders are registered in reverse order of priority, so that custom
 # builder registrations will take precedence. In general, we want lxml
 # to take precedence over html5lib, because it's faster. And we only
 # want to use HTMLParser as a last resort.
-from . import _htmlparser
 register_treebuilders_from(_htmlparser)
 try:
     from . import _html5lib
