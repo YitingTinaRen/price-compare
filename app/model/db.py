@@ -4,20 +4,21 @@ from mysql.connector import errorcode
 
 # MySQL Database config
 dbconfig = {
-	"host": config.DB_HOST,
-	"user": config.DB_USER,
-	"password": config.DB_PASSWORD,
-	"database": config.DB_DB
+    "host": config.DB_HOST,
+    "user": config.DB_USER,
+    "password": config.DB_PASSWORD,
+    "database": config.DB_DB
 }
 
 
 # Create MySQL pooling
 mydb = mysql.connector.connect(
-	pool_name=config.DB_POOL_NAME,
-	pool_size=config.DB_POOL_SIZE,
-	**dbconfig
+    pool_name=config.DB_POOL_NAME,
+    pool_size=config.DB_POOL_SIZE,
+    **dbconfig
 )
 mydb.close()
+
 
 class db:
     def checkAllData(sql, val=()):
@@ -58,32 +59,32 @@ class db:
             return False
 
     def getResult(Category, Page):
-        sql="""
+        sql = """
             select M.ProductID, M.ProductName, M.CurrentPrice, M.ProductURL,
             P.ProductID as PCHProductID, P.ProductName as PCHProductName,P.CurrentPrice as PCHCurrentPrice, P.ProductURL as PCHProductURL,
             substring_index(group_concat(Pic.PicURL order by PCHPicID separator ','), ',',1) as PicURL
-            from MomoProducts as M 
-            inner join PCHomeProducts as P 
-            on M.PCHProductID=P.ProductID 
+            from MomoProducts as M
+            inner join PCHomeProducts as P
+            on M.PCHProductID=P.ProductID
             inner join MomoPic as Pic
             on M.ProductID=Pic.ProductID
             where M.MyCategory=%s and M.HasMatching =TRUE
             group by Pic.PicURL
             Limit 20 offset %s
         """
-        val=(Category,Page,)
-        result = db.checkAllData(sql,val)
+        val = (Category, Page,)
+        result = db.checkAllData(sql, val)
         return result
 
-    def getResult4Member(Category,Page,memberID):
-        sql="""
+    def getResult4Member(Category, Page, memberID):
+        sql = """
             select M.ProductID, M.ProductName, M.CurrentPrice, M.ProductURL,
             P.ProductID as PCHProductID, P.ProductName as PCHProductName,P.CurrentPrice as PCHCurrentPrice, P.ProductURL as PCHProductURL,
             substring_index(group_concat(Pic.PicURL order by PCHPicID separator ','), ',',1) as PicURL,
             T.TrackingID, T.MemberID
-            from MomoProducts as M 
-            inner join PCHomeProducts as P 
-            on M.PCHProductID=P.ProductID 
+            from MomoProducts as M
+            inner join PCHomeProducts as P
+            on M.PCHProductID=P.ProductID
             inner join MomoPic as Pic
             on M.ProductID=Pic.ProductID
             left join (select MomoProductID, MemberID, TrackingID from ProductTracking where MemberID =%s) as T
@@ -97,14 +98,14 @@ class db:
         return result
 
     def getMomoBrand(Category):
-        sql="""
+        sql = """
             select ProductName
             from MomoProducts
             where MyCategory = %s
             and HasMatching=TRUE
         """
 
-        val=(Category,)
+        val = (Category,)
         result = db.checkAllData(sql, val)
         return result
 
@@ -113,9 +114,9 @@ class db:
             select M.ProductID, M.ProductName, M.CurrentPrice, M.ProductURL,
             P.ProductID as PCHProductID, P.ProductName as PCHProductName,P.CurrentPrice as PCHCurrentPrice, P.ProductURL as PCHProductURL,
             substring_index(group_concat(Pic.PicURL order by PCHPicID separator ','), ',',1) as PicURL
-            from MomoProducts as M 
-            inner join PCHomeProducts as P 
-            on M.PCHProductID=P.ProductID 
+            from MomoProducts as M
+            inner join PCHomeProducts as P
+            on M.PCHProductID=P.ProductID
             inner join MomoPic as Pic
             on M.ProductID=Pic.ProductID
             where M.MyCategory=%s and M.HasMatching =TRUE and M.ProductName like %s
@@ -123,19 +124,19 @@ class db:
             Limit 20 offset %s
         """
 
-        val = (Category, '%'+Brand+'%',Page ,)
+        val = (Category, '%' + Brand + '%', Page,)
         result = db.checkAllData(sql, val)
         return result
-    
-    def getResult_Brand4member(Category, Page, Brand,memberID):
+
+    def getResult_Brand4member(Category, Page, Brand, memberID):
         sql = """
             select M.ProductID, M.ProductName, M.CurrentPrice, M.ProductURL,
             P.ProductID as PCHProductID, P.ProductName as PCHProductName,P.CurrentPrice as PCHCurrentPrice, P.ProductURL as PCHProductURL,
             substring_index(group_concat(Pic.PicURL order by PCHPicID separator ','), ',',1) as PicURL,
             T.TrackingID, T.MemberID
-            from MomoProducts as M 
-            inner join PCHomeProducts as P 
-            on M.PCHProductID=P.ProductID 
+            from MomoProducts as M
+            inner join PCHomeProducts as P
+            on M.PCHProductID=P.ProductID
             inner join MomoPic as Pic
             on M.ProductID=Pic.ProductID
             left join (select MomoProductID, MemberID, TrackingID from ProductTracking where MemberID =%s) as T
@@ -145,31 +146,31 @@ class db:
             Limit 20 offset %s
         """
 
-        val = (memberID, Category, '%'+Brand+'%', Page,)
+        val = (memberID, Category, '%' + Brand + '%', Page,)
         result = db.checkAllData(sql, val)
         return result
-    
+
     def checkMemberExist(email):
-        sql="""
+        sql = """
             select MemberID,Name,Email, date_format(TokenValidDate,'%Y-%m-%d') as TokenValidDate, LineToken
             from member
             where Email=%s
         """
-        val=(email,)
+        val = (email,)
         result = db.checkOneData(sql, val)
         return result
 
-    def registerNewUser(Name, Picture, Email,Token):
-        sql="""
+    def registerNewUser(Name, Picture, Email, Token):
+        sql = """
             insert into member (Name, Picture, Email, TokenValidDate, LineToken)
             values(%s, %s, %s, date_add(current_date, interval 29 day), %s)
         """
-        val=(Name, Picture, Email,Token,)
-        result=db.writeData(sql,val)
+        val = (Name, Picture, Email, Token,)
+        result = db.writeData(sql, val)
         return result
-    
-    def updateUserInfo(Name,Picture, Email, Token):
-        sql="""
+
+    def updateUserInfo(Name, Picture, Email, Token):
+        sql = """
             update member
             set Name=%s,
             Picture=%s,
@@ -177,12 +178,12 @@ class db:
             Token=%s
             where Email=%s
         """
-        val=(Name,Picture,Token,Email)
-        result=db.writeData(sql,val)
+        val = (Name, Picture, Token, Email)
+        result = db.writeData(sql, val)
         return result
 
     def getPCHPriceHistory(ID):
-        sql="""
+        sql = """
             select DATE_FORMAT(STR_TO_DATE(CONCAT(W.WeekNum, '1'), '%X%V%w'),'%Y-%m-%d') AS Date, MIN(W.Min_Price) as Price, W.ProductID
             from PCHWeekly_Price as W
             where W.ProductID=%s
@@ -195,8 +196,8 @@ class db:
             where ProductID=%s)
             order by Date;
         """
-        val=(ID,ID,ID,)
-        result=db.checkAllData(sql,val)
+        val = (ID, ID, ID,)
+        result = db.checkAllData(sql, val)
         return result
 
     def getMomoPriceHistory(ID):
@@ -213,96 +214,101 @@ class db:
             where ProductID=%s)
             order by Date;
         """
-        val = (ID,ID,ID,)
+        val = (ID, ID, ID,)
         result = db.checkAllData(sql, val)
         return result
-    
-    def TrackProduct(MemberID, MomoProductID, PCHProductID, TargetPrice, Notify):
-        sql="""
+
+    def TrackProduct(
+            MemberID,
+            MomoProductID,
+            PCHProductID,
+            TargetPrice,
+            Notify):
+        sql = """
             insert into ProductTracking (MemberID,MomoProductID, PCHProductID, TargetPrice, NotifyBelowTarget)
             values(%s, %s, %s, %s,%s)
         """
         val = (MemberID, MomoProductID, PCHProductID, TargetPrice, Notify,)
-        result=db.writeData(sql,val)
+        result = db.writeData(sql, val)
         return result
-    
+
     def UnTrackProduct(MomoProductID, PCHProductID, MemberID):
         sql = """
-            delete from ProductTracking 
+            delete from ProductTracking
             where MomoProductID =%s and PCHProductID=%s and MemberID=%s
         """
         val = (MomoProductID, PCHProductID, MemberID)
         result = db.writeData(sql, val)
         return result
-    
-    def GetMemberTrackingProduct(MemberID,Page):
+
+    def GetMemberTrackingProduct(MemberID, Page):
         sql = """
             select M.ProductID, M.ProductName, M.CurrentPrice, M.ProductURL,
             P.ProductID as PCHProductID, P.ProductName as PCHProductName,P.CurrentPrice as PCHCurrentPrice, P.ProductURL as PCHProductURL,
             substring_index(group_concat(Pic.PicURL order by PCHPicID separator ','), ',',1) as PicURL,
             T.TrackingID, T.MemberID, T.NotifyBelowTarget, T.TargetPrice,
             Mem.Name, Mem.Email, Mem.Picture as ProfilePic
-            from MomoProducts as M 
-            inner join PCHomeProducts as P 
-            on M.PCHProductID=P.ProductID 
+            from MomoProducts as M
+            inner join PCHomeProducts as P
+            on M.PCHProductID=P.ProductID
             inner join MomoPic as Pic
             on M.ProductID=Pic.ProductID
             right join (select MomoProductID, MemberID, TrackingID, NotifyBelowTarget, TargetPrice from ProductTracking where MemberID =%s) as T
             on M.ProductID=T.MomoProductID
             inner join member as Mem
             on Mem.MemberID=T.MemberID
-            where M.HasMatching =TRUE  
+            where M.HasMatching =TRUE
             group by Pic.PicURL
             Limit 20 offset %s;
         """
-        val = (MemberID,Page,)
+        val = (MemberID, Page,)
         result = db.checkAllData(sql, val)
         return result
-    
+
     def getMemberInfoOnly(MemberID):
-        sql="""
+        sql = """
             select Name, Picture as ProfilePic, Email
             from member
             where MemberID=%s
         """
-        val=(MemberID,)
-        result=db.checkOneData(sql,val)
+        val = (MemberID,)
+        result = db.checkOneData(sql, val)
         return result
 
     def setNotify(MemberID, TrackingID, TargetPrice):
-        sql="""
+        sql = """
             update ProductTracking
             set
             TargetPrice =%s,
             NotifyBelowTarget=TRUE
             where MemberID=%s and TrackingID=%s
         """
-        val=(TargetPrice, MemberID, TrackingID,)
-        result=db.writeData(sql,val)
+        val = (TargetPrice, MemberID, TrackingID,)
+        result = db.writeData(sql, val)
         return result
 
-    def cancelNotify(MemberID,TrackingID):
-        sql="""
+    def cancelNotify(MemberID, TrackingID):
+        sql = """
             update ProductTracking
             set TargetPrice=NULL,
             NotifyBelowTarget=FALSE
             where MemberID=%s and TrackingID=%s
         """
-        val=(MemberID, TrackingID,)
-        result=db.writeData(sql,val)
+        val = (MemberID, TrackingID,)
+        result = db.writeData(sql, val)
         return result
 
-    def checkTargetPrice(TargetPrice,TrackingID):
-        sql="""
+    def checkTargetPrice(TargetPrice, TrackingID):
+        sql = """
             select M.CurrentPrice, P.CurrentPrice
             from ProductTracking as PT
             inner join MomoProducts as M
             on PT.MomoProductID=M.ProductID
             inner join PCHomeProducts as P
             on PT.PCHProductID=P.ProductID
-            where PT.TrackingID=%s 
+            where PT.TrackingID=%s
             and (M.CurrentPrice <= %s or P.CurrentPrice <= %s)
         """
-        val=(TrackingID, TargetPrice, TargetPrice,)
-        result=db.checkAllData(sql,val)
+        val = (TrackingID, TargetPrice, TargetPrice,)
+        result = db.checkAllData(sql, val)
         return result
