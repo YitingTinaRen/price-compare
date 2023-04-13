@@ -32,7 +32,7 @@ def lambda_handler(event, context):
 
     addListProd = []
     cursor = mydb.cursor()
-    for i in range(len(prods)-1):
+    for i in range(len(prods) - 1):
         prod = {"Id": prods[i]['Id'], "Price": prods[i]["Price"]}
         addListProd.append(prod)
 

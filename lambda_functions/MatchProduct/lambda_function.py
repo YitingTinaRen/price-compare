@@ -55,7 +55,7 @@ class db:
                 l.append(ProdName)
             else:
                 l.append(ProdName[:ProdName.index(' ')])
-                l.append(ProdName[ProdName.index(' ')+1:])
+                l.append(ProdName[ProdName.index(' ') + 1:])
 
             ProdName = l
         else:
@@ -66,19 +66,19 @@ class db:
                 select ProductID, ProductName,ProductNick, CurrentPrice, ProductURL, EnglishWords,ChineseWords,
                 match(EnglishWords) against(%s in boolean mode) as rel1,
                 match(ChineseWords) against(%s in boolean mode) as rel2
-                from PCHomeProducts 
+                from PCHomeProducts
                 where match(EnglishWords) against(%s in boolean mode)
                 and match(ChineseWords) against(%s in boolean mode) >10
-                and ProductID 
-                in (select ProductID 
-                    from PCHomeProducts 
+                and ProductID
+                in (select ProductID
+                    from PCHomeProducts
                     where ProductName like %s
                         or ProductNick like %s
                     )
                 ;
                 """
         val = (English, Chinese, English, Chinese,
-               '%'+ProdName[0]+'%', '%'+ProdName[0]+'%',)
+               '%' + ProdName[0] + '%', '%' + ProdName[0] + '%',)
         result = db.checkAllData(sql, val)
         if result:
             Eng_point = []
@@ -91,12 +91,12 @@ class db:
                 Eng_point.append(len(list(set(result[i]['EnglishWords'].lower().split(
                     ' ')).intersection(set(English.lower().split(' '))))))
                 Eng_matchRate.append(len(list(set(result[i]['EnglishWords'].lower().split(
-                    ' ')).intersection(set(English.lower().split(' ')))))/len(list(set(result[i]['EnglishWords'].lower().split(
+                    ' ')).intersection(set(English.lower().split(' '))))) / len(list(set(result[i]['EnglishWords'].lower().split(
                         ' ')).union(set(English.lower().split(' '))))))
                 Chi_point.append(len(list(set(result[i]['ChineseWords'].split(
                     ' ')).intersection(set(Chinese.split(' '))))))
                 Chi_matchRate.append(len(list(set(result[i]['ChineseWords'].split(
-                    ' ')).intersection(set(Chinese.split(' ')))))/len(list(set(result[i]['ChineseWords'].split(
+                    ' ')).intersection(set(Chinese.split(' '))))) / len(list(set(result[i]['ChineseWords'].split(
                         ' ')).union(set(Chinese.split(' '))))))
 
             total_point = list(map(add, Eng_point, Chi_point))
@@ -121,7 +121,7 @@ class db:
         result = db.writeData(sql, val)
         print(f'Table update result: {result}')
         return result
-    
+
     def writeNoMatchResult(MomoProductID):
         sql = """
             update MomoProducts
@@ -159,7 +159,9 @@ def lambda_handler(event, context):
         result["ProductName"], result["EnglishWords"], result["ChineseWords"])
     if matchResult:
         db.writeMatchResult(
-            result["MomoProductID"], matchResult["ProductID"], result['MyCate'])
+            result["MomoProductID"],
+            matchResult["ProductID"],
+            result['MyCate'])
         print(
             f"PCHome ProductNick:{matchResult['ProductNick']}, PCHome Price:{matchResult['CurrentPrice']}")
     else:

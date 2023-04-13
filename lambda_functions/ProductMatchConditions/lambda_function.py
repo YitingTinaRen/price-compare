@@ -3,7 +3,7 @@ import boto3
 
 
 def send2SQS(data):
-    randNum = int(1000*random.random() % 1000)
+    randNum = int(1000 * random.random() % 1000)
     client = boto3.client('sqs')
     message = client.send_message(
         QueueUrl=os.environ['sqsUrl'],
@@ -13,6 +13,7 @@ def send2SQS(data):
         MessageGroupId='momo-category',
         MessageDeduplicationId='momo-category' + str(randNum)
     )
+
 
 def lambda_handler(event, context):
     # TODO implement
@@ -58,7 +59,7 @@ def lambda_handler(event, context):
     ]
     for item in match_condition:
         send2SQS(item)
-        
+
     return {
         'statusCode': 200,
         'body': json.dumps('Hello from Lambda!')

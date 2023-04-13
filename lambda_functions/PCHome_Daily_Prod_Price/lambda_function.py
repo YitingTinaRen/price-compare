@@ -20,22 +20,22 @@ def lambda_handler(event, context):
         print(err)
         exit(1)
     cursor.close()
-    
-    add_data="""INSERT INTO PCHDaily_Price
+
+    add_data = """INSERT INTO PCHDaily_Price
                 (ProductID, Price, Date)
                 VALUES(%(Id)s, %(P)s, CURRENT_DATE)
     """
 
     content = json.loads(event['Records'][0]['body'])
-    prods = content[0:len(content)-3]
+    prods = content[0:len(content) - 3]
     print(prods)
-    
+
     addListProd = []
     cursor = mydb.cursor()
-    for i in range(len(prods)-3):
+    for i in range(len(prods) - 3):
         prod = {"Id": prods[i]['Id'], "P": prods[i]["Price"]["P"]}
         addListProd.append(prod)
-    
+
     print("Uploading data to DB")
     cursor.executemany(add_data, addListProd)
     mydb.commit()
@@ -46,4 +46,3 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'body': json.dumps('Hello from Lambda!')
     }
-

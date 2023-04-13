@@ -97,21 +97,24 @@ def lambda_handler(event, context):
     cursor.close()
 
     # Define data insertion statement
-    add_products = ("INSERT INTO MomoProducts"
-                    "(ProductID, ProductName, CurrentPrice, ProductSalecount, ProductURL, Event, EnglishWords, ChineseWords) "
-                    "VALUES (%(Id)s, %(Name)s, %(Price)s, %(Salecount)s, %(Url)s, %(Event)s,%(English)s,%(Chinese)s)")
+    add_products = (
+        "INSERT INTO MomoProducts"
+        "(ProductID, ProductName, CurrentPrice, ProductSalecount, ProductURL, Event, EnglishWords, ChineseWords) "
+        "VALUES (%(Id)s, %(Name)s, %(Price)s, %(Salecount)s, %(Url)s, %(Event)s,%(English)s,%(Chinese)s)")
 
     add_pic = ("INSERT INTO MomoPic"
                "(ProductID, PicURL) "
                "VALUES (%(Id)s, %(Pic)s)")
 
-    add_category = ("INSERT INTO MomoProdCategory"
-                    "(ProductID, CategoryCode, CategoryName, CategoryLevel) "
-                    "VALUES (%(Id)s, %(CateCode)s, %(CateName)s, %(CateLevel)s)")
+    add_category = (
+        "INSERT INTO MomoProdCategory"
+        "(ProductID, CategoryCode, CategoryName, CategoryLevel) "
+        "VALUES (%(Id)s, %(CateCode)s, %(CateName)s, %(CateLevel)s)")
 
-    update_products = ("UPDATE MomoProducts "
-                       " SET ProductName = %(Name)s, CurrentPrice=%(Price)s, ProductSalecount=%(Salecount)s, ProductURL=%(Url)s, Event=%(Event)s, EnglishWords=%(English)s, ChineseWords=%(Chinese)s "
-                       "WHERE ProductID=%(Id)s")
+    update_products = (
+        "UPDATE MomoProducts "
+        " SET ProductName = %(Name)s, CurrentPrice=%(Price)s, ProductSalecount=%(Salecount)s, ProductURL=%(Url)s, Event=%(Event)s, EnglishWords=%(English)s, ChineseWords=%(Chinese)s "
+        "WHERE ProductID=%(Id)s")
 
     update_pic = ("UPDATE MomoPic "
                   "SET PicURL=%(Pic)s "
@@ -128,13 +131,22 @@ def lambda_handler(event, context):
     updateListPic = []
     cursor = mydb.cursor()
     # Organize data to fetch to the database
-    for i in range(len(prods)-1):
-        prod = {"Id": prods[i]['Id'], "Name": prods[i]['Name'],  "Price": prods[i]["Price"],
-                "Url": "https://m.momoshop.com.tw"+prods[i]["Url"], "Event": prods[i]["Event"], "Salecount": prods[i]["Salecount"]}
+    for i in range(len(prods) - 1):
+        prod = {
+            "Id": prods[i]['Id'],
+            "Name": prods[i]['Name'],
+            "Price": prods[i]["Price"],
+            "Url": "https://m.momoshop.com.tw" +
+            prods[i]["Url"],
+            "Event": prods[i]["Event"],
+            "Salecount": prods[i]["Salecount"]}
         NameWords = Generator.splitString(prod['Name'])
         prod.update(NameWords)
         cursor.execute(
-            "select TrackingID, MemberID from ProductTracking where MomoProductID=%s and TargetPrice>=%s", (prods[i]['Id'], prods[i]["Price"],))
+            "select TrackingID, MemberID from ProductTracking where MomoProductID=%s and TargetPrice>=%s",
+            (prods[i]['Id'],
+             prods[i]["Price"],
+             ))
         result = cursor.fetchall()
         if result:
             send2SQS(result)
@@ -156,11 +168,14 @@ def lambda_handler(event, context):
                 updateListPic.append({
                     "Id": prods[i]["Id"], "Pic": "None"})
 
-            cursor.execute("select ProductID, date_format(DateTime, '%Y%m%d')  from MomoProdCategory where ProductID=%s",
-                           (prods[i]["Id"],))
+            cursor.execute(
+                "select ProductID, date_format(DateTime, '%Y%m%d')  from MomoProdCategory where ProductID=%s",
+                (prods[i]["Id"],
+                 ))
             result = cursor.fetchall()
             if result:
-                if result[0][1] <= str(int(datetime.strftime(datetime.now(), '%Y%m%d'))-1):
+                if result[0][1] <= str(
+                        int(datetime.strftime(datetime.now(), '%Y%m%d')) - 1):
                     # Delete the data updated yesterday
                     cursor.execute(
                         "DELETE FROM MomoProdCategory WHERE ProductID = %s", (prods[i]["Id"],))
@@ -181,9 +196,11 @@ def lambda_handler(event, context):
                     "Id": prods[i]["Id"], "Pic": "None"})
 
         cateList = list(prods[-1]["Category"])
-        for j in range(int(len(cateList)/2)):
-            addListCate.append({
-                "Id": prods[i]["Id"], "CateCode": prods[-1]["Category"][cateList[2*j]], "CateName": prods[-1]["Category"][cateList[2*j+1]], "CateLevel": int(cateList[2*j][1])})
+        for j in range(int(len(cateList) / 2)):
+            addListCate.append({"Id": prods[i]["Id"],
+                                "CateCode": prods[-1]["Category"][cateList[2 * j]],
+                                "CateName": prods[-1]["Category"][cateList[2 * j + 1]],
+                                "CateLevel": int(cateList[2 * j][1])})
     print("Uploading data to DB")
 
     cursor.fast_executemany = True
@@ -209,7 +226,7 @@ def lambda_handler(event, context):
 
 
 def send2SQS(data):
-    randNum = int(1000*random.random() % 1000)
+    randNum = int(1000 * random.random() % 1000)
     client = boto3.client('sqs')
     message = client.send_message(
         QueueUrl=os.environ['sqsUrl'],
@@ -219,6 +236,7 @@ def send2SQS(data):
         MessageGroupId='momo-category',
         MessageDeduplicationId='momo-category' + str(randNum)
     )
+
 
 def create_database(cursor):
     try:
@@ -242,7 +260,7 @@ class Generator:
         """return list of string"""
         newList = []
         for i in range(0, len(str), 2):
-            newList.append(str[i:i+2])
+            newList.append(str[i:i + 2])
         if len(newList[-1]) == 1:
             newList.pop(-1)
         return newList
@@ -250,12 +268,12 @@ class Generator:
     def split3Words(str):
         """return list of string"""
         subList = []
-        for i in range(len(str)-2):
-            threeWords = str[i:i+3]
-            rest = str.split(str[i:i+3])
+        for i in range(len(str) - 2):
+            threeWords = str[i:i + 3]
+            rest = str.split(str[i:i + 3])
             for sub in rest:
                 if sub and len(sub) > 1:
-                    subList = subList+Generator.splitEvery2Words(sub)
+                    subList = subList + Generator.splitEvery2Words(sub)
             subList.append(threeWords)
 
         return subList
@@ -277,10 +295,10 @@ class Generator:
         newList = []
         for item in ChiList:
             if len(item) > 4:
-                newList = newList+Generator.splitEvery2Words(item)
-                newList = newList+Generator.split3Words(item)
+                newList = newList + Generator.splitEvery2Words(item)
+                newList = newList + Generator.split3Words(item)
         newList = Generator.removeDuplicates(newList)
-        ChiList = ChiList+newList
+        ChiList = ChiList + newList
         ChiStr = ' '.join(ChiList)
 
         words = {

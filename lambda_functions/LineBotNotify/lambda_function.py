@@ -11,7 +11,7 @@ def sendmsg(LineToken, msg):
 
     # Get userID
     url = "https://api.line.me/v2/profile"
-    res = requests.get(url, headers={"Authorization": "Bearer "+LineToken})
+    res = requests.get(url, headers={"Authorization": "Bearer " + LineToken})
     res = res.json()
     userID = res['userId']
     line_bot_api = LineBotApi(
@@ -19,7 +19,8 @@ def sendmsg(LineToken, msg):
     message = TextSendMessage(text=msg)
     line_bot_api.push_message(userID, message)
 
-def lambda_handler(event,context):
+
+def lambda_handler(event, context):
     # Connect to database
     mydb = mysql.connector.connect(
         host=os.environ['DB_HOST'],
@@ -35,9 +36,9 @@ def lambda_handler(event,context):
 
     cursor = mydb.cursor(dictionary=True)
     for item in data:
-        TrackingID=item[0]
-        MemberID=item[1]
-        sql="""
+        TrackingID = item[0]
+        MemberID = item[1]
+        sql = """
             select PT.TargetPrice, M.LineToken,P.ProductName
             from ProductTracking as PT
             inner join member as M
@@ -46,14 +47,14 @@ def lambda_handler(event,context):
             on PT.MomoProductID = P.ProductID
             where PT.MemberID=%s and (PT.TrackingID=%s)
         """
-        val=(MemberID,TrackingID,)
-        cursor.execute(sql,val)
-        data=cursor.fetchall()
+        val = (MemberID, TrackingID,)
+        cursor.execute(sql, val)
+        data = cursor.fetchall()
         # print(data)
-        msg=f'您追蹤的商品:{data[0]["ProductName"]}\n 已經低於${data[0]["TargetPrice"]}!'
+        msg = f'您追蹤的商品:{data[0]["ProductName"]}\n 已經低於${data[0]["TargetPrice"]}!'
         print(msg)
-        sendmsg(data[0]["LineToken"],msg)
-        
+        sendmsg(data[0]["LineToken"], msg)
+
     cursor.close()
     mydb.close()
 
@@ -61,5 +62,3 @@ def lambda_handler(event,context):
         'statusCode': 200,
         'body': json.dumps('Hello from Lambda!')
     }
-
-
